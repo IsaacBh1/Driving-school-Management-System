@@ -1,6 +1,0 @@
-C:\Users\isaac\source\repos\DrivingSchool_DataAccessLayer\bin\Debug\DrivingSchool_DataAccessLayer.dll
-C:\Users\isaac\source\repos\DrivingSchool_DataAccessLayer\bin\Debug\DrivingSchool_DataAccessLayer.pdb
-C:\Users\isaac\source\repos\DrivingSchool_DataAccessLayer\obj\Debug\DrivingSchool_DataAccessLayer.csproj.AssemblyReference.cache
-C:\Users\isaac\source\repos\DrivingSchool_DataAccessLayer\obj\Debug\DrivingSchool_DataAccessLayer.csproj.CoreCompileInputs.cache
-C:\Users\isaac\source\repos\DrivingSchool_DataAccessLayer\obj\Debug\DrivingSchool_DataAccessLayer.dll
-C:\Users\isaac\source\repos\DrivingSchool_DataAccessLayer\obj\Debug\DrivingSchool_DataAccessLayer.pdb
