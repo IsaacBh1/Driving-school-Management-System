@@ -132,6 +132,15 @@ namespace DrivingSchool_BusinesseLayer
             return false;
         }
 
+        //this is  a code to searsh a person in db 
+        public static DataTable SearchPersonWithUserName(string UserName)
+        {
+            return null; 
+        }
+
+
+
+
     };
 };
 

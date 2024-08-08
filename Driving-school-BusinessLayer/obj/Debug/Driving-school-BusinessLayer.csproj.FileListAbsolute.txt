@@ -1,0 +1,9 @@
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-BusinessLayer\bin\Debug\Driving-school-BusinessLayer.dll
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-BusinessLayer\bin\Debug\Driving-school-BusinessLayer.pdb
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-BusinessLayer\bin\Debug\DrivingSchool-DataAccessLayer.dll
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-BusinessLayer\bin\Debug\DrivingSchool-DataAccessLayer.pdb
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-BusinessLayer\obj\Debug\Driving-school-BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-BusinessLayer\obj\Debug\Driving-school-BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-BusinessLayer\obj\Debug\Driving-.FC5CE00F.Up2Date
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-BusinessLayer\obj\Debug\Driving-school-BusinessLayer.dll
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-BusinessLayer\obj\Debug\Driving-school-BusinessLayer.pdb

@@ -43,7 +43,12 @@
   <ItemGroup>
     <Compile Include="clsAddress.cs" />
     <Compile Include="clsContact.cs" />
+    <Compile Include="clsDrivingLicense.cs" />
+    <Compile Include="clsInstructor.cs" />
+    <Compile Include="clsNamtionalCard.cs" />
     <Compile Include="clsPerson.cs" />
+    <Compile Include="clsStudent.cs" />
+    <Compile Include="clsUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
