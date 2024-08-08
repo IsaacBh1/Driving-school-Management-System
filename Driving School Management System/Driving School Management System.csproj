@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A9685C6-5892-4C0D-B200-E6998FC04A43}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Driving_School_Management_System</RootNamespace>
+    <AssemblyName>Driving School Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\Downloads\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\Downloads\Metro UI\Metro UI\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SATAUiFramework">
+      <HintPath>..\..\..\Downloads\SATAUiFramework.1.0.0\SATAUiFramework.1.0.0\lib\net40\SATAUiFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="SipaaFramework">
+      <HintPath>..\..\..\Downloads\SipaaFramework.1.1.0\SipaaFramework.1.1.0\lib\net46\SipaaFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.ar.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corners-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-circle-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-circle-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrows-in-simple-fill.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
