@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.TopPanel = new System.Windows.Forms.Panel();
             this.SideBar = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
@@ -45,7 +44,6 @@
             this.UserNamePanel = new Sipaa.Framework.SPanel();
             this.lblUserName = new System.Windows.Forms.Label();
             this.SideBarTimer = new System.Windows.Forms.Timer(this.components);
-            this.btnAddCondidateFile = new System.Windows.Forms.Button();
             this.btnMain = new System.Windows.Forms.Button();
             this.btnCondidtes = new System.Windows.Forms.Button();
             this.btnLessons = new System.Windows.Forms.Button();
@@ -60,7 +58,6 @@
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.TopPanel.SuspendLayout();
             this.SideBar.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
@@ -88,7 +85,6 @@
             // SideBar
             // 
             this.SideBar.BackColor = System.Drawing.Color.White;
-            this.SideBar.Controls.Add(this.guna2Panel1);
             this.SideBar.Controls.Add(this.guna2Panel2);
             this.SideBar.Controls.Add(this.guna2Panel4);
             this.SideBar.Controls.Add(this.guna2Panel7);
@@ -101,16 +97,6 @@
             this.SideBar.Controls.Add(this.UserNamePanel);
             resources.ApplyResources(this.SideBar, "SideBar");
             this.SideBar.Name = "SideBar";
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.BorderRadius = 8;
-            this.guna2Panel1.Controls.Add(this.btnAddCondidateFile);
-            this.guna2Panel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.guna2Panel1, "guna2Panel1");
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             // 
             // guna2Panel2
             // 
@@ -219,14 +205,6 @@
             // 
             this.SideBarTimer.Interval = 10;
             // 
-            // btnAddCondidateFile
-            // 
-            this.btnAddCondidateFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
-            resources.ApplyResources(this.btnAddCondidateFile, "btnAddCondidateFile");
-            this.btnAddCondidateFile.Image = global::Driving_School_Management_System.Properties.Resources.plus_circle;
-            this.btnAddCondidateFile.Name = "btnAddCondidateFile";
-            this.btnAddCondidateFile.UseVisualStyleBackColor = false;
-            // 
             // btnMain
             // 
             this.btnMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
@@ -234,6 +212,7 @@
             this.btnMain.Image = global::Driving_School_Management_System.Properties.Resources.house;
             this.btnMain.Name = "btnMain";
             this.btnMain.UseVisualStyleBackColor = false;
+            this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
             // 
             // btnCondidtes
             // 
@@ -331,7 +310,6 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.TopPanel.ResumeLayout(false);
             this.SideBar.ResumeLayout(false);
-            this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel7.ResumeLayout(false);
@@ -357,8 +335,6 @@
         private System.Windows.Forms.PictureBox btnMenu;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private System.Windows.Forms.Button btnFinance;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private System.Windows.Forms.Button btnAddCondidateFile;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
         private System.Windows.Forms.Button btnStatistics;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;

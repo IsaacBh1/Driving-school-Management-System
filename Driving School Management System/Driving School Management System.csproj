@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CxFlatUI">
+      <HintPath>..\..\..\..\Downloads\Flat UI\Flat UI\CxFlatUI.1.0.0.4\lib\net45\CxFlatUI.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>..\..\..\Downloads\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
     </Reference>
@@ -49,6 +52,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,19 +64,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExpensesBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExpensesBar.Designer.cs">
+      <DependentUpon>ExpensesBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\CondidatesWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CondidatesWindow.Designer.cs">
+      <DependentUpon>CondidatesWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ExpensesBar.resx">
+      <DependentUpon>ExpensesBar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.ar.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CondidatesWindow.resx">
+      <DependentUpon>CondidatesWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -147,6 +178,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\arrows-in-simple-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-arrow-down-bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag-simple-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piggy-bank-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\currency-dollar-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-wavy-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tote-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-user-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock-thin %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-open-bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-circle-thin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-circle-thin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-thin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-thin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
