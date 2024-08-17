@@ -1,6 +1,7 @@
 ﻿using DrivingSchool_BusinesseLayer;
 using DrivingSchool_DataAccessLayer;
 using System;
+using System.Data;
 
 namespace Driving_school_BusinessLayer
 {
@@ -17,10 +18,10 @@ namespace Driving_school_BusinessLayer
             BirthPlace = birthPlace;
             Gender = gender;
             NationalCardID = nationalCardID;
-            Person = clsPerson.Find(PersonID); 
+            Person = clsPerson.Find(PersonID);
             NationalCard = clsNationalCard.Find(NationalCardID);
             UserName = NationalCard.CardNumber;
-            Mode = enMode.Update; 
+            Mode = enMode.Update;
         }
         public clsStudent()
         {
@@ -29,15 +30,15 @@ namespace Driving_school_BusinessLayer
             BirthDate = DateTime.Now;
             BirthPlace = string.Empty;
             NationalCardID = -1;
-            Mode = enMode.AddNew; 
+            Mode = enMode.AddNew;
         }
 
-        public int  StudentID { get; set; }
+        public int StudentID { get; set; }
         public int PersonID { get; set; }
         public DateTime BirthDate { get; set; }
-        public string BirthPlace { get; set;}
+        public string BirthPlace { get; set; }
         public bool Gender { get; set; }
-        public int NationalCardID { get ; set; }
+        public int NationalCardID { get; set; }
         public string UserName { get; set; }//the identity card 
         public clsPerson Person { get; set; }
         public clsNationalCard NationalCard { get; set; }
@@ -46,7 +47,7 @@ namespace Driving_school_BusinessLayer
 
         private bool _AddNewStudent()
         {
-            StudentID = clsStudentDataAccess.AddNewStudent(PersonID , UserName , BirthDate , BirthPlace , Gender , NationalCardID);
+            StudentID = clsStudentDataAccess.AddNewStudent(PersonID, UserName, BirthDate, BirthPlace, Gender, NationalCardID);
             return (StudentID != -1);
         }
         private bool _UpdateStudent()
@@ -75,19 +76,19 @@ namespace Driving_school_BusinessLayer
         }
         public static clsStudent Find(int ID)
         {
-            int personID = -1; 
-            DateTime birthDate = DateTime.Now ;  
-            string birthPlace = string.Empty;  
-            bool gender = true;  
-            int nationalCardID = -1; 
+            int personID = -1;
+            DateTime birthDate = DateTime.Now;
+            string birthPlace = string.Empty;
+            bool gender = true;
+            int nationalCardID = -1;
             string UserName = string.Empty;
 
-            if (clsStudentDataAccess.GetStudentInfoByID(ID , ref personID ,ref UserName ,ref birthDate ,ref birthPlace ,ref gender ,ref nationalCardID))
+            if (clsStudentDataAccess.GetStudentInfoByID(ID, ref personID, ref UserName, ref birthDate, ref birthPlace, ref gender, ref nationalCardID))
             {
-                return new clsStudent(ID , personID , birthDate , birthPlace , gender , nationalCardID);
+                return new clsStudent(ID, personID, birthDate, birthPlace, gender, nationalCardID);
             }
             return null;
-            
+
         }
 
 
@@ -100,6 +101,42 @@ namespace Driving_school_BusinessLayer
         {
             return clsStudentDataAccess.DeleteStudent(ID);
         }
+
+
+        public static DataTable GetAllStudentsInfo()
+        {
+            return clsStudentDataAccess.GetAllStudentsInformations();
+        }
+
+        public static DataTable SearchStudentInfoByID(int id)
+        {
+            return clsStudentDataAccess.SearchStudentInfoByID(id); 
+        }
+
+
+        public static DataTable SearchStudentInfoByFirstName_Arabic(string Name)
+        {
+            return clsStudentDataAccess.SearchStudentInfoFirstName_Arabic(Name);
+        }
+
+
+
+        public static DataTable SearchStudentInfoLastName_Arabic(string LastName)
+        {
+            return clsStudentDataAccess.SearchStudentInfoLastName_Arabic(LastName);
+        }
+
+        public static DataTable SearchStudentInfoByIdentityNumber(string Number)
+        {
+            return clsStudentDataAccess.SearchStudentInfoByIdentityNumber(Number);
+        }
+
+        public static DataTable SearchByAll(int id, string FirstName, string LastName, string IdentityNumber)
+        {
+           return clsStudentDataAccess.SearchStudentByAll(id, FirstName, LastName, IdentityNumber); 
+        }
+
+
     }
 }
 

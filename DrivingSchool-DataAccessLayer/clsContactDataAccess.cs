@@ -182,14 +182,13 @@ namespace DrivingSchool_DataAccessLayer
             int ID = -1;
             SqlConnection connection = new SqlConnection(ConnectionString);
             string query = "select ContactID from Contacts where " +
-                "Phone = @Phone and " +
-                "Email  = @Email and " +
-                "AdditionalContact = @AdditionalContact";
-            SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@Phone", Phone);
-            command.Parameters.AddWithValue("@Email", Email);
-            command.Parameters.AddWithValue("@AdditionalContact", AdditionalContact);
+                        "CONVERT(VARCHAR, Phone) = @Phone and " +
+                        "CONVERT(VARCHAR, Email) = @Email ; "; 
 
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@Phone", string.IsNullOrEmpty(Phone) ? DBNull.Value : (object)Phone);
+            command.Parameters.AddWithValue("@Email",string.IsNullOrEmpty(Email) ? DBNull.Value : (object)Email);
+           // command.Parameters.AddWithValue("@AdditionalContact", string.IsNullOrEmpty(AdditionalContact) ? DBNull.Value : (object)AdditionalContact);
 
             try
             {
@@ -197,12 +196,14 @@ namespace DrivingSchool_DataAccessLayer
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.HasRows)
                 {
+                    
                     while (reader.Read())
-                    {
-                        ID = (int)reader["ContactID"];
-                    }
+                        {
+                            ID = (int)reader["ContactID"];
+                        }
                 }
                 reader.Close();
+                return ID; 
             }
             catch
             {
@@ -213,12 +214,11 @@ namespace DrivingSchool_DataAccessLayer
 
                 connection.Close();
             }
-            return ID;
-
+            return -1; 
         }
-        public static bool IsContactExiste(string Country, string State, string AdditionalContact)
+        public static bool IsContactExiste(string Phone, string Email, string AdditionalContact)
         {
-            return (GetCountactIDByInfo(Country, State, AdditionalContact) != -1);
+            return (GetCountactIDByInfo(Phone, Email, AdditionalContact) != -1);
         }
 
     }

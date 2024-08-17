@@ -182,14 +182,12 @@ namespace DrivingSchool_DataAccessLayer
         {
             int ID = -1;
             SqlConnection connection = new SqlConnection(ConnectionString);
-            string query = "select NationalCardID from NationalCards where " +
-                "NationalCardType = @NationalCardType and " +
-                "CardNumber = @CardNumber and " +
-                "EndDate = @EndDate";
+            string query = "select NationalCards.NationalCardID from [NationalCards] where " +
+                "NationalCards.NationalCardType = @NationalCardType and " +
+                "CardNumber = @CardNumber ; "; 
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@NationalCardType", NationalCardType);
             command.Parameters.AddWithValue("@CardNumber", CardNumber);
-            command.Parameters.AddWithValue("@EndDate", EndDate);
             try
             {
                 connection.Open();
@@ -197,9 +195,8 @@ namespace DrivingSchool_DataAccessLayer
                 if (reader.HasRows)
                 {
                     while (reader.Read())
-                    {
                         ID = (int)reader["NationalCardID"];
-                    }
+                    
                 }
                 reader.Close();
             }

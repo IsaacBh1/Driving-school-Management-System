@@ -1,6 +1,7 @@
 ﻿using DrivingSchool_DataAccessLayer;
 using System;
 using System.Data;
+using System.Runtime.InteropServices;
 namespace Driving_school_BusinessLayer
 {
     public class clsNationalCard
@@ -78,6 +79,11 @@ namespace Driving_school_BusinessLayer
                 return new clsNationalCard(ID, _Type, _CardNumber, _EndDate); 
             }
             return null; 
+        }
+
+        public static int Find(string _Type,string _CardNumber,DateTime _EndDate)
+        {
+            return clsNationalCardDataAccess.GetNationalCardIDByInfo(_Type , _CardNumber , _EndDate);
         }
 
         public static bool GetNationalCardExists(int ID)

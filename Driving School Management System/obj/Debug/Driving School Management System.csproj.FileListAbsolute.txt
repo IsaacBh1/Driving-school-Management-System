@@ -34,3 +34,11 @@ C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Mana
 C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\bin\Debug\CxFlatUI.dll
 C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.ExpensesBar.resources
 C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.CondidatesWindow.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.AddStudentForm.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\bin\Debug\Driving-school-BusinessLayer.dll
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\bin\Debug\DrivingSchool-DataAccessLayer.dll
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\bin\Debug\Driving-school-BusinessLayer.pdb
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\bin\Debug\DrivingSchool-DataAccessLayer.pdb
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.UserControls.NotSavedMessage.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.UserControls.SavedSuccessfullyMessage.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.StatusMessageForm.resources

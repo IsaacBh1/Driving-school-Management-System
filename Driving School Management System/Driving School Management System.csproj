@@ -64,10 +64,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExpensesBar.cs">
+    <Compile Include="Forms\StatusMessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StatusMessageForm.Designer.cs">
+      <DependentUpon>StatusMessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ExpensesBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ExpensesBar.Designer.cs">
+    <Compile Include="UserControls\ExpensesBar.Designer.cs">
       <DependentUpon>ExpensesBar.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
@@ -75,6 +81,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddStudentForm.Designer.cs">
+      <DependentUpon>AddStudentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\CondidatesWindow.cs">
       <SubType>Form</SubType>
@@ -90,7 +102,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ExpensesBar.resx">
+    <Compile Include="UserControls\NotSavedMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\NotSavedMessage.Designer.cs">
+      <DependentUpon>NotSavedMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SavedSuccessfullyMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SavedSuccessfullyMessage.Designer.cs">
+      <DependentUpon>SavedSuccessfullyMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityClasses\AddStudentEventArgs.cs" />
+    <EmbeddedResource Include="Forms\StatusMessageForm.resx">
+      <DependentUpon>StatusMessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ExpensesBar.resx">
       <DependentUpon>ExpensesBar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.ar.resx">
@@ -98,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddStudentForm.resx">
+      <DependentUpon>AddStudentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CondidatesWindow.resx">
       <DependentUpon>CondidatesWindow.cs</DependentUpon>
@@ -115,6 +146,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\NotSavedMessage.resx">
+      <DependentUpon>NotSavedMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SavedSuccessfullyMessage.resx">
+      <DependentUpon>SavedSuccessfullyMessage.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -223,6 +260,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\desktop-thin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Driving-school-BusinessLayer\Driving-school-BusinessLayer.csproj">
+      <Project>{16fd8272-a398-49b2-846f-da2cb9f11d46}</Project>
+      <Name>Driving-school-BusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-circle-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-fat-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass-thin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrows-clockwise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\funnel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\funnel %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dots-three-outline.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

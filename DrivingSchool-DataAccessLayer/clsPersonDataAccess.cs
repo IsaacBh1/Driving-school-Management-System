@@ -74,7 +74,7 @@ namespace DrivingSchool_DataAccessLayer
             int Id = -1;
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
             string query = "insert into Persons (FirstName, LastName, FirstName_Arabic, LastName_Arabic, ContactID, AddressID) values (@FirstName, @LastName, @FirstName_Arabic, @LastName_Arabic, @ContactID, @AddressID);" +
-                "select SCOPE_IDENTITY();";
+                " select SCOPE_IDENTITY();";
 
             SqlCommand command = new SqlCommand(query, sqlConnection);
             command.Parameters.AddWithValue("@FirstName", FirstName);
@@ -85,11 +85,12 @@ namespace DrivingSchool_DataAccessLayer
             command.Parameters.AddWithValue("@AddressID", AddressID);
             try
             {
-                sqlConnection.Open();
+                  sqlConnection.Open();
                 object result = command.ExecuteScalar();
                 if (result != null && int.TryParse(result.ToString(), out int ID))
                 {
                     Id = ID;
+                    return Id;
                 }
             }
             catch
@@ -100,7 +101,7 @@ namespace DrivingSchool_DataAccessLayer
             {
                 sqlConnection.Close();
             }
-            return Id;
+            return -1; 
         }
 
         public static bool UpdatePerson(int personID, string FirstName, string LastName, string FirstName_Arabic, string LastName_Arabic, int ContactID, int AddressID)

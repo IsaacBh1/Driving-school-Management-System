@@ -85,6 +85,7 @@ namespace DrivingSchool_DataAccessLayer
                 {
                     Id = ID;
                 }
+                return Id; 
             }
             catch
             {
@@ -94,7 +95,6 @@ namespace DrivingSchool_DataAccessLayer
             {
                 sqlConnection.Close();
             }
-            return Id;
         }
 
         public static bool UpdateAddress(int addressID, string Country, string State, string Localaddress)
@@ -184,13 +184,12 @@ namespace DrivingSchool_DataAccessLayer
             SqlConnection connection = new SqlConnection(ConnectionString);
             string query = "select AddressID from Addresses where " +
                 "Country = @Country and " +
-                "State = @State and " +
-                "Localaddress = @Localaddress";
+                "State = @State"; 
 
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@Country", Country);
             command.Parameters.AddWithValue("@State", State);
-            command.Parameters.AddWithValue("@Localaddress", string.IsNullOrEmpty(Localaddress) ? DBNull.Value : (object)Localaddress);
+         //   command.Parameters.AddWithValue("@Localaddress", string.IsNullOrEmpty(Localaddress) ? DBNull.Value : (object)Localaddress);
 
             try
             {

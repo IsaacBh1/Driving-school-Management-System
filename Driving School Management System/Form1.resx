@@ -126,10 +126,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnMinimize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 0</value>
+    <value>20, 0</value>
   </data>
   <data name="btnMinimize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 40</value>
+    <value>18, 40</value>
+  </data>
+  <data name="btnMinimize.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnMinimize.TabIndex" type="System.Int32, mscorlib">
@@ -157,7 +160,10 @@
     <value>0, 0</value>
   </data>
   <data name="btnclose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 40</value>
+    <value>20, 40</value>
+  </data>
+  <data name="btnclose.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="btnclose.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>

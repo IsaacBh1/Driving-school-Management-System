@@ -73,15 +73,16 @@ namespace DrivingSchool_DataAccessLayer
         {
             int Id = -1;
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
-            string query = "insert into Students (PersonID, UserName, BirthDate, BirthCountry, Gender, NationalCardID) values (@PersonID, @UserName, @BirthDate, @BirthCountry, @Gender, @NationalCardID);" +
-                "select SCOPE_IDENTITY();";
+            int gender = (Gender == true) ? 1 : 0; 
+            string query = @"insert into Students (PersonID, UserName, BirthDate, BirthCountry, Gender, NationalCardID) values (@PersonID, @UserName, @BirthDate, @BirthCountry , @gender , @NationalCardID);
+                    select SCOPE_IDENTITY();";
 
             SqlCommand command = new SqlCommand(query, sqlConnection);
             command.Parameters.AddWithValue("@PersonID", PersonID);
             command.Parameters.AddWithValue("@UserName", UserName);
             command.Parameters.AddWithValue("@BirthDate", BirthDate);
             command.Parameters.AddWithValue("@BirthCountry", BirthCountry);
-            command.Parameters.AddWithValue("@Gender", Gender);
+            command.Parameters.AddWithValue("@gender", gender);
             command.Parameters.AddWithValue("@NationalCardID", NationalCardID);
             try
             {
@@ -91,6 +92,7 @@ namespace DrivingSchool_DataAccessLayer
                 {
                     Id = ID;
                 }
+                return Id; 
             }
             catch
             {
@@ -100,7 +102,6 @@ namespace DrivingSchool_DataAccessLayer
             {
                 sqlConnection.Close();
             }
-            return Id;
         }
 
         public static bool UpdateStudent(int studentID, int PersonID, string UserName, DateTime BirthDate, string BirthCountry, bool Gender, int NationalCardID)
@@ -236,5 +237,177 @@ namespace DrivingSchool_DataAccessLayer
         {
             return (GetStudentIDByInfo(PersonID, UserName, BirthDate, BirthCountry, Gender, NationalCardID) != -1);
         }
+        public static DataTable GetAllStudentsInformations()
+        {
+            DataTable StudentsInfo = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select top 50 * from StudentInformations order by StudentID desc;";
+            SqlCommand command = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    StudentsInfo.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return StudentsInfo;
+        }
+        public static DataTable SearchStudentInfoByID(int id)
+        {
+            DataTable StudentsInfo = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from StudentInformations where StudentID = @Id ; ";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@Id", id); 
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    StudentsInfo.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return StudentsInfo;
+        }
+
+        public static DataTable SearchStudentInfoFirstName_Arabic(string Name)
+        {
+            DataTable StudentsInfo = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from StudentInformations where FirstName_Arabic like '%"+Name+"%'; ";
+            SqlCommand command = new SqlCommand(query, connection);
+            //command.Parameters.AddWithValue("@Name", Name);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    StudentsInfo.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return StudentsInfo;
+        }
+
+
+        public static DataTable SearchStudentInfoLastName_Arabic(string LastName)
+        {
+            DataTable StudentsInfo = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from StudentInformations where LastName_Arabic like '%"+ LastName + "%';";
+            SqlCommand command = new SqlCommand(query, connection);
+            //command.Parameters.AddWithValue("@Name", LastName);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    StudentsInfo.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return StudentsInfo;
+        }
+
+        public static DataTable SearchStudentInfoByIdentityNumber(string Number)
+        {
+            DataTable StudentsInfo = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from StudentInformations where CardNumber like '"+Number+"%' ; ";
+            SqlCommand command = new SqlCommand(query, connection);
+            //command.Parameters.AddWithValue("@Number", Number);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    StudentsInfo.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return StudentsInfo;
+        }
+
+        public static DataTable SearchStudentByAll(int id , string FirstName , string LastName , string IdentityNumber )
+        {
+            DataTable StudentsInfo = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from StudentInformations where StudentID like '%"+id+"%' " +
+                           " and  FirstName_Arabic like '%"+FirstName+"%' " +
+                           " and  LastName_Arabic like '%"+LastName+"%' " +
+                           " and CardNumber like '%"+IdentityNumber+"%';";
+            SqlCommand command = new SqlCommand(query, connection);
+            //command.Parameters.AddWithValue("@Number", Number);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    StudentsInfo.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return StudentsInfo;
+        }
     }
 }
+
+
+//select * from StudentInformations where FirstName_Arabic like '%haq%'

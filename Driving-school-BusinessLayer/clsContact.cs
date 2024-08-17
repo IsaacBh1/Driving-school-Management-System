@@ -103,5 +103,13 @@ namespace DrivingSchool_BusinesseLayer
         {
             return clsContactDataAccess.GetAllContacts();
         }
+
+
+        public static int Find(string Email, string Phone, string AdditionalInfo)
+        {
+            return clsContactDataAccess.GetCountactIDByInfo(Phone, Email, AdditionalInfo);
+        }
+
+
     };
 }

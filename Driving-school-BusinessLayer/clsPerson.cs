@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
+using System.Security.Cryptography.X509Certificates;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
@@ -63,8 +64,8 @@ namespace DrivingSchool_BusinesseLayer
             Contact = clsContact.Find(ContactID);
             Address = clsAddress.Find(AddressID);
             Mode = enMode.Update;
-
         }
+
 
 
         private bool _AddNewPerson()
@@ -136,6 +137,12 @@ namespace DrivingSchool_BusinesseLayer
         public static DataTable SearchPersonWithUserName(string UserName)
         {
             return null; 
+        }
+
+
+        public static int  Find(string FirstName ,string  LastName ,string FirstName_Arabic ,string LastName_Arabic ,int ContactID ,int AddressID)
+        {
+            return clsPersonDataAccess.GetPersonIDByInfo(FirstName, LastName, FirstName_Arabic, LastName_Arabic, ContactID, AddressID); 
         }
 
 
