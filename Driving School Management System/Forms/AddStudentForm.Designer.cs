@@ -75,6 +75,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.CboxIdentityType = new MetroFramework.Controls.MetroComboBox();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.txtbxIdentityNumber = new System.Windows.Forms.TextBox();
             this.txtbox_IdentityCardNumber = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtboxCardNumber = new Guna.UI2.WinForms.Guna2TextBox();
             this.label27 = new System.Windows.Forms.Label();
@@ -86,16 +87,19 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.txtbxEmail = new System.Windows.Forms.TextBox();
             this.txtbox_Email = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtboxEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.txtbxPhone = new System.Windows.Forms.TextBox();
             this.txtbox_Phone = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtboxPhone = new Guna.UI2.WinForms.Guna2TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
+            this.txtbxAdditionalContact = new System.Windows.Forms.TextBox();
             this.txtbox_AdditionalContact = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtboxAdditionalContact = new Guna.UI2.WinForms.Guna2TextBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -103,10 +107,6 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.errDrivingLicenseNumber = new System.Windows.Forms.ErrorProvider(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtbxIdentityNumber = new System.Windows.Forms.TextBox();
-            this.txtbxEmail = new System.Windows.Forms.TextBox();
-            this.txtbxPhone = new System.Windows.Forms.TextBox();
-            this.txtbxAdditionalContact = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -198,7 +198,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.Salmon;
-            this.label3.Location = new System.Drawing.Point(100, 27);
+            this.label3.Location = new System.Drawing.Point(78, 33);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(18, 19);
             this.label3.TabIndex = 11;
@@ -210,7 +210,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(115, 22);
+            this.label2.Location = new System.Drawing.Point(96, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(164, 31);
             this.label2.TabIndex = 9;
@@ -329,7 +329,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.ForeColor = System.Drawing.Color.Salmon;
-            this.label6.Location = new System.Drawing.Point(185, 27);
+            this.label6.Location = new System.Drawing.Point(157, 27);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(18, 19);
             this.label6.TabIndex = 11;
@@ -340,7 +340,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 13F);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(197, 18);
+            this.label7.Location = new System.Drawing.Point(179, 17);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(88, 31);
             this.label7.TabIndex = 9;
@@ -389,7 +389,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.ForeColor = System.Drawing.Color.Salmon;
-            this.label8.Location = new System.Drawing.Point(65, 26);
+            this.label8.Location = new System.Drawing.Point(50, 31);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(18, 19);
             this.label8.TabIndex = 11;
@@ -401,7 +401,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label9.Location = new System.Drawing.Point(82, 22);
+            this.label9.Location = new System.Drawing.Point(68, 22);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(192, 31);
             this.label9.TabIndex = 9;
@@ -450,7 +450,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.ForeColor = System.Drawing.Color.Salmon;
-            this.label10.Location = new System.Drawing.Point(66, 27);
+            this.label10.Location = new System.Drawing.Point(66, 32);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(18, 19);
             this.label10.TabIndex = 11;
@@ -511,7 +511,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.ForeColor = System.Drawing.Color.Salmon;
-            this.label12.Location = new System.Drawing.Point(119, 27);
+            this.label12.Location = new System.Drawing.Point(102, 27);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(18, 19);
             this.label12.TabIndex = 11;
@@ -523,7 +523,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label13.Location = new System.Drawing.Point(133, 22);
+            this.label13.Location = new System.Drawing.Point(115, 22);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(142, 31);
             this.label13.TabIndex = 9;
@@ -742,7 +742,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(859, 125);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "بطاقة التعريف";
+            this.tabPage1.Text = "الهوية";
             // 
             // flowLayoutPanel1
             // 
@@ -772,7 +772,7 @@
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.ForeColor = System.Drawing.Color.Salmon;
-            this.label28.Location = new System.Drawing.Point(110, 19);
+            this.label28.Location = new System.Drawing.Point(105, 19);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(24, 32);
             this.label28.TabIndex = 19;
@@ -818,6 +818,14 @@
             this.panel12.Size = new System.Drawing.Size(254, 100);
             this.panel12.TabIndex = 19;
             // 
+            // txtbxIdentityNumber
+            // 
+            this.txtbxIdentityNumber.AcceptsReturn = true;
+            this.txtbxIdentityNumber.Location = new System.Drawing.Point(24, 52);
+            this.txtbxIdentityNumber.Name = "txtbxIdentityNumber";
+            this.txtbxIdentityNumber.Size = new System.Drawing.Size(220, 39);
+            this.txtbxIdentityNumber.TabIndex = 30;
+            // 
             // txtbox_IdentityCardNumber
             // 
             this.txtbox_IdentityCardNumber.BorderColor = System.Drawing.Color.DarkGray;
@@ -833,15 +841,15 @@
             this.txtbox_IdentityCardNumber.FocusedState.Parent = this.txtbox_IdentityCardNumber;
             this.txtbox_IdentityCardNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbox_IdentityCardNumber.HoverState.Parent = this.txtbox_IdentityCardNumber;
-            this.txtbox_IdentityCardNumber.Location = new System.Drawing.Point(696, 3197);
-            this.txtbox_IdentityCardNumber.Margin = new System.Windows.Forms.Padding(244, 1305, 244, 1305);
+            this.txtbox_IdentityCardNumber.Location = new System.Drawing.Point(1005, 5384);
+            this.txtbox_IdentityCardNumber.Margin = new System.Windows.Forms.Padding(352, 2198, 352, 2198);
             this.txtbox_IdentityCardNumber.Name = "txtbox_IdentityCardNumber";
             this.txtbox_IdentityCardNumber.PasswordChar = '\0';
             this.txtbox_IdentityCardNumber.PlaceholderText = "ex : 2173619";
             this.txtbox_IdentityCardNumber.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtbox_IdentityCardNumber.SelectedText = "";
             this.txtbox_IdentityCardNumber.ShadowDecoration.Parent = this.txtbox_IdentityCardNumber;
-            this.txtbox_IdentityCardNumber.Size = new System.Drawing.Size(3867, 2198);
+            this.txtbox_IdentityCardNumber.Size = new System.Drawing.Size(5586, 3702);
             this.txtbox_IdentityCardNumber.TabIndex = 29;
             // 
             // txtboxCardNumber
@@ -859,14 +867,14 @@
             this.txtboxCardNumber.FocusedState.Parent = this.txtboxCardNumber;
             this.txtboxCardNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtboxCardNumber.HoverState.Parent = this.txtboxCardNumber;
-            this.txtboxCardNumber.Location = new System.Drawing.Point(3751, 32676);
-            this.txtboxCardNumber.Margin = new System.Windows.Forms.Padding(734, 6235, 734, 6235);
+            this.txtboxCardNumber.Location = new System.Drawing.Point(5418, 32676);
+            this.txtboxCardNumber.Margin = new System.Windows.Forms.Padding(1060, 10501, 1060, 10501);
             this.txtboxCardNumber.Name = "txtboxCardNumber";
             this.txtboxCardNumber.PasswordChar = '\0';
             this.txtboxCardNumber.PlaceholderText = "";
             this.txtboxCardNumber.SelectedText = "";
             this.txtboxCardNumber.ShadowDecoration.Parent = this.txtboxCardNumber;
-            this.txtboxCardNumber.Size = new System.Drawing.Size(23823, 29787);
+            this.txtboxCardNumber.Size = new System.Drawing.Size(34411, 50168);
             this.txtboxCardNumber.TabIndex = 25;
             // 
             // label27
@@ -875,7 +883,7 @@
             this.label27.AutoSize = true;
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.ForeColor = System.Drawing.Color.Salmon;
-            this.label27.Location = new System.Drawing.Point(105, 17);
+            this.label27.Location = new System.Drawing.Point(92, 17);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(24, 32);
             this.label27.TabIndex = 20;
@@ -884,7 +892,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(123, 14);
+            this.label19.Location = new System.Drawing.Point(116, 14);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(127, 32);
             this.label19.TabIndex = 18;
@@ -906,7 +914,7 @@
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.ForeColor = System.Drawing.Color.Salmon;
-            this.label29.Location = new System.Drawing.Point(105, 19);
+            this.label29.Location = new System.Drawing.Point(57, 17);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(24, 32);
             this.label29.TabIndex = 20;
@@ -922,7 +930,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(123, 14);
+            this.label20.Location = new System.Drawing.Point(78, 14);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(166, 32);
             this.label20.TabIndex = 18;
@@ -963,6 +971,14 @@
             this.panel14.Size = new System.Drawing.Size(254, 100);
             this.panel14.TabIndex = 0;
             // 
+            // txtbxEmail
+            // 
+            this.txtbxEmail.AcceptsReturn = true;
+            this.txtbxEmail.Location = new System.Drawing.Point(23, 49);
+            this.txtbxEmail.Name = "txtbxEmail";
+            this.txtbxEmail.Size = new System.Drawing.Size(220, 39);
+            this.txtbxEmail.TabIndex = 31;
+            // 
             // txtbox_Email
             // 
             this.txtbox_Email.BorderColor = System.Drawing.Color.DarkGray;
@@ -978,15 +994,15 @@
             this.txtbox_Email.FocusedState.Parent = this.txtbox_Email;
             this.txtbox_Email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbox_Email.HoverState.Parent = this.txtbox_Email;
-            this.txtbox_Email.Location = new System.Drawing.Point(734, 3503);
-            this.txtbox_Email.Margin = new System.Windows.Forms.Padding(169, 775, 169, 775);
+            this.txtbox_Email.Location = new System.Drawing.Point(1060, 5900);
+            this.txtbox_Email.Margin = new System.Windows.Forms.Padding(244, 1305, 244, 1305);
             this.txtbox_Email.Name = "txtbox_Email";
             this.txtbox_Email.PasswordChar = '\0';
             this.txtbox_Email.PlaceholderText = "ex : example@gmail.com";
             this.txtbox_Email.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtbox_Email.SelectedText = "";
             this.txtbox_Email.ShadowDecoration.Parent = this.txtbox_Email;
-            this.txtbox_Email.Size = new System.Drawing.Size(3867, 2198);
+            this.txtbox_Email.Size = new System.Drawing.Size(5586, 3702);
             this.txtbox_Email.TabIndex = 28;
             // 
             // txtboxEmail
@@ -1004,14 +1020,14 @@
             this.txtboxEmail.FocusedState.Parent = this.txtboxEmail;
             this.txtboxEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtboxEmail.HoverState.Parent = this.txtboxEmail;
-            this.txtboxEmail.Location = new System.Drawing.Point(5154, 32676);
-            this.txtboxEmail.Margin = new System.Windows.Forms.Padding(1060, 10501, 1060, 10501);
+            this.txtboxEmail.Location = new System.Drawing.Point(7445, 32676);
+            this.txtboxEmail.Margin = new System.Windows.Forms.Padding(1531, 17686, 1531, 17686);
             this.txtboxEmail.Name = "txtboxEmail";
             this.txtboxEmail.PasswordChar = '\0';
             this.txtboxEmail.PlaceholderText = "";
             this.txtboxEmail.SelectedText = "";
             this.txtboxEmail.ShadowDecoration.Parent = this.txtboxEmail;
-            this.txtboxEmail.Size = new System.Drawing.Size(23823, 29787);
+            this.txtboxEmail.Size = new System.Drawing.Size(34411, 50168);
             this.txtboxEmail.TabIndex = 26;
             // 
             // label31
@@ -1020,7 +1036,7 @@
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.ForeColor = System.Drawing.Color.Salmon;
-            this.label31.Location = new System.Drawing.Point(110, 17);
+            this.label31.Location = new System.Drawing.Point(52, 14);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(24, 32);
             this.label31.TabIndex = 21;
@@ -1029,7 +1045,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(128, 14);
+            this.label21.Location = new System.Drawing.Point(72, 14);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(171, 32);
             this.label21.TabIndex = 18;
@@ -1047,6 +1063,14 @@
             this.panel15.Size = new System.Drawing.Size(254, 100);
             this.panel15.TabIndex = 19;
             // 
+            // txtbxPhone
+            // 
+            this.txtbxPhone.AcceptsReturn = true;
+            this.txtbxPhone.Location = new System.Drawing.Point(24, 49);
+            this.txtbxPhone.Name = "txtbxPhone";
+            this.txtbxPhone.Size = new System.Drawing.Size(220, 39);
+            this.txtbxPhone.TabIndex = 31;
+            // 
             // txtbox_Phone
             // 
             this.txtbox_Phone.BorderColor = System.Drawing.Color.DarkGray;
@@ -1062,15 +1086,15 @@
             this.txtbox_Phone.FocusedState.Parent = this.txtbox_Phone;
             this.txtbox_Phone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbox_Phone.HoverState.Parent = this.txtbox_Phone;
-            this.txtbox_Phone.Location = new System.Drawing.Point(597, 3503);
-            this.txtbox_Phone.Margin = new System.Windows.Forms.Padding(169, 775, 169, 775);
+            this.txtbox_Phone.Location = new System.Drawing.Point(862, 5900);
+            this.txtbox_Phone.Margin = new System.Windows.Forms.Padding(244, 1305, 244, 1305);
             this.txtbox_Phone.Name = "txtbox_Phone";
             this.txtbox_Phone.PasswordChar = '\0';
             this.txtbox_Phone.PlaceholderText = "ex : 068912718";
             this.txtbox_Phone.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtbox_Phone.SelectedText = "";
             this.txtbox_Phone.ShadowDecoration.Parent = this.txtbox_Phone;
-            this.txtbox_Phone.Size = new System.Drawing.Size(3867, 2198);
+            this.txtbox_Phone.Size = new System.Drawing.Size(5586, 3702);
             this.txtbox_Phone.TabIndex = 28;
             // 
             // txtboxPhone
@@ -1088,14 +1112,14 @@
             this.txtboxPhone.FocusedState.Parent = this.txtboxPhone;
             this.txtboxPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtboxPhone.HoverState.Parent = this.txtboxPhone;
-            this.txtboxPhone.Location = new System.Drawing.Point(4076, 32676);
-            this.txtboxPhone.Margin = new System.Windows.Forms.Padding(1060, 10501, 1060, 10501);
+            this.txtboxPhone.Location = new System.Drawing.Point(5888, 32676);
+            this.txtboxPhone.Margin = new System.Windows.Forms.Padding(1531, 17686, 1531, 17686);
             this.txtboxPhone.Name = "txtboxPhone";
             this.txtboxPhone.PasswordChar = '\0';
             this.txtboxPhone.PlaceholderText = "";
             this.txtboxPhone.SelectedText = "";
             this.txtboxPhone.ShadowDecoration.Parent = this.txtboxPhone;
-            this.txtboxPhone.Size = new System.Drawing.Size(23823, 29787);
+            this.txtboxPhone.Size = new System.Drawing.Size(34411, 50168);
             this.txtboxPhone.TabIndex = 26;
             // 
             // label30
@@ -1113,7 +1137,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(123, 14);
+            this.label22.Location = new System.Drawing.Point(125, 14);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(119, 32);
             this.label22.TabIndex = 18;
@@ -1130,6 +1154,14 @@
             this.panel16.Size = new System.Drawing.Size(254, 100);
             this.panel16.TabIndex = 20;
             // 
+            // txtbxAdditionalContact
+            // 
+            this.txtbxAdditionalContact.AcceptsReturn = true;
+            this.txtbxAdditionalContact.Location = new System.Drawing.Point(25, 49);
+            this.txtbxAdditionalContact.Name = "txtbxAdditionalContact";
+            this.txtbxAdditionalContact.Size = new System.Drawing.Size(220, 39);
+            this.txtbxAdditionalContact.TabIndex = 31;
+            // 
             // txtbox_AdditionalContact
             // 
             this.txtbox_AdditionalContact.BorderColor = System.Drawing.Color.DarkGray;
@@ -1145,15 +1177,15 @@
             this.txtbox_AdditionalContact.FocusedState.Parent = this.txtbox_AdditionalContact;
             this.txtbox_AdditionalContact.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbox_AdditionalContact.HoverState.Parent = this.txtbox_AdditionalContact;
-            this.txtbox_AdditionalContact.Location = new System.Drawing.Point(718, 3503);
-            this.txtbox_AdditionalContact.Margin = new System.Windows.Forms.Padding(169, 775, 169, 775);
+            this.txtbox_AdditionalContact.Location = new System.Drawing.Point(1037, 5900);
+            this.txtbox_AdditionalContact.Margin = new System.Windows.Forms.Padding(244, 1305, 244, 1305);
             this.txtbox_AdditionalContact.Name = "txtbox_AdditionalContact";
             this.txtbox_AdditionalContact.PasswordChar = '\0';
             this.txtbox_AdditionalContact.PlaceholderText = "";
             this.txtbox_AdditionalContact.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtbox_AdditionalContact.SelectedText = "";
             this.txtbox_AdditionalContact.ShadowDecoration.Parent = this.txtbox_AdditionalContact;
-            this.txtbox_AdditionalContact.Size = new System.Drawing.Size(3867, 2198);
+            this.txtbox_AdditionalContact.Size = new System.Drawing.Size(5586, 3702);
             this.txtbox_AdditionalContact.TabIndex = 28;
             // 
             // txtboxAdditionalContact
@@ -1171,20 +1203,20 @@
             this.txtboxAdditionalContact.FocusedState.Parent = this.txtboxAdditionalContact;
             this.txtboxAdditionalContact.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtboxAdditionalContact.HoverState.Parent = this.txtboxAdditionalContact;
-            this.txtboxAdditionalContact.Location = new System.Drawing.Point(4515, 32676);
-            this.txtboxAdditionalContact.Margin = new System.Windows.Forms.Padding(1531, 17686, 1531, 17686);
+            this.txtboxAdditionalContact.Location = new System.Drawing.Point(6522, 32676);
+            this.txtboxAdditionalContact.Margin = new System.Windows.Forms.Padding(2211, 29787, 2211, 29787);
             this.txtboxAdditionalContact.Name = "txtboxAdditionalContact";
             this.txtboxAdditionalContact.PasswordChar = '\0';
             this.txtboxAdditionalContact.PlaceholderText = "";
             this.txtboxAdditionalContact.SelectedText = "";
             this.txtboxAdditionalContact.ShadowDecoration.Parent = this.txtboxAdditionalContact;
-            this.txtboxAdditionalContact.Size = new System.Drawing.Size(23823, 29787);
+            this.txtboxAdditionalContact.Size = new System.Drawing.Size(34411, 50168);
             this.txtboxAdditionalContact.TabIndex = 27;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(96, 14);
+            this.label23.Location = new System.Drawing.Point(51, 14);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(194, 32);
             this.label23.TabIndex = 18;
@@ -1244,38 +1276,6 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // txtbxIdentityNumber
-            // 
-            this.txtbxIdentityNumber.AcceptsReturn = true;
-            this.txtbxIdentityNumber.Location = new System.Drawing.Point(24, 52);
-            this.txtbxIdentityNumber.Name = "txtbxIdentityNumber";
-            this.txtbxIdentityNumber.Size = new System.Drawing.Size(220, 39);
-            this.txtbxIdentityNumber.TabIndex = 30;
-            // 
-            // txtbxEmail
-            // 
-            this.txtbxEmail.AcceptsReturn = true;
-            this.txtbxEmail.Location = new System.Drawing.Point(23, 49);
-            this.txtbxEmail.Name = "txtbxEmail";
-            this.txtbxEmail.Size = new System.Drawing.Size(220, 39);
-            this.txtbxEmail.TabIndex = 31;
-            // 
-            // txtbxPhone
-            // 
-            this.txtbxPhone.AcceptsReturn = true;
-            this.txtbxPhone.Location = new System.Drawing.Point(24, 49);
-            this.txtbxPhone.Name = "txtbxPhone";
-            this.txtbxPhone.Size = new System.Drawing.Size(220, 39);
-            this.txtbxPhone.TabIndex = 31;
-            // 
-            // txtbxAdditionalContact
-            // 
-            this.txtbxAdditionalContact.AcceptsReturn = true;
-            this.txtbxAdditionalContact.Location = new System.Drawing.Point(25, 49);
-            this.txtbxAdditionalContact.Name = "txtbxAdditionalContact";
-            this.txtbxAdditionalContact.Size = new System.Drawing.Size(220, 39);
-            this.txtbxAdditionalContact.TabIndex = 31;
             // 
             // AddStudentForm
             // 

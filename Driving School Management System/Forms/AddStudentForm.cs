@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,6 +20,23 @@ namespace Driving_School_Management_System.Forms
     public partial class AddStudentForm : Form
     {
 
+
+
+
+    [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+      (
+          int nLeftRect,     // x-coordinate of upper-left corner
+          int nTopRect,      // y-coordinate of upper-left corner
+          int nRightRect,    // x-coordinate of lower-right corner
+          int nBottomRect,   // y-coordinate of lower-right corner
+          int nWidthEllipse, // width of ellipse
+          int nHeightEllipse // height of ellipse
+      );
+    
+
+
+
         private StatusMessageForm statusMessageForm; 
         private bool InformationCorrect = true;
         private clsPerson person;
@@ -26,17 +44,18 @@ namespace Driving_School_Management_System.Forms
         private clsContact contact;
         private clsStudent student;
         private clsNationalCard nationalCard;
+        
         public EventHandler<AddStudentEventArgs> StudentAdded { get; set; }
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
-        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        [DllImport("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        [DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
 
-        private void Form_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        private void Form_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
@@ -49,6 +68,8 @@ namespace Driving_School_Management_System.Forms
         public AddStudentForm()
         {
             InitializeComponent();
+            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            //this.Size = Screen.PrimaryScreen.WorkingArea.Size;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

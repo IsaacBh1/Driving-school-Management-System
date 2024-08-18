@@ -98,10 +98,6 @@
             this.panel48 = new System.Windows.Forms.Panel();
             this.label85 = new System.Windows.Forms.Label();
             this.pictureBox47 = new System.Windows.Forms.PictureBox();
-            this.panel49 = new System.Windows.Forms.Panel();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
-            this.pictureBox48 = new System.Windows.Forms.PictureBox();
             this.panel50 = new System.Windows.Forms.Panel();
             this.label88 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
@@ -128,10 +124,6 @@
             this.panel27 = new System.Windows.Forms.Panel();
             this.label49 = new System.Windows.Forms.Label();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.panel29 = new System.Windows.Forms.Panel();
             this.label52 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
@@ -158,10 +150,6 @@
             this.panel34 = new System.Windows.Forms.Panel();
             this.label61 = new System.Windows.Forms.Label();
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
-            this.panel35 = new System.Windows.Forms.Panel();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
             this.panel36 = new System.Windows.Forms.Panel();
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
@@ -188,10 +176,6 @@
             this.panel41 = new System.Windows.Forms.Panel();
             this.label73 = new System.Windows.Forms.Label();
             this.pictureBox40 = new System.Windows.Forms.PictureBox();
-            this.panel42 = new System.Windows.Forms.Panel();
-            this.label74 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.pictureBox41 = new System.Windows.Forms.PictureBox();
             this.panel43 = new System.Windows.Forms.Panel();
             this.label76 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
@@ -218,10 +202,6 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.label37 = new System.Windows.Forms.Label();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.panel22 = new System.Windows.Forms.Panel();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
@@ -231,6 +211,26 @@
             this.label18 = new System.Windows.Forms.Label();
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panel49 = new System.Windows.Forms.Panel();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.pictureBox48 = new System.Windows.Forms.PictureBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.piccurrentbox)).BeginInit();
@@ -271,8 +271,6 @@
             this.flowLayoutPanel26.SuspendLayout();
             this.panel48.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
-            this.panel49.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
             this.panel50.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
             this.tabPage2.SuspendLayout();
@@ -289,8 +287,6 @@
             this.flowLayoutPanel17.SuspendLayout();
             this.panel27.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            this.panel28.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
             this.panel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             this.tabPage3.SuspendLayout();
@@ -307,8 +303,6 @@
             this.flowLayoutPanel20.SuspendLayout();
             this.panel34.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
-            this.panel35.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             this.panel36.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
             this.tabPage4.SuspendLayout();
@@ -325,8 +319,6 @@
             this.flowLayoutPanel23.SuspendLayout();
             this.panel41.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
-            this.panel42.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
             this.panel43.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
             this.tabPage5.SuspendLayout();
@@ -343,13 +335,21 @@
             this.flowLayoutPanel14.SuspendLayout();
             this.panel20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            this.panel21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             this.panel22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             this.pnlExpences.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.panel49.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -358,7 +358,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label1.Location = new System.Drawing.Point(934, 0);
+            this.label1.Location = new System.Drawing.Point(1049, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(0, 20, 20, 0);
@@ -378,23 +378,23 @@
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 58);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1036, 94);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1151, 94);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.piccurrentbox);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(820, 3);
+            this.panel1.Location = new System.Drawing.Point(880, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(213, 87);
+            this.panel1.Size = new System.Drawing.Size(268, 87);
             this.panel1.TabIndex = 2;
             // 
             // piccurrentbox
             // 
             this.piccurrentbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.piccurrentbox.Image = global::Driving_School_Management_System.Properties.Resources.box_arrow_down_bold;
-            this.piccurrentbox.Location = new System.Drawing.Point(18, 28);
+            this.piccurrentbox.Location = new System.Drawing.Point(45, 30);
             this.piccurrentbox.Name = "piccurrentbox";
             this.piccurrentbox.Size = new System.Drawing.Size(29, 34);
             this.piccurrentbox.TabIndex = 3;
@@ -407,7 +407,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Sans Unicode", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(51)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(63, 31);
+            this.label2.Location = new System.Drawing.Point(90, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(180, 34);
             this.label2.TabIndex = 0;
@@ -418,7 +418,7 @@
             // 
             this.flowLayoutPanel3.Controls.Add(this.pictureBox2);
             this.flowLayoutPanel3.Controls.Add(this.panel3);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(632, 3);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(692, 3);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(182, 87);
             this.flowLayoutPanel3.TabIndex = 5;
@@ -450,7 +450,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 10F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.label3.Location = new System.Drawing.Point(50, 42);
+            this.label3.Location = new System.Drawing.Point(15, 42);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 24);
             this.label3.TabIndex = 3;
@@ -462,7 +462,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.label5.Location = new System.Drawing.Point(34, 18);
+            this.label5.Location = new System.Drawing.Point(-1, 18);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(124, 24);
             this.label5.TabIndex = 3;
@@ -472,7 +472,7 @@
             // 
             this.flowLayoutPanel4.Controls.Add(this.pictureBox3);
             this.flowLayoutPanel4.Controls.Add(this.panel4);
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(444, 3);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(504, 3);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Size = new System.Drawing.Size(182, 87);
             this.flowLayoutPanel4.TabIndex = 5;
@@ -504,7 +504,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 10F);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(232)))), ((int)(((byte)(130)))));
-            this.label6.Location = new System.Drawing.Point(50, 42);
+            this.label6.Location = new System.Drawing.Point(14, 42);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 24);
             this.label6.TabIndex = 3;
@@ -516,7 +516,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(232)))), ((int)(((byte)(130)))));
-            this.label7.Location = new System.Drawing.Point(55, 18);
+            this.label7.Location = new System.Drawing.Point(13, 18);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(93, 24);
             this.label7.TabIndex = 3;
@@ -526,7 +526,7 @@
             // 
             this.flowLayoutPanel5.Controls.Add(this.pictureBox4);
             this.flowLayoutPanel5.Controls.Add(this.panel5);
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(256, 3);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(316, 3);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
             this.flowLayoutPanel5.Size = new System.Drawing.Size(182, 87);
             this.flowLayoutPanel5.TabIndex = 5;
@@ -558,7 +558,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 10F);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(72)))), ((int)(((byte)(87)))));
-            this.label8.Location = new System.Drawing.Point(50, 42);
+            this.label8.Location = new System.Drawing.Point(12, 42);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(92, 24);
             this.label8.TabIndex = 3;
@@ -570,7 +570,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(72)))), ((int)(((byte)(87)))));
-            this.label9.Location = new System.Drawing.Point(37, 18);
+            this.label9.Location = new System.Drawing.Point(-1, 18);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(124, 24);
             this.label9.TabIndex = 3;
@@ -580,7 +580,7 @@
             // 
             this.flowLayoutPanel2.Controls.Add(this.pictureBox1);
             this.flowLayoutPanel2.Controls.Add(this.panel2);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(68, 3);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(128, 3);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(182, 87);
             this.flowLayoutPanel2.TabIndex = 3;
@@ -612,7 +612,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 10F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(72)))), ((int)(((byte)(219)))));
-            this.label4.Location = new System.Drawing.Point(50, 42);
+            this.label4.Location = new System.Drawing.Point(9, 42);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 24);
             this.label4.TabIndex = 3;
@@ -624,7 +624,7 @@
             this.FirstRasid.AutoSize = true;
             this.FirstRasid.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FirstRasid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(72)))), ((int)(((byte)(219)))));
-            this.FirstRasid.Location = new System.Drawing.Point(65, 18);
+            this.FirstRasid.Location = new System.Drawing.Point(24, 18);
             this.FirstRasid.Name = "FirstRasid";
             this.FirstRasid.Size = new System.Drawing.Size(72, 24);
             this.FirstRasid.TabIndex = 3;
@@ -640,9 +640,9 @@
             this.QuiqOverview.Controls.Add(this.flowLayoutPanel7);
             this.QuiqOverview.Controls.Add(this.flowLayoutPanel6);
             this.QuiqOverview.Controls.Add(this.guna2Separator1);
-            this.QuiqOverview.Location = new System.Drawing.Point(483, 180);
+            this.QuiqOverview.Location = new System.Drawing.Point(574, 180);
             this.QuiqOverview.Name = "QuiqOverview";
-            this.QuiqOverview.Size = new System.Drawing.Size(565, 170);
+            this.QuiqOverview.Size = new System.Drawing.Size(589, 170);
             this.QuiqOverview.TabIndex = 2;
             // 
             // label11
@@ -651,7 +651,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tahoma", 9F);
             this.label11.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label11.Location = new System.Drawing.Point(404, 41);
+            this.label11.Location = new System.Drawing.Point(428, 41);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(148, 22);
             this.label11.TabIndex = 2;
@@ -663,7 +663,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Location = new System.Drawing.Point(431, 13);
+            this.label10.Location = new System.Drawing.Point(455, 13);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(97, 28);
             this.label10.TabIndex = 1;
@@ -705,7 +705,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Tahoma", 10F);
             this.label16.ForeColor = System.Drawing.Color.Silver;
-            this.label16.Location = new System.Drawing.Point(76, 42);
+            this.label16.Location = new System.Drawing.Point(76, 43);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(21, 24);
             this.label16.TabIndex = 3;
@@ -717,7 +717,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(60, 18);
+            this.label17.Location = new System.Drawing.Point(28, 19);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(81, 24);
             this.label17.TabIndex = 3;
@@ -759,7 +759,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Tahoma", 10F);
             this.label14.ForeColor = System.Drawing.Color.Silver;
-            this.label14.Location = new System.Drawing.Point(76, 42);
+            this.label14.Location = new System.Drawing.Point(55, 42);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(53, 24);
             this.label14.TabIndex = 3;
@@ -771,7 +771,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(43, 18);
+            this.label15.Location = new System.Drawing.Point(10, 18);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(106, 24);
             this.label15.TabIndex = 3;
@@ -813,7 +813,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Tahoma", 10F);
             this.label12.ForeColor = System.Drawing.Color.Silver;
-            this.label12.Location = new System.Drawing.Point(76, 42);
+            this.label12.Location = new System.Drawing.Point(47, 42);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(53, 24);
             this.label12.TabIndex = 3;
@@ -825,7 +825,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(62, 18);
+            this.label13.Location = new System.Drawing.Point(33, 18);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(72, 24);
             this.label13.TabIndex = 3;
@@ -837,7 +837,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Separator1.Location = new System.Drawing.Point(2, 61);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(561, 21);
+            this.guna2Separator1.Size = new System.Drawing.Size(585, 21);
             this.guna2Separator1.TabIndex = 0;
             // 
             // tabControl1
@@ -849,7 +849,7 @@
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(-60, 180);
+            this.tabControl1.Location = new System.Drawing.Point(12, 180);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.RightToLeftLayout = true;
             this.tabControl1.SelectedIndex = 0;
@@ -1053,8 +1053,8 @@
             // flowLayoutPanel26
             // 
             this.flowLayoutPanel26.Controls.Add(this.panel48);
-            this.flowLayoutPanel26.Controls.Add(this.panel49);
             this.flowLayoutPanel26.Controls.Add(this.panel50);
+            this.flowLayoutPanel26.Controls.Add(this.panel49);
             this.flowLayoutPanel26.Location = new System.Drawing.Point(48, 3);
             this.flowLayoutPanel26.Name = "flowLayoutPanel26";
             this.flowLayoutPanel26.Size = new System.Drawing.Size(222, 185);
@@ -1093,55 +1093,12 @@
             this.pictureBox47.TabIndex = 0;
             this.pictureBox47.TabStop = false;
             // 
-            // panel49
-            // 
-            this.panel49.Controls.Add(this.label86);
-            this.panel49.Controls.Add(this.label87);
-            this.panel49.Controls.Add(this.pictureBox48);
-            this.panel49.Location = new System.Drawing.Point(0, 48);
-            this.panel49.Name = "panel49";
-            this.panel49.Size = new System.Drawing.Size(219, 39);
-            this.panel49.TabIndex = 10;
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label86.Location = new System.Drawing.Point(63, 6);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(24, 27);
-            this.label86.TabIndex = 6;
-            this.label86.Text = "0";
-            // 
-            // label87
-            // 
-            this.label87.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label87.AutoSize = true;
-            this.label87.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label87.Location = new System.Drawing.Point(93, 6);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(96, 27);
-            this.label87.TabIndex = 1;
-            this.label87.Text = "تطبيقية :";
-            // 
-            // pictureBox48
-            // 
-            this.pictureBox48.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox48.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
-            this.pictureBox48.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox48.Name = "pictureBox48";
-            this.pictureBox48.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox48.TabIndex = 0;
-            this.pictureBox48.TabStop = false;
-            // 
             // panel50
             // 
             this.panel50.Controls.Add(this.label88);
             this.panel50.Controls.Add(this.label89);
             this.panel50.Controls.Add(this.pictureBox49);
-            this.panel50.Location = new System.Drawing.Point(0, 93);
+            this.panel50.Location = new System.Drawing.Point(0, 48);
             this.panel50.Name = "panel50";
             this.panel50.Size = new System.Drawing.Size(219, 39);
             this.panel50.TabIndex = 11;
@@ -1376,8 +1333,8 @@
             // flowLayoutPanel17
             // 
             this.flowLayoutPanel17.Controls.Add(this.panel27);
-            this.flowLayoutPanel17.Controls.Add(this.panel28);
             this.flowLayoutPanel17.Controls.Add(this.panel29);
+            this.flowLayoutPanel17.Controls.Add(this.panel10);
             this.flowLayoutPanel17.Location = new System.Drawing.Point(48, 3);
             this.flowLayoutPanel17.Name = "flowLayoutPanel17";
             this.flowLayoutPanel17.Size = new System.Drawing.Size(222, 185);
@@ -1416,55 +1373,12 @@
             this.pictureBox26.TabIndex = 0;
             this.pictureBox26.TabStop = false;
             // 
-            // panel28
-            // 
-            this.panel28.Controls.Add(this.label50);
-            this.panel28.Controls.Add(this.label51);
-            this.panel28.Controls.Add(this.pictureBox27);
-            this.panel28.Location = new System.Drawing.Point(0, 48);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(219, 39);
-            this.panel28.TabIndex = 10;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label50.Location = new System.Drawing.Point(63, 6);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(24, 27);
-            this.label50.TabIndex = 6;
-            this.label50.Text = "0";
-            // 
-            // label51
-            // 
-            this.label51.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label51.Location = new System.Drawing.Point(93, 6);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(96, 27);
-            this.label51.TabIndex = 1;
-            this.label51.Text = "تطبيقية :";
-            // 
-            // pictureBox27
-            // 
-            this.pictureBox27.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox27.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
-            this.pictureBox27.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox27.TabIndex = 0;
-            this.pictureBox27.TabStop = false;
-            // 
             // panel29
             // 
             this.panel29.Controls.Add(this.label52);
             this.panel29.Controls.Add(this.label53);
             this.panel29.Controls.Add(this.pictureBox28);
-            this.panel29.Location = new System.Drawing.Point(0, 93);
+            this.panel29.Location = new System.Drawing.Point(0, 48);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(219, 39);
             this.panel29.TabIndex = 11;
@@ -1699,8 +1613,8 @@
             // flowLayoutPanel20
             // 
             this.flowLayoutPanel20.Controls.Add(this.panel34);
-            this.flowLayoutPanel20.Controls.Add(this.panel35);
             this.flowLayoutPanel20.Controls.Add(this.panel36);
+            this.flowLayoutPanel20.Controls.Add(this.panel11);
             this.flowLayoutPanel20.Location = new System.Drawing.Point(48, 3);
             this.flowLayoutPanel20.Name = "flowLayoutPanel20";
             this.flowLayoutPanel20.Size = new System.Drawing.Size(222, 185);
@@ -1739,55 +1653,12 @@
             this.pictureBox33.TabIndex = 0;
             this.pictureBox33.TabStop = false;
             // 
-            // panel35
-            // 
-            this.panel35.Controls.Add(this.label62);
-            this.panel35.Controls.Add(this.label63);
-            this.panel35.Controls.Add(this.pictureBox34);
-            this.panel35.Location = new System.Drawing.Point(0, 48);
-            this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(219, 39);
-            this.panel35.TabIndex = 10;
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label62.Location = new System.Drawing.Point(63, 6);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(24, 27);
-            this.label62.TabIndex = 6;
-            this.label62.Text = "0";
-            // 
-            // label63
-            // 
-            this.label63.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label63.Location = new System.Drawing.Point(93, 6);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(96, 27);
-            this.label63.TabIndex = 1;
-            this.label63.Text = "تطبيقية :";
-            // 
-            // pictureBox34
-            // 
-            this.pictureBox34.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox34.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
-            this.pictureBox34.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox34.TabIndex = 0;
-            this.pictureBox34.TabStop = false;
-            // 
             // panel36
             // 
             this.panel36.Controls.Add(this.label64);
             this.panel36.Controls.Add(this.label65);
             this.panel36.Controls.Add(this.pictureBox35);
-            this.panel36.Location = new System.Drawing.Point(0, 93);
+            this.panel36.Location = new System.Drawing.Point(0, 48);
             this.panel36.Name = "panel36";
             this.panel36.Size = new System.Drawing.Size(219, 39);
             this.panel36.TabIndex = 11;
@@ -2022,8 +1893,8 @@
             // flowLayoutPanel23
             // 
             this.flowLayoutPanel23.Controls.Add(this.panel41);
-            this.flowLayoutPanel23.Controls.Add(this.panel42);
             this.flowLayoutPanel23.Controls.Add(this.panel43);
+            this.flowLayoutPanel23.Controls.Add(this.panel12);
             this.flowLayoutPanel23.Location = new System.Drawing.Point(48, 3);
             this.flowLayoutPanel23.Name = "flowLayoutPanel23";
             this.flowLayoutPanel23.Size = new System.Drawing.Size(222, 185);
@@ -2062,55 +1933,12 @@
             this.pictureBox40.TabIndex = 0;
             this.pictureBox40.TabStop = false;
             // 
-            // panel42
-            // 
-            this.panel42.Controls.Add(this.label74);
-            this.panel42.Controls.Add(this.label75);
-            this.panel42.Controls.Add(this.pictureBox41);
-            this.panel42.Location = new System.Drawing.Point(0, 48);
-            this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(219, 39);
-            this.panel42.TabIndex = 10;
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label74.Location = new System.Drawing.Point(63, 6);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(24, 27);
-            this.label74.TabIndex = 6;
-            this.label74.Text = "0";
-            // 
-            // label75
-            // 
-            this.label75.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label75.AutoSize = true;
-            this.label75.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label75.Location = new System.Drawing.Point(93, 6);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(96, 27);
-            this.label75.TabIndex = 1;
-            this.label75.Text = "تطبيقية :";
-            // 
-            // pictureBox41
-            // 
-            this.pictureBox41.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox41.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
-            this.pictureBox41.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox41.Name = "pictureBox41";
-            this.pictureBox41.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox41.TabIndex = 0;
-            this.pictureBox41.TabStop = false;
-            // 
             // panel43
             // 
             this.panel43.Controls.Add(this.label76);
             this.panel43.Controls.Add(this.label77);
             this.panel43.Controls.Add(this.pictureBox42);
-            this.panel43.Location = new System.Drawing.Point(0, 93);
+            this.panel43.Location = new System.Drawing.Point(0, 48);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(219, 39);
             this.panel43.TabIndex = 11;
@@ -2345,8 +2173,8 @@
             // flowLayoutPanel14
             // 
             this.flowLayoutPanel14.Controls.Add(this.panel20);
-            this.flowLayoutPanel14.Controls.Add(this.panel21);
             this.flowLayoutPanel14.Controls.Add(this.panel22);
+            this.flowLayoutPanel14.Controls.Add(this.panel13);
             this.flowLayoutPanel14.Location = new System.Drawing.Point(48, 3);
             this.flowLayoutPanel14.Name = "flowLayoutPanel14";
             this.flowLayoutPanel14.Size = new System.Drawing.Size(222, 185);
@@ -2385,55 +2213,12 @@
             this.pictureBox19.TabIndex = 0;
             this.pictureBox19.TabStop = false;
             // 
-            // panel21
-            // 
-            this.panel21.Controls.Add(this.label38);
-            this.panel21.Controls.Add(this.label39);
-            this.panel21.Controls.Add(this.pictureBox20);
-            this.panel21.Location = new System.Drawing.Point(0, 48);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(219, 39);
-            this.panel21.TabIndex = 10;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label38.Location = new System.Drawing.Point(63, 6);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(24, 27);
-            this.label38.TabIndex = 6;
-            this.label38.Text = "0";
-            // 
-            // label39
-            // 
-            this.label39.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label39.Location = new System.Drawing.Point(93, 6);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(96, 27);
-            this.label39.TabIndex = 1;
-            this.label39.Text = "تطبيقية :";
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox20.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
-            this.pictureBox20.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox20.TabIndex = 0;
-            this.pictureBox20.TabStop = false;
-            // 
             // panel22
             // 
             this.panel22.Controls.Add(this.label40);
             this.panel22.Controls.Add(this.label41);
             this.panel22.Controls.Add(this.pictureBox21);
-            this.panel22.Location = new System.Drawing.Point(0, 93);
+            this.panel22.Location = new System.Drawing.Point(0, 48);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(219, 39);
             this.panel22.TabIndex = 11;
@@ -2479,17 +2264,17 @@
             this.pnlExpences.BackColor = System.Drawing.SystemColors.Window;
             this.pnlExpences.Controls.Add(this.panel9);
             this.pnlExpences.Controls.Add(this.guna2Separator2);
-            this.pnlExpences.Location = new System.Drawing.Point(17, 425);
+            this.pnlExpences.Location = new System.Drawing.Point(18, 428);
             this.pnlExpences.Name = "pnlExpences";
-            this.pnlExpences.Size = new System.Drawing.Size(443, 228);
+            this.pnlExpences.Size = new System.Drawing.Size(514, 318);
             this.pnlExpences.TabIndex = 4;
             // 
             // panel9
             // 
             this.panel9.Controls.Add(this.label18);
-            this.panel9.Location = new System.Drawing.Point(158, 3);
+            this.panel9.Location = new System.Drawing.Point(251, 3);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(464, 38);
+            this.panel9.Size = new System.Drawing.Size(266, 38);
             this.panel9.TabIndex = 5;
             // 
             // label18
@@ -2498,7 +2283,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Tahoma", 13F);
             this.label18.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label18.Location = new System.Drawing.Point(246, 0);
+            this.label18.Location = new System.Drawing.Point(16, 0);
             this.label18.Name = "label18";
             this.label18.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label18.Size = new System.Drawing.Size(246, 31);
@@ -2509,7 +2294,7 @@
             // 
             this.guna2Separator2.Location = new System.Drawing.Point(3, 47);
             this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(619, 11);
+            this.guna2Separator2.Size = new System.Drawing.Size(514, 11);
             this.guna2Separator2.TabIndex = 6;
             // 
             // chart1
@@ -2519,7 +2304,7 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(485, 378);
+            this.chart1.Location = new System.Drawing.Point(590, 378);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series1.ChartArea = "ChartArea1";
@@ -2527,15 +2312,230 @@
             series1.Legend = "Legend1";
             series1.Name = "DrivingLicenseTypesPieChart";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(563, 275);
+            this.chart1.Size = new System.Drawing.Size(573, 356);
             this.chart1.TabIndex = 5;
             this.chart1.Text = "chart1";
+            // 
+            // panel49
+            // 
+            this.panel49.Controls.Add(this.label86);
+            this.panel49.Controls.Add(this.label87);
+            this.panel49.Controls.Add(this.pictureBox48);
+            this.panel49.Location = new System.Drawing.Point(0, 93);
+            this.panel49.Name = "panel49";
+            this.panel49.Size = new System.Drawing.Size(219, 39);
+            this.panel49.TabIndex = 12;
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label86.Location = new System.Drawing.Point(63, 6);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(24, 27);
+            this.label86.TabIndex = 6;
+            this.label86.Text = "0";
+            // 
+            // label87
+            // 
+            this.label87.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label87.Location = new System.Drawing.Point(86, 6);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(96, 27);
+            this.label87.TabIndex = 1;
+            this.label87.Text = "تطبيقية :";
+            // 
+            // pictureBox48
+            // 
+            this.pictureBox48.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox48.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
+            this.pictureBox48.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox48.Name = "pictureBox48";
+            this.pictureBox48.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox48.TabIndex = 0;
+            this.pictureBox48.TabStop = false;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.label19);
+            this.panel10.Controls.Add(this.label20);
+            this.panel10.Controls.Add(this.pictureBox8);
+            this.panel10.Location = new System.Drawing.Point(0, 93);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(219, 39);
+            this.panel10.TabIndex = 12;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label19.Location = new System.Drawing.Point(63, 6);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(24, 27);
+            this.label19.TabIndex = 6;
+            this.label19.Text = "0";
+            // 
+            // label20
+            // 
+            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label20.Location = new System.Drawing.Point(86, 6);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(96, 27);
+            this.label20.TabIndex = 1;
+            this.label20.Text = "تطبيقية :";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox8.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
+            this.pictureBox8.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox8.TabIndex = 0;
+            this.pictureBox8.TabStop = false;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.label21);
+            this.panel11.Controls.Add(this.label22);
+            this.panel11.Controls.Add(this.pictureBox9);
+            this.panel11.Location = new System.Drawing.Point(0, 93);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(219, 39);
+            this.panel11.TabIndex = 12;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label21.Location = new System.Drawing.Point(63, 6);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(24, 27);
+            this.label21.TabIndex = 6;
+            this.label21.Text = "0";
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label22.Location = new System.Drawing.Point(86, 6);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(96, 27);
+            this.label22.TabIndex = 1;
+            this.label22.Text = "تطبيقية :";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox9.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
+            this.pictureBox9.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox9.TabIndex = 0;
+            this.pictureBox9.TabStop = false;
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.label23);
+            this.panel12.Controls.Add(this.label24);
+            this.panel12.Controls.Add(this.pictureBox10);
+            this.panel12.Location = new System.Drawing.Point(0, 93);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(219, 39);
+            this.panel12.TabIndex = 12;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label23.Location = new System.Drawing.Point(63, 6);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(24, 27);
+            this.label23.TabIndex = 6;
+            this.label23.Text = "0";
+            // 
+            // label24
+            // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label24.Location = new System.Drawing.Point(86, 6);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(96, 27);
+            this.label24.TabIndex = 1;
+            this.label24.Text = "تطبيقية :";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox10.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
+            this.pictureBox10.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox10.TabIndex = 0;
+            this.pictureBox10.TabStop = false;
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.label25);
+            this.panel13.Controls.Add(this.label26);
+            this.panel13.Controls.Add(this.pictureBox11);
+            this.panel13.Location = new System.Drawing.Point(0, 93);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(219, 39);
+            this.panel13.TabIndex = 12;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label25.Location = new System.Drawing.Point(63, 6);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(24, 27);
+            this.label25.TabIndex = 6;
+            this.label25.Text = "0";
+            // 
+            // label26
+            // 
+            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label26.Location = new System.Drawing.Point(86, 6);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(96, 27);
+            this.label26.TabIndex = 1;
+            this.label26.Text = "تطبيقية :";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox11.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
+            this.pictureBox11.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox11.TabIndex = 0;
+            this.pictureBox11.TabStop = false;
             // 
             // MainWindow
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.ClientSize = new System.Drawing.Size(1074, 708);
+            this.ClientSize = new System.Drawing.Size(1189, 781);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.pnlExpences);
             this.Controls.Add(this.tabControl1);
@@ -2602,9 +2602,6 @@
             this.panel48.ResumeLayout(false);
             this.panel48.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
-            this.panel49.ResumeLayout(false);
-            this.panel49.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
             this.panel50.ResumeLayout(false);
             this.panel50.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
@@ -2627,9 +2624,6 @@
             this.panel27.ResumeLayout(false);
             this.panel27.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            this.panel28.ResumeLayout(false);
-            this.panel28.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
             this.panel29.ResumeLayout(false);
             this.panel29.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
@@ -2652,9 +2646,6 @@
             this.panel34.ResumeLayout(false);
             this.panel34.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
-            this.panel35.ResumeLayout(false);
-            this.panel35.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
             this.panel36.ResumeLayout(false);
             this.panel36.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
@@ -2677,9 +2668,6 @@
             this.panel41.ResumeLayout(false);
             this.panel41.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
-            this.panel42.ResumeLayout(false);
-            this.panel42.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
             this.panel43.ResumeLayout(false);
             this.panel43.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
@@ -2702,9 +2690,6 @@
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            this.panel21.ResumeLayout(false);
-            this.panel21.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
@@ -2712,6 +2697,21 @@
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            this.panel49.ResumeLayout(false);
+            this.panel49.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2790,10 +2790,6 @@
         private System.Windows.Forms.Panel panel48;
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.PictureBox pictureBox47;
-        private System.Windows.Forms.Panel panel49;
-        private System.Windows.Forms.Label label86;
-        private System.Windows.Forms.Label label87;
-        private System.Windows.Forms.PictureBox pictureBox48;
         private System.Windows.Forms.Panel panel50;
         private System.Windows.Forms.Label label88;
         private System.Windows.Forms.Label label89;
@@ -2819,10 +2815,6 @@
         private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.PictureBox pictureBox26;
-        private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.PictureBox pictureBox27;
         private System.Windows.Forms.Panel panel29;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label53;
@@ -2848,10 +2840,6 @@
         private System.Windows.Forms.Panel panel34;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.PictureBox pictureBox33;
-        private System.Windows.Forms.Panel panel35;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.PictureBox pictureBox34;
         private System.Windows.Forms.Panel panel36;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label65;
@@ -2877,10 +2865,6 @@
         private System.Windows.Forms.Panel panel41;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.PictureBox pictureBox40;
-        private System.Windows.Forms.Panel panel42;
-        private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.PictureBox pictureBox41;
         private System.Windows.Forms.Panel panel43;
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Label label77;
@@ -2906,10 +2890,6 @@
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
@@ -2919,5 +2899,25 @@
         private System.Windows.Forms.Label label18;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Panel panel49;
+        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.PictureBox pictureBox48;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.PictureBox pictureBox11;
     }
 }

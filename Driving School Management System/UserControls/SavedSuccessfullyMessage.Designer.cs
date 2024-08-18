@@ -39,7 +39,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(154, 12);
+            this.label1.Location = new System.Drawing.Point(90, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 31);
             this.label1.TabIndex = 1;
@@ -50,7 +50,7 @@
             this.Message.AutoSize = true;
             this.Message.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.Message.ForeColor = System.Drawing.Color.White;
-            this.Message.Location = new System.Drawing.Point(144, 60);
+            this.Message.Location = new System.Drawing.Point(92, 61);
             this.Message.Name = "Message";
             this.Message.Size = new System.Drawing.Size(252, 22);
             this.Message.TabIndex = 3;
@@ -62,7 +62,7 @@
             this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.check_fat_fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(148, 117);
+            this.pictureBox1.Size = new System.Drawing.Size(84, 117);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;

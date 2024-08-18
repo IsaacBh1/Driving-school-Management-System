@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AddCondidateFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddCondidateFileForm.Designer.cs">
+      <DependentUpon>AddCondidateFileForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\StatusMessageForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,11 +82,11 @@
     <Compile Include="UserControls\ExpensesBar.Designer.cs">
       <DependentUpon>ExpensesBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="DrivingSchoolMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="DrivingSchoolMain.Designer.cs">
+      <DependentUpon>DrivingSchoolMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AddStudentForm.cs">
       <SubType>Form</SubType>
@@ -115,17 +121,20 @@
       <DependentUpon>SavedSuccessfullyMessage.cs</DependentUpon>
     </Compile>
     <Compile Include="UtilityClasses\AddStudentEventArgs.cs" />
+    <EmbeddedResource Include="Forms\AddCondidateFileForm.resx">
+      <DependentUpon>AddCondidateFileForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\StatusMessageForm.resx">
       <DependentUpon>StatusMessageForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ExpensesBar.resx">
       <DependentUpon>ExpensesBar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.ar.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="DrivingSchoolMain.ar.resx">
+      <DependentUpon>DrivingSchoolMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="DrivingSchoolMain.resx">
+      <DependentUpon>DrivingSchoolMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddStudentForm.resx">
       <DependentUpon>AddStudentForm.cs</DependentUpon>
@@ -305,6 +314,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dots-three-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-bookmark.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

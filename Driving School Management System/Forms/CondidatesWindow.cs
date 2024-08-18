@@ -129,18 +129,15 @@ namespace Driving_School_Management_System.Forms
 
 
         }
-
-        /*ID
-        رقم الهوية
-        الاسم
-        النسب
-        الكل*/
-
-
-
         private void btnSearchStudentinfo_Click(object sender, EventArgs e)
         {
             SearchField(); 
+        }
+
+        private void btnAddCondidtefile_Click(object sender, EventArgs e)
+        {
+            AddCondidateFileForm frm = new AddCondidateFileForm();
+            frm.ShowDialog();
         }
     }
 }

@@ -33,7 +33,7 @@
             // StatusMessageForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(323, 83);
+            this.ClientSize = new System.Drawing.Size(396, 117);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StatusMessageForm";
             this.Text = "StausMessageForm";
