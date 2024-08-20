@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,6 +44,7 @@
   <ItemGroup>
     <Compile Include="clsAddressDataAccess.cs" />
     <Compile Include="clsBatchDataAccess.cs" />
+    <Compile Include="clsConnectionStr.cs" />
     <Compile Include="clsContactDataAccess.cs" />
     <Compile Include="clsDrivingLicenseDataAccess.cs" />
     <Compile Include="clsDrivingLicenseTypeDataAccess.cs" />
@@ -63,6 +65,9 @@
     <Compile Include="clsExamTypeDataAccess.cs" />
     <Compile Include="clsLessonDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

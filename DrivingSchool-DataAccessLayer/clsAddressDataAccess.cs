@@ -6,8 +6,7 @@ namespace DrivingSchool_DataAccessLayer
 {
     public sealed class clsAddressDataAccess
     {
-        private static string ConnectionString = "Server=. ; Database=DrivingSchoolDB ; User Id=sa ; Password=sa123456 ; Integrated security=true ; TrustServerCertificate=True;";
-
+        private static string ConnectionString = clsConnectionStr.ConnectionStr;
         public static DataTable GetAllAddresses()
         {
             DataTable Addresses = new DataTable();
