@@ -1,8 +1,9 @@
-﻿using System;
+﻿using DrivingSchool_BusinesseLayer;
+using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-
+using Driving_school_BusinessLayer; 
 namespace Driving_School_Management_System.Forms
 {
     public partial class AddCondidateFileForm : Form
@@ -19,7 +20,7 @@ namespace Driving_School_Management_System.Forms
           );
 
 
-
+      
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -40,6 +41,13 @@ namespace Driving_School_Management_System.Forms
 
         private bool InformationCorrect = true;
         private StatusMessageForm statusMessageForm;
+        private clsCondidateFile condidateFile;
+        private clsStudent student;
+        private clsDrivingLicenseType drivingLicenseType; 
+        private clsGroup group;
+        private clsPayment payment;
+        private clsInstructor Theo_instructor;
+        private clsInstructor App_instructor; 
 
 
 

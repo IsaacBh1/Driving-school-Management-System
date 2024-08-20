@@ -28,31 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.piccurrentbox = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.FirstRasid = new System.Windows.Forms.Label();
@@ -60,17 +55,14 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -81,275 +73,354 @@
             this.flowLayoutPanel25 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel44 = new System.Windows.Forms.Panel();
             this.label78 = new System.Windows.Forms.Label();
-            this.pictureBox43 = new System.Windows.Forms.PictureBox();
             this.panel45 = new System.Windows.Forms.Panel();
             this.label79 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
-            this.pictureBox44 = new System.Windows.Forms.PictureBox();
             this.panel46 = new System.Windows.Forms.Panel();
             this.label81 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
-            this.pictureBox45 = new System.Windows.Forms.PictureBox();
             this.panel47 = new System.Windows.Forms.Panel();
             this.label83 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
-            this.pictureBox46 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel26 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel48 = new System.Windows.Forms.Panel();
             this.label85 = new System.Windows.Forms.Label();
-            this.pictureBox47 = new System.Windows.Forms.PictureBox();
             this.panel50 = new System.Windows.Forms.Panel();
             this.label88 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
-            this.pictureBox49 = new System.Windows.Forms.PictureBox();
+            this.panel49 = new System.Windows.Forms.Panel();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel15 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel16 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel23 = new System.Windows.Forms.Panel();
             this.label42 = new System.Windows.Forms.Label();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.panel24 = new System.Windows.Forms.Panel();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.panel25 = new System.Windows.Forms.Panel();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.panel26 = new System.Windows.Forms.Panel();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel17 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel27 = new System.Windows.Forms.Panel();
             this.label49 = new System.Windows.Forms.Label();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.panel29 = new System.Windows.Forms.Panel();
             this.label52 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel18 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel19 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel30 = new System.Windows.Forms.Panel();
             this.label54 = new System.Windows.Forms.Label();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.panel31 = new System.Windows.Forms.Panel();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.panel32 = new System.Windows.Forms.Panel();
             this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.panel33 = new System.Windows.Forms.Panel();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel20 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel34 = new System.Windows.Forms.Panel();
             this.label61 = new System.Windows.Forms.Label();
-            this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.panel36 = new System.Windows.Forms.Panel();
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
-            this.pictureBox35 = new System.Windows.Forms.PictureBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel21 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel22 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel37 = new System.Windows.Forms.Panel();
             this.label66 = new System.Windows.Forms.Label();
-            this.pictureBox36 = new System.Windows.Forms.PictureBox();
             this.panel38 = new System.Windows.Forms.Panel();
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
-            this.pictureBox37 = new System.Windows.Forms.PictureBox();
             this.panel39 = new System.Windows.Forms.Panel();
             this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
-            this.pictureBox38 = new System.Windows.Forms.PictureBox();
             this.panel40 = new System.Windows.Forms.Panel();
             this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
-            this.pictureBox39 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel23 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel41 = new System.Windows.Forms.Panel();
             this.label73 = new System.Windows.Forms.Label();
-            this.pictureBox40 = new System.Windows.Forms.PictureBox();
             this.panel43 = new System.Windows.Forms.Panel();
             this.label76 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
-            this.pictureBox42 = new System.Windows.Forms.PictureBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel12 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel13 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label30 = new System.Windows.Forms.Label();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.panel17 = new System.Windows.Forms.Panel();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.panel19 = new System.Windows.Forms.Panel();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel14 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel20 = new System.Windows.Forms.Panel();
             this.label37 = new System.Windows.Forms.Label();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.panel22 = new System.Windows.Forms.Panel();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.pnlExpences = new System.Windows.Forms.FlowLayoutPanel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.panel49 = new System.Windows.Forms.Panel();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.label27 = new System.Windows.Forms.Label();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.panel35 = new System.Windows.Forms.Panel();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.panel42 = new System.Windows.Forms.Panel();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.panel51 = new System.Windows.Forms.Panel();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.panel52 = new System.Windows.Forms.Panel();
+            this.label92 = new System.Windows.Forms.Label();
+            this.label93 = new System.Windows.Forms.Label();
+            this.panel53 = new System.Windows.Forms.Panel();
+            this.label94 = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
+            this.panel54 = new System.Windows.Forms.Panel();
+            this.label96 = new System.Windows.Forms.Label();
+            this.label97 = new System.Windows.Forms.Label();
+            this.panel55 = new System.Windows.Forms.Panel();
+            this.label98 = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
+            this.panel56 = new System.Windows.Forms.Panel();
+            this.label100 = new System.Windows.Forms.Label();
+            this.label101 = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.pictureBox34 = new System.Windows.Forms.PictureBox();
+            this.pictureBox41 = new System.Windows.Forms.PictureBox();
+            this.pictureBox50 = new System.Windows.Forms.PictureBox();
+            this.pictureBox51 = new System.Windows.Forms.PictureBox();
+            this.pictureBox52 = new System.Windows.Forms.PictureBox();
+            this.pictureBox53 = new System.Windows.Forms.PictureBox();
+            this.pictureBox43 = new System.Windows.Forms.PictureBox();
+            this.pictureBox44 = new System.Windows.Forms.PictureBox();
+            this.pictureBox45 = new System.Windows.Forms.PictureBox();
+            this.pictureBox46 = new System.Windows.Forms.PictureBox();
+            this.pictureBox47 = new System.Windows.Forms.PictureBox();
+            this.pictureBox49 = new System.Windows.Forms.PictureBox();
             this.pictureBox48 = new System.Windows.Forms.PictureBox();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
+            this.pictureBox33 = new System.Windows.Forms.PictureBox();
+            this.pictureBox35 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.pictureBox36 = new System.Windows.Forms.PictureBox();
+            this.pictureBox37 = new System.Windows.Forms.PictureBox();
+            this.pictureBox38 = new System.Windows.Forms.PictureBox();
+            this.pictureBox39 = new System.Windows.Forms.PictureBox();
+            this.pictureBox40 = new System.Windows.Forms.PictureBox();
+            this.pictureBox42 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.piccurrentbox = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.piccurrentbox)).BeginInit();
             this.flowLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel5.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.QuiqOverview.SuspendLayout();
             this.flowLayoutPanel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel8.SuspendLayout();
             this.flowLayoutPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel7.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel6.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.flowLayoutPanel24.SuspendLayout();
             this.flowLayoutPanel25.SuspendLayout();
             this.panel44.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
             this.panel45.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
             this.panel46.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
             this.panel47.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
             this.flowLayoutPanel26.SuspendLayout();
             this.panel48.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
             this.panel50.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
+            this.panel49.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.flowLayoutPanel15.SuspendLayout();
             this.flowLayoutPanel16.SuspendLayout();
             this.panel23.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             this.panel24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             this.panel25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             this.panel26.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             this.flowLayoutPanel17.SuspendLayout();
             this.panel27.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
             this.panel29.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+            this.panel10.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.flowLayoutPanel18.SuspendLayout();
             this.flowLayoutPanel19.SuspendLayout();
             this.panel30.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             this.panel31.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             this.panel32.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             this.panel33.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             this.flowLayoutPanel20.SuspendLayout();
             this.panel34.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             this.panel36.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
+            this.panel11.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.flowLayoutPanel21.SuspendLayout();
             this.flowLayoutPanel22.SuspendLayout();
             this.panel37.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
             this.panel38.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
             this.panel39.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
             this.panel40.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
             this.flowLayoutPanel23.SuspendLayout();
             this.panel41.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
             this.panel43.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
+            this.panel12.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.flowLayoutPanel12.SuspendLayout();
             this.flowLayoutPanel13.SuspendLayout();
             this.panel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.panel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.panel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             this.panel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             this.flowLayoutPanel14.SuspendLayout();
             this.panel20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             this.panel22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            this.panel13.SuspendLayout();
             this.pnlExpences.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            this.panel49.SuspendLayout();
+            this.flowLayoutPanel9.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.panel21.SuspendLayout();
+            this.panel28.SuspendLayout();
+            this.panel35.SuspendLayout();
+            this.panel42.SuspendLayout();
+            this.panel51.SuspendLayout();
+            this.panel52.SuspendLayout();
+            this.panel53.SuspendLayout();
+            this.panel54.SuspendLayout();
+            this.panel55.SuspendLayout();
+            this.panel56.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
-            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piccurrentbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -358,7 +429,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label1.Location = new System.Drawing.Point(1049, 0);
+            this.label1.Location = new System.Drawing.Point(1449, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(0, 20, 20, 0);
@@ -368,37 +439,26 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel3);
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel4);
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel5);
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 58);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(418, 58);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1151, 94);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1141, 94);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.piccurrentbox);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(880, 3);
+            this.panel1.Location = new System.Drawing.Point(870, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(268, 87);
             this.panel1.TabIndex = 2;
-            // 
-            // piccurrentbox
-            // 
-            this.piccurrentbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.piccurrentbox.Image = global::Driving_School_Management_System.Properties.Resources.box_arrow_down_bold;
-            this.piccurrentbox.Location = new System.Drawing.Point(45, 30);
-            this.piccurrentbox.Name = "piccurrentbox";
-            this.piccurrentbox.Size = new System.Drawing.Size(29, 34);
-            this.piccurrentbox.TabIndex = 3;
-            this.piccurrentbox.TabStop = false;
             // 
             // label2
             // 
@@ -418,21 +478,10 @@
             // 
             this.flowLayoutPanel3.Controls.Add(this.pictureBox2);
             this.flowLayoutPanel3.Controls.Add(this.panel3);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(692, 3);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(682, 3);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(182, 87);
             this.flowLayoutPanel3.TabIndex = 5;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox2.Image = global::Driving_School_Management_System.Properties.Resources.bag_simple_fill;
-            this.pictureBox2.Location = new System.Drawing.Point(129, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 83);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
             // 
             // panel3
             // 
@@ -472,21 +521,10 @@
             // 
             this.flowLayoutPanel4.Controls.Add(this.pictureBox3);
             this.flowLayoutPanel4.Controls.Add(this.panel4);
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(504, 3);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(494, 3);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Size = new System.Drawing.Size(182, 87);
             this.flowLayoutPanel4.TabIndex = 5;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox3.Image = global::Driving_School_Management_System.Properties.Resources.piggy_bank_fill;
-            this.pictureBox3.Location = new System.Drawing.Point(129, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(50, 83);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
             // 
             // panel4
             // 
@@ -526,21 +564,10 @@
             // 
             this.flowLayoutPanel5.Controls.Add(this.pictureBox4);
             this.flowLayoutPanel5.Controls.Add(this.panel5);
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(316, 3);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(306, 3);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
             this.flowLayoutPanel5.Size = new System.Drawing.Size(182, 87);
             this.flowLayoutPanel5.TabIndex = 5;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox4.Image = global::Driving_School_Management_System.Properties.Resources.shopping_cart_fill;
-            this.pictureBox4.Location = new System.Drawing.Point(129, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(50, 83);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
             // 
             // panel5
             // 
@@ -580,21 +607,10 @@
             // 
             this.flowLayoutPanel2.Controls.Add(this.pictureBox1);
             this.flowLayoutPanel2.Controls.Add(this.panel2);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(128, 3);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(118, 3);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(182, 87);
             this.flowLayoutPanel2.TabIndex = 3;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.currency_dollar_fill;
-            this.pictureBox1.Location = new System.Drawing.Point(129, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 83);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -640,9 +656,9 @@
             this.QuiqOverview.Controls.Add(this.flowLayoutPanel7);
             this.QuiqOverview.Controls.Add(this.flowLayoutPanel6);
             this.QuiqOverview.Controls.Add(this.guna2Separator1);
-            this.QuiqOverview.Location = new System.Drawing.Point(574, 180);
+            this.QuiqOverview.Location = new System.Drawing.Point(958, 180);
             this.QuiqOverview.Name = "QuiqOverview";
-            this.QuiqOverview.Size = new System.Drawing.Size(589, 170);
+            this.QuiqOverview.Size = new System.Drawing.Size(605, 170);
             this.QuiqOverview.TabIndex = 2;
             // 
             // label11
@@ -651,7 +667,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tahoma", 9F);
             this.label11.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label11.Location = new System.Drawing.Point(428, 41);
+            this.label11.Location = new System.Drawing.Point(444, 41);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(148, 22);
             this.label11.TabIndex = 2;
@@ -663,7 +679,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Location = new System.Drawing.Point(455, 13);
+            this.label10.Location = new System.Drawing.Point(471, 13);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(97, 28);
             this.label10.TabIndex = 1;
@@ -677,17 +693,6 @@
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
             this.flowLayoutPanel8.Size = new System.Drawing.Size(182, 87);
             this.flowLayoutPanel8.TabIndex = 7;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox7.Image = global::Driving_School_Management_System.Properties.Resources.folder_user_fill;
-            this.pictureBox7.Location = new System.Drawing.Point(129, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(50, 83);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox7.TabIndex = 4;
-            this.pictureBox7.TabStop = false;
             // 
             // panel8
             // 
@@ -732,17 +737,6 @@
             this.flowLayoutPanel7.Size = new System.Drawing.Size(182, 87);
             this.flowLayoutPanel7.TabIndex = 6;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox6.Image = global::Driving_School_Management_System.Properties.Resources.tote_fill;
-            this.pictureBox6.Location = new System.Drawing.Point(129, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(50, 83);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox6.TabIndex = 4;
-            this.pictureBox6.TabStop = false;
-            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
@@ -786,17 +780,6 @@
             this.flowLayoutPanel6.Size = new System.Drawing.Size(182, 87);
             this.flowLayoutPanel6.TabIndex = 5;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox5.Image = global::Driving_School_Management_System.Properties.Resources.money_wavy_fill;
-            this.pictureBox5.Location = new System.Drawing.Point(129, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(50, 83);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
@@ -837,7 +820,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Separator1.Location = new System.Drawing.Point(2, 61);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(585, 21);
+            this.guna2Separator1.Size = new System.Drawing.Size(601, 21);
             this.guna2Separator1.TabIndex = 0;
             // 
             // tabControl1
@@ -849,7 +832,7 @@
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(12, 180);
+            this.tabControl1.Location = new System.Drawing.Point(412, 180);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.RightToLeftLayout = true;
             this.tabControl1.SelectedIndex = 0;
@@ -868,6 +851,7 @@
             // 
             // flowLayoutPanel24
             // 
+            this.flowLayoutPanel24.BackColor = System.Drawing.SystemColors.Window;
             this.flowLayoutPanel24.Controls.Add(this.flowLayoutPanel25);
             this.flowLayoutPanel24.Controls.Add(this.flowLayoutPanel26);
             this.flowLayoutPanel24.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -911,16 +895,6 @@
             this.label78.TabIndex = 1;
             this.label78.Text = "الامتحانات ";
             // 
-            // pictureBox43
-            // 
-            this.pictureBox43.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox43.Image = global::Driving_School_Management_System.Properties.Resources.file_bold;
-            this.pictureBox43.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox43.TabIndex = 0;
-            this.pictureBox43.TabStop = false;
-            // 
             // panel45
             // 
             this.panel45.Controls.Add(this.label79);
@@ -953,16 +927,6 @@
             this.label80.Size = new System.Drawing.Size(94, 27);
             this.label80.TabIndex = 1;
             this.label80.Text = "مبرمجة :";
-            // 
-            // pictureBox44
-            // 
-            this.pictureBox44.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox44.Image = global::Driving_School_Management_System.Properties.Resources.clock_thin__1_;
-            this.pictureBox44.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox44.Name = "pictureBox44";
-            this.pictureBox44.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox44.TabIndex = 0;
-            this.pictureBox44.TabStop = false;
             // 
             // panel46
             // 
@@ -997,16 +961,6 @@
             this.label82.TabIndex = 1;
             this.label82.Text = "ناجح :";
             // 
-            // pictureBox45
-            // 
-            this.pictureBox45.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox45.Image = global::Driving_School_Management_System.Properties.Resources.check_circle_thin;
-            this.pictureBox45.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox45.Name = "pictureBox45";
-            this.pictureBox45.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox45.TabIndex = 0;
-            this.pictureBox45.TabStop = false;
-            // 
             // panel47
             // 
             this.panel47.Controls.Add(this.label83);
@@ -1039,16 +993,6 @@
             this.label84.Size = new System.Drawing.Size(83, 27);
             this.label84.TabIndex = 1;
             this.label84.Text = "راسب :";
-            // 
-            // pictureBox46
-            // 
-            this.pictureBox46.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox46.Image = global::Driving_School_Management_System.Properties.Resources.x_circle_thin;
-            this.pictureBox46.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox46.Name = "pictureBox46";
-            this.pictureBox46.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox46.TabIndex = 0;
-            this.pictureBox46.TabStop = false;
             // 
             // flowLayoutPanel26
             // 
@@ -1083,16 +1027,6 @@
             this.label85.TabIndex = 1;
             this.label85.Text = "الحصص";
             // 
-            // pictureBox47
-            // 
-            this.pictureBox47.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox47.Image = global::Driving_School_Management_System.Properties.Resources.book_open_bold;
-            this.pictureBox47.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox47.Name = "pictureBox47";
-            this.pictureBox47.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox47.TabIndex = 0;
-            this.pictureBox47.TabStop = false;
-            // 
             // panel50
             // 
             this.panel50.Controls.Add(this.label88);
@@ -1126,15 +1060,38 @@
             this.label89.TabIndex = 1;
             this.label89.Text = "نظرية :";
             // 
-            // pictureBox49
+            // panel49
             // 
-            this.pictureBox49.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox49.Image = global::Driving_School_Management_System.Properties.Resources.desktop_thin;
-            this.pictureBox49.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox49.Name = "pictureBox49";
-            this.pictureBox49.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox49.TabIndex = 0;
-            this.pictureBox49.TabStop = false;
+            this.panel49.Controls.Add(this.label86);
+            this.panel49.Controls.Add(this.label87);
+            this.panel49.Controls.Add(this.pictureBox48);
+            this.panel49.Location = new System.Drawing.Point(0, 93);
+            this.panel49.Name = "panel49";
+            this.panel49.Size = new System.Drawing.Size(219, 39);
+            this.panel49.TabIndex = 12;
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label86.Location = new System.Drawing.Point(63, 6);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(24, 27);
+            this.label86.TabIndex = 6;
+            this.label86.Text = "0";
+            // 
+            // label87
+            // 
+            this.label87.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label87.Location = new System.Drawing.Point(86, 6);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(96, 27);
+            this.label87.TabIndex = 1;
+            this.label87.Text = "تطبيقية :";
             // 
             // tabPage2
             // 
@@ -1148,6 +1105,7 @@
             // 
             // flowLayoutPanel15
             // 
+            this.flowLayoutPanel15.BackColor = System.Drawing.SystemColors.Window;
             this.flowLayoutPanel15.Controls.Add(this.flowLayoutPanel16);
             this.flowLayoutPanel15.Controls.Add(this.flowLayoutPanel17);
             this.flowLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1191,16 +1149,6 @@
             this.label42.TabIndex = 1;
             this.label42.Text = "الامتحانات ";
             // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox22.Image = global::Driving_School_Management_System.Properties.Resources.file_bold;
-            this.pictureBox22.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox22.TabIndex = 0;
-            this.pictureBox22.TabStop = false;
-            // 
             // panel24
             // 
             this.panel24.Controls.Add(this.label43);
@@ -1233,16 +1181,6 @@
             this.label44.Size = new System.Drawing.Size(94, 27);
             this.label44.TabIndex = 1;
             this.label44.Text = "مبرمجة :";
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox23.Image = global::Driving_School_Management_System.Properties.Resources.clock_thin__1_;
-            this.pictureBox23.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox23.TabIndex = 0;
-            this.pictureBox23.TabStop = false;
             // 
             // panel25
             // 
@@ -1277,16 +1215,6 @@
             this.label46.TabIndex = 1;
             this.label46.Text = "ناجح :";
             // 
-            // pictureBox24
-            // 
-            this.pictureBox24.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox24.Image = global::Driving_School_Management_System.Properties.Resources.check_circle_thin;
-            this.pictureBox24.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox24.TabIndex = 0;
-            this.pictureBox24.TabStop = false;
-            // 
             // panel26
             // 
             this.panel26.Controls.Add(this.label47);
@@ -1319,16 +1247,6 @@
             this.label48.Size = new System.Drawing.Size(83, 27);
             this.label48.TabIndex = 1;
             this.label48.Text = "راسب :";
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox25.Image = global::Driving_School_Management_System.Properties.Resources.x_circle_thin;
-            this.pictureBox25.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox25.TabIndex = 0;
-            this.pictureBox25.TabStop = false;
             // 
             // flowLayoutPanel17
             // 
@@ -1363,16 +1281,6 @@
             this.label49.TabIndex = 1;
             this.label49.Text = "الحصص";
             // 
-            // pictureBox26
-            // 
-            this.pictureBox26.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox26.Image = global::Driving_School_Management_System.Properties.Resources.book_open_bold;
-            this.pictureBox26.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox26.TabIndex = 0;
-            this.pictureBox26.TabStop = false;
-            // 
             // panel29
             // 
             this.panel29.Controls.Add(this.label52);
@@ -1406,15 +1314,38 @@
             this.label53.TabIndex = 1;
             this.label53.Text = "نظرية :";
             // 
-            // pictureBox28
+            // panel10
             // 
-            this.pictureBox28.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox28.Image = global::Driving_School_Management_System.Properties.Resources.desktop_thin;
-            this.pictureBox28.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox28.TabIndex = 0;
-            this.pictureBox28.TabStop = false;
+            this.panel10.Controls.Add(this.label19);
+            this.panel10.Controls.Add(this.label20);
+            this.panel10.Controls.Add(this.pictureBox8);
+            this.panel10.Location = new System.Drawing.Point(0, 93);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(219, 39);
+            this.panel10.TabIndex = 12;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label19.Location = new System.Drawing.Point(63, 6);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(24, 27);
+            this.label19.TabIndex = 6;
+            this.label19.Text = "0";
+            // 
+            // label20
+            // 
+            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label20.Location = new System.Drawing.Point(86, 6);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(96, 27);
+            this.label20.TabIndex = 1;
+            this.label20.Text = "تطبيقية :";
             // 
             // tabPage3
             // 
@@ -1428,6 +1359,7 @@
             // 
             // flowLayoutPanel18
             // 
+            this.flowLayoutPanel18.BackColor = System.Drawing.SystemColors.Window;
             this.flowLayoutPanel18.Controls.Add(this.flowLayoutPanel19);
             this.flowLayoutPanel18.Controls.Add(this.flowLayoutPanel20);
             this.flowLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1471,16 +1403,6 @@
             this.label54.TabIndex = 1;
             this.label54.Text = "الامتحانات ";
             // 
-            // pictureBox29
-            // 
-            this.pictureBox29.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox29.Image = global::Driving_School_Management_System.Properties.Resources.file_bold;
-            this.pictureBox29.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox29.TabIndex = 0;
-            this.pictureBox29.TabStop = false;
-            // 
             // panel31
             // 
             this.panel31.Controls.Add(this.label55);
@@ -1513,16 +1435,6 @@
             this.label56.Size = new System.Drawing.Size(94, 27);
             this.label56.TabIndex = 1;
             this.label56.Text = "مبرمجة :";
-            // 
-            // pictureBox30
-            // 
-            this.pictureBox30.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox30.Image = global::Driving_School_Management_System.Properties.Resources.clock_thin__1_;
-            this.pictureBox30.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox30.TabIndex = 0;
-            this.pictureBox30.TabStop = false;
             // 
             // panel32
             // 
@@ -1557,16 +1469,6 @@
             this.label58.TabIndex = 1;
             this.label58.Text = "ناجح :";
             // 
-            // pictureBox31
-            // 
-            this.pictureBox31.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox31.Image = global::Driving_School_Management_System.Properties.Resources.check_circle_thin;
-            this.pictureBox31.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox31.TabIndex = 0;
-            this.pictureBox31.TabStop = false;
-            // 
             // panel33
             // 
             this.panel33.Controls.Add(this.label59);
@@ -1599,16 +1501,6 @@
             this.label60.Size = new System.Drawing.Size(83, 27);
             this.label60.TabIndex = 1;
             this.label60.Text = "راسب :";
-            // 
-            // pictureBox32
-            // 
-            this.pictureBox32.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox32.Image = global::Driving_School_Management_System.Properties.Resources.x_circle_thin;
-            this.pictureBox32.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox32.TabIndex = 0;
-            this.pictureBox32.TabStop = false;
             // 
             // flowLayoutPanel20
             // 
@@ -1643,16 +1535,6 @@
             this.label61.TabIndex = 1;
             this.label61.Text = "الحصص";
             // 
-            // pictureBox33
-            // 
-            this.pictureBox33.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox33.Image = global::Driving_School_Management_System.Properties.Resources.book_open_bold;
-            this.pictureBox33.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox33.TabIndex = 0;
-            this.pictureBox33.TabStop = false;
-            // 
             // panel36
             // 
             this.panel36.Controls.Add(this.label64);
@@ -1686,15 +1568,38 @@
             this.label65.TabIndex = 1;
             this.label65.Text = "نظرية :";
             // 
-            // pictureBox35
+            // panel11
             // 
-            this.pictureBox35.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox35.Image = global::Driving_School_Management_System.Properties.Resources.desktop_thin;
-            this.pictureBox35.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox35.TabIndex = 0;
-            this.pictureBox35.TabStop = false;
+            this.panel11.Controls.Add(this.label21);
+            this.panel11.Controls.Add(this.label22);
+            this.panel11.Controls.Add(this.pictureBox9);
+            this.panel11.Location = new System.Drawing.Point(0, 93);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(219, 39);
+            this.panel11.TabIndex = 12;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label21.Location = new System.Drawing.Point(63, 6);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(24, 27);
+            this.label21.TabIndex = 6;
+            this.label21.Text = "0";
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label22.Location = new System.Drawing.Point(86, 6);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(96, 27);
+            this.label22.TabIndex = 1;
+            this.label22.Text = "تطبيقية :";
             // 
             // tabPage4
             // 
@@ -1708,6 +1613,7 @@
             // 
             // flowLayoutPanel21
             // 
+            this.flowLayoutPanel21.BackColor = System.Drawing.SystemColors.Window;
             this.flowLayoutPanel21.Controls.Add(this.flowLayoutPanel22);
             this.flowLayoutPanel21.Controls.Add(this.flowLayoutPanel23);
             this.flowLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1751,16 +1657,6 @@
             this.label66.TabIndex = 1;
             this.label66.Text = "الامتحانات ";
             // 
-            // pictureBox36
-            // 
-            this.pictureBox36.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox36.Image = global::Driving_School_Management_System.Properties.Resources.file_bold;
-            this.pictureBox36.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox36.TabIndex = 0;
-            this.pictureBox36.TabStop = false;
-            // 
             // panel38
             // 
             this.panel38.Controls.Add(this.label67);
@@ -1793,16 +1689,6 @@
             this.label68.Size = new System.Drawing.Size(94, 27);
             this.label68.TabIndex = 1;
             this.label68.Text = "مبرمجة :";
-            // 
-            // pictureBox37
-            // 
-            this.pictureBox37.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox37.Image = global::Driving_School_Management_System.Properties.Resources.clock_thin__1_;
-            this.pictureBox37.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox37.Name = "pictureBox37";
-            this.pictureBox37.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox37.TabIndex = 0;
-            this.pictureBox37.TabStop = false;
             // 
             // panel39
             // 
@@ -1837,16 +1723,6 @@
             this.label70.TabIndex = 1;
             this.label70.Text = "ناجح :";
             // 
-            // pictureBox38
-            // 
-            this.pictureBox38.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox38.Image = global::Driving_School_Management_System.Properties.Resources.check_circle_thin;
-            this.pictureBox38.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox38.TabIndex = 0;
-            this.pictureBox38.TabStop = false;
-            // 
             // panel40
             // 
             this.panel40.Controls.Add(this.label71);
@@ -1879,16 +1755,6 @@
             this.label72.Size = new System.Drawing.Size(83, 27);
             this.label72.TabIndex = 1;
             this.label72.Text = "راسب :";
-            // 
-            // pictureBox39
-            // 
-            this.pictureBox39.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox39.Image = global::Driving_School_Management_System.Properties.Resources.x_circle_thin;
-            this.pictureBox39.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox39.Name = "pictureBox39";
-            this.pictureBox39.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox39.TabIndex = 0;
-            this.pictureBox39.TabStop = false;
             // 
             // flowLayoutPanel23
             // 
@@ -1923,16 +1789,6 @@
             this.label73.TabIndex = 1;
             this.label73.Text = "الحصص";
             // 
-            // pictureBox40
-            // 
-            this.pictureBox40.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox40.Image = global::Driving_School_Management_System.Properties.Resources.book_open_bold;
-            this.pictureBox40.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox40.Name = "pictureBox40";
-            this.pictureBox40.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox40.TabIndex = 0;
-            this.pictureBox40.TabStop = false;
-            // 
             // panel43
             // 
             this.panel43.Controls.Add(this.label76);
@@ -1966,15 +1822,38 @@
             this.label77.TabIndex = 1;
             this.label77.Text = "نظرية :";
             // 
-            // pictureBox42
+            // panel12
             // 
-            this.pictureBox42.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox42.Image = global::Driving_School_Management_System.Properties.Resources.desktop_thin;
-            this.pictureBox42.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox42.Name = "pictureBox42";
-            this.pictureBox42.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox42.TabIndex = 0;
-            this.pictureBox42.TabStop = false;
+            this.panel12.Controls.Add(this.label23);
+            this.panel12.Controls.Add(this.label24);
+            this.panel12.Controls.Add(this.pictureBox10);
+            this.panel12.Location = new System.Drawing.Point(0, 93);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(219, 39);
+            this.panel12.TabIndex = 12;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label23.Location = new System.Drawing.Point(63, 6);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(24, 27);
+            this.label23.TabIndex = 6;
+            this.label23.Text = "0";
+            // 
+            // label24
+            // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.label24.Location = new System.Drawing.Point(86, 6);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(96, 27);
+            this.label24.TabIndex = 1;
+            this.label24.Text = "تطبيقية :";
             // 
             // tabPage5
             // 
@@ -1988,6 +1867,7 @@
             // 
             // flowLayoutPanel12
             // 
+            this.flowLayoutPanel12.BackColor = System.Drawing.SystemColors.Window;
             this.flowLayoutPanel12.Controls.Add(this.flowLayoutPanel13);
             this.flowLayoutPanel12.Controls.Add(this.flowLayoutPanel14);
             this.flowLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2031,16 +1911,6 @@
             this.label30.TabIndex = 1;
             this.label30.Text = "الامتحانات ";
             // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox15.Image = global::Driving_School_Management_System.Properties.Resources.file_bold;
-            this.pictureBox15.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox15.TabIndex = 0;
-            this.pictureBox15.TabStop = false;
-            // 
             // panel17
             // 
             this.panel17.Controls.Add(this.label31);
@@ -2073,16 +1943,6 @@
             this.label32.Size = new System.Drawing.Size(94, 27);
             this.label32.TabIndex = 1;
             this.label32.Text = "مبرمجة :";
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox16.Image = global::Driving_School_Management_System.Properties.Resources.clock_thin__1_;
-            this.pictureBox16.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox16.TabIndex = 0;
-            this.pictureBox16.TabStop = false;
             // 
             // panel18
             // 
@@ -2117,16 +1977,6 @@
             this.label34.TabIndex = 1;
             this.label34.Text = "ناجح :";
             // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox17.Image = global::Driving_School_Management_System.Properties.Resources.check_circle_thin;
-            this.pictureBox17.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox17.TabIndex = 0;
-            this.pictureBox17.TabStop = false;
-            // 
             // panel19
             // 
             this.panel19.Controls.Add(this.label35);
@@ -2159,16 +2009,6 @@
             this.label36.Size = new System.Drawing.Size(83, 27);
             this.label36.TabIndex = 1;
             this.label36.Text = "راسب :";
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox18.Image = global::Driving_School_Management_System.Properties.Resources.x_circle_thin;
-            this.pictureBox18.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox18.TabIndex = 0;
-            this.pictureBox18.TabStop = false;
             // 
             // flowLayoutPanel14
             // 
@@ -2203,16 +2043,6 @@
             this.label37.TabIndex = 1;
             this.label37.Text = "الحصص";
             // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox19.Image = global::Driving_School_Management_System.Properties.Resources.book_open_bold;
-            this.pictureBox19.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox19.TabIndex = 0;
-            this.pictureBox19.TabStop = false;
-            // 
             // panel22
             // 
             this.panel22.Controls.Add(this.label40);
@@ -2245,248 +2075,6 @@
             this.label41.Size = new System.Drawing.Size(76, 27);
             this.label41.TabIndex = 1;
             this.label41.Text = "نظرية :";
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox21.Image = global::Driving_School_Management_System.Properties.Resources.desktop_thin;
-            this.pictureBox21.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox21.TabIndex = 0;
-            this.pictureBox21.TabStop = false;
-            // 
-            // pnlExpences
-            // 
-            this.pnlExpences.AllowDrop = true;
-            this.pnlExpences.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlExpences.AutoScroll = true;
-            this.pnlExpences.BackColor = System.Drawing.SystemColors.Window;
-            this.pnlExpences.Controls.Add(this.panel9);
-            this.pnlExpences.Controls.Add(this.guna2Separator2);
-            this.pnlExpences.Location = new System.Drawing.Point(18, 428);
-            this.pnlExpences.Name = "pnlExpences";
-            this.pnlExpences.Size = new System.Drawing.Size(514, 318);
-            this.pnlExpences.TabIndex = 4;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.label18);
-            this.panel9.Location = new System.Drawing.Point(251, 3);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(266, 38);
-            this.panel9.TabIndex = 5;
-            // 
-            // label18
-            // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.label18.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label18.Location = new System.Drawing.Point(16, 0);
-            this.label18.Name = "label18";
-            this.label18.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label18.Size = new System.Drawing.Size(246, 31);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "المصاريف حسب النوع";
-            // 
-            // guna2Separator2
-            // 
-            this.guna2Separator2.Location = new System.Drawing.Point(3, 47);
-            this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(514, 11);
-            this.guna2Separator2.TabIndex = 6;
-            // 
-            // chart1
-            // 
-            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(590, 378);
-            this.chart1.Name = "chart1";
-            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Legend = "Legend1";
-            series1.Name = "DrivingLicenseTypesPieChart";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(573, 356);
-            this.chart1.TabIndex = 5;
-            this.chart1.Text = "chart1";
-            // 
-            // panel49
-            // 
-            this.panel49.Controls.Add(this.label86);
-            this.panel49.Controls.Add(this.label87);
-            this.panel49.Controls.Add(this.pictureBox48);
-            this.panel49.Location = new System.Drawing.Point(0, 93);
-            this.panel49.Name = "panel49";
-            this.panel49.Size = new System.Drawing.Size(219, 39);
-            this.panel49.TabIndex = 12;
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label86.Location = new System.Drawing.Point(63, 6);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(24, 27);
-            this.label86.TabIndex = 6;
-            this.label86.Text = "0";
-            // 
-            // label87
-            // 
-            this.label87.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label87.AutoSize = true;
-            this.label87.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label87.Location = new System.Drawing.Point(86, 6);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(96, 27);
-            this.label87.TabIndex = 1;
-            this.label87.Text = "تطبيقية :";
-            // 
-            // pictureBox48
-            // 
-            this.pictureBox48.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox48.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
-            this.pictureBox48.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox48.Name = "pictureBox48";
-            this.pictureBox48.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox48.TabIndex = 0;
-            this.pictureBox48.TabStop = false;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.label19);
-            this.panel10.Controls.Add(this.label20);
-            this.panel10.Controls.Add(this.pictureBox8);
-            this.panel10.Location = new System.Drawing.Point(0, 93);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(219, 39);
-            this.panel10.TabIndex = 12;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label19.Location = new System.Drawing.Point(63, 6);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(24, 27);
-            this.label19.TabIndex = 6;
-            this.label19.Text = "0";
-            // 
-            // label20
-            // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label20.Location = new System.Drawing.Point(86, 6);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(96, 27);
-            this.label20.TabIndex = 1;
-            this.label20.Text = "تطبيقية :";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox8.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
-            this.pictureBox8.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox8.TabIndex = 0;
-            this.pictureBox8.TabStop = false;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.label21);
-            this.panel11.Controls.Add(this.label22);
-            this.panel11.Controls.Add(this.pictureBox9);
-            this.panel11.Location = new System.Drawing.Point(0, 93);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(219, 39);
-            this.panel11.TabIndex = 12;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label21.Location = new System.Drawing.Point(63, 6);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(24, 27);
-            this.label21.TabIndex = 6;
-            this.label21.Text = "0";
-            // 
-            // label22
-            // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label22.Location = new System.Drawing.Point(86, 6);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(96, 27);
-            this.label22.TabIndex = 1;
-            this.label22.Text = "تطبيقية :";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox9.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
-            this.pictureBox9.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox9.TabIndex = 0;
-            this.pictureBox9.TabStop = false;
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.label23);
-            this.panel12.Controls.Add(this.label24);
-            this.panel12.Controls.Add(this.pictureBox10);
-            this.panel12.Location = new System.Drawing.Point(0, 93);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(219, 39);
-            this.panel12.TabIndex = 12;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label23.Location = new System.Drawing.Point(63, 6);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(24, 27);
-            this.label23.TabIndex = 6;
-            this.label23.Text = "0";
-            // 
-            // label24
-            // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label24.Location = new System.Drawing.Point(86, 6);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(96, 27);
-            this.label24.TabIndex = 1;
-            this.label24.Text = "تطبيقية :";
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox10.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
-            this.pictureBox10.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(35, 39);
-            this.pictureBox10.TabIndex = 0;
-            this.pictureBox10.TabStop = false;
             // 
             // panel13
             // 
@@ -2521,6 +2109,900 @@
             this.label26.TabIndex = 1;
             this.label26.Text = "تطبيقية :";
             // 
+            // pnlExpences
+            // 
+            this.pnlExpences.AllowDrop = true;
+            this.pnlExpences.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlExpences.AutoScroll = true;
+            this.pnlExpences.BackColor = System.Drawing.SystemColors.Window;
+            this.pnlExpences.Controls.Add(this.panel9);
+            this.pnlExpences.Controls.Add(this.guna2Separator2);
+            this.pnlExpences.Location = new System.Drawing.Point(418, 428);
+            this.pnlExpences.Name = "pnlExpences";
+            this.pnlExpences.Size = new System.Drawing.Size(514, 545);
+            this.pnlExpences.TabIndex = 4;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.label18);
+            this.panel9.Location = new System.Drawing.Point(251, 3);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(266, 38);
+            this.panel9.TabIndex = 5;
+            // 
+            // label18
+            // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Tahoma", 13F);
+            this.label18.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label18.Location = new System.Drawing.Point(16, 0);
+            this.label18.Name = "label18";
+            this.label18.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label18.Size = new System.Drawing.Size(246, 31);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "المصاريف حسب النوع";
+            // 
+            // guna2Separator2
+            // 
+            this.guna2Separator2.Location = new System.Drawing.Point(3, 47);
+            this.guna2Separator2.Name = "guna2Separator2";
+            this.guna2Separator2.Size = new System.Drawing.Size(514, 11);
+            this.guna2Separator2.TabIndex = 6;
+            // 
+            // chart1
+            // 
+            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(960, 378);
+            this.chart1.Name = "chart1";
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.Legend = "Legend1";
+            series2.Name = "DrivingLicenseTypesPieChart";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(603, 583);
+            this.chart1.TabIndex = 5;
+            this.chart1.Text = "chart1";
+            // 
+            // flowLayoutPanel9
+            // 
+            this.flowLayoutPanel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel9.BackColor = System.Drawing.SystemColors.Window;
+            this.flowLayoutPanel9.Controls.Add(this.panel14);
+            this.flowLayoutPanel9.Controls.Add(this.panel15);
+            this.flowLayoutPanel9.Controls.Add(this.panel21);
+            this.flowLayoutPanel9.Controls.Add(this.panel28);
+            this.flowLayoutPanel9.Controls.Add(this.panel35);
+            this.flowLayoutPanel9.Controls.Add(this.panel42);
+            this.flowLayoutPanel9.Controls.Add(this.panel51);
+            this.flowLayoutPanel9.Controls.Add(this.panel52);
+            this.flowLayoutPanel9.Controls.Add(this.panel53);
+            this.flowLayoutPanel9.Controls.Add(this.panel54);
+            this.flowLayoutPanel9.Controls.Add(this.panel55);
+            this.flowLayoutPanel9.Controls.Add(this.panel56);
+            this.flowLayoutPanel9.Location = new System.Drawing.Point(32, 58);
+            this.flowLayoutPanel9.Name = "flowLayoutPanel9";
+            this.flowLayoutPanel9.Size = new System.Drawing.Size(359, 888);
+            this.flowLayoutPanel9.TabIndex = 6;
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.label27);
+            this.panel14.Location = new System.Drawing.Point(0, 3);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(356, 69);
+            this.panel14.TabIndex = 0;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
+            this.label27.Location = new System.Drawing.Point(74, 14);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(268, 31);
+            this.label27.TabIndex = 1;
+            this.label27.Text = "بيانات مدرسة القيادة";
+            // 
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.label28);
+            this.panel15.Controls.Add(this.label29);
+            this.panel15.Controls.Add(this.pictureBox12);
+            this.panel15.Location = new System.Drawing.Point(51, 78);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(305, 67);
+            this.panel15.TabIndex = 37;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(58, 19);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(27, 29);
+            this.label28.TabIndex = 2;
+            this.label28.Text = "0";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Verdana", 13F);
+            this.label29.Location = new System.Drawing.Point(113, 15);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(117, 32);
+            this.label29.TabIndex = 1;
+            this.label29.Text = "عدد الطلاب";
+            // 
+            // panel21
+            // 
+            this.panel21.Controls.Add(this.label38);
+            this.panel21.Controls.Add(this.label39);
+            this.panel21.Controls.Add(this.pictureBox13);
+            this.panel21.Location = new System.Drawing.Point(51, 151);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(305, 67);
+            this.panel21.TabIndex = 38;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(58, 19);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(27, 29);
+            this.label38.TabIndex = 2;
+            this.label38.Text = "0";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Verdana", 13F);
+            this.label39.Location = new System.Drawing.Point(113, 15);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(116, 32);
+            this.label39.TabIndex = 1;
+            this.label39.Text = "عدد الملفات";
+            // 
+            // panel28
+            // 
+            this.panel28.Controls.Add(this.label50);
+            this.panel28.Controls.Add(this.label51);
+            this.panel28.Controls.Add(this.pictureBox14);
+            this.panel28.Location = new System.Drawing.Point(51, 224);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(305, 67);
+            this.panel28.TabIndex = 39;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(58, 19);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(27, 29);
+            this.label50.TabIndex = 2;
+            this.label50.Text = "0";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Verdana", 13F);
+            this.label51.Location = new System.Drawing.Point(102, 15);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(127, 32);
+            this.label51.TabIndex = 1;
+            this.label51.Text = "عدد المدربين";
+            // 
+            // panel35
+            // 
+            this.panel35.Controls.Add(this.label62);
+            this.panel35.Controls.Add(this.label63);
+            this.panel35.Controls.Add(this.pictureBox20);
+            this.panel35.Location = new System.Drawing.Point(51, 297);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(305, 67);
+            this.panel35.TabIndex = 40;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(58, 19);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(27, 29);
+            this.label62.TabIndex = 2;
+            this.label62.Text = "0";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Verdana", 13F);
+            this.label63.Location = new System.Drawing.Point(96, 15);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(133, 32);
+            this.label63.TabIndex = 1;
+            this.label63.Text = "عدد المركبات";
+            // 
+            // panel42
+            // 
+            this.panel42.Controls.Add(this.label74);
+            this.panel42.Controls.Add(this.label75);
+            this.panel42.Controls.Add(this.pictureBox27);
+            this.panel42.Location = new System.Drawing.Point(51, 370);
+            this.panel42.Name = "panel42";
+            this.panel42.Size = new System.Drawing.Size(305, 67);
+            this.panel42.TabIndex = 41;
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.Location = new System.Drawing.Point(40, 19);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(27, 29);
+            this.label74.TabIndex = 2;
+            this.label74.Text = "0";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("Verdana", 13F);
+            this.label75.Location = new System.Drawing.Point(73, 15);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(156, 32);
+            this.label75.TabIndex = 1;
+            this.label75.Text = "عدد المستخدمين";
+            // 
+            // panel51
+            // 
+            this.panel51.Controls.Add(this.label90);
+            this.panel51.Controls.Add(this.label91);
+            this.panel51.Controls.Add(this.pictureBox34);
+            this.panel51.Location = new System.Drawing.Point(51, 443);
+            this.panel51.Name = "panel51";
+            this.panel51.Size = new System.Drawing.Size(305, 67);
+            this.panel51.TabIndex = 42;
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label90.Location = new System.Drawing.Point(40, 19);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(27, 29);
+            this.label90.TabIndex = 2;
+            this.label90.Text = "0";
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Font = new System.Drawing.Font("Verdana", 13F);
+            this.label91.Location = new System.Drawing.Point(75, 15);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(154, 32);
+            this.label91.TabIndex = 1;
+            this.label91.Text = "عدد المجموعات";
+            // 
+            // panel52
+            // 
+            this.panel52.Controls.Add(this.label92);
+            this.panel52.Controls.Add(this.label93);
+            this.panel52.Controls.Add(this.pictureBox41);
+            this.panel52.Location = new System.Drawing.Point(51, 516);
+            this.panel52.Name = "panel52";
+            this.panel52.Size = new System.Drawing.Size(305, 67);
+            this.panel52.TabIndex = 43;
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label92.Location = new System.Drawing.Point(58, 19);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(27, 29);
+            this.label92.TabIndex = 2;
+            this.label92.Text = "0";
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Font = new System.Drawing.Font("Verdana", 13F);
+            this.label93.Location = new System.Drawing.Point(113, 15);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(114, 32);
+            this.label93.TabIndex = 1;
+            this.label93.Text = "عدد النفقات";
+            // 
+            // panel53
+            // 
+            this.panel53.Controls.Add(this.label94);
+            this.panel53.Controls.Add(this.label95);
+            this.panel53.Controls.Add(this.pictureBox50);
+            this.panel53.Location = new System.Drawing.Point(51, 589);
+            this.panel53.Name = "panel53";
+            this.panel53.Size = new System.Drawing.Size(305, 67);
+            this.panel53.TabIndex = 44;
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label94.Location = new System.Drawing.Point(58, 19);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(27, 29);
+            this.label94.TabIndex = 2;
+            this.label94.Text = "0";
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Font = new System.Drawing.Font("Verdana", 13F);
+            this.label95.Location = new System.Drawing.Point(106, 15);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(121, 32);
+            this.label95.TabIndex = 1;
+            this.label95.Text = "عدد الدروس";
+            // 
+            // panel54
+            // 
+            this.panel54.Controls.Add(this.label96);
+            this.panel54.Controls.Add(this.label97);
+            this.panel54.Controls.Add(this.pictureBox51);
+            this.panel54.Location = new System.Drawing.Point(51, 662);
+            this.panel54.Name = "panel54";
+            this.panel54.Size = new System.Drawing.Size(305, 67);
+            this.panel54.TabIndex = 45;
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label96.Location = new System.Drawing.Point(58, 19);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(27, 29);
+            this.label96.TabIndex = 2;
+            this.label96.Text = "0";
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.Font = new System.Drawing.Font("Verdana", 13F);
+            this.label97.Location = new System.Drawing.Point(113, 15);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(116, 32);
+            this.label97.TabIndex = 1;
+            this.label97.Text = "نسبة النجاح";
+            // 
+            // panel55
+            // 
+            this.panel55.Controls.Add(this.label98);
+            this.panel55.Controls.Add(this.label99);
+            this.panel55.Controls.Add(this.pictureBox52);
+            this.panel55.Location = new System.Drawing.Point(51, 735);
+            this.panel55.Name = "panel55";
+            this.panel55.Size = new System.Drawing.Size(305, 67);
+            this.panel55.TabIndex = 46;
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label98.Location = new System.Drawing.Point(40, 19);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(27, 29);
+            this.label98.TabIndex = 2;
+            this.label98.Text = "0";
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Font = new System.Drawing.Font("Verdana", 13F);
+            this.label99.Location = new System.Drawing.Point(63, 15);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(164, 32);
+            this.label99.TabIndex = 1;
+            this.label99.Text = "الملفات المؤرشفة";
+            // 
+            // panel56
+            // 
+            this.panel56.Controls.Add(this.label100);
+            this.panel56.Controls.Add(this.label101);
+            this.panel56.Controls.Add(this.pictureBox53);
+            this.panel56.Location = new System.Drawing.Point(51, 808);
+            this.panel56.Name = "panel56";
+            this.panel56.Size = new System.Drawing.Size(305, 67);
+            this.panel56.TabIndex = 47;
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label100.Location = new System.Drawing.Point(58, 19);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(27, 29);
+            this.label100.TabIndex = 2;
+            this.label100.Text = "0";
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Font = new System.Drawing.Font("Verdana", 13F);
+            this.label101.Location = new System.Drawing.Point(81, 15);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(146, 32);
+            this.label101.TabIndex = 1;
+            this.label101.Text = "عدد الامتحانات";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox12.Image = global::Driving_School_Management_System.Properties.Resources.student;
+            this.pictureBox12.Location = new System.Drawing.Point(241, 0);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(64, 67);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox12.TabIndex = 0;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox13.Image = global::Driving_School_Management_System.Properties.Resources.folder;
+            this.pictureBox13.Location = new System.Drawing.Point(241, 0);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(64, 67);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox13.TabIndex = 0;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox14.Image = global::Driving_School_Management_System.Properties.Resources.chalkboard_teacher;
+            this.pictureBox14.Location = new System.Drawing.Point(241, 0);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(64, 67);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox14.TabIndex = 0;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox20.Image = global::Driving_School_Management_System.Properties.Resources.car_profile;
+            this.pictureBox20.Location = new System.Drawing.Point(241, 0);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(64, 67);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox20.TabIndex = 0;
+            this.pictureBox20.TabStop = false;
+            // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox27.Image = global::Driving_School_Management_System.Properties.Resources.users__1_;
+            this.pictureBox27.Location = new System.Drawing.Point(241, 0);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(64, 67);
+            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox27.TabIndex = 0;
+            this.pictureBox27.TabStop = false;
+            // 
+            // pictureBox34
+            // 
+            this.pictureBox34.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox34.Image = global::Driving_School_Management_System.Properties.Resources.users_four;
+            this.pictureBox34.Location = new System.Drawing.Point(241, 0);
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(64, 67);
+            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox34.TabIndex = 0;
+            this.pictureBox34.TabStop = false;
+            // 
+            // pictureBox41
+            // 
+            this.pictureBox41.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox41.Image = global::Driving_School_Management_System.Properties.Resources.money;
+            this.pictureBox41.Location = new System.Drawing.Point(241, 0);
+            this.pictureBox41.Name = "pictureBox41";
+            this.pictureBox41.Size = new System.Drawing.Size(64, 67);
+            this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox41.TabIndex = 0;
+            this.pictureBox41.TabStop = false;
+            // 
+            // pictureBox50
+            // 
+            this.pictureBox50.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox50.Image = global::Driving_School_Management_System.Properties.Resources.pencil;
+            this.pictureBox50.Location = new System.Drawing.Point(241, 0);
+            this.pictureBox50.Name = "pictureBox50";
+            this.pictureBox50.Size = new System.Drawing.Size(64, 67);
+            this.pictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox50.TabIndex = 0;
+            this.pictureBox50.TabStop = false;
+            // 
+            // pictureBox51
+            // 
+            this.pictureBox51.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox51.Image = global::Driving_School_Management_System.Properties.Resources.checks;
+            this.pictureBox51.Location = new System.Drawing.Point(241, 0);
+            this.pictureBox51.Name = "pictureBox51";
+            this.pictureBox51.Size = new System.Drawing.Size(64, 67);
+            this.pictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox51.TabIndex = 0;
+            this.pictureBox51.TabStop = false;
+            // 
+            // pictureBox52
+            // 
+            this.pictureBox52.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox52.Image = global::Driving_School_Management_System.Properties.Resources.archive;
+            this.pictureBox52.Location = new System.Drawing.Point(241, 0);
+            this.pictureBox52.Name = "pictureBox52";
+            this.pictureBox52.Size = new System.Drawing.Size(64, 67);
+            this.pictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox52.TabIndex = 0;
+            this.pictureBox52.TabStop = false;
+            // 
+            // pictureBox53
+            // 
+            this.pictureBox53.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox53.Image = global::Driving_School_Management_System.Properties.Resources.note_pencil;
+            this.pictureBox53.Location = new System.Drawing.Point(241, 0);
+            this.pictureBox53.Name = "pictureBox53";
+            this.pictureBox53.Size = new System.Drawing.Size(64, 67);
+            this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox53.TabIndex = 0;
+            this.pictureBox53.TabStop = false;
+            // 
+            // pictureBox43
+            // 
+            this.pictureBox43.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox43.Image = global::Driving_School_Management_System.Properties.Resources.file_bold;
+            this.pictureBox43.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox43.Name = "pictureBox43";
+            this.pictureBox43.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox43.TabIndex = 0;
+            this.pictureBox43.TabStop = false;
+            // 
+            // pictureBox44
+            // 
+            this.pictureBox44.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox44.Image = global::Driving_School_Management_System.Properties.Resources.clock_thin__1_;
+            this.pictureBox44.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox44.Name = "pictureBox44";
+            this.pictureBox44.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox44.TabIndex = 0;
+            this.pictureBox44.TabStop = false;
+            // 
+            // pictureBox45
+            // 
+            this.pictureBox45.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox45.Image = global::Driving_School_Management_System.Properties.Resources.check_circle_thin;
+            this.pictureBox45.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox45.Name = "pictureBox45";
+            this.pictureBox45.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox45.TabIndex = 0;
+            this.pictureBox45.TabStop = false;
+            // 
+            // pictureBox46
+            // 
+            this.pictureBox46.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox46.Image = global::Driving_School_Management_System.Properties.Resources.x_circle_thin;
+            this.pictureBox46.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox46.Name = "pictureBox46";
+            this.pictureBox46.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox46.TabIndex = 0;
+            this.pictureBox46.TabStop = false;
+            // 
+            // pictureBox47
+            // 
+            this.pictureBox47.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox47.Image = global::Driving_School_Management_System.Properties.Resources.book_open_bold;
+            this.pictureBox47.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox47.Name = "pictureBox47";
+            this.pictureBox47.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox47.TabIndex = 0;
+            this.pictureBox47.TabStop = false;
+            // 
+            // pictureBox49
+            // 
+            this.pictureBox49.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox49.Image = global::Driving_School_Management_System.Properties.Resources.desktop_thin;
+            this.pictureBox49.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox49.Name = "pictureBox49";
+            this.pictureBox49.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox49.TabIndex = 0;
+            this.pictureBox49.TabStop = false;
+            // 
+            // pictureBox48
+            // 
+            this.pictureBox48.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox48.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
+            this.pictureBox48.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox48.Name = "pictureBox48";
+            this.pictureBox48.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox48.TabIndex = 0;
+            this.pictureBox48.TabStop = false;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox22.Image = global::Driving_School_Management_System.Properties.Resources.file_bold;
+            this.pictureBox22.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox22.TabIndex = 0;
+            this.pictureBox22.TabStop = false;
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox23.Image = global::Driving_School_Management_System.Properties.Resources.clock_thin__1_;
+            this.pictureBox23.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox23.TabIndex = 0;
+            this.pictureBox23.TabStop = false;
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox24.Image = global::Driving_School_Management_System.Properties.Resources.check_circle_thin;
+            this.pictureBox24.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox24.TabIndex = 0;
+            this.pictureBox24.TabStop = false;
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox25.Image = global::Driving_School_Management_System.Properties.Resources.x_circle_thin;
+            this.pictureBox25.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox25.TabIndex = 0;
+            this.pictureBox25.TabStop = false;
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox26.Image = global::Driving_School_Management_System.Properties.Resources.book_open_bold;
+            this.pictureBox26.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox26.TabIndex = 0;
+            this.pictureBox26.TabStop = false;
+            // 
+            // pictureBox28
+            // 
+            this.pictureBox28.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox28.Image = global::Driving_School_Management_System.Properties.Resources.desktop_thin;
+            this.pictureBox28.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox28.TabIndex = 0;
+            this.pictureBox28.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox8.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
+            this.pictureBox8.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox8.TabIndex = 0;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox29.Image = global::Driving_School_Management_System.Properties.Resources.file_bold;
+            this.pictureBox29.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox29.TabIndex = 0;
+            this.pictureBox29.TabStop = false;
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox30.Image = global::Driving_School_Management_System.Properties.Resources.clock_thin__1_;
+            this.pictureBox30.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox30.TabIndex = 0;
+            this.pictureBox30.TabStop = false;
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox31.Image = global::Driving_School_Management_System.Properties.Resources.check_circle_thin;
+            this.pictureBox31.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox31.TabIndex = 0;
+            this.pictureBox31.TabStop = false;
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox32.Image = global::Driving_School_Management_System.Properties.Resources.x_circle_thin;
+            this.pictureBox32.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox32.TabIndex = 0;
+            this.pictureBox32.TabStop = false;
+            // 
+            // pictureBox33
+            // 
+            this.pictureBox33.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox33.Image = global::Driving_School_Management_System.Properties.Resources.book_open_bold;
+            this.pictureBox33.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox33.TabIndex = 0;
+            this.pictureBox33.TabStop = false;
+            // 
+            // pictureBox35
+            // 
+            this.pictureBox35.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox35.Image = global::Driving_School_Management_System.Properties.Resources.desktop_thin;
+            this.pictureBox35.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox35.Name = "pictureBox35";
+            this.pictureBox35.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox35.TabIndex = 0;
+            this.pictureBox35.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox9.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
+            this.pictureBox9.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox9.TabIndex = 0;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox36
+            // 
+            this.pictureBox36.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox36.Image = global::Driving_School_Management_System.Properties.Resources.file_bold;
+            this.pictureBox36.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox36.Name = "pictureBox36";
+            this.pictureBox36.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox36.TabIndex = 0;
+            this.pictureBox36.TabStop = false;
+            // 
+            // pictureBox37
+            // 
+            this.pictureBox37.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox37.Image = global::Driving_School_Management_System.Properties.Resources.clock_thin__1_;
+            this.pictureBox37.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox37.Name = "pictureBox37";
+            this.pictureBox37.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox37.TabIndex = 0;
+            this.pictureBox37.TabStop = false;
+            // 
+            // pictureBox38
+            // 
+            this.pictureBox38.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox38.Image = global::Driving_School_Management_System.Properties.Resources.check_circle_thin;
+            this.pictureBox38.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox38.Name = "pictureBox38";
+            this.pictureBox38.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox38.TabIndex = 0;
+            this.pictureBox38.TabStop = false;
+            // 
+            // pictureBox39
+            // 
+            this.pictureBox39.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox39.Image = global::Driving_School_Management_System.Properties.Resources.x_circle_thin;
+            this.pictureBox39.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox39.Name = "pictureBox39";
+            this.pictureBox39.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox39.TabIndex = 0;
+            this.pictureBox39.TabStop = false;
+            // 
+            // pictureBox40
+            // 
+            this.pictureBox40.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox40.Image = global::Driving_School_Management_System.Properties.Resources.book_open_bold;
+            this.pictureBox40.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox40.Name = "pictureBox40";
+            this.pictureBox40.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox40.TabIndex = 0;
+            this.pictureBox40.TabStop = false;
+            // 
+            // pictureBox42
+            // 
+            this.pictureBox42.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox42.Image = global::Driving_School_Management_System.Properties.Resources.desktop_thin;
+            this.pictureBox42.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox42.Name = "pictureBox42";
+            this.pictureBox42.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox42.TabIndex = 0;
+            this.pictureBox42.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox10.Image = global::Driving_School_Management_System.Properties.Resources.car_thin;
+            this.pictureBox10.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox10.TabIndex = 0;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox15.Image = global::Driving_School_Management_System.Properties.Resources.file_bold;
+            this.pictureBox15.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox15.TabIndex = 0;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox16.Image = global::Driving_School_Management_System.Properties.Resources.clock_thin__1_;
+            this.pictureBox16.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox16.TabIndex = 0;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox17.Image = global::Driving_School_Management_System.Properties.Resources.check_circle_thin;
+            this.pictureBox17.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox17.TabIndex = 0;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox18.Image = global::Driving_School_Management_System.Properties.Resources.x_circle_thin;
+            this.pictureBox18.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox18.TabIndex = 0;
+            this.pictureBox18.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox19.Image = global::Driving_School_Management_System.Properties.Resources.book_open_bold;
+            this.pictureBox19.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox19.TabIndex = 0;
+            this.pictureBox19.TabStop = false;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox21.Image = global::Driving_School_Management_System.Properties.Resources.desktop_thin;
+            this.pictureBox21.Location = new System.Drawing.Point(184, 0);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(35, 39);
+            this.pictureBox21.TabIndex = 0;
+            this.pictureBox21.TabStop = false;
+            // 
             // pictureBox11
             // 
             this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Right;
@@ -2531,11 +3013,99 @@
             this.pictureBox11.TabIndex = 0;
             this.pictureBox11.TabStop = false;
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox7.Image = global::Driving_School_Management_System.Properties.Resources.folder_user_fill;
+            this.pictureBox7.Location = new System.Drawing.Point(129, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(50, 83);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox7.TabIndex = 4;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox6.Image = global::Driving_School_Management_System.Properties.Resources.tote_fill;
+            this.pictureBox6.Location = new System.Drawing.Point(129, 3);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(50, 83);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox6.TabIndex = 4;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox5.Image = global::Driving_School_Management_System.Properties.Resources.money_wavy_fill;
+            this.pictureBox5.Location = new System.Drawing.Point(129, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(50, 83);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            // 
+            // piccurrentbox
+            // 
+            this.piccurrentbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.piccurrentbox.Image = global::Driving_School_Management_System.Properties.Resources.box_arrow_down_bold;
+            this.piccurrentbox.Location = new System.Drawing.Point(45, 30);
+            this.piccurrentbox.Name = "piccurrentbox";
+            this.piccurrentbox.Size = new System.Drawing.Size(29, 34);
+            this.piccurrentbox.TabIndex = 3;
+            this.piccurrentbox.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox2.Image = global::Driving_School_Management_System.Properties.Resources.bag_simple_fill;
+            this.pictureBox2.Location = new System.Drawing.Point(129, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 83);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox3.Image = global::Driving_School_Management_System.Properties.Resources.piggy_bank_fill;
+            this.pictureBox3.Location = new System.Drawing.Point(129, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(50, 83);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox4.Image = global::Driving_School_Management_System.Properties.Resources.shopping_cart_fill;
+            this.pictureBox4.Location = new System.Drawing.Point(129, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(50, 83);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.currency_dollar_fill;
+            this.pictureBox1.Location = new System.Drawing.Point(129, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 83);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainWindow
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.ClientSize = new System.Drawing.Size(1189, 781);
+            this.ClientSize = new System.Drawing.Size(1589, 1008);
+            this.Controls.Add(this.flowLayoutPanel9);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.pnlExpences);
             this.Controls.Add(this.tabControl1);
@@ -2551,35 +3121,27 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.piccurrentbox)).EndInit();
             this.flowLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.flowLayoutPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.flowLayoutPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.QuiqOverview.ResumeLayout(false);
             this.QuiqOverview.PerformLayout();
             this.flowLayoutPanel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.flowLayoutPanel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.flowLayoutPanel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -2588,130 +3150,174 @@
             this.flowLayoutPanel25.ResumeLayout(false);
             this.panel44.ResumeLayout(false);
             this.panel44.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
             this.panel45.ResumeLayout(false);
             this.panel45.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
             this.panel46.ResumeLayout(false);
             this.panel46.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
             this.panel47.ResumeLayout(false);
             this.panel47.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
             this.flowLayoutPanel26.ResumeLayout(false);
             this.panel48.ResumeLayout(false);
             this.panel48.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
             this.panel50.ResumeLayout(false);
             this.panel50.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
+            this.panel49.ResumeLayout(false);
+            this.panel49.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.flowLayoutPanel15.ResumeLayout(false);
             this.flowLayoutPanel16.ResumeLayout(false);
             this.panel23.ResumeLayout(false);
             this.panel23.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             this.panel24.ResumeLayout(false);
             this.panel24.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             this.panel26.ResumeLayout(false);
             this.panel26.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             this.flowLayoutPanel17.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
             this.panel27.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
             this.panel29.ResumeLayout(false);
             this.panel29.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.flowLayoutPanel18.ResumeLayout(false);
             this.flowLayoutPanel19.ResumeLayout(false);
             this.panel30.ResumeLayout(false);
             this.panel30.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             this.panel31.ResumeLayout(false);
             this.panel31.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             this.panel32.ResumeLayout(false);
             this.panel32.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             this.panel33.ResumeLayout(false);
             this.panel33.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             this.flowLayoutPanel20.ResumeLayout(false);
             this.panel34.ResumeLayout(false);
             this.panel34.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             this.panel36.ResumeLayout(false);
             this.panel36.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.flowLayoutPanel21.ResumeLayout(false);
             this.flowLayoutPanel22.ResumeLayout(false);
             this.panel37.ResumeLayout(false);
             this.panel37.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
             this.panel38.ResumeLayout(false);
             this.panel38.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
             this.panel39.ResumeLayout(false);
             this.panel39.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
             this.panel40.ResumeLayout(false);
             this.panel40.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
             this.flowLayoutPanel23.ResumeLayout(false);
             this.panel41.ResumeLayout(false);
             this.panel41.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
             this.panel43.ResumeLayout(false);
             this.panel43.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.flowLayoutPanel12.ResumeLayout(false);
             this.flowLayoutPanel13.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             this.flowLayoutPanel14.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
             this.pnlExpences.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            this.panel49.ResumeLayout(false);
-            this.panel49.PerformLayout();
+            this.flowLayoutPanel9.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            this.panel21.ResumeLayout(false);
+            this.panel21.PerformLayout();
+            this.panel28.ResumeLayout(false);
+            this.panel28.PerformLayout();
+            this.panel35.ResumeLayout(false);
+            this.panel35.PerformLayout();
+            this.panel42.ResumeLayout(false);
+            this.panel42.PerformLayout();
+            this.panel51.ResumeLayout(false);
+            this.panel51.PerformLayout();
+            this.panel52.ResumeLayout(false);
+            this.panel52.PerformLayout();
+            this.panel53.ResumeLayout(false);
+            this.panel53.PerformLayout();
+            this.panel54.ResumeLayout(false);
+            this.panel54.PerformLayout();
+            this.panel55.ResumeLayout(false);
+            this.panel55.PerformLayout();
+            this.panel56.ResumeLayout(false);
+            this.panel56.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piccurrentbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2919,5 +3525,52 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel9;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.Panel panel28;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.Panel panel35;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.PictureBox pictureBox20;
+        private System.Windows.Forms.Panel panel42;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.PictureBox pictureBox27;
+        private System.Windows.Forms.Panel panel51;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.PictureBox pictureBox34;
+        private System.Windows.Forms.Panel panel52;
+        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label label93;
+        private System.Windows.Forms.PictureBox pictureBox41;
+        private System.Windows.Forms.Panel panel53;
+        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.PictureBox pictureBox50;
+        private System.Windows.Forms.Panel panel54;
+        private System.Windows.Forms.Label label96;
+        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.PictureBox pictureBox51;
+        private System.Windows.Forms.Panel panel55;
+        private System.Windows.Forms.Label label98;
+        private System.Windows.Forms.Label label99;
+        private System.Windows.Forms.PictureBox pictureBox52;
+        private System.Windows.Forms.Panel panel56;
+        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.PictureBox pictureBox53;
     }
 }

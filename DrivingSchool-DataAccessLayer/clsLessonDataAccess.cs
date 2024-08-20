@@ -243,5 +243,15 @@ namespace DrivingSchool_DataAccessLayer
         {
             throw new NotImplementedException();
         }
+
+        public static int AddNewLesson(int candidateFileID, DateTime lessonDate, string notes, int applicationInstructorID, bool isCompleted)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static bool UpdateLesson(int lessonID, int candidateFileID, DateTime lessonDate, string notes, int applicationInstructorID, bool isCompleted)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

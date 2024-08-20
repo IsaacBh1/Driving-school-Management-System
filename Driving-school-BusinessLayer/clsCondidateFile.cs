@@ -3,7 +3,7 @@ using System;
 
 namespace Driving_school_BusinessLayer
 {
-    public class clsCandidateFile
+    public class clsCondidateFile
     {
         enum enMode { AddNew = 0, Update = 1 }
         enMode Mode = enMode.AddNew;
@@ -20,7 +20,7 @@ namespace Driving_school_BusinessLayer
         public int TheoreticalInstructorID { get; set; }
         public int ApplicationInstructorID { get; set; }
 
-        public clsCandidateFile()
+        public clsCondidateFile()
         {
             CandidateFileID = -1;
             StudentID = -1;
@@ -36,7 +36,7 @@ namespace Driving_school_BusinessLayer
             Mode = enMode.AddNew;
         }
 
-        private clsCandidateFile(int candidateFileID, int studentID, int drivingLicenseTypeID, string additionalNotes, bool isActive, DateTime creatingFileDate, bool isArchived, int groupID, int paymentID, int theoreticalInstructorID, int applicationInstructorID)
+        private clsCondidateFile(int candidateFileID, int studentID, int drivingLicenseTypeID, string additionalNotes, bool isActive, DateTime creatingFileDate, bool isArchived, int groupID, int paymentID, int theoreticalInstructorID, int applicationInstructorID)
         {
             CandidateFileID = candidateFileID;
             StudentID = studentID;
@@ -54,13 +54,13 @@ namespace Driving_school_BusinessLayer
 
         private bool _AddNewCandidateFile()
         {
-            CandidateFileID = clsCandidateFileDataAccess.AddNewCandidateFile(StudentID, DrivingLicenseTypeID, AdditionalNotes, IsActive, CreatingFileDate, IsArchived, GroupID, PaymentID, TheoreticalInstructorID, ApplicationInstructorID);
+            CandidateFileID = clsCondidateFileDataAccess.AddNewCondidateFile(StudentID, DrivingLicenseTypeID, AdditionalNotes, IsActive, CreatingFileDate, IsArchived, GroupID, PaymentID, TheoreticalInstructorID, ApplicationInstructorID);
             return CandidateFileID != -1;
         }
 
         private bool _UpdateCandidateFile()
         {
-            return clsCandidateFileDataAccess.UpdateCandidateFile(CandidateFileID, StudentID, DrivingLicenseTypeID, AdditionalNotes, IsActive, CreatingFileDate, IsArchived, GroupID, PaymentID, TheoreticalInstructorID, ApplicationInstructorID);
+            return clsCondidateFileDataAccess.UpdateCondidateFile(CandidateFileID, StudentID, DrivingLicenseTypeID, AdditionalNotes, IsActive, CreatingFileDate, IsArchived, GroupID, PaymentID, TheoreticalInstructorID, ApplicationInstructorID);
         }
 
         public bool Save()
@@ -80,7 +80,7 @@ namespace Driving_school_BusinessLayer
             return false;
         }
 
-        public static clsCandidateFile Find(int ID)
+        public static clsCondidateFile Find(int ID)
         {
             int _StudentID = -1;
             int _DrivingLicenseTypeID = -1;
@@ -95,7 +95,7 @@ namespace Driving_school_BusinessLayer
 
             if (clsCondidateFileDataAccess.GetCondidateFileInfoByID(ID ,ref _DrivingLicenseTypeID ,ref _AdditionalNotes ,ref _IsActive ,ref _CreatingFileDate ,ref _IsArchived ,ref _GroupID ,ref _PaymentID , ref _TheoreticalInstructorID , ref _ApplicationInstructorID))
             {
-                return new clsCandidateFile(ID, _StudentID, _DrivingLicenseTypeID, _AdditionalNotes, _IsActive, _CreatingFileDate, _IsArchived, _GroupID, _PaymentID, _TheoreticalInstructorID, _ApplicationInstructorID);
+                return new clsCondidateFile(ID, _StudentID, _DrivingLicenseTypeID, _AdditionalNotes, _IsActive, _CreatingFileDate, _IsArchived, _GroupID, _PaymentID, _TheoreticalInstructorID, _ApplicationInstructorID);
             }
             return null;
         }
