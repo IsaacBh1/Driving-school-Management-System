@@ -40,8 +40,6 @@ namespace Driving_school_BusinessLayer
             return (this.NamtionalCardID != -1); 
         }
 
-
-
         private bool _UpdateNationalCard()
         {
             return clsNationalCardDataAccess.UpdateNationalCard(NamtionalCardID ,  Type ,CardNumber , EndDate );
@@ -64,12 +62,8 @@ namespace Driving_school_BusinessLayer
             }
             return false; 
         }
-
-
         public static clsNationalCard Find(int ID)
         {
-            
-
             string _Type = string.Empty;
             string _CardNumber = string.Empty;
             DateTime _EndDate = DateTime.Now;
@@ -78,7 +72,7 @@ namespace Driving_school_BusinessLayer
             {
                 return new clsNationalCard(ID, _Type, _CardNumber, _EndDate); 
             }
-            return null; 
+            return null;
         }
 
         public static int Find(string _Type,string _CardNumber,DateTime _EndDate)

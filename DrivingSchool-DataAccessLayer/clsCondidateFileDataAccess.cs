@@ -257,5 +257,10 @@ namespace DrivingSchool_DataAccessLayer
         {
             return (GetCondidateFileIDByInfo(studentID, drivingLicenseTypeID, additionalNotes, isActive, creatingFileDate, isArchived, groupID, paymentID, theoreticalInstructorID, applicationInstructorID) != -1);
         }
+
+        public static bool GetCondidateFileInfoByID(int iD, ref int drivingLicenseTypeID, ref string additionalNotes, ref bool isActive, ref DateTime creatingFileDate, ref bool isArchived, ref int groupID, ref int paymentID, ref int theoreticalInstructorID, ref int applicationInstructorID)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

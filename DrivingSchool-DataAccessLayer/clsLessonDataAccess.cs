@@ -238,5 +238,10 @@ namespace DrivingSchool_DataAccessLayer
         {
             return (GetLessonIDByInfo(type, dateOfLessons, timeOfLesson, durationHours, durationMin, condidateFileID, instructor) != -1);
         }
+
+        public static bool GetLessonInfoByID(int iD, ref int candidateFileID, ref DateTime lessonDate, ref string notes, ref int applicationInstructorID, ref bool isCompleted)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

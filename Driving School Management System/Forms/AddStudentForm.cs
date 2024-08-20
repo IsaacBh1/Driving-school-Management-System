@@ -80,45 +80,18 @@ namespace Driving_School_Management_System.Forms
         {
             Close();
         }
-        public void CheckField(ref Guna.UI2.WinForms.Guna2TextBox txtBoxField)
+        //Guna.UI2.WinForms.Guna2TextBox
+        //MetroFramework.Controls.MetroComboBox
+        //TextBox
+        public void CheckField(Control txtBoxField)
         {
-
-            if (txtBoxField.Text == string.Empty || txtBoxField is null)
+            if (txtBoxField is TextBox textBox)
             {
+                textBox.BackColor = string.IsNullOrEmpty(textBox.Text) ? Color.IndianRed : Color.White;
 
-                txtBoxField.BorderColor = Color.IndianRed;
-                InformationCorrect = false;
-            } else
-            {
-                txtBoxField.BorderColor = Color.DarkGray;
+                InformationCorrect = !string.IsNullOrEmpty(textBox.Text) && InformationCorrect;
             }
-            InformationCorrect = true && InformationCorrect;
         }
-        public void CheckField(ref MetroFramework.Controls.MetroComboBox txtBoxField)
-        {
-            if (txtBoxField.Text == string.Empty || txtBoxField is null)
-            {
-
-                txtBoxField.BackColor = Color.IndianRed;
-                InformationCorrect = false;
-            }
-            txtBoxField.BackColor = Color.DarkGray;
-            InformationCorrect = true && InformationCorrect;
-        }
-        public void CheckField(ref TextBox txtBoxField)
-        {
-            if (txtBoxField.Text == string.Empty || txtBoxField is null)
-            {
-
-                txtBoxField.BackColor = Color.IndianRed;
-                InformationCorrect = false;
-            }
-            txtBoxField.BackColor = Color.DarkGray;
-            InformationCorrect = true && InformationCorrect;
-        }
-
-
-
         private int _SaveAddress()
         {
             address = new clsAddress() { Country = txtboxBirthPlace.Text ?? "", State = CBoxState.Text ?? "", LocalAddress = txtboxAddress.Text ?? ""};
@@ -175,19 +148,23 @@ namespace Driving_School_Management_System.Forms
         private bool _GetGender()
         {
             return true ? RbtnMale.Checked : false; 
-        }    
+        }
+
+        //Guna.UI2.WinForms.Guna2TextBox
+        //MetroFramework.Controls.MetroComboBox
+        //TextBox
         private void CheckPersonInformations()
         {
             InformationCorrect = true; 
-            CheckField(ref txtboxFirstName_Arabic);
-            CheckField(ref txtboxLastName_Arabic);
-            CheckField(ref txtboxFirstName);
-            CheckField(ref txtboxLastName);
-            CheckField(ref txtboxBirthPlace);
-            CheckField(ref txtbxPhone); ;
-            CheckField(ref CboxIdentityType);
-            CheckField(ref txtbxIdentityNumber);
-            CheckField(ref txtbxEmail);
+            CheckField(txtboxFirstName_Arabic);
+            CheckField ( txtboxLastName_Arabic);
+            CheckField(txtboxFirstName);
+            CheckField(txtboxLastName);
+            CheckField(txtboxBirthPlace);
+            CheckField(txtbxPhone); ;
+            CheckField(CboxIdentityType);
+            CheckField(txtbxIdentityNumber);
+            CheckField(txtbxEmail);
         }
 
 

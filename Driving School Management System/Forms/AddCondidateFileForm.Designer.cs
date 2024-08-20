@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.txtbxPrice = new System.Windows.Forms.NumericUpDown();
             this.txtbox_Email = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtboxEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.label31 = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.CBoxState = new MetroFramework.Controls.MetroComboBox();
+            this.CbxDrivingLicenseType = new MetroFramework.Controls.MetroComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.pnl = new CxFlatUI.CxFlatTabControl();
@@ -68,7 +68,7 @@
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
+            this.CbxPaymentType = new MetroFramework.Controls.MetroComboBox();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -81,11 +81,11 @@
             this.label16 = new System.Windows.Forms.Label();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtboxFirstName_Arabic = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtbxCondidateID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtboxLastName_Arabic = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtbxIdentityNumber = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -94,13 +94,13 @@
             this.errDrivingLicenseNumber = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.CbxGroup = new MetroFramework.Controls.MetroComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtbxPrice)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -124,7 +124,7 @@
             // panel14
             // 
             this.panel14.Controls.Add(this.label17);
-            this.panel14.Controls.Add(this.numericUpDown1);
+            this.panel14.Controls.Add(this.txtbxPrice);
             this.panel14.Controls.Add(this.txtbox_Email);
             this.panel14.Controls.Add(this.txtboxEmail);
             this.panel14.Controls.Add(this.label31);
@@ -144,12 +144,12 @@
             this.label17.TabIndex = 35;
             this.label17.Text = "DA";
             // 
-            // numericUpDown1
+            // txtbxPrice
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(70, 11);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(174, 39);
-            this.numericUpDown1.TabIndex = 32;
+            this.txtbxPrice.Location = new System.Drawing.Point(70, 11);
+            this.txtbxPrice.Name = "txtbxPrice";
+            this.txtbxPrice.Size = new System.Drawing.Size(174, 39);
+            this.txtbxPrice.TabIndex = 32;
             // 
             // txtbox_Email
             // 
@@ -515,7 +515,7 @@
             this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel8.Controls.Add(this.label7);
-            this.panel8.Controls.Add(this.CBoxState);
+            this.panel8.Controls.Add(this.CbxDrivingLicenseType);
             this.panel8.Controls.Add(this.label15);
             this.panel8.Location = new System.Drawing.Point(494, 194);
             this.panel8.Name = "panel8";
@@ -533,23 +533,23 @@
             this.label7.TabIndex = 21;
             this.label7.Text = "*";
             // 
-            // CBoxState
+            // CbxDrivingLicenseType
             // 
-            this.CBoxState.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CbxDrivingLicenseType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CBoxState.FormattingEnabled = true;
-            this.CBoxState.ItemHeight = 23;
-            this.CBoxState.Items.AddRange(new object[] {
+            this.CbxDrivingLicenseType.FormattingEnabled = true;
+            this.CbxDrivingLicenseType.ItemHeight = 23;
+            this.CbxDrivingLicenseType.Items.AddRange(new object[] {
             "A",
             "AB",
             "B",
             "C",
             "AC"});
-            this.CBoxState.Location = new System.Drawing.Point(46, 62);
-            this.CBoxState.Name = "CBoxState";
-            this.CBoxState.Size = new System.Drawing.Size(365, 29);
-            this.CBoxState.TabIndex = 20;
-            this.CBoxState.UseSelectable = true;
+            this.CbxDrivingLicenseType.Location = new System.Drawing.Point(46, 62);
+            this.CbxDrivingLicenseType.Name = "CbxDrivingLicenseType";
+            this.CbxDrivingLicenseType.Size = new System.Drawing.Size(365, 29);
+            this.CbxDrivingLicenseType.TabIndex = 20;
+            this.CbxDrivingLicenseType.UseSelectable = true;
             // 
             // label15
             // 
@@ -736,7 +736,7 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.metroComboBox2);
+            this.panel6.Controls.Add(this.CbxPaymentType);
             this.panel6.Controls.Add(this.guna2TextBox4);
             this.panel6.Controls.Add(this.guna2TextBox5);
             this.panel6.Controls.Add(this.label12);
@@ -746,22 +746,22 @@
             this.panel6.Size = new System.Drawing.Size(442, 61);
             this.panel6.TabIndex = 33;
             // 
-            // metroComboBox2
+            // CbxPaymentType
             // 
-            this.metroComboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CbxPaymentType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroComboBox2.FormattingEnabled = true;
-            this.metroComboBox2.ItemHeight = 23;
-            this.metroComboBox2.Items.AddRange(new object[] {
+            this.CbxPaymentType.FormattingEnabled = true;
+            this.CbxPaymentType.ItemHeight = 23;
+            this.CbxPaymentType.Items.AddRange(new object[] {
             "نقديا",
             "بطاقات الائتمان",
             "الشيكات المصرفية ",
             "الحوالات البريدية"});
-            this.metroComboBox2.Location = new System.Drawing.Point(19, 17);
-            this.metroComboBox2.Name = "metroComboBox2";
-            this.metroComboBox2.Size = new System.Drawing.Size(225, 29);
-            this.metroComboBox2.TabIndex = 23;
-            this.metroComboBox2.UseSelectable = true;
+            this.CbxPaymentType.Location = new System.Drawing.Point(19, 17);
+            this.CbxPaymentType.Name = "CbxPaymentType";
+            this.CbxPaymentType.Size = new System.Drawing.Size(225, 29);
+            this.CbxPaymentType.TabIndex = 23;
+            this.CbxPaymentType.UseSelectable = true;
             // 
             // guna2TextBox4
             // 
@@ -959,12 +959,13 @@
             this.btnSubmit.Size = new System.Drawing.Size(126, 44);
             this.btnSubmit.TabIndex = 33;
             this.btnSubmit.Text = "التسجيل";
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.txtboxFirstName_Arabic);
+            this.panel1.Controls.Add(this.txtbxCondidateID);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(493, 73);
@@ -972,31 +973,31 @@
             this.panel1.Size = new System.Drawing.Size(429, 107);
             this.panel1.TabIndex = 23;
             // 
-            // txtboxFirstName_Arabic
+            // txtbxCondidateID
             // 
-            this.txtboxFirstName_Arabic.BorderColor = System.Drawing.Color.DarkGray;
-            this.txtboxFirstName_Arabic.BorderRadius = 5;
-            this.txtboxFirstName_Arabic.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtboxFirstName_Arabic.DefaultText = "";
-            this.txtboxFirstName_Arabic.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtboxFirstName_Arabic.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtboxFirstName_Arabic.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxFirstName_Arabic.DisabledState.Parent = this.txtboxFirstName_Arabic;
-            this.txtboxFirstName_Arabic.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxFirstName_Arabic.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxFirstName_Arabic.FocusedState.Parent = this.txtboxFirstName_Arabic;
-            this.txtboxFirstName_Arabic.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxFirstName_Arabic.HoverState.Parent = this.txtboxFirstName_Arabic;
-            this.txtboxFirstName_Arabic.Location = new System.Drawing.Point(47, 62);
-            this.txtboxFirstName_Arabic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtboxFirstName_Arabic.Name = "txtboxFirstName_Arabic";
-            this.txtboxFirstName_Arabic.PasswordChar = '\0';
-            this.txtboxFirstName_Arabic.PlaceholderText = "ex : 38";
-            this.txtboxFirstName_Arabic.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtboxFirstName_Arabic.SelectedText = "";
-            this.txtboxFirstName_Arabic.ShadowDecoration.Parent = this.txtboxFirstName_Arabic;
-            this.txtboxFirstName_Arabic.Size = new System.Drawing.Size(364, 34);
-            this.txtboxFirstName_Arabic.TabIndex = 20;
+            this.txtbxCondidateID.BorderColor = System.Drawing.Color.DarkGray;
+            this.txtbxCondidateID.BorderRadius = 5;
+            this.txtbxCondidateID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtbxCondidateID.DefaultText = "";
+            this.txtbxCondidateID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtbxCondidateID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtbxCondidateID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxCondidateID.DisabledState.Parent = this.txtbxCondidateID;
+            this.txtbxCondidateID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxCondidateID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxCondidateID.FocusedState.Parent = this.txtbxCondidateID;
+            this.txtbxCondidateID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxCondidateID.HoverState.Parent = this.txtbxCondidateID;
+            this.txtbxCondidateID.Location = new System.Drawing.Point(47, 62);
+            this.txtbxCondidateID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbxCondidateID.Name = "txtbxCondidateID";
+            this.txtbxCondidateID.PasswordChar = '\0';
+            this.txtbxCondidateID.PlaceholderText = "ex : 38";
+            this.txtbxCondidateID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtbxCondidateID.SelectedText = "";
+            this.txtbxCondidateID.ShadowDecoration.Parent = this.txtbxCondidateID;
+            this.txtbxCondidateID.Size = new System.Drawing.Size(364, 34);
+            this.txtbxCondidateID.TabIndex = 20;
             // 
             // label3
             // 
@@ -1025,7 +1026,7 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.txtboxLastName_Arabic);
+            this.panel2.Controls.Add(this.txtbxIdentityNumber);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(14, 73);
@@ -1033,31 +1034,31 @@
             this.panel2.Size = new System.Drawing.Size(473, 107);
             this.panel2.TabIndex = 24;
             // 
-            // txtboxLastName_Arabic
+            // txtbxIdentityNumber
             // 
-            this.txtboxLastName_Arabic.BorderColor = System.Drawing.Color.DarkGray;
-            this.txtboxLastName_Arabic.BorderRadius = 5;
-            this.txtboxLastName_Arabic.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtboxLastName_Arabic.DefaultText = "";
-            this.txtboxLastName_Arabic.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtboxLastName_Arabic.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtboxLastName_Arabic.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxLastName_Arabic.DisabledState.Parent = this.txtboxLastName_Arabic;
-            this.txtboxLastName_Arabic.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxLastName_Arabic.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxLastName_Arabic.FocusedState.Parent = this.txtboxLastName_Arabic;
-            this.txtboxLastName_Arabic.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxLastName_Arabic.HoverState.Parent = this.txtboxLastName_Arabic;
-            this.txtboxLastName_Arabic.Location = new System.Drawing.Point(66, 62);
-            this.txtboxLastName_Arabic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtboxLastName_Arabic.Name = "txtboxLastName_Arabic";
-            this.txtboxLastName_Arabic.PasswordChar = '\0';
-            this.txtboxLastName_Arabic.PlaceholderText = "ex : 376387";
-            this.txtboxLastName_Arabic.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtboxLastName_Arabic.SelectedText = "";
-            this.txtboxLastName_Arabic.ShadowDecoration.Parent = this.txtboxLastName_Arabic;
-            this.txtboxLastName_Arabic.Size = new System.Drawing.Size(398, 34);
-            this.txtboxLastName_Arabic.TabIndex = 24;
+            this.txtbxIdentityNumber.BorderColor = System.Drawing.Color.DarkGray;
+            this.txtbxIdentityNumber.BorderRadius = 5;
+            this.txtbxIdentityNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtbxIdentityNumber.DefaultText = "";
+            this.txtbxIdentityNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtbxIdentityNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtbxIdentityNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxIdentityNumber.DisabledState.Parent = this.txtbxIdentityNumber;
+            this.txtbxIdentityNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxIdentityNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxIdentityNumber.FocusedState.Parent = this.txtbxIdentityNumber;
+            this.txtbxIdentityNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxIdentityNumber.HoverState.Parent = this.txtbxIdentityNumber;
+            this.txtbxIdentityNumber.Location = new System.Drawing.Point(66, 62);
+            this.txtbxIdentityNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbxIdentityNumber.Name = "txtbxIdentityNumber";
+            this.txtbxIdentityNumber.PasswordChar = '\0';
+            this.txtbxIdentityNumber.PlaceholderText = "ex : 376387";
+            this.txtbxIdentityNumber.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtbxIdentityNumber.SelectedText = "";
+            this.txtbxIdentityNumber.ShadowDecoration.Parent = this.txtbxIdentityNumber;
+            this.txtbxIdentityNumber.Size = new System.Drawing.Size(398, 34);
+            this.txtbxIdentityNumber.TabIndex = 24;
             // 
             // label4
             // 
@@ -1065,7 +1066,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.Salmon;
-            this.label4.Location = new System.Drawing.Point(308, 30);
+            this.label4.Location = new System.Drawing.Point(322, 30);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(18, 19);
             this.label4.TabIndex = 11;
@@ -1077,11 +1078,11 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(330, 20);
+            this.label5.Location = new System.Drawing.Point(343, 20);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(134, 31);
+            this.label5.Size = new System.Drawing.Size(121, 31);
             this.label5.TabIndex = 9;
-            this.label5.Text = "رقم البطاقة";
+            this.label5.Text = "رقم الهوية";
             // 
             // pictureBox1
             // 
@@ -1129,7 +1130,7 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.metroComboBox1);
+            this.panel3.Controls.Add(this.CbxGroup);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Location = new System.Drawing.Point(15, 194);
             this.panel3.Name = "panel3";
@@ -1147,24 +1148,24 @@
             this.label9.TabIndex = 22;
             this.label9.Text = "*";
             // 
-            // metroComboBox1
+            // CbxGroup
             // 
-            this.metroComboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CbxGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Items.AddRange(new object[] {
+            this.CbxGroup.FormattingEnabled = true;
+            this.CbxGroup.ItemHeight = 23;
+            this.CbxGroup.Items.AddRange(new object[] {
             "A1",
             "A2",
             "A3",
             "B1",
             "B2",
             "B3"});
-            this.metroComboBox1.Location = new System.Drawing.Point(65, 62);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(399, 29);
-            this.metroComboBox1.TabIndex = 20;
-            this.metroComboBox1.UseSelectable = true;
+            this.CbxGroup.Location = new System.Drawing.Point(65, 62);
+            this.CbxGroup.Name = "CbxGroup";
+            this.CbxGroup.Size = new System.Drawing.Size(399, 29);
+            this.CbxGroup.TabIndex = 20;
+            this.CbxGroup.UseSelectable = true;
             // 
             // label6
             // 
@@ -1250,7 +1251,7 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtbxPrice)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
@@ -1294,7 +1295,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel8;
-        private MetroFramework.Controls.MetroComboBox CBoxState;
+        private MetroFramework.Controls.MetroComboBox CbxDrivingLicenseType;
         private System.Windows.Forms.Label label15;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private CxFlatUI.CxFlatTabControl pnl;
@@ -1302,11 +1303,11 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private Guna.UI2.WinForms.Guna2Button btnSubmit;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2TextBox txtboxFirstName_Arabic;
+        private Guna.UI2.WinForms.Guna2TextBox txtbxCondidateID;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2TextBox txtboxLastName_Arabic;
+        private Guna.UI2.WinForms.Guna2TextBox txtbxIdentityNumber;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -1314,14 +1315,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ErrorProvider errDrivingLicenseNumber;
         private System.Windows.Forms.Panel panel3;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private MetroFramework.Controls.MetroComboBox CbxGroup;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown txtbxPrice;
         private System.Windows.Forms.Panel panel5;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
@@ -1335,7 +1336,7 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
         private System.Windows.Forms.Label label16;
-        private MetroFramework.Controls.MetroComboBox metroComboBox2;
+        private MetroFramework.Controls.MetroComboBox CbxPaymentType;
         private System.Windows.Forms.Label label17;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox8;
         private System.Windows.Forms.Label label18;

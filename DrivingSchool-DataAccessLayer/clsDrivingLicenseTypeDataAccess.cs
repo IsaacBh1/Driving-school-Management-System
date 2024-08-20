@@ -35,7 +35,7 @@ namespace DrivingSchool_DataAccessLayer
             return DrivingLicenseTypes;
         }
 
-        public static bool GetDrivingLicenseTypeInfoByID(int drivingLicenseTypeID, ref string Name, ref decimal Price, ref bool? Situation, ref int? NumberOfLessons_Theo, ref int? NumberOfLessons_App, ref string IconImagePath, ref int? Instructor_TheoID, ref int? Instructor_AppID)
+        public static bool GetDrivingLicenseTypeInfoByID(int drivingLicenseTypeID, ref string Name, ref decimal Price, ref bool Situation, ref int NumberOfLessons_Theo, ref int NumberOfLessons_App, ref string IconImagePath, ref int Instructor_TheoID, ref int Instructor_AppID)
         {
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
             string query = "select * from DrivingLicenseTypes where DrivingLiceseTypeID = @drivingLicenseTypeID";
@@ -51,12 +51,12 @@ namespace DrivingSchool_DataAccessLayer
                     IsFound = true;
                     Name = (string)reader["Name"];
                     Price = (decimal)reader["Price"];
-                    Situation = reader["Situation"] as bool?;
-                    NumberOfLessons_Theo = reader["NumberOfLessons_Theo"] as int?;
-                    NumberOfLessons_App = reader["NumberOfLessons_App"] as int?;
+                    Situation =(bool) reader["Situation"] ;
+                    NumberOfLessons_Theo = (int)reader["NumberOfLessons_Theo"];
+                    NumberOfLessons_App = (int)reader["NumberOfLessons_App"];
                     IconImagePath = reader["IconImagePath"] as string;
-                    Instructor_TheoID = reader["Instructor_TheoID"] as int?;
-                    Instructor_AppID = reader["Instructor_AppID"] as int?;
+                    Instructor_TheoID = (int)reader["Instructor_TheoID"];
+                    Instructor_AppID = (int)reader["Instructor_AppID"];
                 }
                 reader.Close();
                 return IsFound;

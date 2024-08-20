@@ -42,13 +42,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsAddress.cs" />
+    <Compile Include="clsBatch.cs" />
+    <Compile Include="clsCondidateFile.cs" />
     <Compile Include="clsContact.cs" />
     <Compile Include="clsDrivingLicense.cs" />
+    <Compile Include="clsDrivingLicenseType.cs" />
+    <Compile Include="clsExam.cs" />
+    <Compile Include="clsExamType.cs" />
+    <Compile Include="clsExpense.cs" />
+    <Compile Include="clsGroup.cs" />
     <Compile Include="clsInstructor.cs" />
-    <Compile Include="clsNamtionalCard.cs" />
+    <Compile Include="clsLesson.cs" />
+    <Compile Include="clsMoneyBank.cs" />
+    <Compile Include="clsNationalCard.cs" />
+    <Compile Include="clsPayment.cs" />
     <Compile Include="clsPerson.cs" />
     <Compile Include="clsStudent.cs" />
     <Compile Include="clsUser.cs" />
+    <Compile Include="clsFuelTypes.cs" />
+    <Compile Include="clsVehicle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

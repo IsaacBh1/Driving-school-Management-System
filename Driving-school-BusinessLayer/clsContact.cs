@@ -40,8 +40,8 @@ namespace DrivingSchool_BusinesseLayer
 
         public bool _AddNewContact()
         {
-            this.contactID = clsContactDataAccess.AddNewContact(Phone, Email, AdditionalContact);
-            return (this.contactID != -1);
+            contactID = clsContactDataAccess.AddNewContact(Phone, Email, AdditionalContact);
+            return (contactID != -1);
         }
 
 
@@ -94,7 +94,6 @@ namespace DrivingSchool_BusinesseLayer
             {
                 return null;
             }
-
 
         }
 

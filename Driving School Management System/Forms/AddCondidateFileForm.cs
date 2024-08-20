@@ -7,18 +7,15 @@ namespace Driving_School_Management_System.Forms
 {
     public partial class AddCondidateFileForm : Form
     {
-
-
-
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+       [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
           (
-              int nLeftRect,     // x-coordinate of upper-left corner
-              int nTopRect,      // y-coordinate of upper-left corner
-              int nRightRect,    // x-coordinate of lower-right corner
-              int nBottomRect,   // y-coordinate of lower-right corner
-              int nWidthEllipse, // width of ellipse
-              int nHeightEllipse // height of ellipse
+              int nLeftRect,     
+              int nTopRect,      
+              int nRightRect,    
+              int nBottomRect,   
+              int nWidthEllipse, 
+              int nHeightEllipse 
           );
 
 
@@ -41,6 +38,11 @@ namespace Driving_School_Management_System.Forms
             }
         }
 
+        private bool InformationCorrect = true;
+        private StatusMessageForm statusMessageForm;
+
+
+
         public AddCondidateFileForm()
         {
             InitializeComponent();
@@ -48,16 +50,73 @@ namespace Driving_School_Management_System.Forms
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            this.Close(); 
-        }
-
+        private void pictureBox1_Click(object sender, EventArgs e)=>Close();
         
+
+        private void guna2Button2_Click(object sender, EventArgs e) => Close(); 
+       
+
+        public void CheckField(Control txtBoxField)
+        {
+            if (txtBoxField is Guna.UI2.WinForms.Guna2TextBox GunatextBox)
+            {
+                GunatextBox.BorderColor = string.IsNullOrEmpty(GunatextBox.Text) ? Color.IndianRed : Color.White;
+                InformationCorrect = !string.IsNullOrEmpty(GunatextBox.Text) && InformationCorrect;
+
+            }
+            else if(txtBoxField is NumericUpDown NumInput)
+            {
+                NumInput.BackColor = string.IsNullOrEmpty(NumInput.Text) ? Color.Gray : Color.White;
+                InformationCorrect = !string.IsNullOrEmpty(NumInput.Text) && InformationCorrect;
+            }
+            else if (txtBoxField is MetroFramework.Controls.MetroComboBox MetroInput)
+            {
+                MetroInput.BackColor = string.IsNullOrEmpty(MetroInput.Text) ? Color.Gray : Color.White;
+                InformationCorrect = !string.IsNullOrEmpty(MetroInput.Text) && InformationCorrect;
+
+            }
+        }
+
+
+        public void CheckCondidatesFileInformations()
+        {
+            InformationCorrect = true; 
+            CheckField(txtbxCondidateID); 
+            CheckField(txtbxIdentityNumber); 
+            CheckField(txtbxPrice); 
+            CheckField(CbxDrivingLicenseType); 
+            CheckField(CbxGroup); 
+            CheckField(CbxPaymentType); 
+        }
+
+        private bool _SaveCondidatesFile()
+        {
+            return true; 
+        }
+
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            CheckCondidatesFileInformations(); 
+            if (InformationCorrect)
+            {
+                //this is the code to save on DB 
+                if (_SaveCondidatesFile())
+                {
+                    // MessageBox.Show("student is saved successfully with ID = " + student.StudentID);
+                    statusMessageForm = new StatusMessageForm("File Saved Successfully");
+                    statusMessageForm.ShowSuccess();
+                    Close();
+                }
+                else
+                {
+                    statusMessageForm = new StatusMessageForm("File not Saved");
+                    statusMessageForm.ShowFailed();
+                }
+            }
+            else
+                MessageBox.Show("هناك معلومات مفقودة", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+        }
     }
 }

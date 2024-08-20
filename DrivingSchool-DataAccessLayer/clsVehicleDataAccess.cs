@@ -35,7 +35,7 @@ namespace DrivingSchool_DataAccessLayer
             return Vehicles;
         }
 
-        public static bool GetVehicleInfoByID(int vehicleID, ref string Name, ref string RegestrationNumber, ref string Mark, ref string Type, ref string Model, ref string Color, ref string ImagePath, ref DateTime? DateOfUsage, ref string AdditionalNotes, ref int? FuelType, ref int? DrivingLicenseTypeID)
+        public static bool GetVehicleInfoByID(int vehicleID, ref string Name, ref string RegestrationNumber, ref string Mark, ref string Type, ref string Model, ref string Color, ref string ImagePath, ref DateTime? DateOfUsage, ref string AdditionalNotes, ref int FuelType, ref int DrivingLicenseTypeID)
         {
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
             string query = "SELECT * FROM Vehicles WHERE VehicleID = @vehicleID";
@@ -58,8 +58,8 @@ namespace DrivingSchool_DataAccessLayer
                     ImagePath = reader["ImagePath"] as string;
                     DateOfUsage = reader["DateOfUsage"] as DateTime?;
                     AdditionalNotes = reader["AdditionalNotes"] as string;
-                    FuelType = reader["FuelType"] as int?;
-                    DrivingLicenseTypeID = reader["DrivingLicenseTypeID"] as int?;
+                    FuelType =(int) reader["FuelType"] ;
+                    DrivingLicenseTypeID = (int)reader["DrivingLicenseTypeID"];
                 }
                 reader.Close();
                 return IsFound;
