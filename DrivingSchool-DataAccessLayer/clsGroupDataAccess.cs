@@ -35,6 +35,34 @@ namespace DrivingSchool_DataAccessLayer
             return Groups;
         }
 
+        public static DataTable GetAllNamesGroups()
+        {
+            DataTable Groups = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "SELECT Name FROM Groups;";
+            SqlCommand command = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    Groups.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return Groups;
+        }
+
+
         public static bool GetGroupInfoByID(int groupID, ref int GroupNumber, ref int NumberOfMembers, ref int DrivingLicenseTypesID)
         {
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
@@ -232,6 +260,27 @@ namespace DrivingSchool_DataAccessLayer
                 connection.Close();
             }
             return totalMembers;
+        }
+        public static int GetGroupIDbyName(string name)
+        {
+            int ID = -1 ;
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = @"select GroupID from Groups where Name = @name; "; 
+            SqlCommand command = new SqlCommand(query , connection);
+            command.Parameters.AddWithValue("@name", name); 
+            try
+            {
+                connection.Open();
+                var i = command.ExecuteScalar(); 
+                if(i!= null && int.TryParse(i.ToString(), out int id))
+                {
+                    ID = id;
+                }
+                return ID; 
+            }
+
+            catch { return -1; }
+            finally { connection.Close(); }
         }
     }
 }

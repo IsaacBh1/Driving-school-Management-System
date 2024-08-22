@@ -7,19 +7,23 @@ namespace Driving_school_BusinessLayer
     {
         enum enMode { AddNew = 0, Update = 1 }
         enMode Mode = enMode.AddNew;
-
         public int CandidateFileID { get; set; }
         public int StudentID { get; set; }
+        public clsStudent Student {  get; set; }
         public int DrivingLicenseTypeID { get; set; }
         public string AdditionalNotes { get; set; }
         public bool IsActive { get; set; }
         public DateTime CreatingFileDate { get; set; }
         public bool IsArchived { get; set; }
         public int GroupID { get; set; }
+        public clsGroup Group {  get; set; }
         public int PaymentID { get; set; }
+        public clsPayment Payment { get; set; }
         public int TheoreticalInstructorID { get; set; }
         public int ApplicationInstructorID { get; set; }
-
+        public clsDrivingLicenseType drivingLicenseType {  get; set; }
+        public clsInstructor TheoreticalInstructor {get ; set;}
+        public clsInstructor ApplicationInstructor { get; set;}
         public clsCondidateFile()
         {
             CandidateFileID = -1;
@@ -40,15 +44,22 @@ namespace Driving_school_BusinessLayer
         {
             CandidateFileID = candidateFileID;
             StudentID = studentID;
+            Student = clsStudent.Find(StudentID); 
             DrivingLicenseTypeID = drivingLicenseTypeID;
+            drivingLicenseType = clsDrivingLicenseType.Find(DrivingLicenseTypeID); 
             AdditionalNotes = additionalNotes;
             IsActive = isActive;
             CreatingFileDate = creatingFileDate;
             IsArchived = isArchived;
             GroupID = groupID;
+            Group = clsGroup.Find(GroupID); 
             PaymentID = paymentID;
+            Payment = clsPayment.Find(PaymentID);
             TheoreticalInstructorID = theoreticalInstructorID;
             ApplicationInstructorID = applicationInstructorID;
+            TheoreticalInstructor = clsInstructor.Find(TheoreticalInstructorID); 
+            ApplicationInstructor = clsInstructor.Find(ApplicationInstructorID);
+
             Mode = enMode.Update;
         }
 

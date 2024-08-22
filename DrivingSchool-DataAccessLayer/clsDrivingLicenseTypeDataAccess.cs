@@ -35,6 +35,35 @@ namespace DrivingSchool_DataAccessLayer
             return DrivingLicenseTypes;
         }
 
+        public static DataTable GetAllNamesDrivingLicenseTypes()
+        {
+            DataTable DrivingLicenseTypes = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select Name from DrivingLicenseTypes;";
+            SqlCommand command = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    DrivingLicenseTypes.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return DrivingLicenseTypes;
+        }
+
+
+
         public static bool GetDrivingLicenseTypeInfoByID(int drivingLicenseTypeID, ref string Name, ref decimal Price, ref bool Situation, ref int NumberOfLessons_Theo, ref int NumberOfLessons_App, ref string IconImagePath, ref int Instructor_TheoID, ref int Instructor_AppID)
         {
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
@@ -243,6 +272,86 @@ namespace DrivingSchool_DataAccessLayer
             }
             return ID;
         }
+
+        public static int GetDrivingLicenseTypeIDByName(string Name)
+        {
+            int ID = -1;
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = @"select DrivingLiceseTypeID from DrivingLicenseTypes where Name = @Name ;"; 
+             
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@Name", Name);
+       
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        ID = (int)reader["DrivingLiceseTypeID"];
+                    }
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return -1;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return ID;
+        }
+
+
+        public static decimal GetDrivingLicenseTypePriceByID(int ID)
+        {
+            decimal Price = 0;
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = @"select Price from DrivingLicenseTypes where DrivingLiceseTypeID = @ID ;";
+
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@ID", ID);
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Price = (decimal)reader["Price"];
+                    }
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return -1;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return Price;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         public static bool IsDrivingLicenseTypeExists(string Name, decimal Price, bool? Situation, int? NumberOfLessons_Theo, int? NumberOfLessons_App, string IconImagePath, int? Instructor_TheoID, int? Instructor_AppID)
         {

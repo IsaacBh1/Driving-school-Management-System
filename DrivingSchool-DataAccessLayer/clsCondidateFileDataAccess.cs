@@ -77,6 +77,8 @@ namespace DrivingSchool_DataAccessLayer
         public static int AddNewCondidateFile(int studentID, int drivingLicenseTypeID, string additionalNotes, bool isActive, DateTime creatingFileDate, bool isArchived, int groupID, int paymentID, int theoreticalInstructorID, int applicationInstructorID)
         {
             int id = -1;
+            int ISAcrtive = isActive == true ? 1 : 0;
+            int IsArchived = isArchived == true ? 1 : 0;
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
             string query = "insert into CondidateFiles (StudentID, DrivingLicenseTypeID, AdditionalNotes, IsActive, CreatingFileDate, IsArchived, GroupID, PaymentID, theoreticalInstructorID, ApplicationInstructorID) Values (@StudentID, @DrivingLicenseTypeID, @AdditionalNotes, @IsActive, @CreatingFileDate, @IsArchived, @GroupID, @PaymentID, @theoreticalInstructorID, @ApplicationInstructorID);" +
                 "select SCOPE_IDENTITY();";
@@ -85,9 +87,9 @@ namespace DrivingSchool_DataAccessLayer
             command.Parameters.AddWithValue("@StudentID", studentID);
             command.Parameters.AddWithValue("@DrivingLicenseTypeID", drivingLicenseTypeID);
             command.Parameters.AddWithValue("@AdditionalNotes", additionalNotes);
-            command.Parameters.AddWithValue("@IsActive", isActive);
+            command.Parameters.AddWithValue("@IsActive", ISAcrtive);
             command.Parameters.AddWithValue("@CreatingFileDate", creatingFileDate);
-            command.Parameters.AddWithValue("@IsArchived", isArchived);
+            command.Parameters.AddWithValue("@IsArchived", IsArchived);
             command.Parameters.AddWithValue("@GroupID", groupID);
             command.Parameters.AddWithValue("@PaymentID", paymentID);
             command.Parameters.AddWithValue("@theoreticalInstructorID", theoreticalInstructorID);

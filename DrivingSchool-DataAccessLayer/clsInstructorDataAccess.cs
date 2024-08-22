@@ -35,6 +35,37 @@ namespace DrivingSchool_DataAccessLayer
             return Instructors;
         }
 
+
+        public static DataTable GetAllInstructorsUserNames()
+        {
+            DataTable Instructors = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select UserName from Instructors;";
+            SqlCommand command = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    Instructors.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return Instructors;
+        }
+
+
+
+
         public static bool GetInstructorInfoByID(int instructorID, ref int PersonID, ref string UserName, ref bool Gender, ref int DrivingLicenseID, ref int NationalCardID)
         {
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
@@ -226,9 +257,47 @@ namespace DrivingSchool_DataAccessLayer
             return ID;
         }
 
-        public static bool IsInstructorExists(int PersonID, string UserName, bool Gender, int DrivingLicenseID, int NationalCardID)
+        public static bool IsInstructorExists(int PersonID, string UserName, bool Gender, int DrivingLicenseID, int NationalCardID) =>
+            (GetInstructorIDByInfo(PersonID, UserName, Gender, DrivingLicenseID, NationalCardID) != -1);
+
+        public static int GetInstructorIDByUserName(string UserName)
         {
-            return (GetInstructorIDByInfo(PersonID, UserName, Gender, DrivingLicenseID, NationalCardID) != -1);
+            int ID = -1;
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select InstructorID from Instructors where UserName = @UserName ; "; 
+
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@UserName", UserName);
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        ID = (int)reader["InstructorID"];
+                    }
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return -1;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return ID;
         }
+
+
+    
+
+
+
+
     }
 }

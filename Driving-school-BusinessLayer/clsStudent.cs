@@ -136,7 +136,15 @@ namespace Driving_school_BusinessLayer
            return clsStudentDataAccess.SearchStudentByAll(id, FirstName, LastName, IdentityNumber); 
         }
 
-
+        public static int GetStudentIDByIdentityNumber(string IdentityNumber)
+        {
+            return clsStudentDataAccess.GetStudentIDByIdentityNumber(IdentityNumber);
+        }
+        //GetStudentIdentityNumberByID
+        public static string GetStudentIdentityNumberByID(int ID)
+        {
+            return clsStudentDataAccess.GetStudentIdentityNumberByID(ID);
+        }
     }
 }
 

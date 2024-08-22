@@ -1,5 +1,6 @@
 ﻿using DrivingSchool_DataAccessLayer;
 using System;
+using System.Data;
 
 namespace Driving_school_BusinessLayer
 {
@@ -112,5 +113,15 @@ namespace Driving_school_BusinessLayer
             }
             return null;
         }
+   
+        public static DataTable GetAllVehiclesNames()
+        {
+            return clsVehicleDataAccess.GetAllVehiclesNames(); 
+        }
+        public static int GetVehicleIDByVehicleName(string Name)
+        {
+            return clsVehicleDataAccess.GetVehicleIDByVehicleName(Name); 
+        }
+        
     }
 }

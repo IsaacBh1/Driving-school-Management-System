@@ -104,6 +104,71 @@ namespace DrivingSchool_DataAccessLayer
             }
         }
 
+        public static int GetStudentIDByIdentityNumber(string IdentityNumber)
+        {
+            int Id = -1;
+            SqlConnection sqlConnection = new SqlConnection(ConnectionString);          
+            string query = @"select StudentID from Students 
+                            inner join NationalCards on NationalCards.NationalCardID = Students.NationalCardID 
+                            where CardNumber = @IdentityNumber;";
+
+            SqlCommand command = new SqlCommand(query, sqlConnection);
+            command.Parameters.AddWithValue("@IdentityNumber", IdentityNumber);
+           
+            try
+            {
+                sqlConnection.Open();
+                object result = command.ExecuteScalar();
+                if (result != null && int.TryParse(result.ToString(), out int ID))
+                {
+                    Id = ID;
+                }
+                return Id;
+            }
+            catch
+            {
+                return -1;
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
+        }
+
+        public static string GetStudentIdentityNumberByID(int ID )
+        {
+            string IdentityNumber = string.Empty;
+            SqlConnection sqlConnection = new SqlConnection(ConnectionString);
+            string query = @"select CardNumber from Students 
+                            inner join NationalCards on NationalCards.NationalCardID = Students.NationalCardID 
+                            where StudentID = @ID;";
+
+            SqlCommand command = new SqlCommand(query, sqlConnection);
+            command.Parameters.AddWithValue("@ID", ID);
+
+            try
+            {
+                sqlConnection.Open();
+                object result = command.ExecuteScalar();
+                if (result != null)
+                {
+                    IdentityNumber= result.ToString();
+                }
+                return IdentityNumber;
+            }
+            catch
+            {
+                return "";
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
+        }
+
+
+
+
         public static bool UpdateStudent(int studentID, int PersonID, string UserName, DateTime BirthDate, string BirthCountry, bool Gender, int NationalCardID)
         {
             int AffectedRows = 0;
@@ -290,6 +355,7 @@ namespace DrivingSchool_DataAccessLayer
             }
             return StudentsInfo;
         }
+        
 
         public static DataTable SearchStudentInfoFirstName_Arabic(string Name)
         {

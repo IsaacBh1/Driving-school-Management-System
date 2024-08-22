@@ -1,4 +1,5 @@
 ﻿using DrivingSchool_DataAccessLayer;
+using System.Data;
 
 
 namespace Driving_school_BusinessLayer
@@ -105,6 +106,19 @@ namespace Driving_school_BusinessLayer
 
             }
             return null;
+        }
+
+        public static DataTable GetAllNames()
+        {
+            return clsDrivingLicenseTypeDataAccess.GetAllNamesDrivingLicenseTypes(); 
+        }
+        public static int GetDrivingLicenseTypeIDByName(string Name)
+        {
+            return clsDrivingLicenseTypeDataAccess.GetDrivingLicenseTypeIDByName (Name);
+        }
+        public static decimal GetDrivingLicenseTypePriceByID(int ID)
+        {
+            return clsDrivingLicenseTypeDataAccess.GetDrivingLicenseTypePriceByID(ID); 
         }
 
     }

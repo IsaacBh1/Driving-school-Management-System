@@ -96,13 +96,13 @@ namespace Driving_School_Management_System.Forms
         {
             address = new clsAddress() { Country = txtboxBirthPlace.Text ?? "", State = CBoxState.Text ?? "", LocalAddress = txtboxAddress.Text ?? ""};
             address.Save();
-            return clsAddress.Find(address.Country, address.State, address.LocalAddress);
+            return address.AddressID;
         }
         private int _SaveContact()
         {
             contact = new clsContact() { Email = txtbxEmail.Text ?? "", Phone = txtbxPhone.Text ?? "", AdditionalContact = txtbxAdditionalContact.Text ?? "" };
             contact.Save();
-            return clsContact.Find(contact.Email, contact.Phone, contact.AdditionalContact);
+            return contact.contactID;
         }
         private int _SavePerson()
         {
@@ -118,7 +118,7 @@ namespace Driving_School_Management_System.Forms
             };
             
             person.Save();
-            return clsPerson.Find(person.FirstName, person.LastName, person.FirstName_Arabic, person.LastName_Arabic, person.ContactID, person.AddressID);
+            return person.PersonID;
 
 
         }
@@ -131,7 +131,7 @@ namespace Driving_School_Management_System.Forms
                 EndDate = Convert.ToDateTime(dateEndIdentity.Value)
             };
             nationalCard.Save();
-            return clsNationalCard.Find(nationalCard.Type, nationalCard.CardNumber, nationalCard.EndDate);
+            return nationalCard.NamtionalCardID;
         }
         private bool _SaveStudent()
         {

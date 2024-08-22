@@ -106,11 +106,24 @@ namespace Driving_school_BusinessLayer
             return clsInstructorDataAccess.GetAllInstructors();
         }
 
+
+        public static DataTable GatAllInsructorsUserName()
+        {
+            return clsInstructorDataAccess.GetAllInstructorsUserNames();
+        }
+
         //it will be implemented later on
         public DataTable SearchInstructor(string LastName)
         {
             return null; 
         }
+
+
+        public static int GetInstructorIDByUserName(string UserName)
+        {
+            return clsInstructorDataAccess.GetInstructorIDByUserName(UserName); 
+        }
+
 
     }
 }

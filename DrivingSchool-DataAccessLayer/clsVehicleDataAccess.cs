@@ -34,6 +34,33 @@ namespace DrivingSchool_DataAccessLayer
             }
             return Vehicles;
         }
+        public static DataTable GetAllVehiclesNames()
+        {
+            DataTable Vehicles = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "SELECT Name FROM Vehicles;";
+            SqlCommand command = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    Vehicles.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return Vehicles;
+        }
+
 
         public static bool GetVehicleInfoByID(int vehicleID, ref string Name, ref string RegestrationNumber, ref string Mark, ref string Type, ref string Model, ref string Color, ref string ImagePath, ref DateTime? DateOfUsage, ref string AdditionalNotes, ref int FuelType, ref int DrivingLicenseTypeID)
         {
@@ -48,7 +75,6 @@ namespace DrivingSchool_DataAccessLayer
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    IsFound = true;
                     Name = (string)reader["Name"];
                     RegestrationNumber = (string)reader["RegestrationNumber"];
                     Mark = reader["Mark"] as string;
@@ -238,6 +264,39 @@ namespace DrivingSchool_DataAccessLayer
             }
             return ID;
         }
+
+
+        public static int GetVehicleIDByVehicleName(string Name)
+        {
+            int ID = -1;
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "SELECT VehicleID FROM Vehicles WHERE Name = @Name";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@Name", Name);
+           // command.Parameters.AddWithValue("@RegestrationNumber", RegestrationNumber);
+            try
+            {
+                connection.Open();
+                object result = command.ExecuteScalar();
+                if (result != null && int.TryParse(result.ToString(), out int vehicleID))
+                {
+                    ID = vehicleID;
+                }
+            }
+            catch
+            {
+                return -1;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return ID;
+        }
+
+
+
+
 
         public static bool IsVehicleExists(string Name, string RegestrationNumber)
         {

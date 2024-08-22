@@ -78,5 +78,9 @@ namespace Driving_school_BusinessLayer
             }
             return null;
         }
+        public static int GetCurrentMoneyBank()
+        {
+            return clsMoneyBankDataAccess.GetCurrentMoneyBank(); 
+        }
     }
 }

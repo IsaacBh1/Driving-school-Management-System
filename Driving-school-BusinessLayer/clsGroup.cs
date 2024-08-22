@@ -1,4 +1,5 @@
 ﻿using DrivingSchool_DataAccessLayer;
+using System.Data;
 
 namespace Driving_school_BusinessLayer
 {
@@ -69,6 +70,14 @@ namespace Driving_school_BusinessLayer
                 return new clsGroup(ID, _GroupNumber, _NumberOfMembers, _DrivingLicenseTypesID);
             }
             return null;
+        }
+        public static DataTable GetAllGroupsNames()
+        {
+            return clsGroupDataAccess.GetAllNamesGroups(); 
+        }
+        public static int GetGroupIDbyName(string name)
+        {
+            return clsGroupDataAccess.GetGroupIDbyName(name);
         }
     }
 }

@@ -8,7 +8,22 @@ namespace Driving_School_Management_System.Forms
 {
     public partial class AddCondidateFileForm : Form
     {
-       [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        //----------------------------------------------------------------------------------
+        //----------------------------------------------------------------------------------
+
+        //constructor
+        public AddCondidateFileForm()
+        {
+            InitializeComponent();
+            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            _initializeFormCboxes();
+            GetDrivingLicensePrice(CbxDrivingLicenseType.Text);
+            changeDrivingLicenseEvent(CbxDrivingLicenseType, null); 
+        }
+
+        //----------------------------------------------------------------------------------
+        //---------------------------this is for window properties ------------------------------
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
           (
               int nLeftRect,     
@@ -39,30 +54,105 @@ namespace Driving_School_Management_System.Forms
             }
         }
 
+        //----------------------------------------------------------------------------------
+        //----------------------this is for closing the window-------------------------------
+
+        private void pictureBox1_Click(object sender, EventArgs e) => Close();
+        private void guna2Button2_Click(object sender, EventArgs e) => Close();
+
+        //----------------------------------------------------------------------------------
+        //------this is for searching the student by his id or his Identity number----------
+
+        private int GetStudentIDfromIdentityNumber(string IdentityNumber)
+        {
+            return clsStudent.GetStudentIDByIdentityNumber(IdentityNumber); 
+        }
+        private string GetStudentIdentityNumberfromID(int ID)
+        {
+            return clsStudent.GetStudentIdentityNumberByID(ID);
+        }
+        //----------------------------------------------------------------------------------
+        //----------------------this is for getting all IDs and infos in the form --------------------
+
+        private int GetIDOfIndructor(string UserName)
+        {
+            return clsInstructor.GetInstructorIDByUserName(UserName); 
+        }
+        private int GetIDOfVehicleFromVehicleName(string VehicleName)
+        {
+            return clsVehicle.GetVehicleIDByVehicleName(VehicleName);  
+        }
+        private int GetIDOfDrivingLicenseTypeFromName(string Name)
+        {
+            return clsDrivingLicenseType.GetDrivingLicenseTypeIDByName(Name);
+        }
+
+        private decimal GetDrivingLicensePrice(string Name)
+        {
+            return clsDrivingLicenseType.GetDrivingLicenseTypePriceByID(GetIDOfDrivingLicenseTypeFromName(Name)); 
+        }
+        private int GetGruopIDFromName(string Name)
+        {
+            return clsGroup.GetGroupIDbyName(Name);
+        }
+
+
+        //----------------------------------------------------------------------------------
+        //----------------------------------------------------------------------------------
+
+
+
         private bool InformationCorrect = true;
         private StatusMessageForm statusMessageForm;
         private clsCondidateFile condidateFile;
-        private clsStudent student;
-        private clsDrivingLicenseType drivingLicenseType; 
-        private clsGroup group;
+        //private clsStudent student;
+        //private clsDrivingLicenseType drivingLicenseType; 
+        //private clsGroup group;
         private clsPayment payment;
-        private clsInstructor Theo_instructor;
-        private clsInstructor App_instructor; 
+        //private clsInstructor Theo_instructor;
+        //private clsInstructor App_instructor; 
 
 
 
-        public AddCondidateFileForm()
+        //----------------------------------------------------------------------------------
+        //----------------this is for inetialize comboboxes of the form----------------------
+
+        private void _initializeDrivingLicenseTypeCbox()
         {
-            InitializeComponent();
-            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-
+            CbxDrivingLicenseType.DataSource = clsDrivingLicenseType.GetAllNames().DefaultView;
+            CbxDrivingLicenseType.DisplayMember = "Name";
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)=>Close();
-        
+        //GetAllGroupsNames()
+        private void _initializeGroupsCbox()
+        {
+            CbxGroup.DataSource = clsGroup.GetAllGroupsNames().DefaultView;
+            CbxGroup.DisplayMember = "Name";
+        }
 
-        private void guna2Button2_Click(object sender, EventArgs e) => Close(); 
-       
+        private void _initializeInstructorsCbox()
+        {
+            CboxAppInsructor.DataSource = clsInstructor.GatAllInsructorsUserName().DefaultView;
+            CboxAppInsructor.DisplayMember = "UserName";
+            CboxTheoInsructor.DataSource = clsInstructor.GatAllInsructorsUserName().DefaultView;
+            CboxTheoInsructor.DisplayMember = "UserName";
+        }
+       /* private void _initializeVehicleCbox()
+        {
+          CboxVehicle.DataSource =clsVehicle.GetAllVehiclesNames().DefaultView;
+          CboxVehicle.DisplayMember = "Name";
+
+        }*/
+        private void _initializeFormCboxes()
+        {
+            _initializeDrivingLicenseTypeCbox();
+            _initializeGroupsCbox();
+            _initializeInstructorsCbox();
+            //_initializeVehicleCbox();
+        }
+     
+        //----------------------------------------------------------------------------------
+        //--------------------ths is for checking if all required field is exist-----------
 
         public void CheckField(Control txtBoxField)
         {
@@ -84,8 +174,6 @@ namespace Driving_School_Management_System.Forms
 
             }
         }
-
-
         public void CheckCondidatesFileInformations()
         {
             InformationCorrect = true; 
@@ -97,9 +185,38 @@ namespace Driving_School_Management_System.Forms
             CheckField(CbxPaymentType); 
         }
 
+
+        //----------------------------------------------------------------------------------
+        //----------------------------------------------------------------------------------
+
+
         private bool _SaveCondidatesFile()
         {
-            return true; 
+
+            if (int.TryParse (txtbxCondidateID.Text , out int studentID))
+            {
+            payment = new clsPayment() { AmountPayed = Convert.ToDecimal(txtbxAmountPayed.Text), 
+                                        FullAmount = Convert.ToDecimal(txtbxPrice.Text),
+                                        MoneyBankID = clsMoneyBank.GetCurrentMoneyBank()};
+            payment.Save();
+                condidateFile = new clsCondidateFile()
+                {
+                    StudentID = studentID,
+                    DrivingLicenseTypeID = GetIDOfDrivingLicenseTypeFromName(CbxDrivingLicenseType.Text),
+                    AdditionalNotes = txtBoxAdditionalNotes.Text,
+                    IsActive = true,
+                    CreatingFileDate = DateTime.Now,
+                    IsArchived = false,
+                    PaymentID = payment.PaymentID,
+                    GroupID = GetGruopIDFromName(CbxGroup.Text) , 
+                    ApplicationInstructorID = GetIDOfIndructor(CboxAppInsructor.Text), 
+                    TheoreticalInstructorID = GetIDOfIndructor(CboxTheoInsructor.Text)
+                };
+                return condidateFile.Save(); 
+
+            }                     
+
+            return false; 
         }
 
 
@@ -125,6 +242,27 @@ namespace Driving_School_Management_System.Forms
             else
                 MessageBox.Show("هناك معلومات مفقودة", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+        }
+
+        private void IDChangedEvent(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtbxCondidateID.Text, out int ID)) {
+                txtbxIdentityNumber.Text = GetStudentIdentityNumberfromID(ID); 
+            }; 
+        }
+
+        private void IdentityNumberChangedEvent(object sender, EventArgs e)
+        {
+            int ID = GetStudentIDfromIdentityNumber(txtbxIdentityNumber.Text);
+            if (ID > 0) txtbxCondidateID.Text = ID.ToString();
+            else txtbxCondidateID.Text = ""; 
+
+
+        }
+
+        private void changeDrivingLicenseEvent(object sender, EventArgs e)
+        {
+            txtbxPrice.Text = GetDrivingLicensePrice(CbxDrivingLicenseType.Text).ToString(); 
         }
     }
 }

@@ -223,9 +223,37 @@ namespace DrivingSchool_DataAccessLayer
             return ID;
         }
 
-        public static bool IsMoneyBankExists(decimal InitialAmount, decimal AllAmount, decimal InternalAmount, decimal NetProfit, bool IsClosed)
+
+
+        public static int GetCurrentMoneyBank()
         {
-            return (GetMoneyBankIDByInfo(InitialAmount, AllAmount, InternalAmount, NetProfit, IsClosed) != -1);
+            int ID = -1;
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = @"Select CurrentMoneyBankID from Globals where ID = 2;";
+            SqlCommand command = new SqlCommand(query, connection);
+      
+            try
+            {
+                connection.Open();
+                object result = command.ExecuteScalar();
+                if (result != null && int.TryParse(result.ToString(), out int moneyBankID))
+                {
+                    ID = moneyBankID;
+                }
+            }
+            catch
+            {
+                return -1;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return ID;
         }
+
+
+
+
     }
 }
