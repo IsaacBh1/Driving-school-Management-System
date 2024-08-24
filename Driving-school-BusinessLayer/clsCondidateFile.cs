@@ -112,8 +112,22 @@ namespace Driving_school_BusinessLayer
             return null;
         }
         public static DataTable GetAllCondidateFileInformations()
-        {
-            return clsCondidateFileDataAccess.GetAllCondidateFileInformations(); 
-        }
+            =>clsCondidateFileDataAccess.GetAllCondidateFileInformations(); 
+        
+        public static DataTable SearchCondidtesFilesByDrivingLisence(string Name)
+            =>clsCondidateFileDataAccess.SearchCondidtesFilesByDrivingLisence(Name); 
+        
+        public static DataTable SearchArchivedStudentsFiles(bool isArchived)
+            =>clsCondidateFileDataAccess.SearchArchivedStudentsFiles(isArchived); 
+       
+        public static DataTable SearchActiveStudentsFiles(bool isActive) 
+            => clsCondidateFileDataAccess.SearchActiveStudentsFiles(isActive);
+        public static DataTable SearchCondidatesFileInfoLastName_Arabic(string Name)
+            => clsCondidateFileDataAccess.SearchCondidatesFileInfoLastName_Arabic(Name);
+
+        public static DataTable SearchCondidatesFileInfoFirstName_Arabic(string Name)
+            => clsCondidateFileDataAccess.SearchCondidtesFileInfoFirstName_Arabic(Name);
+        public static DataTable SearchCondidateFileInfoByID(string Id)
+            => clsCondidateFileDataAccess.SearchCondidateFileInfoByID(Id); 
     }
 }
