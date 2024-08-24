@@ -229,8 +229,7 @@
               "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving School Management System\\Forms\\Main.cs [Design]",
               "RelativeToolTip": "Forms\\Main.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T10:17:09.48Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-20T10:17:09.48Z"
             },
             {
               "$type": "Document",
@@ -238,12 +237,11 @@
               "Title": "CondidatesWindow.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving School Management System\\Forms\\CondidatesWindow.cs",
               "RelativeDocumentMoniker": "Forms\\CondidatesWindow.cs",
-              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving School Management System\\Forms\\CondidatesWindow.cs*",
-              "RelativeToolTip": "Forms\\CondidatesWindow.cs*",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving School Management System\\Forms\\CondidatesWindow.cs",
+              "RelativeToolTip": "Forms\\CondidatesWindow.cs",
               "ViewState": "AQIAAJYAAAAAAAAAAAA+wJ8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T01:32:26.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-14T01:32:26.008Z"
             },
             {
               "$type": "Document",
@@ -255,8 +253,7 @@
               "RelativeToolTip": "..\\DrivingSchool-DataAccessLayer\\clsCondidateFileDataAccess.cs",
               "ViewState": "AQIAACAAAAAAAAAAAADwvyYAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T10:14:07.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-20T10:14:07.132Z"
             },
             {
               "$type": "Document",
@@ -268,8 +265,7 @@
               "RelativeToolTip": "..\\Driving-school-BusinessLayer\\clsCondidateFile.cs",
               "ViewState": "AQIAAF4AAAAAAAAAAAAuwHEAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T11:20:01.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-19T11:20:01.558Z"
             },
             {
               "$type": "Document",
@@ -281,8 +277,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T03:18:54.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-17T03:18:54.105Z"
             },
             {
               "$type": "Document",
@@ -629,8 +624,7 @@
               "RelativeToolTip": "..\\DrivingSchool-DataAccessLayer\\App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-08-20T12:59:46.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-20T12:59:46.681Z"
             },
             {
               "$type": "Document",
@@ -642,8 +636,7 @@
               "RelativeToolTip": "App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAACwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-08-20T12:09:27.207Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-20T12:09:27.207Z"
             },
             {
               "$type": "Document",

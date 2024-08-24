@@ -2,6 +2,7 @@
 using System.Collections.Specialized;
 using System.Data;
 using System.Data.SqlClient;
+using System.Xml.Linq;
 
 namespace DrivingSchool_DataAccessLayer
 {
@@ -292,5 +293,185 @@ namespace DrivingSchool_DataAccessLayer
         {
             throw new NotImplementedException();
         }
+
+
+        public static DataTable SearchCondidateFileInfoByID(string Id)
+        {
+            DataTable StudentsInfo = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from CondidateFileInformation where CondidateFileID like'" + Id + "';";
+            SqlCommand command = new SqlCommand(query, connection);
+            //command.Parameters.AddWithValue("@Number", Number);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    StudentsInfo.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return StudentsInfo;
+        }
+
+
+
+
+        public static DataTable SearchCondidtesFileInfoFirstName_Arabic(string Name)
+        {
+            DataTable StudentsInfo = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from CondidateFileInformation where FirstName_Arabic like '%" + Name + "%'; ";
+            SqlCommand command = new SqlCommand(query, connection);
+            //command.Parameters.AddWithValue("@Name", Name);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    StudentsInfo.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return StudentsInfo;
+        }
+
+
+
+
+
+        public static DataTable SearchCondidatesFileInfoLastName_Arabic(string Name)
+        {
+            DataTable StudentsInfo = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from CondidateFileInformation where LastName_Arabic like '%" + Name + "%';";
+            SqlCommand command = new SqlCommand(query, connection);
+            //command.Parameters.AddWithValue("@Name", LastName);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    StudentsInfo.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return StudentsInfo;
+        }
+
+        public static DataTable SearchActiveStudentsFiles(bool isActive)
+        {
+            DataTable StudentsInfo = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            int IsActive = isActive == true ? 1 : 0; 
+            string query = "select * from CondidateFileInformation where IsActive = @isActive ; ";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@@isActive", IsActive);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    StudentsInfo.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return StudentsInfo;
+        }
+
+        public static DataTable SearchArchivedStudentsFiles(bool isArchived)
+        {
+            DataTable StudentsInfo = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            int IsActive = isArchived == true ? 1 : 0;
+            string query = "select * from CondidateFileInformation where IsArchived = @isActive ; ";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@isActive", IsActive);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    StudentsInfo.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return StudentsInfo;
+        }
+
+
+        public static DataTable SearchCondidtesFilesByDrivingLisence(string Name)
+        {
+            DataTable StudentsInfo = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from CondidateFileInformation where LastName_Arabic like '" + Name + "';";
+            SqlCommand command = new SqlCommand(query, connection);
+            //command.Parameters.AddWithValue("@isActive", IsActive);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    StudentsInfo.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return StudentsInfo;
+        }
+
     }
 }
