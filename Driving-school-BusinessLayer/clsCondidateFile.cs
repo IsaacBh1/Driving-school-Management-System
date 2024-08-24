@@ -1,5 +1,6 @@
 ﻿using DrivingSchool_DataAccessLayer;
 using System;
+using System.Data;
 
 namespace Driving_school_BusinessLayer
 {
@@ -109,6 +110,10 @@ namespace Driving_school_BusinessLayer
                 return new clsCondidateFile(ID, _StudentID, _DrivingLicenseTypeID, _AdditionalNotes, _IsActive, _CreatingFileDate, _IsArchived, _GroupID, _PaymentID, _TheoreticalInstructorID, _ApplicationInstructorID);
             }
             return null;
+        }
+        public static DataTable GetAllCondidateFileInformations()
+        {
+            return clsCondidateFileDataAccess.GetAllCondidateFileInformations(); 
         }
     }
 }

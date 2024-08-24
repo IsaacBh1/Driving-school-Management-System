@@ -36,6 +36,34 @@ namespace DrivingSchool_DataAccessLayer
             return condidateFiles;
         }
 
+        public static DataTable GetAllCondidateFileInformations()
+        {
+            DataTable condidateFiles = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from CondidateFileInformation ; ";
+            SqlCommand command = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    condidateFiles.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return condidateFiles;
+        }
+
+
         public static bool GetCondidateFileInfoByID(int condidateFileID, ref int studentID, ref int drivingLicenseTypeID, ref string additionalNotes, ref bool isActive, ref DateTime creatingFileDate, ref bool isArchived, ref int groupID, ref int paymentID, ref int theoreticalInstructorID, ref int applicationInstructorID)
         {
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);

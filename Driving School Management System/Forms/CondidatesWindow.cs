@@ -12,8 +12,13 @@ namespace Driving_School_Management_System.Forms
         {
             InitializeComponent();
             DispalyStudentsInformations(clsStudent.GetAllStudentsInfo());
+            DisplayCondidteFilesInformations(clsCondidateFile.GetAllCondidateFileInformations());
 
         }
+        private string _getFileStatus(string s) => s == "False" ? "نشط" : "مؤرشف";
+        private string _getStudentStatus(string s) => s == "True" ? "نشط" : "منقطع"; 
+               
+        
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
@@ -50,8 +55,17 @@ namespace Driving_School_Management_System.Forms
 
         }
 
+        public void DisplayCondidteFilesInformations(DataTable AllFiles)
+        {
+            DGVFiles.Rows.Clear();
+            foreach (DataRow row in AllFiles.Rows)
+            {
+                DGVFiles.Rows.Add(row[0], row[1], row[2], row[3], _getFileStatus(row[4].ToString()), _getStudentStatus(row[5].ToString()), row[6], row[7]); 
+            }
+        }
 
 
+        //GetAllCondidateFileInformations()
 
 
         private DataTable QueryByID(int Id)
@@ -138,6 +152,12 @@ namespace Driving_School_Management_System.Forms
         {
             AddCondidateFileForm frm = new AddCondidateFileForm();
             frm.ShowDialog();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            DisplayCondidteFilesInformations(clsCondidateFile.GetAllCondidateFileInformations());
+
         }
     }
 }

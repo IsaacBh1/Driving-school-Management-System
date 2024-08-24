@@ -351,5 +351,8 @@
   <ItemGroup>
     <None Include="Resources\note-pencil.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-thin.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
