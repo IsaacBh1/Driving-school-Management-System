@@ -128,6 +128,9 @@ namespace Driving_school_BusinessLayer
         public static DataTable SearchCondidatesFileInfoFirstName_Arabic(string Name)
             => clsCondidateFileDataAccess.SearchCondidtesFileInfoFirstName_Arabic(Name);
         public static DataTable SearchCondidateFileInfoByID(string Id)
-            => clsCondidateFileDataAccess.SearchCondidateFileInfoByID(Id); 
+            => clsCondidateFileDataAccess.SearchCondidateFileInfoByID(Id);
+        public static DataTable SearchByAll(int CondidateFileID, string FirstName_Arabic, string LastName_Arabic, string DrivingLisenceType, bool isArchived, bool isActive)
+            => clsCondidateFileDataAccess.SearchByAll(CondidateFileID, FirstName_Arabic, LastName_Arabic, DrivingLisenceType, isArchived, isActive); 
+        
     }
 }

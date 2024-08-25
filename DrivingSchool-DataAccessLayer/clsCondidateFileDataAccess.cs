@@ -472,6 +472,43 @@ namespace DrivingSchool_DataAccessLayer
             }
             return StudentsInfo;
         }
+        //"++"
+        public static DataTable SearchByAll(int CondidateFileID , string FirstName_Arabic , string LastName_Arabic , string DrivingLisenceType, bool isArchived ,bool isActive)
+        {
+            DataTable StudentsInfo = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            int IsArchived = isArchived ? 1 : 0;
+            int IsActive = isActive ? 1 : 0;
+            string query = @"select * from CondidateFileInformation " +
+                            "where " + 
+                            "CondidateFileID like '"+ CondidateFileID + "%'and " + 
+                            "FirstName_Arabic like '%"+ FirstName_Arabic + "%'and " + 
+                            "LastName_Arabic like '%"+ LastName_Arabic + "%'and " +
+                            "Name like '"+ DrivingLisenceType+ "%' and " +
+                            "IsArchived like '"+ IsArchived + "%' and " +
+                            "IsActive like '"+ IsActive + "%' ; ";
+            SqlCommand command = new SqlCommand(query, connection);
+            //command.Parameters.AddWithValue("@isActive", IsActive);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    StudentsInfo.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return StudentsInfo;
+        }
 
     }
 }
