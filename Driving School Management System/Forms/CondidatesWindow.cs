@@ -175,8 +175,9 @@ namespace Driving_School_Management_System.Forms
                             //textBoxID
                             break;
                     case "الكل":
-                        // it will be implemented later on 
-                        break;
+                        if (int.TryParse(textBoxID.Text.ToString(), out int Id))
+                            DisplayCondidteFilesInformations(clsCondidateFile.SearchByAll(Id, textBoxFName_Arabic.Text, textBoxLName_Arabic.Text, CboxDrivingLisence.Text, _getIsArchived(CboxFileStatus.Text), _getIsActive(CboxStudentStatus.Text))); 
+                            break;
                     case "الرخصة":
                         DisplayCondidteFilesInformations(clsCondidateFile.SearchCondidtesFilesByDrivingLisence(CboxDrivingLisence.Text)); 
                         break;
