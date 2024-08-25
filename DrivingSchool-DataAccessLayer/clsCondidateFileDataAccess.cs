@@ -393,7 +393,7 @@ namespace DrivingSchool_DataAccessLayer
             int IsActive = isActive == true ? 1 : 0; 
             string query = "select * from CondidateFileInformation where IsActive = @isActive ; ";
             SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@@isActive", IsActive);
+            command.Parameters.AddWithValue("@isActive", IsActive);
             try
             {
                 connection.Open();
@@ -449,7 +449,7 @@ namespace DrivingSchool_DataAccessLayer
         {
             DataTable StudentsInfo = new DataTable();
             SqlConnection connection = new SqlConnection(ConnectionString);
-            string query = "select * from CondidateFileInformation where LastName_Arabic like '" + Name + "';";
+            string query = "select * from CondidateFileInformation where Name like '" + Name + "';";
             SqlCommand command = new SqlCommand(query, connection);
             //command.Parameters.AddWithValue("@isActive", IsActive);
             try

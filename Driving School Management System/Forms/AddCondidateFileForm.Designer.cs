@@ -56,6 +56,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.txtbxAmountPayed = new System.Windows.Forms.NumericUpDown();
             this.label18 = new System.Windows.Forms.Label();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -91,7 +92,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtBoxAdditionalNotes = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtbxAmountPayed = new System.Windows.Forms.NumericUpDown();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtbxPrice)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
@@ -103,6 +103,7 @@
             this.tabPage1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtbxAmountPayed)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -110,7 +111,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtbxAmountPayed)).BeginInit();
             this.SuspendLayout();
             // 
             // panel14
@@ -539,6 +539,18 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(442, 61);
             this.panel5.TabIndex = 33;
+            // 
+            // txtbxAmountPayed
+            // 
+            this.txtbxAmountPayed.Location = new System.Drawing.Point(162, 12);
+            this.txtbxAmountPayed.Maximum = new decimal(new int[] {
+            1316134912,
+            2328,
+            0,
+            0});
+            this.txtbxAmountPayed.Name = "txtbxAmountPayed";
+            this.txtbxAmountPayed.Size = new System.Drawing.Size(174, 39);
+            this.txtbxAmountPayed.TabIndex = 36;
             // 
             // label18
             // 
@@ -1102,18 +1114,6 @@
             this.label8.TabIndex = 9;
             this.label8.Text = "ملاحظات";
             // 
-            // txtbxAmountPayed
-            // 
-            this.txtbxAmountPayed.Location = new System.Drawing.Point(162, 12);
-            this.txtbxAmountPayed.Maximum = new decimal(new int[] {
-            1316134912,
-            2328,
-            0,
-            0});
-            this.txtbxAmountPayed.Name = "txtbxAmountPayed";
-            this.txtbxAmountPayed.Size = new System.Drawing.Size(174, 39);
-            this.txtbxAmountPayed.TabIndex = 36;
-            // 
             // AddCondidateFileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -1151,6 +1151,7 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtbxAmountPayed)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -1164,7 +1165,6 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtbxAmountPayed)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

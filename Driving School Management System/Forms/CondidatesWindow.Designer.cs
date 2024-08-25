@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.SideBar = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnManageStudents = new System.Windows.Forms.Button();
@@ -75,9 +75,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.CboxFilterCondidtateFile = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSSearchCondidteFIle = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.DGVFiles = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -91,22 +91,22 @@
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxID = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxFName_Arabic = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxLName_Arabic = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.CbxGroup = new MetroFramework.Controls.MetroComboBox();
+            this.CboxDrivingLisence = new MetroFramework.Controls.MetroComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.CboxFileStatus = new MetroFramework.Controls.MetroComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
+            this.CboxStudentStatus = new MetroFramework.Controls.MetroComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -335,8 +335,8 @@
             // 
             // DGVStudents
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.DGVStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.DGVStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DGVStudents.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -345,15 +345,15 @@
             this.DGVStudents.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGVStudents.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DGVStudents.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.NullValue = "\"\"";
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.NullValue = "\"\"";
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DGVStudents.ColumnHeadersHeight = 50;
             this.DGVStudents.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -363,14 +363,14 @@
             this.Phone,
             this.Email,
             this.Operations});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGVStudents.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGVStudents.DefaultCellStyle = dataGridViewCellStyle3;
             this.DGVStudents.EnableHeadersVisualStyles = false;
             this.DGVStudents.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DGVStudents.Location = new System.Drawing.Point(6, 231);
@@ -681,9 +681,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.guna2ComboBox1);
+            this.panel6.Controls.Add(this.CboxFilterCondidtateFile);
             this.panel6.Controls.Add(this.pictureBox2);
-            this.panel6.Controls.Add(this.guna2Button2);
+            this.panel6.Controls.Add(this.btnSSearchCondidteFIle);
             this.panel6.Controls.Add(this.guna2Button4);
             this.panel6.Controls.Add(this.DGVFiles);
             this.panel6.Controls.Add(this.flowLayoutPanel2);
@@ -696,31 +696,33 @@
             this.panel6.Size = new System.Drawing.Size(1213, 668);
             this.panel6.TabIndex = 7;
             // 
-            // guna2ComboBox1
+            // CboxFilterCondidtateFile
             // 
-            this.guna2ComboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.FormattingEnabled = true;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.CboxFilterCondidtateFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CboxFilterCondidtateFile.BackColor = System.Drawing.Color.Transparent;
+            this.CboxFilterCondidtateFile.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CboxFilterCondidtateFile.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CboxFilterCondidtateFile.FocusedColor = System.Drawing.Color.Empty;
+            this.CboxFilterCondidtateFile.FocusedState.Parent = this.CboxFilterCondidtateFile;
+            this.CboxFilterCondidtateFile.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.CboxFilterCondidtateFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.CboxFilterCondidtateFile.FormattingEnabled = true;
+            this.CboxFilterCondidtateFile.HoverState.Parent = this.CboxFilterCondidtateFile;
+            this.CboxFilterCondidtateFile.ItemHeight = 30;
+            this.CboxFilterCondidtateFile.Items.AddRange(new object[] {
             "ID",
-            "رقم ب.ت.و",
             "الاسم",
             "النسب",
+            "الرخصة",
+            "حالة الملف",
+            "وضع المرشح",
             "الكل"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(865, 79);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(183, 36);
-            this.guna2ComboBox1.TabIndex = 35;
+            this.CboxFilterCondidtateFile.ItemsAppearance.Parent = this.CboxFilterCondidtateFile;
+            this.CboxFilterCondidtateFile.Location = new System.Drawing.Point(865, 79);
+            this.CboxFilterCondidtateFile.Name = "CboxFilterCondidtateFile";
+            this.CboxFilterCondidtateFile.ShadowDecoration.Parent = this.CboxFilterCondidtateFile;
+            this.CboxFilterCondidtateFile.Size = new System.Drawing.Size(183, 36);
+            this.CboxFilterCondidtateFile.TabIndex = 35;
             // 
             // pictureBox2
             // 
@@ -733,23 +735,24 @@
             this.pictureBox2.TabIndex = 34;
             this.pictureBox2.TabStop = false;
             // 
-            // guna2Button2
+            // btnSSearchCondidteFIle
             // 
-            this.guna2Button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button2.BorderRadius = 5;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(135)))), ((int)(((byte)(255)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(1054, 76);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(89, 43);
-            this.guna2Button2.TabIndex = 27;
-            this.guna2Button2.Text = "بحث";
+            this.btnSSearchCondidteFIle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSSearchCondidteFIle.BorderRadius = 5;
+            this.btnSSearchCondidteFIle.CheckedState.Parent = this.btnSSearchCondidteFIle;
+            this.btnSSearchCondidteFIle.CustomImages.Parent = this.btnSSearchCondidteFIle;
+            this.btnSSearchCondidteFIle.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(135)))), ((int)(((byte)(255)))));
+            this.btnSSearchCondidteFIle.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnSSearchCondidteFIle.ForeColor = System.Drawing.Color.White;
+            this.btnSSearchCondidteFIle.HoverState.Parent = this.btnSSearchCondidteFIle;
+            this.btnSSearchCondidteFIle.Location = new System.Drawing.Point(1054, 76);
+            this.btnSSearchCondidteFIle.Name = "btnSSearchCondidteFIle";
+            this.btnSSearchCondidteFIle.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSSearchCondidteFIle.ShadowDecoration.Parent = this.btnSSearchCondidteFIle;
+            this.btnSSearchCondidteFIle.Size = new System.Drawing.Size(89, 43);
+            this.btnSSearchCondidteFIle.TabIndex = 27;
+            this.btnSSearchCondidteFIle.Text = "بحث";
+            this.btnSSearchCondidteFIle.Click += new System.EventHandler(this.btnSSearchCondidteFIle_Click);
             // 
             // guna2Button4
             // 
@@ -772,8 +775,8 @@
             // 
             // DGVFiles
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.DGVFiles.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.DGVFiles.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DGVFiles.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -782,15 +785,15 @@
             this.DGVFiles.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGVFiles.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DGVFiles.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.NullValue = "\"\"";
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVFiles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.NullValue = "\"\"";
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVFiles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DGVFiles.ColumnHeadersHeight = 50;
             this.DGVFiles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -802,14 +805,14 @@
             this.DateOfCreationFile,
             this.Exams,
             this.dataGridViewImageColumn2});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGVFiles.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGVFiles.DefaultCellStyle = dataGridViewCellStyle6;
             this.DGVFiles.EnableHeadersVisualStyles = false;
             this.DGVFiles.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
             this.DGVFiles.Location = new System.Drawing.Point(6, 231);
@@ -930,19 +933,19 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.textBox1);
+            this.panel7.Controls.Add(this.textBoxID);
             this.panel7.Controls.Add(this.label9);
             this.panel7.Location = new System.Drawing.Point(1006, 3);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(183, 83);
             this.panel7.TabIndex = 23;
             // 
-            // textBox1
+            // textBoxID
             // 
-            this.textBox1.Location = new System.Drawing.Point(18, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(157, 39);
-            this.textBox1.TabIndex = 25;
+            this.textBoxID.Location = new System.Drawing.Point(18, 35);
+            this.textBoxID.Name = "textBoxID";
+            this.textBoxID.Size = new System.Drawing.Size(157, 39);
+            this.textBoxID.TabIndex = 25;
             // 
             // label9
             // 
@@ -957,19 +960,19 @@
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.textBox3);
+            this.panel9.Controls.Add(this.textBoxFName_Arabic);
             this.panel9.Controls.Add(this.label11);
             this.panel9.Location = new System.Drawing.Point(817, 3);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(183, 83);
             this.panel9.TabIndex = 25;
             // 
-            // textBox3
+            // textBoxFName_Arabic
             // 
-            this.textBox3.Location = new System.Drawing.Point(14, 35);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(157, 39);
-            this.textBox3.TabIndex = 27;
+            this.textBoxFName_Arabic.Location = new System.Drawing.Point(14, 35);
+            this.textBoxFName_Arabic.Name = "textBoxFName_Arabic";
+            this.textBoxFName_Arabic.Size = new System.Drawing.Size(157, 39);
+            this.textBoxFName_Arabic.TabIndex = 27;
             // 
             // label11
             // 
@@ -984,19 +987,19 @@
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.textBox4);
+            this.panel10.Controls.Add(this.textBoxLName_Arabic);
             this.panel10.Controls.Add(this.label12);
             this.panel10.Location = new System.Drawing.Point(628, 3);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(183, 83);
             this.panel10.TabIndex = 26;
             // 
-            // textBox4
+            // textBoxLName_Arabic
             // 
-            this.textBox4.Location = new System.Drawing.Point(14, 35);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(157, 39);
-            this.textBox4.TabIndex = 26;
+            this.textBoxLName_Arabic.Location = new System.Drawing.Point(14, 35);
+            this.textBoxLName_Arabic.Name = "textBoxLName_Arabic";
+            this.textBoxLName_Arabic.Size = new System.Drawing.Size(157, 39);
+            this.textBoxLName_Arabic.TabIndex = 26;
             // 
             // label12
             // 
@@ -1011,31 +1014,31 @@
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.CbxGroup);
+            this.panel11.Controls.Add(this.CboxDrivingLisence);
             this.panel11.Controls.Add(this.label17);
             this.panel11.Location = new System.Drawing.Point(439, 3);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(183, 83);
             this.panel11.TabIndex = 27;
             // 
-            // CbxGroup
+            // CboxDrivingLisence
             // 
-            this.CbxGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CboxDrivingLisence.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CbxGroup.FormattingEnabled = true;
-            this.CbxGroup.ItemHeight = 23;
-            this.CbxGroup.Items.AddRange(new object[] {
+            this.CboxDrivingLisence.FormattingEnabled = true;
+            this.CboxDrivingLisence.ItemHeight = 23;
+            this.CboxDrivingLisence.Items.AddRange(new object[] {
             "A1",
             "A2",
             "A3",
             "B1",
             "B2",
             "B3"});
-            this.CbxGroup.Location = new System.Drawing.Point(19, 40);
-            this.CbxGroup.Name = "CbxGroup";
-            this.CbxGroup.Size = new System.Drawing.Size(157, 29);
-            this.CbxGroup.TabIndex = 24;
-            this.CbxGroup.UseSelectable = true;
+            this.CboxDrivingLisence.Location = new System.Drawing.Point(19, 40);
+            this.CboxDrivingLisence.Name = "CboxDrivingLisence";
+            this.CboxDrivingLisence.Size = new System.Drawing.Size(157, 29);
+            this.CboxDrivingLisence.TabIndex = 24;
+            this.CboxDrivingLisence.UseSelectable = true;
             // 
             // label17
             // 
@@ -1050,27 +1053,27 @@
             // 
             // panel12
             // 
-            this.panel12.Controls.Add(this.metroComboBox1);
+            this.panel12.Controls.Add(this.CboxFileStatus);
             this.panel12.Controls.Add(this.label18);
             this.panel12.Location = new System.Drawing.Point(250, 3);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(183, 83);
             this.panel12.TabIndex = 28;
             // 
-            // metroComboBox1
+            // CboxFileStatus
             // 
-            this.metroComboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CboxFileStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Items.AddRange(new object[] {
-            "Active",
-            "Not Active"});
-            this.metroComboBox1.Location = new System.Drawing.Point(19, 40);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(157, 29);
-            this.metroComboBox1.TabIndex = 24;
-            this.metroComboBox1.UseSelectable = true;
+            this.CboxFileStatus.FormattingEnabled = true;
+            this.CboxFileStatus.ItemHeight = 23;
+            this.CboxFileStatus.Items.AddRange(new object[] {
+            "نشط",
+            "مؤرشف"});
+            this.CboxFileStatus.Location = new System.Drawing.Point(19, 40);
+            this.CboxFileStatus.Name = "CboxFileStatus";
+            this.CboxFileStatus.Size = new System.Drawing.Size(157, 29);
+            this.CboxFileStatus.TabIndex = 24;
+            this.CboxFileStatus.UseSelectable = true;
             // 
             // label18
             // 
@@ -1085,27 +1088,27 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.metroComboBox2);
+            this.panel8.Controls.Add(this.CboxStudentStatus);
             this.panel8.Controls.Add(this.label10);
             this.panel8.Location = new System.Drawing.Point(61, 3);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(183, 83);
             this.panel8.TabIndex = 29;
             // 
-            // metroComboBox2
+            // CboxStudentStatus
             // 
-            this.metroComboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CboxStudentStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroComboBox2.FormattingEnabled = true;
-            this.metroComboBox2.ItemHeight = 23;
-            this.metroComboBox2.Items.AddRange(new object[] {
-            "Active",
-            "Not Active"});
-            this.metroComboBox2.Location = new System.Drawing.Point(19, 40);
-            this.metroComboBox2.Name = "metroComboBox2";
-            this.metroComboBox2.Size = new System.Drawing.Size(157, 29);
-            this.metroComboBox2.TabIndex = 24;
-            this.metroComboBox2.UseSelectable = true;
+            this.CboxStudentStatus.FormattingEnabled = true;
+            this.CboxStudentStatus.ItemHeight = 23;
+            this.CboxStudentStatus.Items.AddRange(new object[] {
+            "نشط",
+            "منقطع"});
+            this.CboxStudentStatus.Location = new System.Drawing.Point(19, 40);
+            this.CboxStudentStatus.Name = "CboxStudentStatus";
+            this.CboxStudentStatus.Size = new System.Drawing.Size(157, 29);
+            this.CboxStudentStatus.TabIndex = 24;
+            this.CboxStudentStatus.UseSelectable = true;
             // 
             // label10
             // 
@@ -1309,20 +1312,20 @@
         private System.Windows.Forms.DataGridViewImageColumn Operations;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.Panel panel6;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox CboxFilterCondidtateFile;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnSSearchCondidteFIle;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2DataGridView DGVFiles;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxFName_Arabic;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxLName_Arabic;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
@@ -1330,9 +1333,9 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label17;
-        private MetroFramework.Controls.MetroComboBox CbxGroup;
+        private MetroFramework.Controls.MetroComboBox CboxDrivingLisence;
         private System.Windows.Forms.Panel panel12;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private MetroFramework.Controls.MetroComboBox CboxFileStatus;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -1344,7 +1347,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Exams;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.Panel panel8;
-        private MetroFramework.Controls.MetroComboBox metroComboBox2;
+        private MetroFramework.Controls.MetroComboBox CboxStudentStatus;
         private System.Windows.Forms.Label label10;
     }
 }
