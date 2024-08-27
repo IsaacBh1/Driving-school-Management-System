@@ -11,11 +11,11 @@ namespace Driving_School_Management_System
         int previousTabIndex = -1;
         MainWindow mainWindow = null;
         CondidatesWindow condidatesWindow = null;
+        LessonsWindow lessonsForm = null;
         public MainForm()
         {
             InitializeComponent();
-            ShowMainWindow();
-
+            ShowWindow<MainWindow>(mainWindow);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -49,39 +49,22 @@ namespace Driving_School_Management_System
             this.WindowState = FormWindowState.Minimized; 
         }
 
-        private void ShowMainWindow()
+       
+
+        private void ShowWindow<FormType>(Form form) where FormType : Form , new()
         {
-
-            if (mainWindow is null)
+            if (form is null)
             {
-                mainWindow = new MainWindow(); 
-                mainWindow.MdiParent= this;
-                mainWindow.Dock = DockStyle.Fill;
-                mainWindow.Show();
-
+                form = new FormType();
+                form .MdiParent = this;
+                form .Dock = DockStyle.Fill;
+                form .Show();
+                
 
             }
             else
             {
-                mainWindow.Activate(); 
-            }
-
-        }
-
-        private void ShowCondidatesWindow()
-        {
-
-            if (condidatesWindow is null)
-            {
-                condidatesWindow = new CondidatesWindow();
-                condidatesWindow.MdiParent = this;
-                condidatesWindow.Dock = DockStyle.Fill;
-                condidatesWindow.Show();
-
-            }
-            else
-            {
-                condidatesWindow.Activate();
+                form.Activate();
             }
         }
 
@@ -89,8 +72,10 @@ namespace Driving_School_Management_System
         {
             previousTabIndex = tabIndex; 
             tabIndex = 1;
-            updateTabColor(); 
-            ShowMainWindow(); 
+            updateTabColor();
+            //ShowMainWindow(); 
+            ShowWindow<MainWindow>(mainWindow);
+
         }
 
 
@@ -101,8 +86,8 @@ namespace Driving_School_Management_System
             previousTabIndex = tabIndex;
             tabIndex = 2;
             updateTabColor();
-            ShowCondidatesWindow(); 
-
+            //ShowCondidatesWindow(); 
+            ShowWindow<CondidatesWindow>(condidatesWindow); 
         }
 
 
@@ -118,12 +103,15 @@ namespace Driving_School_Management_System
             switch(tabIndex)
             {
                 case 1:
-                    btnMain.BackColor = System.Drawing.ColorTranslator.FromHtml("#E5AF1D");
+                    btnMain.BackColor = ColorTranslator.FromHtml("#E5AF1D");
                     break;
 
                 case 2:
-                    btnCondidtes.BackColor = System.Drawing.ColorTranslator.FromHtml("#E5AF1D");
-                    break; 
+                    btnCondidtes.BackColor = ColorTranslator.FromHtml("#E5AF1D");
+                    break;
+                case 3:
+                    btnLessons.BackColor = ColorTranslator.FromHtml("#E5AF1D");
+                    break;
             }
         }
 
@@ -139,11 +127,19 @@ namespace Driving_School_Management_System
                 case 2:
                     btnCondidtes.BackColor = Color.Transparent;
                     break;
+                case 3:
+                    btnLessons.BackColor = Color.Transparent;
+                    break; 
             }
         }
 
+        private void btnLessons_Click(object sender, EventArgs e)
+        {
+            previousTabIndex = tabIndex;
+            tabIndex = 3;
+            updateTabColor();
+            ShowWindow<LessonsWindow>(lessonsForm); 
 
-
-
+        }
     }
 }

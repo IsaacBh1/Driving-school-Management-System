@@ -40,7 +40,7 @@
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnCondidtes = new System.Windows.Forms.Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnLessons = new System.Windows.Forms.Button();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
@@ -170,18 +170,19 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderRadius = 8;
-            this.guna2Panel1.Controls.Add(this.button5);
+            this.guna2Panel1.Controls.Add(this.btnLessons);
             this.guna2Panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.guna2Panel1, "guna2Panel1");
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             // 
-            // button5
+            // btnLessons
             // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Image = global::Driving_School_Management_System.Properties.Resources.book_bookmark;
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnLessons, "btnLessons");
+            this.btnLessons.Image = global::Driving_School_Management_System.Properties.Resources.book_bookmark;
+            this.btnLessons.Name = "btnLessons";
+            this.btnLessons.UseVisualStyleBackColor = true;
+            this.btnLessons.Click += new System.EventHandler(this.btnLessons_Click);
             // 
             // guna2Panel7
             // 
@@ -378,7 +379,7 @@
         private System.Windows.Forms.PictureBox btnclose;
         private System.Windows.Forms.PictureBox btnMinimize;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnLessons;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private System.Windows.Forms.Button button3;
     }
