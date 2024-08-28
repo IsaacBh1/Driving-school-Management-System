@@ -9,43 +9,46 @@ namespace Driving_school_BusinessLayer
         enMode Mode = enMode.AddNew;
 
         public int LessonID { get; set; }
-        public int CandidateFileID { get; set; }
+        public int GroupID { get; set; }
         public DateTime LessonDate { get; set; }
-        public string Notes { get; set; }
-        public int ApplicationInstructorID { get; set; }
-        public bool IsCompleted { get; set; }
+        public int Duration_hours { get; set; } = 0;
+        public int Duration_minutes { get; set; } = 0;
+        public TimeSpan timeSpan { get; set; } = 0; 
+        public string type { get; set; }
+        public int InstructorID { get; set; }
+
 
         public clsLesson()
         {
             LessonID = -1;
-            CandidateFileID = -1;
+            GroupID = -1;
             LessonDate = DateTime.MinValue;
-            Notes = string.Empty;
-            ApplicationInstructorID = -1;
-            IsCompleted = false;
+            type = string.Empty;
+            InstructorID = -1;
             Mode = enMode.AddNew;
         }
 
-        private clsLesson(int lessonID, int candidateFileID, DateTime lessonDate, string notes, int applicationInstructorID, bool isCompleted)
+        private clsLesson(int lessonID, int candidateFileID, DateTime lessonDate,int Duration_hours , int Duration_minuts,  string _type, int applicationInstructorID, bool isCompleted)
         {
             LessonID = lessonID;
-            CandidateFileID = candidateFileID;
+            GroupID = candidateFileID;
             LessonDate = lessonDate;
-            Notes = notes;
-            ApplicationInstructorID = applicationInstructorID;
-            IsCompleted = isCompleted;
+            type = _type;
+            InstructorID = applicationInstructorID;
+            this.Duration_hours = Duration_hours;
+            this.Duration_minutes = Duration_minuts; 
             Mode = enMode.Update;
         }
 
         private bool _AddNewLesson()
         {
-            LessonID = clsLessonDataAccess.AddNewLesson(CandidateFileID, LessonDate, Notes, ApplicationInstructorID, IsCompleted);
+            LessonID = clsLessonDataAccess.AddNewLesson(type , LessonDate , timeSpan , Duration_hours , Duration_minutes , GroupID , InstructorID);
             return LessonID != -1;
         }
 
         private bool _UpdateLesson()
         {
-            return clsLessonDataAccess.UpdateLesson(LessonID, CandidateFileID, LessonDate, Notes, ApplicationInstructorID, IsCompleted);
+            return clsLessonDataAccess.UpdateLesson(LessonID ,  type, LessonDate, timeSpan, Duration_hours, Duration_minutes, GroupID, InstructorID);
         }
 
         public bool Save()
@@ -65,19 +68,15 @@ namespace Driving_school_BusinessLayer
             return false;
         }
 
-        public static clsLesson Find(int ID)
+       /* public static clsLesson Find(int ID)
         {
-            int _CandidateFileID = -1;
-            DateTime _LessonDate = DateTime.MinValue;
-            string _Notes = string.Empty;
-            int _ApplicationInstructorID = -1;
-            bool _IsCompleted = false;
+           
 
             if (clsLessonDataAccess.GetLessonInfoByID(ID, ref _CandidateFileID, ref _LessonDate, ref _Notes, ref _ApplicationInstructorID, ref _IsCompleted))
             {
-                return new clsLesson(ID, _CandidateFileID, _LessonDate, _Notes, _ApplicationInstructorID, _IsCompleted);
+                //return new clsLesson(ID, _CandidateFileID, _LessonDate, _Notes, _ApplicationInstructorID, _IsCompleted);
             }
             return null;
-        }
+        }*/
     }
 }

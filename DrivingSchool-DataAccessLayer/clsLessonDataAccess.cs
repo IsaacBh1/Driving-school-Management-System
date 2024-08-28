@@ -6,7 +6,7 @@ namespace DrivingSchool_DataAccessLayer
 {
     public sealed class clsLessonDataAccess
     {
-        private static string ConnectionString = clsConnectionStr.ConnectionStr;
+        private static readonly string ConnectionString = clsConnectionStr.ConnectionStr;
 
         public static DataTable GetAllLessons()
         {
@@ -35,7 +35,7 @@ namespace DrivingSchool_DataAccessLayer
             return lessons;
         }
 
-        public static bool GetLessonInfoByID(int lessonID, ref string type, ref DateTime dateOfLessons, ref TimeSpan timeOfLesson, ref int durationHours, ref int durationMin, ref int condidateFileID, ref int instructor)
+        public static bool GetLessonInfoByID(int lessonID, ref string type, ref DateTime dateOfLessons, ref TimeSpan timeOfLesson, ref int durationHours, ref int durationMin, ref int instructor , ref int GroupID)
         {
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
             string query = "select * from Lessons where LessonID = @lessonID";
@@ -54,8 +54,8 @@ namespace DrivingSchool_DataAccessLayer
                     timeOfLesson = (TimeSpan)reader["TimeOfLesson"];
                     durationHours = (int)reader["DurationHours"];
                     durationMin = (int)reader["DurationMin"];
-                    condidateFileID = (int)reader["CondidateFileID"];
                     instructor = (int)reader["Instructor"];
+                    GroupID = (int)reader["GroupID"];
                 }
                 reader.Close();
                 return isFound;
@@ -70,11 +70,11 @@ namespace DrivingSchool_DataAccessLayer
             }
         }
 
-        public static int AddNewLesson(string type, DateTime dateOfLessons, TimeSpan timeOfLesson, int durationHours, int durationMin, int condidateFileID, int instructor)
+        public static int AddNewLesson(string type, DateTime dateOfLessons, TimeSpan timeOfLesson, int durationHours, int durationMin, int GroupID, int instructor)
         {
             int id = -1;
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
-            string query = "insert into Lessons (Type, DateOfLessons, TimeOfLesson, DurationHours, DurationMin, CondidateFileID, Instructor) Values (@Type, @DateOfLessons, @TimeOfLesson, @DurationHours, @DurationMin, @CondidateFileID, @Instructor);" +
+            string query = "insert into Lessons (Type, DateOfLessons, TimeOfLesson, DurationHours, DurationMin, Instructor , GroupID) Values (@Type, @DateOfLessons, @TimeOfLesson, @DurationHours, @DurationMin, @Instructor , @GroupID);" +
                 "select SCOPE_IDENTITY();";
 
             SqlCommand command = new SqlCommand(query, sqlConnection);
@@ -83,7 +83,7 @@ namespace DrivingSchool_DataAccessLayer
             command.Parameters.AddWithValue("@TimeOfLesson", timeOfLesson);
             command.Parameters.AddWithValue("@DurationHours", durationHours);
             command.Parameters.AddWithValue("@DurationMin", durationMin);
-            command.Parameters.AddWithValue("@CondidateFileID", condidateFileID);
+            command.Parameters.AddWithValue("@GroupID", GroupID);
             command.Parameters.AddWithValue("@Instructor", instructor);
             try
             {
@@ -105,7 +105,7 @@ namespace DrivingSchool_DataAccessLayer
             return id;
         }
 
-        public static bool UpdateLesson(int lessonID, string type, DateTime dateOfLessons, TimeSpan timeOfLesson, int durationHours, int durationMin, int condidateFileID, int instructor)
+        public static bool UpdateLesson(int lessonID, string type, DateTime dateOfLessons, TimeSpan timeOfLesson, int durationHours, int durationMin, int instructor, int GroupID)
         {
             int affectedRows = 0;
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
@@ -115,10 +115,10 @@ namespace DrivingSchool_DataAccessLayer
                 "TimeOfLesson = @TimeOfLesson," +
                 "DurationHours = @DurationHours," +
                 "DurationMin = @DurationMin," +
-                "CondidateFileID = @CondidateFileID," +
+                "GroupID = @GroupID," +
                 "Instructor = @Instructor" +
                 " WHERE LessonID = @lessonID";
-
+            
             SqlCommand command = new SqlCommand(query, sqlConnection);
             command.Parameters.AddWithValue("@lessonID", lessonID);
             command.Parameters.AddWithValue("@Type", type);
@@ -126,7 +126,7 @@ namespace DrivingSchool_DataAccessLayer
             command.Parameters.AddWithValue("@TimeOfLesson", timeOfLesson);
             command.Parameters.AddWithValue("@DurationHours", durationHours);
             command.Parameters.AddWithValue("@DurationMin", durationMin);
-            command.Parameters.AddWithValue("@CondidateFileID", condidateFileID);
+            command.Parameters.AddWithValue("@GroupID", GroupID);
             command.Parameters.AddWithValue("@Instructor", instructor);
             try
             {
@@ -244,14 +244,7 @@ namespace DrivingSchool_DataAccessLayer
             throw new NotImplementedException();
         }
 
-        public static int AddNewLesson(int candidateFileID, DateTime lessonDate, string notes, int applicationInstructorID, bool isCompleted)
-        {
-            throw new NotImplementedException();
-        }
 
-        public static bool UpdateLesson(int lessonID, int candidateFileID, DateTime lessonDate, string notes, int applicationInstructorID, bool isCompleted)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

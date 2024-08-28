@@ -1,15 +1,7 @@
 ﻿using Driving_school_BusinessLayer;
-using Driving_School_Management_System.UtilityClasses.Driving_School_Management_System;
-using DrivingSchool_BusinesseLayer;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Driving_School_Management_System.Forms
@@ -21,12 +13,12 @@ namespace Driving_School_Management_System.Forms
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
           (
-              int nLeftRect,     // x-coordinate of upper-left corner
-              int nTopRect,      // y-coordinate of upper-left corner
-              int nRightRect,    // x-coordinate of lower-right corner
-              int nBottomRect,   // y-coordinate of lower-right corner
-              int nWidthEllipse, // width of ellipse
-              int nHeightEllipse // height of ellipse
+              int nLeftRect,    
+              int nTopRect,     
+              int nRightRect,   
+              int nBottomRect,  
+              int nWidthEllipse,
+              int nHeightEllipse
           );
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -47,7 +39,29 @@ namespace Driving_School_Management_System.Forms
         }
 
 
+        clsLesson lesson ;  
 
+
+        
+        
+        private void _initializeGroupsCbox()
+        {
+            CbxGroup.DataSource = clsGroup.GetAllGroupsNames().DefaultView;
+            CbxGroup.DisplayMember = "Name";
+        }
+
+        private void _initializeInstructorsCbox()
+        {
+            CboxInsructor.DataSource = clsInstructor.GatAllInsructorsUserName().DefaultView;
+            CboxInsructor.DisplayMember = "UserName";
+           
+        }
+
+        private void _inetializeCboxes()
+        {
+            _initializeGroupsCbox();
+            _initializeInstructorsCbox(); 
+        }
 
 
 
@@ -55,6 +69,8 @@ namespace Driving_School_Management_System.Forms
         {
             InitializeComponent();
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            _inetializeCboxes(); 
+
 
         }
 
