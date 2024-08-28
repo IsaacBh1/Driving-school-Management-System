@@ -13,7 +13,7 @@ namespace Driving_school_BusinessLayer
         public DateTime LessonDate { get; set; }
         public int Duration_hours { get; set; } = 0;
         public int Duration_minutes { get; set; } = 0;
-        public TimeSpan timeSpan { get; set; } = 0; 
+        public TimeSpan timeSpan { get; set; } = TimeSpan.Zero; 
         public string type { get; set; }
         public int InstructorID { get; set; }
 
