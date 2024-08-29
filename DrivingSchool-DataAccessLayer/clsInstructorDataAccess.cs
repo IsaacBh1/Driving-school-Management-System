@@ -293,8 +293,40 @@ namespace DrivingSchool_DataAccessLayer
             return ID;
         }
 
+        public static string GetInstructorUserNameByID(int instructorID)
+        {
+            string userName = null;
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select UserName from Instructors where InstructorID = @InstructorID;";
 
-    
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@InstructorID", instructorID);
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        userName = reader["UserName"].ToString();
+                    }
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return userName;
+        }
+
+
 
 
 

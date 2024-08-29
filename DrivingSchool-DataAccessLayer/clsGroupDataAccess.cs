@@ -282,5 +282,34 @@ namespace DrivingSchool_DataAccessLayer
             catch { return -1; }
             finally { connection.Close(); }
         }
+        public static string GetGroupNameByID(int groupID)
+        {
+            string groupName = null;
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = @"select Name from Groups where GroupID = @groupID;";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@groupID", groupID);
+
+            try
+            {
+                connection.Open();
+                var result = command.ExecuteScalar();
+                if (result != null)
+                {
+                    groupName = result.ToString();
+                }
+                return groupName;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+
     }
 }

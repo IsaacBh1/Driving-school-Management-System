@@ -1,4 +1,5 @@
 ﻿using DrivingSchool_DataAccessLayer;
+using Microsoft.SqlServer.Server;
 using System.Data;
 
 namespace Driving_school_BusinessLayer
@@ -78,6 +79,10 @@ namespace Driving_school_BusinessLayer
         public static int GetGroupIDbyName(string name)
         {
             return clsGroupDataAccess.GetGroupIDbyName(name);
+        }
+        public static string GetGroupNameByID(int ID)
+        {
+            return clsGroupDataAccess.GetGroupNameByID(ID);
         }
     }
 }

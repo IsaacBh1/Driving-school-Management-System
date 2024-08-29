@@ -125,5 +125,12 @@ namespace Driving_school_BusinessLayer
         }
 
 
+        public static string GetInsreuctorUserNameByID(int ID)
+        {
+            return clsInstructorDataAccess.GetInstructorUserNameByID(ID); 
+
+        }
+
+
     }
 }

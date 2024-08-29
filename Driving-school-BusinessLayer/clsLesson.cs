@@ -1,5 +1,6 @@
 ﻿using DrivingSchool_DataAccessLayer;
 using System;
+using System.Data;
 
 namespace Driving_school_BusinessLayer
 {
@@ -68,6 +69,9 @@ namespace Driving_school_BusinessLayer
             return false;
         }
 
+
+        public static DataTable GetAllLessons() => clsLessonDataAccess.GetAllLessons(); 
+        
        /* public static clsLesson Find(int ID)
         {
            

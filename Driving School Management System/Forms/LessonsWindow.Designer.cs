@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -38,14 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSearchStudentinfo = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.DGVStudents = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FirstName_Arabic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LastName_Arabic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdentityCardNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Operations = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DGVLessons = new Guna.UI2.WinForms.Guna2DataGridView();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtBoxID = new System.Windows.Forms.TextBox();
@@ -53,25 +46,24 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtBoxIdentityNumber = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.txtBoxFirstName_Arabic = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.txtBoxLastName_Arabic = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GroupID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Instructor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TimeOfLesson = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Duration = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Operations = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVStudents)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVLessons)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -106,7 +98,7 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btnSearchStudentinfo);
             this.panel2.Controls.Add(this.guna2Button3);
-            this.panel2.Controls.Add(this.DGVStudents);
+            this.panel2.Controls.Add(this.DGVLessons);
             this.panel2.Controls.Add(this.flowLayoutPanel1);
             this.panel2.Controls.Add(this.guna2Separator1);
             this.panel2.Controls.Add(this.label2);
@@ -188,133 +180,82 @@
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
             this.guna2Button3.Size = new System.Drawing.Size(41, 43);
             this.guna2Button3.TabIndex = 26;
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
-            // DGVStudents
+            // DGVLessons
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.DGVStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.DGVStudents.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.DGVLessons.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DGVLessons.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.DGVStudents.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DGVStudents.BackgroundColor = System.Drawing.Color.White;
-            this.DGVStudents.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DGVStudents.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DGVStudents.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.NullValue = "\"\"";
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.DGVStudents.ColumnHeadersHeight = 50;
-            this.DGVStudents.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DGVLessons.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGVLessons.BackgroundColor = System.Drawing.Color.White;
+            this.DGVLessons.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DGVLessons.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DGVLessons.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.NullValue = "\"\"";
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVLessons.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DGVLessons.ColumnHeadersHeight = 50;
+            this.DGVLessons.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
-            this.FirstName_Arabic,
-            this.LastName_Arabic,
-            this.IdentityCardNumber,
-            this.Phone,
-            this.Email,
+            this.GroupID,
+            this.Instructor,
+            this.Type,
+            this.TimeOfLesson,
+            this.Duration,
             this.Operations});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGVStudents.DefaultCellStyle = dataGridViewCellStyle6;
-            this.DGVStudents.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.DGVStudents.EnableHeadersVisualStyles = false;
-            this.DGVStudents.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DGVStudents.Location = new System.Drawing.Point(6, 231);
-            this.DGVStudents.Name = "DGVStudents";
-            this.DGVStudents.ReadOnly = true;
-            this.DGVStudents.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.DGVStudents.RowHeadersVisible = false;
-            this.DGVStudents.RowHeadersWidth = 62;
-            this.DGVStudents.RowTemplate.Height = 29;
-            this.DGVStudents.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.DGVStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVStudents.Size = new System.Drawing.Size(1130, 311);
-            this.DGVStudents.TabIndex = 25;
-            this.DGVStudents.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.DGVStudents.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.DGVStudents.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.DGVStudents.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.DGVStudents.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.DGVStudents.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.DGVStudents.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.DGVStudents.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DGVStudents.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
-            this.DGVStudents.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DGVStudents.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.DGVStudents.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.DGVStudents.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.DGVStudents.ThemeStyle.HeaderStyle.Height = 50;
-            this.DGVStudents.ThemeStyle.ReadOnly = true;
-            this.DGVStudents.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.DGVStudents.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DGVStudents.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.DGVStudents.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.DGVStudents.ThemeStyle.RowsStyle.Height = 29;
-            this.DGVStudents.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DGVStudents.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 8;
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            // 
-            // FirstName_Arabic
-            // 
-            this.FirstName_Arabic.HeaderText = "الاسم";
-            this.FirstName_Arabic.MinimumWidth = 8;
-            this.FirstName_Arabic.Name = "FirstName_Arabic";
-            this.FirstName_Arabic.ReadOnly = true;
-            // 
-            // LastName_Arabic
-            // 
-            this.LastName_Arabic.HeaderText = "النسب";
-            this.LastName_Arabic.MinimumWidth = 8;
-            this.LastName_Arabic.Name = "LastName_Arabic";
-            this.LastName_Arabic.ReadOnly = true;
-            // 
-            // IdentityCardNumber
-            // 
-            this.IdentityCardNumber.HeaderText = "رقم ب.ت.و";
-            this.IdentityCardNumber.MinimumWidth = 8;
-            this.IdentityCardNumber.Name = "IdentityCardNumber";
-            this.IdentityCardNumber.ReadOnly = true;
-            // 
-            // Phone
-            // 
-            this.Phone.HeaderText = "رقم الهاتف";
-            this.Phone.MinimumWidth = 8;
-            this.Phone.Name = "Phone";
-            this.Phone.ReadOnly = true;
-            // 
-            // Email
-            // 
-            this.Email.HeaderText = "البريد الإلكتروني";
-            this.Email.MinimumWidth = 8;
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            // 
-            // Operations
-            // 
-            this.Operations.HeaderText = "الإجراءات";
-            this.Operations.Image = global::Driving_School_Management_System.Properties.Resources.dots_three_outline;
-            this.Operations.MinimumWidth = 8;
-            this.Operations.Name = "Operations";
-            this.Operations.ReadOnly = true;
-            this.Operations.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Operations.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGVLessons.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DGVLessons.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.DGVLessons.EnableHeadersVisualStyles = false;
+            this.DGVLessons.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DGVLessons.Location = new System.Drawing.Point(6, 231);
+            this.DGVLessons.Name = "DGVLessons";
+            this.DGVLessons.ReadOnly = true;
+            this.DGVLessons.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.DGVLessons.RowHeadersVisible = false;
+            this.DGVLessons.RowHeadersWidth = 62;
+            this.DGVLessons.RowTemplate.Height = 29;
+            this.DGVLessons.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.DGVLessons.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGVLessons.Size = new System.Drawing.Size(1130, 311);
+            this.DGVLessons.TabIndex = 25;
+            this.DGVLessons.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.DGVLessons.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.DGVLessons.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.DGVLessons.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.DGVLessons.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.DGVLessons.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.DGVLessons.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.DGVLessons.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DGVLessons.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
+            this.DGVLessons.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DGVLessons.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.DGVLessons.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.DGVLessons.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.DGVLessons.ThemeStyle.HeaderStyle.Height = 50;
+            this.DGVLessons.ThemeStyle.ReadOnly = true;
+            this.DGVLessons.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.DGVLessons.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DGVLessons.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.DGVLessons.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DGVLessons.ThemeStyle.RowsStyle.Height = 29;
+            this.DGVLessons.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DGVLessons.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // flowLayoutPanel1
             // 
@@ -322,8 +263,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Controls.Add(this.panel4);
-            this.flowLayoutPanel1.Controls.Add(this.panel5);
-            this.flowLayoutPanel1.Controls.Add(this.panel6);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(14, 125);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -384,60 +323,6 @@
             this.label6.TabIndex = 23;
             this.label6.Text = "رقم بطاقة الهوية";
             // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.txtBoxFirstName_Arabic);
-            this.panel5.Controls.Add(this.label7);
-            this.panel5.Location = new System.Drawing.Point(558, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(183, 83);
-            this.panel5.TabIndex = 25;
-            // 
-            // txtBoxFirstName_Arabic
-            // 
-            this.txtBoxFirstName_Arabic.Location = new System.Drawing.Point(14, 35);
-            this.txtBoxFirstName_Arabic.Name = "txtBoxFirstName_Arabic";
-            this.txtBoxFirstName_Arabic.Size = new System.Drawing.Size(157, 27);
-            this.txtBoxFirstName_Arabic.TabIndex = 27;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(118, 2);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 28);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "الاسم";
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.txtBoxLastName_Arabic);
-            this.panel6.Controls.Add(this.label8);
-            this.panel6.Location = new System.Drawing.Point(369, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(183, 83);
-            this.panel6.TabIndex = 26;
-            // 
-            // txtBoxLastName_Arabic
-            // 
-            this.txtBoxLastName_Arabic.Location = new System.Drawing.Point(14, 35);
-            this.txtBoxLastName_Arabic.Name = "txtBoxLastName_Arabic";
-            this.txtBoxLastName_Arabic.Size = new System.Drawing.Size(157, 27);
-            this.txtBoxLastName_Arabic.TabIndex = 26;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(110, 2);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 28);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "النسب";
-            // 
             // guna2Separator1
             // 
             this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -491,6 +376,58 @@
             this.guna2Button1.Text = "إضافة ";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 8;
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            // 
+            // GroupID
+            // 
+            this.GroupID.HeaderText = "المجموعة";
+            this.GroupID.MinimumWidth = 8;
+            this.GroupID.Name = "GroupID";
+            this.GroupID.ReadOnly = true;
+            // 
+            // Instructor
+            // 
+            this.Instructor.HeaderText = "المدرب";
+            this.Instructor.MinimumWidth = 8;
+            this.Instructor.Name = "Instructor";
+            this.Instructor.ReadOnly = true;
+            // 
+            // Type
+            // 
+            this.Type.HeaderText = "نوع الدرس";
+            this.Type.MinimumWidth = 8;
+            this.Type.Name = "Type";
+            this.Type.ReadOnly = true;
+            // 
+            // TimeOfLesson
+            // 
+            this.TimeOfLesson.HeaderText = "وقت الدرس";
+            this.TimeOfLesson.MinimumWidth = 8;
+            this.TimeOfLesson.Name = "TimeOfLesson";
+            this.TimeOfLesson.ReadOnly = true;
+            // 
+            // Duration
+            // 
+            this.Duration.HeaderText = "مدة الدرس";
+            this.Duration.MinimumWidth = 20;
+            this.Duration.Name = "Duration";
+            this.Duration.ReadOnly = true;
+            // 
+            // Operations
+            // 
+            this.Operations.HeaderText = "الإجراءات";
+            this.Operations.Image = global::Driving_School_Management_System.Properties.Resources.dots_three_outline;
+            this.Operations.MinimumWidth = 8;
+            this.Operations.Name = "Operations";
+            this.Operations.ReadOnly = true;
+            this.Operations.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Operations.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // LessonsWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -506,16 +443,12 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVStudents)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVLessons)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -530,14 +463,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnSearchStudentinfo;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2DataGridView DGVStudents;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FirstName_Arabic;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LastName_Arabic;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdentityCardNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewImageColumn Operations;
+        private Guna.UI2.WinForms.Guna2DataGridView DGVLessons;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtBoxID;
@@ -545,14 +471,15 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txtBoxIdentityNumber;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox txtBoxFirstName_Arabic;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox txtBoxLastName_Arabic;
-        private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GroupID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Instructor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TimeOfLesson;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Duration;
+        private System.Windows.Forms.DataGridViewImageColumn Operations;
     }
 }
