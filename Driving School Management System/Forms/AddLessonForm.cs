@@ -38,12 +38,12 @@ namespace Driving_School_Management_System.Forms
             }
         }
 
+        private bool InformationCorrect = true;
+        clsLesson lesson ;
+        StatusMessageForm statusMessageForm; 
 
-        clsLesson lesson ;  
 
 
-        
-        
         private void _initializeGroupsCbox()
         {
             CbxGroup.DataSource = clsGroup.GetAllGroupsNames().DefaultView;
@@ -63,6 +63,9 @@ namespace Driving_School_Management_System.Forms
             _initializeInstructorsCbox(); 
         }
 
+        private string _getLessonType() =>
+            rdobtnTheo.Checked ? "نظرية" : "تطبيقية"; 
+
 
 
         public AddLessonForm()
@@ -70,13 +73,38 @@ namespace Driving_School_Management_System.Forms
             InitializeComponent();
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             _inetializeCboxes(); 
-
-
+    
         }
 
         private void pictureBox1_Click(object sender, EventArgs e) => Close();
 
-        private void guna2Button2_Click(object sender, EventArgs e) => Close(); 
-    
+        private void guna2Button2_Click(object sender, EventArgs e) => Close();
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            lesson = new clsLesson()
+            {
+                GroupID = clsGroup.GetGroupIDbyName(CbxGroup.Text),
+                InstructorID = clsInstructor.GetInstructorIDByUserName(CboxInsructor.Text),
+                Duration_hours = Convert.ToInt32(numUpDwHours.Value),
+                Duration_minutes = Convert.ToInt32(numUpDwMins.Value),
+                timeSpan = new TimeSpan(Convert.ToInt32(numUpDwHours.Value), Convert.ToInt32(numUpDwMins.Value), 0),
+                type = _getLessonType(),
+                LessonDate = dateTimeLessaon.Value
+
+            };
+            if (lesson.Save())
+            {
+                // MessageBox.Show("student is saved successfully with ID = " + student.StudentID);
+                statusMessageForm = new StatusMessageForm("Student Saved Successfully .");
+                statusMessageForm.ShowSuccess();
+                Close();
+            }
+            else
+            {
+                statusMessageForm = new StatusMessageForm("Student not Saved .");
+                statusMessageForm.ShowFailed();
+            }; 
+        }
     }
 }

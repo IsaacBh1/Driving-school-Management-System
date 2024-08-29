@@ -45,16 +45,16 @@
             this.rdobtnApp = new System.Windows.Forms.RadioButton();
             this.rdobtnTheo = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.chckLessonsType = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeLessaon = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numUpDwMins = new System.Windows.Forms.NumericUpDown();
+            this.numUpDwHours = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -67,8 +67,8 @@
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDwMins)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDwHours)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Separator1
@@ -235,7 +235,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.chckLessonsType);
             this.panel3.Location = new System.Drawing.Point(44, 155);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(771, 70);
@@ -286,23 +286,23 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "*";
             // 
-            // label7
+            // chckLessonsType
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(689, 17);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 31);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "النوع";
+            this.chckLessonsType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chckLessonsType.AutoSize = true;
+            this.chckLessonsType.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chckLessonsType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.chckLessonsType.Location = new System.Drawing.Point(689, 17);
+            this.chckLessonsType.Name = "chckLessonsType";
+            this.chckLessonsType.Size = new System.Drawing.Size(64, 31);
+            this.chckLessonsType.TabIndex = 9;
+            this.chckLessonsType.Text = "النوع";
             // 
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.Controls.Add(this.dateTimePicker1);
+            this.panel4.Controls.Add(this.dateTimeLessaon);
             this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Location = new System.Drawing.Point(44, 231);
@@ -310,13 +310,13 @@
             this.panel4.Size = new System.Drawing.Size(771, 70);
             this.panel4.TabIndex = 29;
             // 
-            // dateTimePicker1
+            // dateTimeLessaon
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(126, 23);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(359, 27);
-            this.dateTimePicker1.TabIndex = 12;
+            this.dateTimeLessaon.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimeLessaon.Location = new System.Drawing.Point(126, 23);
+            this.dateTimeLessaon.Name = "dateTimeLessaon";
+            this.dateTimeLessaon.Size = new System.Drawing.Size(359, 27);
+            this.dateTimeLessaon.TabIndex = 12;
             // 
             // label8
             // 
@@ -347,8 +347,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.Controls.Add(this.label13);
             this.panel5.Controls.Add(this.label12);
-            this.panel5.Controls.Add(this.numericUpDown2);
-            this.panel5.Controls.Add(this.numericUpDown1);
+            this.panel5.Controls.Add(this.numUpDwMins);
+            this.panel5.Controls.Add(this.numUpDwHours);
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.label11);
             this.panel5.Location = new System.Drawing.Point(44, 307);
@@ -378,26 +378,26 @@
             this.label12.TabIndex = 14;
             this.label12.Text = "h";
             // 
-            // numericUpDown2
+            // numUpDwMins
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(175, 20);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(140, 27);
-            this.numericUpDown2.TabIndex = 13;
+            this.numUpDwMins.Location = new System.Drawing.Point(175, 20);
+            this.numUpDwMins.Name = "numUpDwMins";
+            this.numUpDwMins.Size = new System.Drawing.Size(140, 27);
+            this.numUpDwMins.TabIndex = 13;
             // 
-            // numericUpDown1
+            // numUpDwHours
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(355, 20);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(140, 27);
-            this.numericUpDown1.TabIndex = 12;
+            this.numUpDwHours.Location = new System.Drawing.Point(355, 20);
+            this.numUpDwHours.Name = "numUpDwHours";
+            this.numUpDwHours.Size = new System.Drawing.Size(140, 27);
+            this.numUpDwHours.TabIndex = 12;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.ForeColor = System.Drawing.Color.Salmon;
-            this.label10.Location = new System.Drawing.Point(651, 29);
+            this.label10.Location = new System.Drawing.Point(658, 29);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(18, 19);
             this.label10.TabIndex = 11;
@@ -450,6 +450,7 @@
             this.btnSubmit.Size = new System.Drawing.Size(126, 44);
             this.btnSubmit.TabIndex = 35;
             this.btnSubmit.Text = "التسجيل";
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // AddLessonForm
             // 
@@ -481,8 +482,8 @@
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDwMins)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUpDwHours)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -504,7 +505,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label chckLessonsType;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -514,12 +515,12 @@
         private System.Windows.Forms.RadioButton rdobtnTheo;
         private System.Windows.Forms.RadioButton rdobtnApp;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numUpDwHours;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numUpDwMins;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button btnSubmit;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimeLessaon;
     }
 }
