@@ -39,24 +39,28 @@
             this.btnSearchStudentinfo = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.DGVLessons = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txtBoxID = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.txtBoxIdentityNumber = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GroupID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Instructor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TimeOfLesson = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Duration = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Operations = new System.Windows.Forms.DataGridViewImageColumn();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txtBoxID = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.CbxGroup = new MetroFramework.Controls.MetroComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,6 +68,7 @@
             this.flowLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -210,6 +215,7 @@
             this.Instructor,
             this.Type,
             this.TimeOfLesson,
+            this.Time,
             this.Duration,
             this.Operations});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -257,12 +263,72 @@
             this.DGVLessons.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DGVLessons.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 8;
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            // 
+            // GroupID
+            // 
+            this.GroupID.HeaderText = "المجموعة";
+            this.GroupID.MinimumWidth = 8;
+            this.GroupID.Name = "GroupID";
+            this.GroupID.ReadOnly = true;
+            // 
+            // Instructor
+            // 
+            this.Instructor.HeaderText = "المدرب";
+            this.Instructor.MinimumWidth = 8;
+            this.Instructor.Name = "Instructor";
+            this.Instructor.ReadOnly = true;
+            // 
+            // Type
+            // 
+            this.Type.HeaderText = "نوع الدرس";
+            this.Type.MinimumWidth = 8;
+            this.Type.Name = "Type";
+            this.Type.ReadOnly = true;
+            // 
+            // TimeOfLesson
+            // 
+            this.TimeOfLesson.HeaderText = "يوم الدرس";
+            this.TimeOfLesson.MinimumWidth = 8;
+            this.TimeOfLesson.Name = "TimeOfLesson";
+            this.TimeOfLesson.ReadOnly = true;
+            // 
+            // Time
+            // 
+            this.Time.HeaderText = "الوقت";
+            this.Time.MinimumWidth = 8;
+            this.Time.Name = "Time";
+            this.Time.ReadOnly = true;
+            // 
+            // Duration
+            // 
+            this.Duration.HeaderText = "مدة الدرس";
+            this.Duration.MinimumWidth = 20;
+            this.Duration.Name = "Duration";
+            this.Duration.ReadOnly = true;
+            // 
+            // Operations
+            // 
+            this.Operations.HeaderText = "الإجراءات";
+            this.Operations.Image = global::Driving_School_Management_System.Properties.Resources.dots_three_outline;
+            this.Operations.MinimumWidth = 8;
+            this.Operations.Name = "Operations";
+            this.Operations.ReadOnly = true;
+            this.Operations.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Operations.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Controls.Add(this.panel4);
+            this.flowLayoutPanel1.Controls.Add(this.panel5);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(14, 125);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -298,30 +364,70 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.txtBoxIdentityNumber);
+            this.panel4.Controls.Add(this.CbxGroup);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Location = new System.Drawing.Point(747, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(183, 83);
             this.panel4.TabIndex = 24;
             // 
-            // txtBoxIdentityNumber
+            // CbxGroup
             // 
-            this.txtBoxIdentityNumber.Location = new System.Drawing.Point(21, 35);
-            this.txtBoxIdentityNumber.Name = "txtBoxIdentityNumber";
-            this.txtBoxIdentityNumber.Size = new System.Drawing.Size(157, 27);
-            this.txtBoxIdentityNumber.TabIndex = 28;
+            this.CbxGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CbxGroup.FormattingEnabled = true;
+            this.CbxGroup.ItemHeight = 23;
+            this.CbxGroup.Location = new System.Drawing.Point(21, 34);
+            this.CbxGroup.Name = "CbxGroup";
+            this.CbxGroup.Size = new System.Drawing.Size(157, 29);
+            this.CbxGroup.TabIndex = 25;
+            this.CbxGroup.UseSelectable = true;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(26, 2);
+            this.label6.Location = new System.Drawing.Point(86, 2);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(150, 28);
+            this.label6.Size = new System.Drawing.Size(92, 28);
             this.label6.TabIndex = 23;
-            this.label6.Text = "رقم بطاقة الهوية";
+            this.label6.Text = "المجموعة";
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.metroComboBox1);
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Location = new System.Drawing.Point(558, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(183, 83);
+            this.panel5.TabIndex = 26;
+            // 
+            // metroComboBox1
+            // 
+            this.metroComboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroComboBox1.FormattingEnabled = true;
+            this.metroComboBox1.ItemHeight = 23;
+            this.metroComboBox1.Items.AddRange(new object[] {
+            "نظرية",
+            "تطبيقية"});
+            this.metroComboBox1.Location = new System.Drawing.Point(21, 34);
+            this.metroComboBox1.Name = "metroComboBox1";
+            this.metroComboBox1.Size = new System.Drawing.Size(157, 29);
+            this.metroComboBox1.TabIndex = 25;
+            this.metroComboBox1.UseSelectable = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label3.ForeColor = System.Drawing.Color.Gray;
+            this.label3.Location = new System.Drawing.Point(81, 2);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 28);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "نوع الدرس";
             // 
             // guna2Separator1
             // 
@@ -368,65 +474,13 @@
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Image = global::Driving_School_Management_System.Properties.Resources.plus_bold;
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2Button1.Location = new System.Drawing.Point(34, 13);
+            this.guna2Button1.Location = new System.Drawing.Point(34, 20);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(126, 44);
             this.guna2Button1.TabIndex = 6;
             this.guna2Button1.Text = "إضافة ";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 8;
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            // 
-            // GroupID
-            // 
-            this.GroupID.HeaderText = "المجموعة";
-            this.GroupID.MinimumWidth = 8;
-            this.GroupID.Name = "GroupID";
-            this.GroupID.ReadOnly = true;
-            // 
-            // Instructor
-            // 
-            this.Instructor.HeaderText = "المدرب";
-            this.Instructor.MinimumWidth = 8;
-            this.Instructor.Name = "Instructor";
-            this.Instructor.ReadOnly = true;
-            // 
-            // Type
-            // 
-            this.Type.HeaderText = "نوع الدرس";
-            this.Type.MinimumWidth = 8;
-            this.Type.Name = "Type";
-            this.Type.ReadOnly = true;
-            // 
-            // TimeOfLesson
-            // 
-            this.TimeOfLesson.HeaderText = "وقت الدرس";
-            this.TimeOfLesson.MinimumWidth = 8;
-            this.TimeOfLesson.Name = "TimeOfLesson";
-            this.TimeOfLesson.ReadOnly = true;
-            // 
-            // Duration
-            // 
-            this.Duration.HeaderText = "مدة الدرس";
-            this.Duration.MinimumWidth = 20;
-            this.Duration.Name = "Duration";
-            this.Duration.ReadOnly = true;
-            // 
-            // Operations
-            // 
-            this.Operations.HeaderText = "الإجراءات";
-            this.Operations.Image = global::Driving_School_Management_System.Properties.Resources.dots_three_outline;
-            this.Operations.MinimumWidth = 8;
-            this.Operations.Name = "Operations";
-            this.Operations.ReadOnly = true;
-            this.Operations.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Operations.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // LessonsWindow
             // 
@@ -449,6 +503,8 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -469,7 +525,6 @@
         private System.Windows.Forms.TextBox txtBoxID;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox txtBoxIdentityNumber;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.Label label2;
@@ -479,7 +534,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Instructor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Type;
         private System.Windows.Forms.DataGridViewTextBoxColumn TimeOfLesson;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Time;
         private System.Windows.Forms.DataGridViewTextBoxColumn Duration;
         private System.Windows.Forms.DataGridViewImageColumn Operations;
+        private MetroFramework.Controls.MetroComboBox CbxGroup;
+        private System.Windows.Forms.Panel panel5;
+        private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private System.Windows.Forms.Label label3;
     }
 }

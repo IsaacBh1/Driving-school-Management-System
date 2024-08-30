@@ -38,7 +38,7 @@ namespace Driving_School_Management_System.Forms
             }
         }
 
-        private bool InformationCorrect = true;
+        //private bool InformationCorrect = true;
         clsLesson lesson ;
         StatusMessageForm statusMessageForm; 
 
@@ -63,8 +63,7 @@ namespace Driving_School_Management_System.Forms
             _initializeInstructorsCbox(); 
         }
 
-        private string _getLessonType() =>
-            rdobtnTheo.Checked ? "نظرية" : "تطبيقية"; 
+        private string _getLessonType() => rdobtnTheo.Checked ? "نظرية" : "تطبيقية"; 
 
 
 
@@ -88,7 +87,7 @@ namespace Driving_School_Management_System.Forms
                 InstructorID = clsInstructor.GetInstructorIDByUserName(CboxInsructor.Text),
                 Duration_hours = Convert.ToInt32(numUpDwHours.Value),
                 Duration_minutes = Convert.ToInt32(numUpDwMins.Value),
-                timeSpan = new TimeSpan(Convert.ToInt32(numUpDwHours.Value), Convert.ToInt32(numUpDwMins.Value), 0),
+                timeSpan = new TimeSpan(Convert.ToInt32(numUpDwTimeHours.Value), Convert.ToInt32(numUpDwTimeMins.Value), 0),
                 type = _getLessonType(),
                 LessonDate = dateTimeLessaon.Value
 

@@ -12,7 +12,7 @@ namespace DrivingSchool_DataAccessLayer
         {
             DataTable lessons = new DataTable();
             SqlConnection connection = new SqlConnection(ConnectionString);
-            string query = "select * from Lessons; ";
+            string query = "select * from Lessons order by LessonID desc; ";
             SqlCommand command = new SqlCommand(query, connection);
             try
             {

@@ -1,12 +1,6 @@
 ﻿using Driving_school_BusinessLayer;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Driving_School_Management_System.Forms
@@ -16,7 +10,9 @@ namespace Driving_School_Management_System.Forms
         public LessonsWindow()
         {
             InitializeComponent();
+            _initializeGroupsCbox(); 
             DisplayCondidteFilesInformations(clsLesson.GetAllLessons()); 
+
         }
 
 
@@ -26,10 +22,23 @@ namespace Driving_School_Management_System.Forms
             foreach (DataRow row in AllLessons.Rows)
             {
                 string DurationTime =row["DurationHours"].ToString() + ":" + row["DurationMin"] ;  
-                DGVLessons.Rows.Add(row[0], clsGroup.GetGroupNameByID ((int)row[7]),clsInstructor.GetInsreuctorUserNameByID((int)row[6]), row[1], row[2] , DurationTime);
+                DGVLessons.Rows.Add(row[0], 
+                    clsGroup.GetGroupNameByID ((int)row[7]),
+                    clsInstructor.GetInsreuctorUserNameByID((int)row[6]), 
+                    row[1], 
+                    row[2], 
+                    row[3], 
+                    DurationTime);
             }
             
         }
+
+        private void _initializeGroupsCbox()
+        {
+            CbxGroup.DataSource = clsGroup.GetAllGroupsNames().DefaultView;
+            CbxGroup.DisplayMember = "Name";
+        }
+
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
@@ -42,5 +51,6 @@ namespace Driving_School_Management_System.Forms
             DisplayCondidteFilesInformations(clsLesson.GetAllLessons());
 
         }
+        //the search will be implemented later on 
     }
 }
