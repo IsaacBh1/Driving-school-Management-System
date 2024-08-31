@@ -64,6 +64,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calender.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calender.Designer.cs">
+      <DependentUpon>Calender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CalenderDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CalenderDay.Designer.cs">
+      <DependentUpon>CalenderDay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddCondidateFileForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,12 @@
     </Compile>
     <Compile Include="Forms\AddLessonForm.Designer.cs">
       <DependentUpon>AddLessonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lessons&amp;ExamsCalender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lessons&amp;ExamsCalender.Designer.cs">
+      <DependentUpon>Lessons&amp;ExamsCalender.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\LessonsWindow.cs">
       <SubType>Form</SubType>
@@ -133,11 +151,20 @@
       <DependentUpon>SavedSuccessfullyMessage.cs</DependentUpon>
     </Compile>
     <Compile Include="UtilityClasses\AddStudentEventArgs.cs" />
+    <EmbeddedResource Include="Calender.resx">
+      <DependentUpon>Calender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CalenderDay.resx">
+      <DependentUpon>CalenderDay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddCondidateFileForm.resx">
       <DependentUpon>AddCondidateFileForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddLessonForm.resx">
       <DependentUpon>AddLessonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lessons&amp;ExamsCalender.resx">
+      <DependentUpon>Lessons&amp;ExamsCalender.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LessonsWindow.resx">
       <DependentUpon>LessonsWindow.cs</DependentUpon>
@@ -371,6 +398,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\file-thin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-circle-left-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-circle-right-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-fill.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

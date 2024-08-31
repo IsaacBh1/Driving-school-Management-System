@@ -73,6 +73,26 @@ namespace Driving_School_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_circle_left_fill {
+            get {
+                object obj = ResourceManager.GetObject("arrow-circle-left-fill", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arrow_circle_right_fill {
+            get {
+                object obj = ResourceManager.GetObject("arrow-circle-right-fill", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrows_clockwise {
             get {
                 object obj = ResourceManager.GetObject("arrows-clockwise", resourceCulture);
@@ -136,6 +156,16 @@ namespace Driving_School_Management_System.Properties {
         internal static System.Drawing.Bitmap box_arrow_down_bold {
             get {
                 object obj = ResourceManager.GetObject("box-arrow-down-bold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar_fill {
+            get {
+                object obj = ResourceManager.GetObject("calendar-fill", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

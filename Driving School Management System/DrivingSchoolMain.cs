@@ -141,5 +141,11 @@ namespace Driving_School_Management_System
             ShowWindow<LessonsWindow>(lessonsForm); 
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Lessons_Exams lessons_Exams = new Lessons_Exams();
+            lessons_Exams.ShowDialog(); 
+        }
     }
 }
