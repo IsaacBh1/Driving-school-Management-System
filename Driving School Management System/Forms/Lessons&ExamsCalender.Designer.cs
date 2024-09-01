@@ -31,7 +31,7 @@
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.calender1 = new Driving_School_Management_System.Calender();
+            this.calenderContainer = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,23 +72,23 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // calender1
+            // calenderContainer
             // 
-            this.calender1.Location = new System.Drawing.Point(15, 58);
-            this.calender1.Name = "calender1";
-            this.calender1.Size = new System.Drawing.Size(1037, 913);
-            this.calender1.TabIndex = 0;
+            this.calenderContainer.Location = new System.Drawing.Point(12, 68);
+            this.calenderContainer.Name = "calenderContainer";
+            this.calenderContainer.Size = new System.Drawing.Size(1025, 795);
+            this.calenderContainer.TabIndex = 9;
             // 
             // Lessons_Exams
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1058, 849);
+            this.ClientSize = new System.Drawing.Size(1058, 875);
+            this.Controls.Add(this.calenderContainer);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.calender1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Lessons_Exams";
             this.Text = "Lessons_Exams";
@@ -100,10 +100,9 @@
         }
 
         #endregion
-
-        private Calender calender1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel calenderContainer;
     }
 }

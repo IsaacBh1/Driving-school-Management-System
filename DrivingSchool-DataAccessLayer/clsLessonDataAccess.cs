@@ -6,7 +6,7 @@ namespace DrivingSchool_DataAccessLayer
 {
     public sealed class clsLessonDataAccess
     {
-        private static readonly string ConnectionString = clsConnectionStr.ConnectionStr;
+        private static string ConnectionString = clsConnectionStr.ConnectionStr;
 
         public static DataTable GetAllLessons()
         {
@@ -237,29 +237,35 @@ namespace DrivingSchool_DataAccessLayer
 
         public static int GetNumberOfLessonsPerDay(string day)
         {
+            int Numberoflessons = 0;
             SqlConnection connection = new SqlConnection(ConnectionString);
-            int numberOfLessonsInDay = 0;
-            string query = "select count(*) as NumberOfLessons from Lessons where DateOfLessons like '" + day + "' group by Type;";
-            SqlCommand command = new SqlCommand(query , connection); 
-            
+            string query = "select count(*)as NumberOfLessons from Lessons where DateOfLessons like '"+day+"' group by Type; "; 
+
+            SqlCommand command = new SqlCommand(query, connection);
+
             try
             {
                 connection.Open();
-                SqlDataReader reader = command.ExecuteReader();   
+                SqlDataReader reader = command.ExecuteReader();
                 if (reader.HasRows)
                 {
-                    numberOfLessonsInDay = (int)reader["NumberOfLessons"]; 
+                    while (reader.Read())
+                    {
+                        Numberoflessons = (int)reader["NumberOfLessons"];
+                    }
                 }
+                reader.Close();
             }
             catch
             {
-
-            }finally
-            {
-
-                connection.Close();  
+                return -1;
             }
-            return numberOfLessonsInDay;
+            finally
+            {
+                connection.Close();
+            }
+            return Numberoflessons;
+
         }
 
         public static bool IsLessonExist(string type, DateTime dateOfLessons, TimeSpan timeOfLesson, int durationHours, int durationMin, int condidateFileID, int instructor)

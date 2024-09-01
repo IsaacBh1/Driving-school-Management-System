@@ -40,6 +40,10 @@ namespace Driving_School_Management_System.Forms
             InitializeComponent();
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
+            Calender calender = new Calender();
+            calenderContainer.Controls.Add(calender); 
+
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

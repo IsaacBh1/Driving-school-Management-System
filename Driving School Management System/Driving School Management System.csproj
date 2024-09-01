@@ -64,10 +64,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calender.cs">
+    <Compile Include="UserControls\Calender.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Calender.Designer.cs">
+    <Compile Include="UserControls\Calender.Designer.cs">
       <DependentUpon>Calender.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\CalenderDay.cs">
@@ -151,7 +151,7 @@
       <DependentUpon>SavedSuccessfullyMessage.cs</DependentUpon>
     </Compile>
     <Compile Include="UtilityClasses\AddStudentEventArgs.cs" />
-    <EmbeddedResource Include="Calender.resx">
+    <EmbeddedResource Include="UserControls\Calender.resx">
       <DependentUpon>Calender.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\CalenderDay.resx">

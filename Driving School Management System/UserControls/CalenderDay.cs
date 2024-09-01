@@ -16,9 +16,9 @@ namespace Driving_School_Management_System
         {
             InitializeComponent();
             NumberDay.Text = dayNumber.ToString();
-            if (numberofExams > 0 && numberofLessons > 0)
+            if (numberofExams > 0 || numberofLessons > 0)
             {
-                InetializeCalederDay(numberofLessons, numberofExams);  
+                InetializeCalederDay(numberofLessons, numberofExams);
             }
             _day = dayNumber;
             BackColor = Color.Gray;
@@ -30,12 +30,12 @@ namespace Driving_School_Management_System
         private void InetializeCalederDay(int numberofLessons, int numberofExams)
         {
             Label lbl1 = new Label();
-            lbl1.Text = numberofExams.ToString() + ": امتحانات";
+            lbl1.Text = " امتحانات : " + numberofExams.ToString();
             lbl1.ForeColor = Color.Red;
             flowLayoutPanel2.Controls.Add(lbl1);
 
             Label lbl = new Label();
-            lbl.Text = numberofLessons.ToString() + " : دروس"; ;
+            lbl.Text = " دروس : " + numberofLessons.ToString() ; ;
             lbl.ForeColor = Color.Blue;
             flowLayoutPanel2.Controls.Add(lbl);
         }
