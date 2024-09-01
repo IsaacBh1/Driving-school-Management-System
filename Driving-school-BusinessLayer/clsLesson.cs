@@ -70,8 +70,12 @@ namespace Driving_school_BusinessLayer
         }
 
 
-        public static DataTable GetAllLessons() => clsLessonDataAccess.GetAllLessons(); 
-        
+        public static DataTable GetAllLessons() => clsLessonDataAccess.GetAllLessons();
+
+        public static int GetNumberOfLessonsPerDay(string day) => clsLessonDataAccess.GetNumberOfLessonsPerDay(day); 
+
+
+
        /* public static clsLesson Find(int ID)
         {
            
