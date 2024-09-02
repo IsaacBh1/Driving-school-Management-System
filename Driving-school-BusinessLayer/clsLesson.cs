@@ -1,6 +1,7 @@
 ﻿using DrivingSchool_DataAccessLayer;
 using System;
 using System.Data;
+using System.Security.Policy;
 
 namespace Driving_school_BusinessLayer
 {
@@ -72,19 +73,30 @@ namespace Driving_school_BusinessLayer
 
         public static DataTable GetAllLessons() => clsLessonDataAccess.GetAllLessons();
 
-        public static int GetNumberOfLessonsPerDay(string day) => clsLessonDataAccess.GetNumberOfLessonsPerDay(day); 
+        public static int GetNumberOfLessonsPerDay(string day) => clsLessonDataAccess.GetNumberOfLessonsPerDay(day);
 
 
 
-       /* public static clsLesson Find(int ID)
-        {
-           
+        /* public static clsLesson Find(int ID)
+         {
 
-            if (clsLessonDataAccess.GetLessonInfoByID(ID, ref _CandidateFileID, ref _LessonDate, ref _Notes, ref _ApplicationInstructorID, ref _IsCompleted))
-            {
-                //return new clsLesson(ID, _CandidateFileID, _LessonDate, _Notes, _ApplicationInstructorID, _IsCompleted);
-            }
-            return null;
-        }*/
+
+             if (clsLessonDataAccess.GetLessonInfoByID(ID, ref _CandidateFileID, ref _LessonDate, ref _Notes, ref _ApplicationInstructorID, ref _IsCompleted))
+             {
+                 //return new clsLesson(ID, _CandidateFileID, _LessonDate, _Notes, _ApplicationInstructorID, _IsCompleted);
+             }
+             return null;
+         }*/
+
+        public static DataTable SearchLessonByID(int ID) => clsLessonDataAccess.SearchLessonByID(ID);
+        public static DataTable SearchLessonByLessonType(string Type) => clsLessonDataAccess.SearchLessonByLessonType(Type); 
+        public static DataTable SearchLessonByGroup(string group) => clsLessonDataAccess.SearchLessonByGroup(group); 
+
+
+
+
+
+
+
     }
 }

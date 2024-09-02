@@ -278,7 +278,99 @@ namespace DrivingSchool_DataAccessLayer
             throw new NotImplementedException();
         }
 
+        public static DataTable SearchLessonByID(int ID)
+        {
+            DataTable lessons = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from Lessons where  LessonID = @ID; ";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@ID" , ID);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    lessons.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return lessons;
+        }
+        public static DataTable SearchLessonByLessonType(string Type)
+        {
+            DataTable lessons = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from Lessons where Type = @type;";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@type", Type);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    lessons.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return lessons;
+        }
 
-       
+        public static DataTable SearchLessonByGroup(string group)
+        {
+            DataTable lessons = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = @"select 
+                             Lessons.*
+                             from Lessons 
+                             inner join Groups On Lessons.GroupID = Groups.GroupID 
+                             where Groups.Name = @group ; ";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@group", group);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    lessons.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return lessons;
+        }
+
+
+
+
+
+
+
     }
+
 }

@@ -35,7 +35,7 @@ namespace Driving_School_Management_System
             flowLayoutPanel2.Controls.Add(lbl1);
 
             Label lbl = new Label();
-            lbl.Text = " دروس : " + numberofLessons.ToString() ; ;
+            lbl.Text = " دروس : " + numberofLessons.ToString(); 
             lbl.ForeColor = Color.Blue;
             flowLayoutPanel2.Controls.Add(lbl);
         }

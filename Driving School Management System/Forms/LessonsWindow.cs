@@ -10,13 +10,13 @@ namespace Driving_School_Management_System.Forms
         public LessonsWindow()
         {
             InitializeComponent();
-            _initializeGroupsCbox(); 
-            DisplayCondidteFilesInformations(clsLesson.GetAllLessons()); 
+            _initializeGroupsCbox();
+            DisplayLessonInformations(clsLesson.GetAllLessons()); 
 
         }
 
 
-        public void DisplayCondidteFilesInformations(DataTable AllLessons)
+        public void DisplayLessonInformations(DataTable AllLessons)
         {
             DGVLessons.Rows.Clear();
             foreach (DataRow row in AllLessons.Rows)
@@ -39,6 +39,13 @@ namespace Driving_School_Management_System.Forms
             CbxGroup.DisplayMember = "Name";
         }
 
+        private void mekeSearchFieldsEmpty()
+        {
+            txtBoxID.Text = string.Empty;
+            CbxGroup.Text = string.Empty;
+            CboxLessonType.Text = string.Empty; 
+        }
+
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
@@ -48,8 +55,41 @@ namespace Driving_School_Management_System.Forms
         //refersh btn
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            DisplayCondidteFilesInformations(clsLesson.GetAllLessons());
+            DisplayLessonInformations(clsLesson.GetAllLessons());
+            mekeSearchFieldsEmpty(); 
+        }
 
+        private void searchLessonField()
+        {
+            try
+            {
+
+                switch (CBoxLessonFilter.Text.ToString())
+                {
+                    case "ID":
+                        if (int.TryParse(txtBoxID.Text, out int ID))
+                            DisplayLessonInformations(clsLesson.SearchLessonByID(ID)); 
+                        break;
+                    case "المجموعة":
+                        DisplayLessonInformations(clsLesson.SearchLessonByGroup(CbxGroup.Text));
+                        break;
+
+                    case "نوع الدرس":
+                        DisplayLessonInformations(clsLesson.SearchLessonByLessonType(CboxLessonType.Text));
+                        break;
+                }
+
+            }
+            catch
+            {
+                MessageBox.Show("Error", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void btnSearchLesson_Click(object sender, EventArgs e)
+        {
+            searchLessonField();
         }
         //the search will be implemented later on 
     }

@@ -34,9 +34,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.CBoxStudentInfoFilter = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.CBoxLessonFilter = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnSearchStudentinfo = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSearchLesson = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.DGVLessons = new Guna.UI2.WinForms.Guna2DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,7 +55,7 @@
             this.CbxGroup = new MetroFramework.Controls.MetroComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.CboxLessonType = new MetroFramework.Controls.MetroComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.label2 = new System.Windows.Forms.Label();
@@ -99,9 +99,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.CBoxStudentInfoFilter);
+            this.panel2.Controls.Add(this.CBoxLessonFilter);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.btnSearchStudentinfo);
+            this.panel2.Controls.Add(this.btnSearchLesson);
             this.panel2.Controls.Add(this.guna2Button3);
             this.panel2.Controls.Add(this.DGVLessons);
             this.panel2.Controls.Add(this.flowLayoutPanel1);
@@ -113,31 +113,29 @@
             this.panel2.Size = new System.Drawing.Size(1143, 575);
             this.panel2.TabIndex = 5;
             // 
-            // CBoxStudentInfoFilter
+            // CBoxLessonFilter
             // 
-            this.CBoxStudentInfoFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CBoxStudentInfoFilter.BackColor = System.Drawing.Color.Transparent;
-            this.CBoxStudentInfoFilter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CBoxStudentInfoFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBoxStudentInfoFilter.FocusedColor = System.Drawing.Color.Empty;
-            this.CBoxStudentInfoFilter.FocusedState.Parent = this.CBoxStudentInfoFilter;
-            this.CBoxStudentInfoFilter.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.CBoxStudentInfoFilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.CBoxStudentInfoFilter.FormattingEnabled = true;
-            this.CBoxStudentInfoFilter.HoverState.Parent = this.CBoxStudentInfoFilter;
-            this.CBoxStudentInfoFilter.ItemHeight = 30;
-            this.CBoxStudentInfoFilter.Items.AddRange(new object[] {
+            this.CBoxLessonFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CBoxLessonFilter.BackColor = System.Drawing.Color.Transparent;
+            this.CBoxLessonFilter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CBoxLessonFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBoxLessonFilter.FocusedColor = System.Drawing.Color.Empty;
+            this.CBoxLessonFilter.FocusedState.Parent = this.CBoxLessonFilter;
+            this.CBoxLessonFilter.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.CBoxLessonFilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.CBoxLessonFilter.FormattingEnabled = true;
+            this.CBoxLessonFilter.HoverState.Parent = this.CBoxLessonFilter;
+            this.CBoxLessonFilter.ItemHeight = 30;
+            this.CBoxLessonFilter.Items.AddRange(new object[] {
             "ID",
-            "رقم ب.ت.و",
-            "الاسم",
-            "النسب",
-            "الكل"});
-            this.CBoxStudentInfoFilter.ItemsAppearance.Parent = this.CBoxStudentInfoFilter;
-            this.CBoxStudentInfoFilter.Location = new System.Drawing.Point(795, 79);
-            this.CBoxStudentInfoFilter.Name = "CBoxStudentInfoFilter";
-            this.CBoxStudentInfoFilter.ShadowDecoration.Parent = this.CBoxStudentInfoFilter;
-            this.CBoxStudentInfoFilter.Size = new System.Drawing.Size(183, 36);
-            this.CBoxStudentInfoFilter.TabIndex = 35;
+            "المجموعة",
+            "نوع الدرس"});
+            this.CBoxLessonFilter.ItemsAppearance.Parent = this.CBoxLessonFilter;
+            this.CBoxLessonFilter.Location = new System.Drawing.Point(795, 79);
+            this.CBoxLessonFilter.Name = "CBoxLessonFilter";
+            this.CBoxLessonFilter.ShadowDecoration.Parent = this.CBoxLessonFilter;
+            this.CBoxLessonFilter.Size = new System.Drawing.Size(183, 36);
+            this.CBoxLessonFilter.TabIndex = 35;
             // 
             // pictureBox1
             // 
@@ -150,23 +148,24 @@
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
             // 
-            // btnSearchStudentinfo
+            // btnSearchLesson
             // 
-            this.btnSearchStudentinfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearchStudentinfo.BorderRadius = 5;
-            this.btnSearchStudentinfo.CheckedState.Parent = this.btnSearchStudentinfo;
-            this.btnSearchStudentinfo.CustomImages.Parent = this.btnSearchStudentinfo;
-            this.btnSearchStudentinfo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(135)))), ((int)(((byte)(255)))));
-            this.btnSearchStudentinfo.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btnSearchStudentinfo.ForeColor = System.Drawing.Color.White;
-            this.btnSearchStudentinfo.HoverState.Parent = this.btnSearchStudentinfo;
-            this.btnSearchStudentinfo.Location = new System.Drawing.Point(984, 76);
-            this.btnSearchStudentinfo.Name = "btnSearchStudentinfo";
-            this.btnSearchStudentinfo.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnSearchStudentinfo.ShadowDecoration.Parent = this.btnSearchStudentinfo;
-            this.btnSearchStudentinfo.Size = new System.Drawing.Size(89, 43);
-            this.btnSearchStudentinfo.TabIndex = 27;
-            this.btnSearchStudentinfo.Text = "بحث";
+            this.btnSearchLesson.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearchLesson.BorderRadius = 5;
+            this.btnSearchLesson.CheckedState.Parent = this.btnSearchLesson;
+            this.btnSearchLesson.CustomImages.Parent = this.btnSearchLesson;
+            this.btnSearchLesson.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(135)))), ((int)(((byte)(255)))));
+            this.btnSearchLesson.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnSearchLesson.ForeColor = System.Drawing.Color.White;
+            this.btnSearchLesson.HoverState.Parent = this.btnSearchLesson;
+            this.btnSearchLesson.Location = new System.Drawing.Point(984, 76);
+            this.btnSearchLesson.Name = "btnSearchLesson";
+            this.btnSearchLesson.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSearchLesson.ShadowDecoration.Parent = this.btnSearchLesson;
+            this.btnSearchLesson.Size = new System.Drawing.Size(89, 43);
+            this.btnSearchLesson.TabIndex = 27;
+            this.btnSearchLesson.Text = "بحث";
+            this.btnSearchLesson.Click += new System.EventHandler(this.btnSearchLesson_Click);
             // 
             // guna2Button3
             // 
@@ -396,27 +395,27 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.metroComboBox1);
+            this.panel5.Controls.Add(this.CboxLessonType);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Location = new System.Drawing.Point(558, 3);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(183, 83);
             this.panel5.TabIndex = 26;
             // 
-            // metroComboBox1
+            // CboxLessonType
             // 
-            this.metroComboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CboxLessonType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Items.AddRange(new object[] {
+            this.CboxLessonType.FormattingEnabled = true;
+            this.CboxLessonType.ItemHeight = 23;
+            this.CboxLessonType.Items.AddRange(new object[] {
             "نظرية",
             "تطبيقية"});
-            this.metroComboBox1.Location = new System.Drawing.Point(21, 34);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(157, 29);
-            this.metroComboBox1.TabIndex = 25;
-            this.metroComboBox1.UseSelectable = true;
+            this.CboxLessonType.Location = new System.Drawing.Point(21, 34);
+            this.CboxLessonType.Name = "CboxLessonType";
+            this.CboxLessonType.Size = new System.Drawing.Size(157, 29);
+            this.CboxLessonType.TabIndex = 25;
+            this.CboxLessonType.UseSelectable = true;
             // 
             // label3
             // 
@@ -515,9 +514,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2ComboBox CBoxStudentInfoFilter;
+        private Guna.UI2.WinForms.Guna2ComboBox CBoxLessonFilter;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2Button btnSearchStudentinfo;
+        private Guna.UI2.WinForms.Guna2Button btnSearchLesson;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2DataGridView DGVLessons;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
@@ -539,7 +538,7 @@
         private System.Windows.Forms.DataGridViewImageColumn Operations;
         private MetroFramework.Controls.MetroComboBox CbxGroup;
         private System.Windows.Forms.Panel panel5;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private MetroFramework.Controls.MetroComboBox CboxLessonType;
         private System.Windows.Forms.Label label3;
     }
 }
