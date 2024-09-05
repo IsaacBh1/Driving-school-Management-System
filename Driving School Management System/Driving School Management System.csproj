@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AddExamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddExamForm.Designer.cs">
+      <DependentUpon>AddExamForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Calender.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -151,6 +157,9 @@
       <DependentUpon>SavedSuccessfullyMessage.cs</DependentUpon>
     </Compile>
     <Compile Include="UtilityClasses\AddStudentEventArgs.cs" />
+    <EmbeddedResource Include="Forms\AddExamForm.resx">
+      <DependentUpon>AddExamForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Calender.resx">
       <DependentUpon>Calender.cs</DependentUpon>
     </EmbeddedResource>

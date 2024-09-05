@@ -38,13 +38,11 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.CboxInsructor = new MetroFramework.Controls.MetroComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.rdobtnApp = new System.Windows.Forms.RadioButton();
             this.rdobtnTheo = new System.Windows.Forms.RadioButton();
-            this.label6 = new System.Windows.Forms.Label();
             this.chckLessonsType = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dateTimeLessaon = new System.Windows.Forms.DateTimePicker();
@@ -62,7 +60,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.numUpDwMins = new System.Windows.Forms.NumericUpDown();
             this.numUpDwHours = new System.Windows.Forms.NumericUpDown();
-            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
@@ -191,7 +188,6 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.CboxInsructor);
-            this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(44, 79);
             this.panel2.Name = "panel2";
@@ -217,17 +213,6 @@
             this.CboxInsructor.TabIndex = 21;
             this.CboxInsructor.UseSelectable = true;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.ForeColor = System.Drawing.Color.Salmon;
-            this.label4.Location = new System.Drawing.Point(624, 29);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(18, 19);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "*";
-            // 
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -245,7 +230,6 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.panel6);
-            this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.chckLessonsType);
             this.panel3.Location = new System.Drawing.Point(44, 155);
             this.panel3.Name = "panel3";
@@ -285,17 +269,6 @@
             this.rdobtnTheo.TabStop = true;
             this.rdobtnTheo.Text = "نظرية";
             this.rdobtnTheo.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.ForeColor = System.Drawing.Color.Salmon;
-            this.label6.Location = new System.Drawing.Point(659, 29);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(18, 19);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "*";
             // 
             // chckLessonsType
             // 
@@ -372,7 +345,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label7.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label7.Location = new System.Drawing.Point(126, 19);
+            this.label7.Location = new System.Drawing.Point(303, 18);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(51, 29);
             this.label7.TabIndex = 14;
@@ -383,7 +356,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label14.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label14.Location = new System.Drawing.Point(328, 19);
+            this.label14.Location = new System.Drawing.Point(130, 20);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(26, 29);
             this.label14.TabIndex = 14;
@@ -391,7 +364,7 @@
             // 
             // numUpDwTimeMins
             // 
-            this.numUpDwTimeMins.Location = new System.Drawing.Point(175, 20);
+            this.numUpDwTimeMins.Location = new System.Drawing.Point(352, 19);
             this.numUpDwTimeMins.Maximum = new decimal(new int[] {
             59,
             0,
@@ -403,7 +376,7 @@
             // 
             // numUpDwTimeHours
             // 
-            this.numUpDwTimeHours.Location = new System.Drawing.Point(355, 20);
+            this.numUpDwTimeHours.Location = new System.Drawing.Point(157, 21);
             this.numUpDwTimeHours.Maximum = new decimal(new int[] {
             12,
             0,
@@ -444,7 +417,6 @@
             this.panel5.Controls.Add(this.label12);
             this.panel5.Controls.Add(this.numUpDwMins);
             this.panel5.Controls.Add(this.numUpDwHours);
-            this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.label11);
             this.panel5.Location = new System.Drawing.Point(44, 383);
             this.panel5.Name = "panel5";
@@ -456,7 +428,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label13.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label13.Location = new System.Drawing.Point(126, 19);
+            this.label13.Location = new System.Drawing.Point(303, 16);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(51, 29);
             this.label13.TabIndex = 14;
@@ -467,7 +439,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label12.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label12.Location = new System.Drawing.Point(328, 19);
+            this.label12.Location = new System.Drawing.Point(130, 16);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(26, 29);
             this.label12.TabIndex = 14;
@@ -475,7 +447,7 @@
             // 
             // numUpDwMins
             // 
-            this.numUpDwMins.Location = new System.Drawing.Point(175, 20);
+            this.numUpDwMins.Location = new System.Drawing.Point(352, 17);
             this.numUpDwMins.Maximum = new decimal(new int[] {
             59,
             0,
@@ -487,21 +459,10 @@
             // 
             // numUpDwHours
             // 
-            this.numUpDwHours.Location = new System.Drawing.Point(355, 20);
+            this.numUpDwHours.Location = new System.Drawing.Point(157, 17);
             this.numUpDwHours.Name = "numUpDwHours";
             this.numUpDwHours.Size = new System.Drawing.Size(140, 27);
             this.numUpDwHours.TabIndex = 12;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.ForeColor = System.Drawing.Color.Salmon;
-            this.label10.Location = new System.Drawing.Point(658, 29);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(18, 19);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "*";
             // 
             // label11
             // 
@@ -607,16 +568,13 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel2;
         private MetroFramework.Controls.MetroComboBox CboxInsructor;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label chckLessonsType;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.RadioButton rdobtnTheo;
         private System.Windows.Forms.RadioButton rdobtnApp;
