@@ -51,3 +51,37 @@ C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Mana
 C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Calender.resources
 C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.AddExamForm.resources
 C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.ExamsWindow.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\bin\Debug\Driving School Management System.exe.config
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\bin\Debug\Driving School Management System.exe
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\bin\Debug\Driving School Management System.pdb
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\bin\Debug\ar\Driving School Management System.resources.dll
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\bin\Debug\Driving-school-BusinessLayer.dll
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\bin\Debug\DrivingSchool-DataAccessLayer.dll
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\bin\Debug\Driving-school-BusinessLayer.pdb
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\bin\Debug\DrivingSchool-DataAccessLayer.pdb
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\bin\Debug\DrivingSchool-DataAccessLayer.dll.config
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving School Management System.csproj.AssemblyReference.cache
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.AddExamForm.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.ExamsWindow.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Calender.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.CalenderDay.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.AddCondidateFileForm.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.AddLessonForm.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.Lessons_Exams.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.LessonsWindow.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.StatusMessageForm.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.ExpensesBar.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.MainForm.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.AddStudentForm.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.CondidatesWindow.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.MainWindow.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Properties.Resources.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.UserControls.NotSavedMessage.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.UserControls.SavedSuccessfullyMessage.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.MainForm.ar.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving School Management System.csproj.GenerateResource.cache
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving School Management System.csproj.CoreCompileInputs.cache
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\ar\Driving School Management System.resources.dll
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving .328A50F5.Up2Date
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving School Management System.exe
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving School Management System.pdb

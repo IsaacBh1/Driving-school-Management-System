@@ -216,14 +216,14 @@
             this.CondidatesWindowTab.Controls.Add(this.tabPage2);
             this.CondidatesWindowTab.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CondidatesWindowTab.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.CondidatesWindowTab.ItemSize = new System.Drawing.Size(100, 50);
+            this.CondidatesWindowTab.ItemSize = new System.Drawing.Size(1, 0);
             this.CondidatesWindowTab.Location = new System.Drawing.Point(0, 0);
             this.CondidatesWindowTab.Name = "CondidatesWindowTab";
             this.CondidatesWindowTab.SelectedIndex = 0;
             this.CondidatesWindowTab.Size = new System.Drawing.Size(1260, 822);
             this.CondidatesWindowTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.CondidatesWindowTab.TabIndex = 3;
-            this.CondidatesWindowTab.ThemeColor = System.Drawing.Color.Gray;
+            this.CondidatesWindowTab.ThemeColor = System.Drawing.Color.Transparent;
             // 
             // tabPage1
             // 
@@ -231,10 +231,10 @@
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Controls.Add(this.guna2Button1);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Location = new System.Drawing.Point(0, 50);
+            this.tabPage1.Location = new System.Drawing.Point(0, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1260, 772);
+            this.tabPage1.Size = new System.Drawing.Size(1260, 797);
             this.tabPage1.TabIndex = 0;
             // 
             // panel1
@@ -255,7 +255,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(21, 77);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1213, 668);
+            this.panel1.Size = new System.Drawing.Size(1213, 693);
             this.panel1.TabIndex = 4;
             // 
             // CBoxStudentInfoFilter
@@ -383,7 +383,7 @@
             this.DGVStudents.RowTemplate.Height = 29;
             this.DGVStudents.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DGVStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVStudents.Size = new System.Drawing.Size(1200, 404);
+            this.DGVStudents.Size = new System.Drawing.Size(1200, 429);
             this.DGVStudents.TabIndex = 25;
             this.DGVStudents.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.DGVStudents.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;

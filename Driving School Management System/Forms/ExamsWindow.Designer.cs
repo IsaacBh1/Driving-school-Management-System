@@ -31,7 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddExam = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.label2 = new System.Windows.Forms.Label();
             this.CboxLessonType = new MetroFramework.Controls.MetroComboBox();
@@ -71,23 +71,24 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // guna2Button1
+            // btnAddExam
             // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Image = global::Driving_School_Management_System.Properties.Resources.plus_bold;
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2Button1.Location = new System.Drawing.Point(17, 26);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(126, 44);
-            this.guna2Button1.TabIndex = 9;
-            this.guna2Button1.Text = "إضافة ";
+            this.btnAddExam.BorderRadius = 10;
+            this.btnAddExam.CheckedState.Parent = this.btnAddExam;
+            this.btnAddExam.CustomImages.Parent = this.btnAddExam;
+            this.btnAddExam.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
+            this.btnAddExam.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
+            this.btnAddExam.ForeColor = System.Drawing.Color.Black;
+            this.btnAddExam.HoverState.Parent = this.btnAddExam;
+            this.btnAddExam.Image = global::Driving_School_Management_System.Properties.Resources.plus_bold;
+            this.btnAddExam.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnAddExam.Location = new System.Drawing.Point(17, 26);
+            this.btnAddExam.Name = "btnAddExam";
+            this.btnAddExam.ShadowDecoration.Parent = this.btnAddExam;
+            this.btnAddExam.Size = new System.Drawing.Size(126, 44);
+            this.btnAddExam.TabIndex = 9;
+            this.btnAddExam.Text = "إضافة ";
+            this.btnAddExam.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Separator1
             // 
@@ -483,7 +484,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1208, 677);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.btnAddExam);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -508,7 +509,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnAddExam;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.Label label2;
         private MetroFramework.Controls.MetroComboBox CboxLessonType;

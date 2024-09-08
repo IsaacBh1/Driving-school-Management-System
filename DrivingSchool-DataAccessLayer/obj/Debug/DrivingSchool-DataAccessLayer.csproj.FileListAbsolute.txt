@@ -5,3 +5,10 @@ C:\Users\isaac\source\repos\Driving-school-Management-System\DrivingSchool-DataA
 C:\Users\isaac\source\repos\Driving-school-Management-System\DrivingSchool-DataAccessLayer\obj\Debug\DrivingSchool-DataAccessLayer.dll
 C:\Users\isaac\source\repos\Driving-school-Management-System\DrivingSchool-DataAccessLayer\obj\Debug\DrivingSchool-DataAccessLayer.pdb
 C:\Users\isaac\source\repos\Driving-school-Management-System\DrivingSchool-DataAccessLayer\bin\Debug\DrivingSchool-DataAccessLayer.dll.config
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\DrivingSchool-DataAccessLayer\bin\Debug\DrivingSchool-DataAccessLayer.dll.config
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\DrivingSchool-DataAccessLayer\bin\Debug\DrivingSchool-DataAccessLayer.dll
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\DrivingSchool-DataAccessLayer\bin\Debug\DrivingSchool-DataAccessLayer.pdb
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\DrivingSchool-DataAccessLayer\obj\Debug\DrivingSchool-DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\DrivingSchool-DataAccessLayer\obj\Debug\DrivingSchool-DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\DrivingSchool-DataAccessLayer\obj\Debug\DrivingSchool-DataAccessLayer.dll
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\DrivingSchool-DataAccessLayer\obj\Debug\DrivingSchool-DataAccessLayer.pdb
