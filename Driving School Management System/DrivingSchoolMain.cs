@@ -12,6 +12,7 @@ namespace Driving_School_Management_System
         MainWindow mainWindow = null;
         CondidatesWindow condidatesWindow = null;
         LessonsWindow lessonsForm = null;
+        ExamsWindow examsWindow = null; 
         public MainForm()
         {
             InitializeComponent();
@@ -46,9 +47,8 @@ namespace Driving_School_Management_System
 
         private void btnMinimize_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized; 
+            WindowState = FormWindowState.Minimized; 
         }
-
        
 
         private void ShowWindow<FormType>(Form form) where FormType : Form , new()
@@ -66,13 +66,14 @@ namespace Driving_School_Management_System
             {
                 form.Activate();
             }
+            updateTabColor();
+
         }
 
         private void btnMain_Click(object sender, EventArgs e)
         {
             previousTabIndex = tabIndex; 
             tabIndex = 1;
-            updateTabColor();
             //ShowMainWindow(); 
             ShowWindow<MainWindow>(mainWindow);
 
@@ -85,7 +86,6 @@ namespace Driving_School_Management_System
 
             previousTabIndex = tabIndex;
             tabIndex = 2;
-            updateTabColor();
             //ShowCondidatesWindow(); 
             ShowWindow<CondidatesWindow>(condidatesWindow); 
         }
@@ -105,12 +105,14 @@ namespace Driving_School_Management_System
                 case 1:
                     btnMain.BackColor = ColorTranslator.FromHtml("#E5AF1D");
                     break;
-
                 case 2:
                     btnCondidtes.BackColor = ColorTranslator.FromHtml("#E5AF1D");
                     break;
                 case 3:
                     btnLessons.BackColor = ColorTranslator.FromHtml("#E5AF1D");
+                    break;
+                case 4:
+                    btnExams.BackColor = ColorTranslator.FromHtml("#E5AF1D");
                     break;
             }
         }
@@ -129,7 +131,10 @@ namespace Driving_School_Management_System
                     break;
                 case 3:
                     btnLessons.BackColor = Color.Transparent;
-                    break; 
+                    break;
+                case 4:
+                    btnExams.BackColor = Color.Transparent;
+                    break;
             }
         }
 
@@ -137,7 +142,6 @@ namespace Driving_School_Management_System
         {
             previousTabIndex = tabIndex;
             tabIndex = 3;
-            updateTabColor();
             ShowWindow<LessonsWindow>(lessonsForm); 
 
         }
@@ -146,6 +150,13 @@ namespace Driving_School_Management_System
         {
             Lessons_Exams lessons_Exams = new Lessons_Exams();
             lessons_Exams.ShowDialog(); 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            previousTabIndex = tabIndex;
+            tabIndex = 4;
+            ShowWindow<ExamsWindow>(examsWindow); 
         }
     }
 }

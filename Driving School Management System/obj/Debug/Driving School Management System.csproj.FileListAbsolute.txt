@@ -49,3 +49,5 @@ C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Mana
 C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.Lessons_Exams.resources
 C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.CalenderDay.resources
 C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Calender.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.AddExamForm.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.ExamsWindow.resources

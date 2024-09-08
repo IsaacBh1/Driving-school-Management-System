@@ -456,43 +456,43 @@
   <data name="&gt;&gt;guna2Panel1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnExams.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt, style=Bold</value>
   </data>
-  <data name="button3.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btnExams.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnExams.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnExams.Location" type="System.Drawing.Point, System.Drawing">
     <value>-9, -10</value>
   </data>
-  <data name="button3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnExams.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 10, 0</value>
   </data>
-  <data name="button3.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+  <data name="btnExams.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnExams.Size" type="System.Drawing.Size, System.Drawing">
     <value>252, 80</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnExams.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="button3.Text" xml:space="preserve">
+  <data name="btnExams.Text" xml:space="preserve">
     <value>الامتحانات</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="&gt;&gt;btnExams.Name" xml:space="preserve">
+    <value>btnExams</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnExams.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnExams.Parent" xml:space="preserve">
     <value>guna2Panel7</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnExams.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="guna2Panel7.Font" type="System.Drawing.Font, System.Drawing">
@@ -980,9 +980,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>984, 853</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
     <value>True</value>
