@@ -131,6 +131,13 @@ namespace Driving_school_BusinessLayer
             => clsCondidateFileDataAccess.SearchCondidateFileInfoByID(Id);
         public static DataTable SearchByAll(int CondidateFileID, string FirstName_Arabic, string LastName_Arabic, string DrivingLisenceType, bool isArchived, bool isActive)
             => clsCondidateFileDataAccess.SearchByAll(CondidateFileID, FirstName_Arabic, LastName_Arabic, DrivingLisenceType, isArchived, isActive); 
-        
+    
+        public static bool IsCondidateFileExists(int id)
+        {
+            return clsCondidateFileDataAccess.IsCondidateFileExist(id);
+        }
+
     }
+
+
 }

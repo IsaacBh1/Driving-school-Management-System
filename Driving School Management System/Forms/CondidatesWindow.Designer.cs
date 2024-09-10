@@ -670,10 +670,10 @@
             this.tabPage2.Controls.Add(this.panel6);
             this.tabPage2.Controls.Add(this.label16);
             this.tabPage2.Controls.Add(this.btnAddCondidtefile);
-            this.tabPage2.Location = new System.Drawing.Point(0, 50);
+            this.tabPage2.Location = new System.Drawing.Point(0, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1260, 772);
+            this.tabPage2.Size = new System.Drawing.Size(1260, 797);
             this.tabPage2.TabIndex = 1;
             // 
             // panel6
@@ -694,7 +694,7 @@
             this.panel6.Controls.Add(this.label15);
             this.panel6.Location = new System.Drawing.Point(21, 77);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1213, 668);
+            this.panel6.Size = new System.Drawing.Size(1213, 693);
             this.panel6.TabIndex = 7;
             // 
             // CboxFilterCondidtateFile
@@ -825,7 +825,7 @@
             this.DGVFiles.RowTemplate.Height = 29;
             this.DGVFiles.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DGVFiles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVFiles.Size = new System.Drawing.Size(1200, 404);
+            this.DGVFiles.Size = new System.Drawing.Size(1200, 429);
             this.DGVFiles.TabIndex = 25;
             this.DGVFiles.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.DGVFiles.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;

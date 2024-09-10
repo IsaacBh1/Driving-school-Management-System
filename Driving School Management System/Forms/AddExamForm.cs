@@ -15,7 +15,7 @@ namespace Driving_School_Management_System.Forms
     public partial class AddExamForm : Form
     {
 
-       
+
         //----------------------------------------------------------------------------------
         //---------------------------this is for window properties ------------------------------
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -49,6 +49,9 @@ namespace Driving_School_Management_System.Forms
             }
         }
 
+
+
+        clsExam exam = null;
         public AddExamForm()
         {
             InitializeComponent();
@@ -58,7 +61,45 @@ namespace Driving_School_Management_System.Forms
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Close(); 
+            Close();
         }
+
+        private bool IsIDExists()
+        {
+            return clsCondidateFile.IsCondidateFileExists(Convert.ToInt32(txtboxID.Text));
+        }
+
+
+
+        private int GetExamType()
+        {
+            return rdobtnTheo.Checked ? 1 : 2;
+        }
+
+        private bool CheckExamInputs()
+        {
+            return string.IsNullOrEmpty(txtboxID.Text) && string.IsNullOrEmpty(CboxState.Text) && IsIDExists();
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            StoreExam();
+        }
+        private void StoreExam()
+        {
+            if (!CheckExamInputs())
+            {
+
+                exam = new clsExam()
+                {
+
+                    ExamTypeID = GetExamType(),
+                    CandidateFileID = Convert.ToInt32(txtboxID.Text),
+                    ExamDate = dateTimeExam.Value,
+                    Result = numupdownResult.Text
+                };
+            };
+        }
+
     }
 }
