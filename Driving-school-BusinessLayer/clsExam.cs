@@ -12,8 +12,20 @@ namespace Driving_school_BusinessLayer
         public int ExamTypeID { get; set; }
         public int CandidateFileID { get; set; }
         public DateTime ExamDate { get; set; }
-        public string Result { get; set; }
-        public int ApplicationInstructorID { get; set; }
+        public int? Result { get; set; }
+        public string Situation { get; set; }
+        public string AdditionalNotes { get; set; }
+        public TimeSpan timeOfExam { get; set; }
+        /*
+            ExamID 
+	        CondidateFileID 
+	        ExamTypeID 
+	        Result 
+	        Situation 
+	        DateOfExam  
+	        AdditionalNotes 
+	        timeOfExam 
+         */
 
         public clsExam()
         {
@@ -21,31 +33,31 @@ namespace Driving_school_BusinessLayer
             ExamTypeID = -1;
             CandidateFileID = -1;
             ExamDate = DateTime.MinValue;
-            Result = string.Empty;
-            ApplicationInstructorID = -1;
+            Result = 0;
             Mode = enMode.AddNew;
         }
 
-        private clsExam(int examID, int examTypeID, int candidateFileID, DateTime examDate, string result, int applicationInstructorID)
+        private clsExam(int examID, int examTypeID, int candidateFileID, DateTime examDate, int result, string situation, string additionalNotes, TimeSpan timeOfExam)
         {
             ExamID = examID;
             ExamTypeID = examTypeID;
             CandidateFileID = candidateFileID;
             ExamDate = examDate;
             Result = result;
-            ApplicationInstructorID = applicationInstructorID;
-            Mode = enMode.Update;
+            Situation = situation;
+            AdditionalNotes = additionalNotes;
+            this.timeOfExam = timeOfExam;
         }
 
         private bool _AddNewExam()
         {
-            ExamID = clsExamDataAccess.AddNewExam(ExamTypeID, CandidateFileID, ExamDate, Result, ApplicationInstructorID);
+            ExamID = clsExamDataAccess.AddNewExam(CandidateFileID, ExamTypeID, Result, Situation, ExamDate, AdditionalNotes, timeOfExam); 
             return ExamID != -1;
         }
 
         private bool _UpdateExam()
         {
-            return clsExamDataAccess.UpdateExam(ExamID, ExamTypeID, CandidateFileID, ExamDate, Result, ApplicationInstructorID);
+            return clsExamDataAccess.UpdateExam(ExamID, CandidateFileID, ExamTypeID, Result, Situation, ExamDate, AdditionalNotes, timeOfExam);
         }
 
         public bool Save()
@@ -65,7 +77,7 @@ namespace Driving_school_BusinessLayer
             return false;
         }
 
-        public static clsExam Find(int ID)
+      /*  public static clsExam Find(int ID)
         {
             int _ExamTypeID = -1;
             int _CandidateFileID = -1;
@@ -73,11 +85,12 @@ namespace Driving_school_BusinessLayer
             string _Result = string.Empty;
             int _ApplicationInstructorID = -1;
 
-            if (clsExamDataAccess.GetExamInfoByID(ID, ref _ExamTypeID, ref _CandidateFileID, ref _ExamDate, ref _Result, ref _ApplicationInstructorID))
+            if (clsExamDataAccess.GetExamInfoByID(
+                ID, ref _ExamTypeID, ref _CandidateFileID, ref _ExamDate, ref _Result, ref _ApplicationInstructorID))
             {
-                return new clsExam(ID, _ExamTypeID, _CandidateFileID, _ExamDate, _Result, _ApplicationInstructorID);
+                
             }
             return null;
-        }
+        }*/
     }
 }

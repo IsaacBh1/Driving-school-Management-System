@@ -60,10 +60,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.CboxState = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtboxAdditionalNotes = new Guna.UI2.WinForms.Guna2TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.lblNotFoundStudent = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDwTimeMins)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -229,6 +230,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.lblNotFoundStudent);
             this.panel1.Controls.Add(this.txtboxID);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -250,7 +252,7 @@
             this.txtboxID.FocusedState.Parent = this.txtboxID;
             this.txtboxID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtboxID.HoverState.Parent = this.txtboxID;
-            this.txtboxID.Location = new System.Drawing.Point(126, 17);
+            this.txtboxID.Location = new System.Drawing.Point(126, 2);
             this.txtboxID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtboxID.Name = "txtboxID";
             this.txtboxID.PasswordChar = '\0';
@@ -265,7 +267,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.Salmon;
-            this.label3.Location = new System.Drawing.Point(610, 27);
+            this.label3.Location = new System.Drawing.Point(610, 13);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(18, 19);
             this.label3.TabIndex = 11;
@@ -277,7 +279,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(633, 17);
+            this.label2.Location = new System.Drawing.Point(633, 7);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 31);
             this.label2.TabIndex = 9;
@@ -332,7 +334,7 @@
             this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.x_light;
             this.pictureBox1.Location = new System.Drawing.Point(21, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 20);
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
@@ -479,6 +481,52 @@
             this.label4.TabIndex = 9;
             this.label4.Text = " الحالة";
             // 
+            // panel8
+            // 
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel8.Controls.Add(this.txtboxAdditionalNotes);
+            this.panel8.Controls.Add(this.label11);
+            this.panel8.Location = new System.Drawing.Point(16, 459);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(771, 70);
+            this.panel8.TabIndex = 32;
+            // 
+            // txtboxAdditionalNotes
+            // 
+            this.txtboxAdditionalNotes.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtboxAdditionalNotes.DefaultText = "";
+            this.txtboxAdditionalNotes.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtboxAdditionalNotes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtboxAdditionalNotes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtboxAdditionalNotes.DisabledState.Parent = this.txtboxAdditionalNotes;
+            this.txtboxAdditionalNotes.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtboxAdditionalNotes.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtboxAdditionalNotes.FocusedState.Parent = this.txtboxAdditionalNotes;
+            this.txtboxAdditionalNotes.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtboxAdditionalNotes.HoverState.Parent = this.txtboxAdditionalNotes;
+            this.txtboxAdditionalNotes.Location = new System.Drawing.Point(126, 17);
+            this.txtboxAdditionalNotes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtboxAdditionalNotes.Name = "txtboxAdditionalNotes";
+            this.txtboxAdditionalNotes.PasswordChar = '\0';
+            this.txtboxAdditionalNotes.PlaceholderText = "";
+            this.txtboxAdditionalNotes.SelectedText = "";
+            this.txtboxAdditionalNotes.ShadowDecoration.Parent = this.txtboxAdditionalNotes;
+            this.txtboxAdditionalNotes.Size = new System.Drawing.Size(359, 40);
+            this.txtboxAdditionalNotes.TabIndex = 12;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label11.Location = new System.Drawing.Point(559, 15);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(194, 31);
+            this.label11.TabIndex = 9;
+            this.label11.Text = " ملاحظات إضافية";
+            // 
             // guna2Button2
             // 
             this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
@@ -499,51 +547,15 @@
             this.guna2Button2.TabIndex = 42;
             this.guna2Button2.Text = "اغلاق";
             // 
-            // panel8
+            // lblNotFoundStudent
             // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel8.Controls.Add(this.guna2TextBox2);
-            this.panel8.Controls.Add(this.label11);
-            this.panel8.Location = new System.Drawing.Point(16, 459);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(771, 70);
-            this.panel8.TabIndex = 32;
-            // 
-            // guna2TextBox2
-            // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(126, 17);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(359, 40);
-            this.guna2TextBox2.TabIndex = 12;
-            // 
-            // label11
-            // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label11.Location = new System.Drawing.Point(559, 15);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(194, 31);
-            this.label11.TabIndex = 9;
-            this.label11.Text = " ملاحظات إضافية";
+            this.lblNotFoundStudent.AutoSize = true;
+            this.lblNotFoundStudent.ForeColor = System.Drawing.Color.Red;
+            this.lblNotFoundStudent.Location = new System.Drawing.Point(303, 44);
+            this.lblNotFoundStudent.Name = "lblNotFoundStudent";
+            this.lblNotFoundStudent.Size = new System.Drawing.Size(34, 19);
+            this.lblNotFoundStudent.TabIndex = 13;
+            this.lblNotFoundStudent.Text = "     ";
             // 
             // AddExamForm
             // 
@@ -623,7 +635,8 @@
         private Guna.UI2.WinForms.Guna2ComboBox CboxState;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel8;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox txtboxAdditionalNotes;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblNotFoundStudent;
     }
 }

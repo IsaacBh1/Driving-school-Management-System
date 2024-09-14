@@ -239,7 +239,7 @@ namespace DrivingSchool_DataAccessLayer
             return (GetExamIDByInfo(condidateFileID, examTypeID, result, situation, dateOfExam, additionalNotes, timeOfExam) != -1);
         }
 
-        public static bool GetExamInfoByID(int iD, ref int examTypeID, ref int candidateFileID, ref DateTime examDate, ref string result, ref int applicationInstructorID)
+        public static bool GetExamInfoByID(int examID, int condidateFileID, int examTypeID, int? result, string situation, DateTime dateOfExam, string additionalNotes, TimeSpan timeOfExam)
         {
             throw new NotImplementedException();
         }
@@ -250,6 +250,11 @@ namespace DrivingSchool_DataAccessLayer
         }
 
         public static bool UpdateExam(int examID, int examTypeID, int candidateFileID, DateTime examDate, string result, int applicationInstructorID)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static bool GetExamInfoByID(int iD, ref int examTypeID, ref int candidateFileID, ref DateTime examDate, ref string result, ref int applicationInstructorID)
         {
             throw new NotImplementedException();
         }

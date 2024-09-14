@@ -1,13 +1,7 @@
 ﻿using Driving_school_BusinessLayer;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Driving_School_Management_System.Forms
@@ -15,6 +9,7 @@ namespace Driving_School_Management_System.Forms
     public partial class AddExamForm : Form
     {
 
+        //lblNotFoundStudent
 
         //----------------------------------------------------------------------------------
         //---------------------------this is for window properties ------------------------------
@@ -40,7 +35,7 @@ namespace Driving_School_Management_System.Forms
         [DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
 
-        private void Form_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        private void Form_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
@@ -52,6 +47,7 @@ namespace Driving_School_Management_System.Forms
 
 
         clsExam exam = null;
+        StatusMessageForm statusMessageForm = null; 
         public AddExamForm()
         {
             InitializeComponent();
@@ -66,9 +62,18 @@ namespace Driving_School_Management_System.Forms
 
         private bool IsIDExists()
         {
-            return clsCondidateFile.IsCondidateFileExists(Convert.ToInt32(txtboxID.Text));
-        }
+            bool IsCondidateFileExists = false; 
+            if (int.TryParse(txtboxID.Text , out int ID)) {
 
+            IsCondidateFileExists = clsCondidateFile.IsCondidateFileExists(ID);
+            if (!IsCondidateFileExists)
+            {
+                lblNotFoundStudent.Text = "ملف المرشح غير موجود"; 
+            }
+
+            }
+            return IsCondidateFileExists;
+        }
 
 
         private int GetExamType()
@@ -78,28 +83,54 @@ namespace Driving_School_Management_System.Forms
 
         private bool CheckExamInputs()
         {
-            return string.IsNullOrEmpty(txtboxID.Text) && string.IsNullOrEmpty(CboxState.Text) && IsIDExists();
+            return !string.IsNullOrEmpty(txtboxID.Text) && !string.IsNullOrEmpty(CboxState.Text) && IsIDExists();
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            StoreExam();
+            SaveExam(); 
         }
-        private void StoreExam()
+        private bool StoreExam()
         {
-            if (!CheckExamInputs())
-            {
-
                 exam = new clsExam()
                 {
-
                     ExamTypeID = GetExamType(),
                     CandidateFileID = Convert.ToInt32(txtboxID.Text),
                     ExamDate = dateTimeExam.Value,
-                    Result = numupdownResult.Text
+                    Result = Convert.ToInt32(numupdownResult.Text),
+                    AdditionalNotes = txtboxAdditionalNotes.Text , 
+                    Situation = CboxState.Text,
+                    timeOfExam = new TimeSpan(Convert.ToInt32(numUpDwTimeHours.Value), Convert.ToInt32(numUpDwTimeMins.Value) , 0) 
                 };
-            };
+                return exam.Save(); 
         }
+
+
+        private void SaveExam()
+        {
+            //CheckField( CBoxState,e)&&
+
+            if (CheckExamInputs())
+            {
+                //this is the code to save on DB 
+                if (StoreExam())
+                {
+                    // MessageBox.Show("student is saved successfully with ID = " + student.StudentID);
+                    statusMessageForm = new StatusMessageForm("Exam Saved Successfully .");
+                    statusMessageForm.ShowSuccess();
+                    Close();
+                }
+                else
+                {
+                    statusMessageForm = new StatusMessageForm("Exam not Saved .");
+                    statusMessageForm.ShowFailed();
+                }
+            }
+            else
+                MessageBox.Show("هناك معلومات مفقودة", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+        }
+
 
     }
 }
