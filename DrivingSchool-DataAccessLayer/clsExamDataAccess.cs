@@ -8,11 +8,11 @@ namespace DrivingSchool_DataAccessLayer
     {
         private static string ConnectionString = clsConnectionStr.ConnectionStr;
 
-        public static DataTable GetAllExams()
+        public static DataTable GetAll(string Query)
         {
             DataTable exams = new DataTable();
             SqlConnection connection = new SqlConnection(ConnectionString);
-            string query = "select * from Exams; ";
+            string query = Query ;
             SqlCommand command = new SqlCommand(query, connection);
             try
             {
@@ -33,6 +33,17 @@ namespace DrivingSchool_DataAccessLayer
                 connection.Close();
             }
             return exams;
+        }
+
+        public static DataTable GetAllExams()
+        {
+            return GetAll("select * from Exams ;");
+
+        }
+
+        public static DataTable GetAllExamInformations()
+        {
+            return GetAll("select * from ExamsInformations ; "); 
         }
 
         public static bool GetExamInfoByID(int examID, ref int condidateFileID, ref int examTypeID, ref int? result, ref string situation, ref DateTime dateOfExam, ref string additionalNotes, ref TimeSpan timeOfExam)

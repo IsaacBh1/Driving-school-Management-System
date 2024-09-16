@@ -42,6 +42,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblNotFoundStudent = new System.Windows.Forms.Label();
             this.txtboxID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,7 +65,6 @@
             this.txtboxAdditionalNotes = new Guna.UI2.WinForms.Guna2TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.lblNotFoundStudent = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDwTimeMins)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -238,6 +238,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(771, 70);
             this.panel1.TabIndex = 26;
+            // 
+            // lblNotFoundStudent
+            // 
+            this.lblNotFoundStudent.AutoSize = true;
+            this.lblNotFoundStudent.ForeColor = System.Drawing.Color.Red;
+            this.lblNotFoundStudent.Location = new System.Drawing.Point(303, 44);
+            this.lblNotFoundStudent.Name = "lblNotFoundStudent";
+            this.lblNotFoundStudent.Size = new System.Drawing.Size(34, 19);
+            this.lblNotFoundStudent.TabIndex = 13;
+            this.lblNotFoundStudent.Text = "     ";
             // 
             // txtboxID
             // 
@@ -546,16 +556,6 @@
             this.guna2Button2.Size = new System.Drawing.Size(126, 44);
             this.guna2Button2.TabIndex = 42;
             this.guna2Button2.Text = "اغلاق";
-            // 
-            // lblNotFoundStudent
-            // 
-            this.lblNotFoundStudent.AutoSize = true;
-            this.lblNotFoundStudent.ForeColor = System.Drawing.Color.Red;
-            this.lblNotFoundStudent.Location = new System.Drawing.Point(303, 44);
-            this.lblNotFoundStudent.Name = "lblNotFoundStudent";
-            this.lblNotFoundStudent.Size = new System.Drawing.Size(34, 19);
-            this.lblNotFoundStudent.TabIndex = 13;
-            this.lblNotFoundStudent.Text = "     ";
             // 
             // AddExamForm
             // 
