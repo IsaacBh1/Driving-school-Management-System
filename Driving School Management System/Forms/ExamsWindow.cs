@@ -41,5 +41,7 @@ namespace Driving_School_Management_System.Forms
         {
             DisplayExamsInformations(clsExam.GetAllExamInformations());
         }
+
+      
     }
 }

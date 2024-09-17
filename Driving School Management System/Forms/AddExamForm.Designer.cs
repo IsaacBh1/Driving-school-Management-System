@@ -140,7 +140,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.chckLessonsType);
-            this.panel3.Location = new System.Drawing.Point(16, 79);
+            this.panel3.Location = new System.Drawing.Point(16, 85);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(771, 70);
             this.panel3.TabIndex = 28;
@@ -236,14 +236,14 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(16, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(771, 70);
+            this.panel1.Size = new System.Drawing.Size(771, 76);
             this.panel1.TabIndex = 26;
             // 
             // lblNotFoundStudent
             // 
             this.lblNotFoundStudent.AutoSize = true;
             this.lblNotFoundStudent.ForeColor = System.Drawing.Color.Red;
-            this.lblNotFoundStudent.Location = new System.Drawing.Point(303, 44);
+            this.lblNotFoundStudent.Location = new System.Drawing.Point(303, 51);
             this.lblNotFoundStudent.Name = "lblNotFoundStudent";
             this.lblNotFoundStudent.Size = new System.Drawing.Size(34, 19);
             this.lblNotFoundStudent.TabIndex = 13;
@@ -262,7 +262,7 @@
             this.txtboxID.FocusedState.Parent = this.txtboxID;
             this.txtboxID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtboxID.HoverState.Parent = this.txtboxID;
-            this.txtboxID.Location = new System.Drawing.Point(126, 2);
+            this.txtboxID.Location = new System.Drawing.Point(126, 7);
             this.txtboxID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtboxID.Name = "txtboxID";
             this.txtboxID.PasswordChar = '\0';
@@ -277,7 +277,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.Salmon;
-            this.label3.Location = new System.Drawing.Point(610, 13);
+            this.label3.Location = new System.Drawing.Point(610, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(18, 19);
             this.label3.TabIndex = 11;
@@ -289,7 +289,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(633, 7);
+            this.label2.Location = new System.Drawing.Point(633, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 31);
             this.label2.TabIndex = 9;
@@ -320,7 +320,7 @@
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.dateTimeExam);
             this.panel4.Controls.Add(this.label9);
-            this.panel4.Location = new System.Drawing.Point(16, 155);
+            this.panel4.Location = new System.Drawing.Point(16, 161);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(771, 70);
             this.panel4.TabIndex = 29;
@@ -398,7 +398,7 @@
             this.panel7.Controls.Add(this.numUpDwTimeHours);
             this.panel7.Controls.Add(this.label15);
             this.panel7.Controls.Add(this.label16);
-            this.panel7.Location = new System.Drawing.Point(16, 231);
+            this.panel7.Location = new System.Drawing.Point(16, 237);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(771, 70);
             this.panel7.TabIndex = 31;
@@ -409,7 +409,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.numupdownResult);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(16, 307);
+            this.panel2.Location = new System.Drawing.Point(16, 313);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(771, 70);
             this.panel2.TabIndex = 27;
@@ -440,7 +440,7 @@
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.CboxState);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Location = new System.Drawing.Point(16, 383);
+            this.panel5.Location = new System.Drawing.Point(16, 389);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(771, 70);
             this.panel5.TabIndex = 28;
@@ -497,7 +497,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel8.Controls.Add(this.txtboxAdditionalNotes);
             this.panel8.Controls.Add(this.label11);
-            this.panel8.Location = new System.Drawing.Point(16, 459);
+            this.panel8.Location = new System.Drawing.Point(16, 465);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(771, 70);
             this.panel8.TabIndex = 32;

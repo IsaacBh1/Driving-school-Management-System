@@ -95,9 +95,12 @@ namespace Driving_school_BusinessLayer
         }*/
 
         public static DataTable GetAllExamInformations()
-        {
-            return clsExamDataAccess.GetAllExamInformations(); 
-        }
+            => clsExamDataAccess.GetAllExamInformations(); 
+        
+
+        public static DataTable GetExamByID(int ID)
+            => clsExamDataAccess.GetExamByID(ID); 
+        
 
 
     }

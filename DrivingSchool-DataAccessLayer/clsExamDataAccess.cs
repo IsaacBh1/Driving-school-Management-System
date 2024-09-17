@@ -43,7 +43,12 @@ namespace DrivingSchool_DataAccessLayer
 
         public static DataTable GetAllExamInformations()
         {
-            return GetAll("select * from ExamsInformations ; "); 
+            return GetAll("select * from ExamsInformations order by ExamID desc; "); 
+        }
+
+        public static DataTable GetExamByID(int ID)
+        {
+            return GetAll ("select * from ExamsInformations where ExamID = "+ID.ToString()+" order by ExamID desc");
         }
 
         public static bool GetExamInfoByID(int examID, ref int condidateFileID, ref int examTypeID, ref int? result, ref string situation, ref DateTime dateOfExam, ref string additionalNotes, ref TimeSpan timeOfExam)
