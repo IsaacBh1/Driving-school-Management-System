@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnAddExam = new Guna.UI2.WinForms.Guna2Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.label2 = new System.Windows.Forms.Label();
             this.CboxExamType = new MetroFramework.Controls.MetroComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -48,9 +46,7 @@
             this.cboxStatus = new MetroFramework.Controls.MetroComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.CBoxExamsFilter = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSearchLesson = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.DGVExams = new Guna.UI2.WinForms.Guna2DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CondidateFile = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,40 +54,25 @@
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Operations = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnAddExam = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.Operations = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVExams)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnAddExam
-            // 
-            this.btnAddExam.BorderRadius = 10;
-            this.btnAddExam.CheckedState.Parent = this.btnAddExam;
-            this.btnAddExam.CustomImages.Parent = this.btnAddExam;
-            this.btnAddExam.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
-            this.btnAddExam.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
-            this.btnAddExam.ForeColor = System.Drawing.Color.Black;
-            this.btnAddExam.HoverState.Parent = this.btnAddExam;
-            this.btnAddExam.Image = global::Driving_School_Management_System.Properties.Resources.plus_bold;
-            this.btnAddExam.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnAddExam.Location = new System.Drawing.Point(17, 26);
-            this.btnAddExam.Name = "btnAddExam";
-            this.btnAddExam.ShadowDecoration.Parent = this.btnAddExam;
-            this.btnAddExam.Size = new System.Drawing.Size(126, 44);
-            this.btnAddExam.TabIndex = 9;
-            this.btnAddExam.Text = "إضافة ";
-            this.btnAddExam.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Separator1
             // 
@@ -101,21 +82,6 @@
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(1181, 10);
             this.guna2Separator1.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label2.Image = global::Driving_School_Management_System.Properties.Resources.magnifying_glass__1_;
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(935, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.label2.Size = new System.Drawing.Size(234, 37);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "    بحث متعدد المعايير";
             // 
             // CboxExamType
             // 
@@ -281,17 +247,6 @@
             this.CBoxExamsFilter.Size = new System.Drawing.Size(183, 36);
             this.CBoxExamsFilter.TabIndex = 35;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.funnel__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(773, 79);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 37);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 34;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnSearchLesson
             // 
             this.btnSearchLesson.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -311,29 +266,10 @@
             this.btnSearchLesson.Text = "بحث";
             this.btnSearchLesson.Click += new System.EventHandler(this.btnSearchLesson_Click);
             // 
-            // guna2Button3
-            // 
-            this.guna2Button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button3.BorderRadius = 5;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.Black;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Image = global::Driving_School_Management_System.Properties.Resources.arrows_clockwise;
-            this.guna2Button3.Location = new System.Drawing.Point(1107, 76);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(41, 43);
-            this.guna2Button3.TabIndex = 26;
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
-            // 
             // DGVExams
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.DGVExams.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.DGVExams.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DGVExams.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -342,15 +278,15 @@
             this.DGVExams.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGVExams.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DGVExams.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.NullValue = "\"\"";
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVExams.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.NullValue = "\"\"";
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVExams.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DGVExams.ColumnHeadersHeight = 50;
             this.DGVExams.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -360,14 +296,15 @@
             this.type,
             this.date,
             this.Operations});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGVExams.DefaultCellStyle = dataGridViewCellStyle6;
+            this.DGVExams.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGVExams.DefaultCellStyle = dataGridViewCellStyle3;
             this.DGVExams.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.DGVExams.EnableHeadersVisualStyles = false;
             this.DGVExams.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -377,7 +314,7 @@
             this.DGVExams.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.DGVExams.RowHeadersVisible = false;
             this.DGVExams.RowHeadersWidth = 62;
-            this.DGVExams.RowTemplate.Height = 29;
+            this.DGVExams.RowTemplate.Height = 40;
             this.DGVExams.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DGVExams.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGVExams.Size = new System.Drawing.Size(1156, 311);
@@ -401,7 +338,7 @@
             this.DGVExams.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DGVExams.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.DGVExams.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.DGVExams.ThemeStyle.RowsStyle.Height = 29;
+            this.DGVExams.ThemeStyle.RowsStyle.Height = 40;
             this.DGVExams.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DGVExams.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
@@ -447,16 +384,6 @@
             this.date.Name = "date";
             this.date.ReadOnly = true;
             // 
-            // Operations
-            // 
-            this.Operations.HeaderText = "الإجراءات";
-            this.Operations.Image = global::Driving_School_Management_System.Properties.Resources.dots_three_outline;
-            this.Operations.MinimumWidth = 8;
-            this.Operations.Name = "Operations";
-            this.Operations.ReadOnly = true;
-            this.Operations.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Operations.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
@@ -485,16 +412,6 @@
             this.panel1.Size = new System.Drawing.Size(1169, 575);
             this.panel1.TabIndex = 10;
             // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.HeaderText = "الإجراءات";
-            this.dataGridViewImageColumn1.Image = global::Driving_School_Management_System.Properties.Resources.dots_three_outline;
-            this.dataGridViewImageColumn1.MinimumWidth = 8;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewImageColumn1.Width = 162;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -508,6 +425,90 @@
             this.label1.Size = new System.Drawing.Size(221, 51);
             this.label1.TabIndex = 8;
             this.label1.Text = "إدارة الامتحانات";
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.HeaderText = "الإجراءات";
+            this.dataGridViewImageColumn1.Image = global::Driving_School_Management_System.Properties.Resources.dots_three_outline;
+            this.dataGridViewImageColumn1.MinimumWidth = 8;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewImageColumn1.Width = 162;
+            // 
+            // btnAddExam
+            // 
+            this.btnAddExam.BorderRadius = 10;
+            this.btnAddExam.CheckedState.Parent = this.btnAddExam;
+            this.btnAddExam.CustomImages.Parent = this.btnAddExam;
+            this.btnAddExam.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
+            this.btnAddExam.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
+            this.btnAddExam.ForeColor = System.Drawing.Color.Black;
+            this.btnAddExam.HoverState.Parent = this.btnAddExam;
+            this.btnAddExam.Image = global::Driving_School_Management_System.Properties.Resources.plus_bold;
+            this.btnAddExam.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnAddExam.Location = new System.Drawing.Point(17, 26);
+            this.btnAddExam.Name = "btnAddExam";
+            this.btnAddExam.ShadowDecoration.Parent = this.btnAddExam;
+            this.btnAddExam.Size = new System.Drawing.Size(126, 44);
+            this.btnAddExam.TabIndex = 9;
+            this.btnAddExam.Text = "إضافة ";
+            this.btnAddExam.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.funnel__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(773, 79);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(42, 37);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabStop = false;
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button3.BorderRadius = 5;
+            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
+            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
+            this.guna2Button3.FillColor = System.Drawing.Color.Black;
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.HoverState.Parent = this.guna2Button3;
+            this.guna2Button3.Image = global::Driving_School_Management_System.Properties.Resources.arrows_clockwise;
+            this.guna2Button3.Location = new System.Drawing.Point(1107, 76);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
+            this.guna2Button3.Size = new System.Drawing.Size(41, 43);
+            this.guna2Button3.TabIndex = 26;
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            // 
+            // Operations
+            // 
+            this.Operations.HeaderText = "الإجراءات";
+            this.Operations.Image = global::Driving_School_Management_System.Properties.Resources.dots_three_outline;
+            this.Operations.MinimumWidth = 8;
+            this.Operations.Name = "Operations";
+            this.Operations.ReadOnly = true;
+            this.Operations.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Operations.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label2.Image = global::Driving_School_Management_System.Properties.Resources.magnifying_glass__1_;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Location = new System.Drawing.Point(935, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
+            this.label2.Name = "label2";
+            this.label2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.label2.Size = new System.Drawing.Size(234, 37);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "    بحث متعدد المعايير";
             // 
             // ExamsWindow
             // 
@@ -529,11 +530,11 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVExams)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

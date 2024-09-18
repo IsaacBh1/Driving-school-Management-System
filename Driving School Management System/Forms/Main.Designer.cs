@@ -2563,7 +2563,7 @@
             // panel9
             // 
             this.panel9.Controls.Add(this.label18);
-            this.panel9.Location = new System.Drawing.Point(248, 3);
+            this.panel9.Location = new System.Drawing.Point(245, 3);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(266, 38);
             this.panel9.TabIndex = 5;
@@ -2583,9 +2583,9 @@
             // 
             // guna2Separator2
             // 
-            this.guna2Separator2.Location = new System.Drawing.Point(3, 47);
+            this.guna2Separator2.Location = new System.Drawing.Point(6, 47);
             this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(511, 11);
+            this.guna2Separator2.Size = new System.Drawing.Size(505, 11);
             this.guna2Separator2.TabIndex = 6;
             // 
             // chart1

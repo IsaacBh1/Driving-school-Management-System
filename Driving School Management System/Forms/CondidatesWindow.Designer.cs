@@ -216,7 +216,7 @@
             this.CondidatesWindowTab.Controls.Add(this.tabPage2);
             this.CondidatesWindowTab.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CondidatesWindowTab.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.CondidatesWindowTab.ItemSize = new System.Drawing.Size(1, 0);
+            this.CondidatesWindowTab.ItemSize = new System.Drawing.Size(10, 10);
             this.CondidatesWindowTab.Location = new System.Drawing.Point(0, 0);
             this.CondidatesWindowTab.Name = "CondidatesWindowTab";
             this.CondidatesWindowTab.SelectedIndex = 0;
@@ -231,10 +231,10 @@
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Controls.Add(this.guna2Button1);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Location = new System.Drawing.Point(0, 25);
+            this.tabPage1.Location = new System.Drawing.Point(0, 100);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1260, 797);
+            this.tabPage1.Size = new System.Drawing.Size(1260, 722);
             this.tabPage1.TabIndex = 0;
             // 
             // panel1
@@ -255,7 +255,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(21, 77);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1213, 693);
+            this.panel1.Size = new System.Drawing.Size(1213, 618);
             this.panel1.TabIndex = 4;
             // 
             // CBoxStudentInfoFilter
@@ -380,10 +380,10 @@
             this.DGVStudents.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.DGVStudents.RowHeadersVisible = false;
             this.DGVStudents.RowHeadersWidth = 62;
-            this.DGVStudents.RowTemplate.Height = 29;
+            this.DGVStudents.RowTemplate.Height = 40;
             this.DGVStudents.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DGVStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVStudents.Size = new System.Drawing.Size(1200, 429);
+            this.DGVStudents.Size = new System.Drawing.Size(1200, 354);
             this.DGVStudents.TabIndex = 25;
             this.DGVStudents.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.DGVStudents.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -404,7 +404,7 @@
             this.DGVStudents.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DGVStudents.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.DGVStudents.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.DGVStudents.ThemeStyle.RowsStyle.Height = 29;
+            this.DGVStudents.ThemeStyle.RowsStyle.Height = 40;
             this.DGVStudents.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DGVStudents.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
@@ -670,10 +670,10 @@
             this.tabPage2.Controls.Add(this.panel6);
             this.tabPage2.Controls.Add(this.label16);
             this.tabPage2.Controls.Add(this.btnAddCondidtefile);
-            this.tabPage2.Location = new System.Drawing.Point(0, 25);
+            this.tabPage2.Location = new System.Drawing.Point(0, 10);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1260, 797);
+            this.tabPage2.Size = new System.Drawing.Size(1260, 812);
             this.tabPage2.TabIndex = 1;
             // 
             // panel6
@@ -694,7 +694,7 @@
             this.panel6.Controls.Add(this.label15);
             this.panel6.Location = new System.Drawing.Point(21, 77);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1213, 693);
+            this.panel6.Size = new System.Drawing.Size(1213, 708);
             this.panel6.TabIndex = 7;
             // 
             // CboxFilterCondidtateFile
@@ -822,10 +822,10 @@
             this.DGVFiles.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.DGVFiles.RowHeadersVisible = false;
             this.DGVFiles.RowHeadersWidth = 62;
-            this.DGVFiles.RowTemplate.Height = 29;
+            this.DGVFiles.RowTemplate.Height = 40;
             this.DGVFiles.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DGVFiles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVFiles.Size = new System.Drawing.Size(1200, 429);
+            this.DGVFiles.Size = new System.Drawing.Size(1200, 444);
             this.DGVFiles.TabIndex = 25;
             this.DGVFiles.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.DGVFiles.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -846,7 +846,7 @@
             this.DGVFiles.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DGVFiles.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.DGVFiles.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.DGVFiles.ThemeStyle.RowsStyle.Height = 29;
+            this.DGVFiles.ThemeStyle.RowsStyle.Height = 40;
             this.DGVFiles.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DGVFiles.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 

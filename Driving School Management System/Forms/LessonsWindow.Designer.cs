@@ -234,7 +234,7 @@
             this.DGVLessons.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.DGVLessons.RowHeadersVisible = false;
             this.DGVLessons.RowHeadersWidth = 62;
-            this.DGVLessons.RowTemplate.Height = 29;
+            this.DGVLessons.RowTemplate.Height = 40;
             this.DGVLessons.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DGVLessons.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGVLessons.Size = new System.Drawing.Size(1130, 311);
@@ -258,7 +258,7 @@
             this.DGVLessons.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DGVLessons.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.DGVLessons.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.DGVLessons.ThemeStyle.RowsStyle.Height = 29;
+            this.DGVLessons.ThemeStyle.RowsStyle.Height = 40;
             this.DGVLessons.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DGVLessons.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 

@@ -37,18 +37,18 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.UserNamePanel = new Sipaa.Framework.SPanel();
-            this.lblUserName = new System.Windows.Forms.Label();
-            this.SideBarTimer = new System.Windows.Forms.Timer(this.components);
-            this.lblEmail = new System.Windows.Forms.Label();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel13 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.UserNamePanel = new Sipaa.Framework.SPanel();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblUserName = new System.Windows.Forms.Label();
+            this.SideBarTimer = new System.Windows.Forms.Timer(this.components);
             this.btnMain = new System.Windows.Forms.Button();
             this.btnCondidtes = new System.Windows.Forms.Button();
             this.btnLessons = new System.Windows.Forms.Button();
@@ -62,15 +62,15 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btnStatistics = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.btnclose = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.TopPanel.SuspendLayout();
             this.SideBar.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -78,19 +78,19 @@
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
-            this.guna2Panel8.SuspendLayout();
-            this.guna2Panel5.SuspendLayout();
-            this.guna2Panel6.SuspendLayout();
-            this.UserNamePanel.SuspendLayout();
             this.guna2Panel10.SuspendLayout();
             this.guna2Panel11.SuspendLayout();
             this.guna2Panel12.SuspendLayout();
             this.guna2Panel13.SuspendLayout();
+            this.guna2Panel5.SuspendLayout();
+            this.guna2Panel8.SuspendLayout();
+            this.guna2Panel6.SuspendLayout();
+            this.UserNamePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // TopPanel
@@ -173,71 +173,6 @@
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             // 
-            // guna2Panel8
-            // 
-            this.guna2Panel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel8.BorderRadius = 8;
-            this.guna2Panel8.Controls.Add(this.button5);
-            this.guna2Panel8.Controls.Add(this.btnStatistics);
-            this.guna2Panel8.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.guna2Panel8, "guna2Panel8");
-            this.guna2Panel8.Name = "guna2Panel8";
-            this.guna2Panel8.ShadowDecoration.Parent = this.guna2Panel8;
-            // 
-            // guna2Separator2
-            // 
-            this.guna2Separator2.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.guna2Separator2, "guna2Separator2");
-            this.guna2Separator2.Name = "guna2Separator2";
-            // 
-            // guna2Panel5
-            // 
-            this.guna2Panel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel5.BorderRadius = 8;
-            this.guna2Panel5.Controls.Add(this.button1);
-            this.guna2Panel5.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.guna2Panel5, "guna2Panel5");
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
-            // 
-            // guna2Panel6
-            // 
-            this.guna2Panel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel6.BorderRadius = 8;
-            this.guna2Panel6.Controls.Add(this.button2);
-            this.guna2Panel6.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.guna2Panel6, "guna2Panel6");
-            this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
-            // 
-            // UserNamePanel
-            // 
-            this.UserNamePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
-            this.UserNamePanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.UserNamePanel.BorderRadius = 12;
-            this.UserNamePanel.BorderSize = 0;
-            this.UserNamePanel.Controls.Add(this.lblEmail);
-            this.UserNamePanel.Controls.Add(this.lblUserName);
-            this.UserNamePanel.Controls.Add(this.pictureBox2);
-            this.UserNamePanel.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.UserNamePanel, "UserNamePanel");
-            this.UserNamePanel.Name = "UserNamePanel";
-            // 
-            // lblUserName
-            // 
-            resources.ApplyResources(this.lblUserName, "lblUserName");
-            this.lblUserName.Name = "lblUserName";
-            // 
-            // SideBarTimer
-            // 
-            this.SideBarTimer.Interval = 10;
-            // 
-            // lblEmail
-            // 
-            resources.ApplyResources(this.lblEmail, "lblEmail");
-            this.lblEmail.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblEmail.Name = "lblEmail";
-            // 
             // guna2Panel10
             // 
             this.guna2Panel10.BackColor = System.Drawing.Color.Transparent;
@@ -281,6 +216,71 @@
             resources.ApplyResources(this.guna2Panel13, "guna2Panel13");
             this.guna2Panel13.Name = "guna2Panel13";
             this.guna2Panel13.ShadowDecoration.Parent = this.guna2Panel13;
+            // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel5.BorderRadius = 8;
+            this.guna2Panel5.Controls.Add(this.button1);
+            this.guna2Panel5.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.guna2Panel5, "guna2Panel5");
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
+            // 
+            // guna2Separator2
+            // 
+            this.guna2Separator2.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.guna2Separator2, "guna2Separator2");
+            this.guna2Separator2.Name = "guna2Separator2";
+            // 
+            // guna2Panel8
+            // 
+            this.guna2Panel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel8.BorderRadius = 8;
+            this.guna2Panel8.Controls.Add(this.button5);
+            this.guna2Panel8.Controls.Add(this.btnStatistics);
+            this.guna2Panel8.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.guna2Panel8, "guna2Panel8");
+            this.guna2Panel8.Name = "guna2Panel8";
+            this.guna2Panel8.ShadowDecoration.Parent = this.guna2Panel8;
+            // 
+            // guna2Panel6
+            // 
+            this.guna2Panel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel6.BorderRadius = 8;
+            this.guna2Panel6.Controls.Add(this.button2);
+            this.guna2Panel6.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.guna2Panel6, "guna2Panel6");
+            this.guna2Panel6.Name = "guna2Panel6";
+            this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
+            // 
+            // UserNamePanel
+            // 
+            this.UserNamePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
+            this.UserNamePanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.UserNamePanel.BorderRadius = 12;
+            this.UserNamePanel.BorderSize = 0;
+            this.UserNamePanel.Controls.Add(this.lblEmail);
+            this.UserNamePanel.Controls.Add(this.lblUserName);
+            this.UserNamePanel.Controls.Add(this.pictureBox2);
+            this.UserNamePanel.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.UserNamePanel, "UserNamePanel");
+            this.UserNamePanel.Name = "UserNamePanel";
+            // 
+            // lblEmail
+            // 
+            resources.ApplyResources(this.lblEmail, "lblEmail");
+            this.lblEmail.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblEmail.Name = "lblEmail";
+            // 
+            // lblUserName
+            // 
+            resources.ApplyResources(this.lblUserName, "lblUserName");
+            this.lblUserName.Name = "lblUserName";
+            // 
+            // SideBarTimer
+            // 
+            this.SideBarTimer.Interval = 10;
             // 
             // btnMain
             // 
@@ -378,6 +378,13 @@
             this.button11.Name = "button11";
             this.button11.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Image = global::Driving_School_Management_System.Properties.Resources.database;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // button5
             // 
             resources.ApplyResources(this.button5, "button5");
@@ -391,6 +398,20 @@
             this.btnStatistics.Image = global::Driving_School_Management_System.Properties.Resources.gear;
             this.btnStatistics.Name = "btnStatistics";
             this.btnStatistics.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Image = global::Driving_School_Management_System.Properties.Resources.sign_out;
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Driving_School_Management_System.Properties.Resources.user_circle_fill;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -413,7 +434,7 @@
             // 
             this.btnclose.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.btnclose, "btnclose");
-            this.btnclose.Image = global::Driving_School_Management_System.Properties.Resources.x_circle_fill;
+            this.btnclose.Image = global::Driving_School_Management_System.Properties.Resources.x_circle;
             this.btnclose.Name = "btnclose";
             this.btnclose.TabStop = false;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
@@ -426,27 +447,6 @@
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.TabStop = false;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Driving_School_Management_System.Properties.Resources.user_circle_fill;
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
-            // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Image = global::Driving_School_Management_System.Properties.Resources.sign_out;
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Image = global::Driving_School_Management_System.Properties.Resources.database;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -466,20 +466,20 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel7.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
-            this.guna2Panel8.ResumeLayout(false);
-            this.guna2Panel5.ResumeLayout(false);
-            this.guna2Panel6.ResumeLayout(false);
-            this.UserNamePanel.ResumeLayout(false);
-            this.UserNamePanel.PerformLayout();
             this.guna2Panel10.ResumeLayout(false);
             this.guna2Panel11.ResumeLayout(false);
             this.guna2Panel12.ResumeLayout(false);
             this.guna2Panel13.ResumeLayout(false);
+            this.guna2Panel5.ResumeLayout(false);
+            this.guna2Panel8.ResumeLayout(false);
+            this.guna2Panel6.ResumeLayout(false);
+            this.UserNamePanel.ResumeLayout(false);
+            this.UserNamePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnclose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

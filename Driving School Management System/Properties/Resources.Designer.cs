@@ -693,6 +693,16 @@ namespace Driving_School_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap x_circle {
+            get {
+                object obj = ResourceManager.GetObject("x-circle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap x_circle_fill {
             get {
                 object obj = ResourceManager.GetObject("x-circle-fill", resourceCulture);

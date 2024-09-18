@@ -14,7 +14,10 @@ namespace Driving_School_Management_System.Forms
             _initializeDrivingLicenseTypeCbox(); 
             DispalyStudentsInformations(clsStudent.GetAllStudentsInfo());
             DisplayCondidteFilesInformations(clsCondidateFile.GetAllCondidateFileInformations());
+
+
         }
+       
         private string _getFileStatus(string s) => s == "False" ? "نشط" : "مؤرشف";
         private string _getStudentStatus(string s) => s == "True" ? "نشط" : "منقطع"; 
         private bool _getIsActive(string s)=> s == "نشط" ? true : false;
