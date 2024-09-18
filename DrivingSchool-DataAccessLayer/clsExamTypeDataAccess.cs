@@ -120,6 +120,11 @@ namespace DrivingSchool_DataAccessLayer
             return (affectedRows != 0);
         }
 
+
+        
+
+
+
         public static bool DeleteExamType(int id)
         {
             bool result = false;

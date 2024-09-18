@@ -51,6 +51,23 @@ namespace DrivingSchool_DataAccessLayer
             return GetAll ("select * from ExamsInformations where ExamID = "+ID.ToString()+" order by ExamID desc");
         }
 
+        public static DataTable GetExamsByExamType(int ExamType)
+        {
+            return GetAll("select * from ExamsInformations where ExamTypeID = "+ExamType.ToString()+" ; "); 
+        }
+
+        public static DataTable GetExamsByStatus(string status)
+        {
+            return GetAll("select * from ExamsInformations where Situation = '" + status + "'   ; "); 
+        }
+
+        public static DataTable GetExamsByCondidateFile(int condidateFileID)
+        {
+            return GetAll("select * from ExamsInformations where CondidateFileID = " + condidateFileID.ToString() + "  ;"); 
+        }
+
+
+
         public static bool GetExamInfoByID(int examID, ref int condidateFileID, ref int examTypeID, ref int? result, ref string situation, ref DateTime dateOfExam, ref string additionalNotes, ref TimeSpan timeOfExam)
         {
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);

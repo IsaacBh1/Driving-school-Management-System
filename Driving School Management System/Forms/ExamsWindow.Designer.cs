@@ -28,22 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAddExam = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.label2 = new System.Windows.Forms.Label();
-            this.CboxLessonType = new MetroFramework.Controls.MetroComboBox();
+            this.CboxExamType = new MetroFramework.Controls.MetroComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.textbxCondidateFileID = new System.Windows.Forms.TextBox();
             this.txtBoxID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.CBoxLessonFilter = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.cboxStatus = new MetroFramework.Controls.MetroComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.CBoxExamsFilter = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSearchLesson = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -59,19 +63,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVExams)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAddExam
@@ -117,20 +117,20 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "    بحث متعدد المعايير";
             // 
-            // CboxLessonType
+            // CboxExamType
             // 
-            this.CboxLessonType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CboxExamType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CboxLessonType.FormattingEnabled = true;
-            this.CboxLessonType.ItemHeight = 23;
-            this.CboxLessonType.Items.AddRange(new object[] {
+            this.CboxExamType.FormattingEnabled = true;
+            this.CboxExamType.ItemHeight = 23;
+            this.CboxExamType.Items.AddRange(new object[] {
             "نظري",
             "تطبيقي"});
-            this.CboxLessonType.Location = new System.Drawing.Point(21, 34);
-            this.CboxLessonType.Name = "CboxLessonType";
-            this.CboxLessonType.Size = new System.Drawing.Size(157, 29);
-            this.CboxLessonType.TabIndex = 25;
-            this.CboxLessonType.UseSelectable = true;
+            this.CboxExamType.Location = new System.Drawing.Point(21, 34);
+            this.CboxExamType.Name = "CboxExamType";
+            this.CboxExamType.Size = new System.Drawing.Size(157, 29);
+            this.CboxExamType.TabIndex = 25;
+            this.CboxExamType.UseSelectable = true;
             // 
             // label3
             // 
@@ -145,7 +145,7 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.CboxLessonType);
+            this.panel5.Controls.Add(this.CboxExamType);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Location = new System.Drawing.Point(584, 3);
             this.panel5.Name = "panel5";
@@ -165,12 +165,19 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.textbxCondidateFileID);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Location = new System.Drawing.Point(773, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(183, 83);
             this.panel4.TabIndex = 24;
+            // 
+            // textbxCondidateFileID
+            // 
+            this.textbxCondidateFileID.Location = new System.Drawing.Point(16, 36);
+            this.textbxCondidateFileID.Name = "textbxCondidateFileID";
+            this.textbxCondidateFileID.Size = new System.Drawing.Size(157, 27);
+            this.textbxCondidateFileID.TabIndex = 26;
             // 
             // txtBoxID
             // 
@@ -213,30 +220,66 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1148, 100);
             this.flowLayoutPanel1.TabIndex = 24;
             // 
-            // CBoxLessonFilter
+            // panel6
             // 
-            this.CBoxLessonFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CBoxLessonFilter.BackColor = System.Drawing.Color.Transparent;
-            this.CBoxLessonFilter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CBoxLessonFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBoxLessonFilter.FocusedColor = System.Drawing.Color.Empty;
-            this.CBoxLessonFilter.FocusedState.Parent = this.CBoxLessonFilter;
-            this.CBoxLessonFilter.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.CBoxLessonFilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.CBoxLessonFilter.FormattingEnabled = true;
-            this.CBoxLessonFilter.HoverState.Parent = this.CBoxLessonFilter;
-            this.CBoxLessonFilter.ItemHeight = 30;
-            this.CBoxLessonFilter.Items.AddRange(new object[] {
+            this.panel6.Controls.Add(this.cboxStatus);
+            this.panel6.Controls.Add(this.label4);
+            this.panel6.Location = new System.Drawing.Point(395, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(183, 83);
+            this.panel6.TabIndex = 27;
+            // 
+            // cboxStatus
+            // 
+            this.cboxStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboxStatus.FormattingEnabled = true;
+            this.cboxStatus.ItemHeight = 23;
+            this.cboxStatus.Items.AddRange(new object[] {
+            "مبرمج",
+            "ناجح",
+            "راسب"});
+            this.cboxStatus.Location = new System.Drawing.Point(21, 34);
+            this.cboxStatus.Name = "cboxStatus";
+            this.cboxStatus.Size = new System.Drawing.Size(157, 29);
+            this.cboxStatus.TabIndex = 25;
+            this.cboxStatus.UseSelectable = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label4.ForeColor = System.Drawing.Color.Gray;
+            this.label4.Location = new System.Drawing.Point(120, 2);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 28);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "الحالة";
+            // 
+            // CBoxExamsFilter
+            // 
+            this.CBoxExamsFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CBoxExamsFilter.BackColor = System.Drawing.Color.Transparent;
+            this.CBoxExamsFilter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CBoxExamsFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBoxExamsFilter.FocusedColor = System.Drawing.Color.Empty;
+            this.CBoxExamsFilter.FocusedState.Parent = this.CBoxExamsFilter;
+            this.CBoxExamsFilter.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.CBoxExamsFilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.CBoxExamsFilter.FormattingEnabled = true;
+            this.CBoxExamsFilter.HoverState.Parent = this.CBoxExamsFilter;
+            this.CBoxExamsFilter.ItemHeight = 30;
+            this.CBoxExamsFilter.Items.AddRange(new object[] {
             "ID",
             "الملف",
             "نوع الامتحان",
             "الحالة"});
-            this.CBoxLessonFilter.ItemsAppearance.Parent = this.CBoxLessonFilter;
-            this.CBoxLessonFilter.Location = new System.Drawing.Point(821, 79);
-            this.CBoxLessonFilter.Name = "CBoxLessonFilter";
-            this.CBoxLessonFilter.ShadowDecoration.Parent = this.CBoxLessonFilter;
-            this.CBoxLessonFilter.Size = new System.Drawing.Size(183, 36);
-            this.CBoxLessonFilter.TabIndex = 35;
+            this.CBoxExamsFilter.ItemsAppearance.Parent = this.CBoxExamsFilter;
+            this.CBoxExamsFilter.Location = new System.Drawing.Point(821, 79);
+            this.CBoxExamsFilter.Name = "CBoxExamsFilter";
+            this.CBoxExamsFilter.ShadowDecoration.Parent = this.CBoxExamsFilter;
+            this.CBoxExamsFilter.Size = new System.Drawing.Size(183, 36);
+            this.CBoxExamsFilter.TabIndex = 35;
             // 
             // pictureBox1
             // 
@@ -266,6 +309,7 @@
             this.btnSearchLesson.Size = new System.Drawing.Size(89, 43);
             this.btnSearchLesson.TabIndex = 27;
             this.btnSearchLesson.Text = "بحث";
+            this.btnSearchLesson.Click += new System.EventHandler(this.btnSearchLesson_Click);
             // 
             // guna2Button3
             // 
@@ -288,8 +332,8 @@
             // 
             // DGVExams
             // 
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            this.DGVExams.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.DGVExams.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DGVExams.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -298,15 +342,15 @@
             this.DGVExams.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGVExams.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DGVExams.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.NullValue = "\"\"";
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVExams.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.NullValue = "\"\"";
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVExams.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DGVExams.ColumnHeadersHeight = 50;
             this.DGVExams.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -316,14 +360,14 @@
             this.type,
             this.date,
             this.Operations});
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGVExams.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGVExams.DefaultCellStyle = dataGridViewCellStyle6;
             this.DGVExams.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.DGVExams.EnableHeadersVisualStyles = false;
             this.DGVExams.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -416,7 +460,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.CBoxLessonFilter);
+            this.panel2.Controls.Add(this.CBoxExamsFilter);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btnSearchLesson);
             this.panel2.Controls.Add(this.guna2Button3);
@@ -465,49 +509,6 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "إدارة الامتحانات";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(16, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(157, 27);
-            this.textBox1.TabIndex = 26;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.metroComboBox1);
-            this.panel6.Controls.Add(this.label4);
-            this.panel6.Location = new System.Drawing.Point(395, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(183, 83);
-            this.panel6.TabIndex = 27;
-            // 
-            // metroComboBox1
-            // 
-            this.metroComboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Items.AddRange(new object[] {
-            "مبرمج",
-            "ناجح",
-            "راسب"});
-            this.metroComboBox1.Location = new System.Drawing.Point(21, 34);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(157, 29);
-            this.metroComboBox1.TabIndex = 25;
-            this.metroComboBox1.UseSelectable = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(120, 2);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 28);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "الحالة";
-            // 
             // ExamsWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -526,13 +527,13 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVExams)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -543,7 +544,7 @@
         private Guna.UI2.WinForms.Guna2Button btnAddExam;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.Label label2;
-        private MetroFramework.Controls.MetroComboBox CboxLessonType;
+        private MetroFramework.Controls.MetroComboBox CboxExamType;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label6;
@@ -552,7 +553,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private Guna.UI2.WinForms.Guna2ComboBox CBoxLessonFilter;
+        private Guna.UI2.WinForms.Guna2ComboBox CBoxExamsFilter;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnSearchLesson;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
@@ -568,9 +569,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn type;
         private System.Windows.Forms.DataGridViewTextBoxColumn date;
         private System.Windows.Forms.DataGridViewImageColumn Operations;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textbxCondidateFileID;
         private System.Windows.Forms.Panel panel6;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private MetroFramework.Controls.MetroComboBox cboxStatus;
         private System.Windows.Forms.Label label4;
     }
 }
