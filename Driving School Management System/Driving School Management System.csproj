@@ -426,5 +426,20 @@
   <ItemGroup>
     <None Include="Resources\calendar-fill.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steering-wheel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\identification-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
