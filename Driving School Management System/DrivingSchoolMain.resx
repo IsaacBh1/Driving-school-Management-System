@@ -786,43 +786,43 @@
   <data name="&gt;&gt;guna2Panel11.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="button8.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnCars.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt, style=Bold</value>
   </data>
-  <data name="button8.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btnCars.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="button8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnCars.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnCars.Location" type="System.Drawing.Point, System.Drawing">
     <value>-9, -12</value>
   </data>
-  <data name="button8.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnCars.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 10, 0</value>
   </data>
-  <data name="button8.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+  <data name="btnCars.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
-  <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnCars.Size" type="System.Drawing.Size, System.Drawing">
     <value>252, 80</value>
   </data>
-  <data name="button8.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnCars.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="button8.Text" xml:space="preserve">
+  <data name="btnCars.Text" xml:space="preserve">
     <value>المركبات</value>
   </data>
-  <data name="&gt;&gt;button8.Name" xml:space="preserve">
-    <value>button8</value>
+  <data name="&gt;&gt;btnCars.Name" xml:space="preserve">
+    <value>btnCars</value>
   </data>
-  <data name="&gt;&gt;button8.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnCars.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnCars.Parent" xml:space="preserve">
     <value>guna2Panel12</value>
   </data>
-  <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnCars.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="button9.Font" type="System.Drawing.Font, System.Drawing">
@@ -1394,9 +1394,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>984, 1029</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
     <value>True</value>

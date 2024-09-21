@@ -12,7 +12,8 @@ namespace Driving_School_Management_System
         MainWindow mainWindow = null;
         CondidatesWindow condidatesWindow = null;
         LessonsWindow lessonsForm = null;
-        ExamsWindow examsWindow = null; 
+        ExamsWindow examsWindow = null;
+        CarsWindow carsWindow = null; 
         public MainForm()
         {
             InitializeComponent();
@@ -114,6 +115,9 @@ namespace Driving_School_Management_System
                 case 4:
                     btnExams.BackColor = ColorTranslator.FromHtml("#E5AF1D");
                     break;
+                case 8:
+                    btnCars.BackColor = ColorTranslator.FromHtml("#E5AF1D");
+                    break;
             }
         }
 
@@ -134,6 +138,10 @@ namespace Driving_School_Management_System
                     break;
                 case 4:
                     btnExams.BackColor = Color.Transparent;
+                    break;
+
+                case 8:
+                    btnCars.BackColor = Color.Transparent;
                     break;
             }
         }
@@ -157,6 +165,13 @@ namespace Driving_School_Management_System
             previousTabIndex = tabIndex;
             tabIndex = 4;
             ShowWindow<ExamsWindow>(examsWindow); 
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            previousTabIndex = tabIndex;
+            tabIndex = 8;
+            ShowWindow<CarsWindow>(carsWindow); 
         }
     }
 }

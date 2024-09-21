@@ -16,5 +16,11 @@ namespace Driving_School_Management_System.Forms
         {
             InitializeComponent();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            AddCarForm carForm = new AddCarForm();
+            carForm.ShowDialog(); 
+        }
     }
 }
