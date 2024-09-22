@@ -80,5 +80,8 @@ namespace Driving_school_BusinessLayer
             => clsFuelTypeDataAccess.GetAllFuelTypes();
 
 
+        public static int GetFuelTypeIDByName(string Name)
+            =>clsFuelTypeDataAccess.GetFuelTypeIDByName(Name);
+
     }
 }

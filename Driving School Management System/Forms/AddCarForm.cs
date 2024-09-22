@@ -44,6 +44,8 @@ namespace Driving_School_Management_System.Forms
         }
 
 
+        clsVehicle vehicle = null;
+        StatusMessageForm statusMessageForm = null;
         public AddCarForm()
         {
             InitializeComponent();
@@ -74,6 +76,11 @@ namespace Driving_School_Management_System.Forms
             _initializeFuelTypeCbox(); 
         }
 
+        private bool CkeckCarInformations()
+        {
+            return !string.IsNullOrEmpty(txtbxRegistrationNumber.Text) && !string.IsNullOrEmpty(txtboxCarMark.Text);  
+        }
+
 
 
         private void btnGetCarImagePath_Click(object sender, EventArgs e)
@@ -91,11 +98,60 @@ namespace Driving_School_Management_System.Forms
                 }
                 else
                 {
-                    MessageBox.Show("الملف غير موجود.");
+                    MessageBox.Show("الصورة غير موجودة.");
                 }
-
             }
 
         }
+
+        private void StoreVehicle()
+        {
+            if (CkeckCarInformations())
+            {
+
+                vehicle = new clsVehicle() {
+                    Name = txtboxVehicleName.Text,
+                    RegistrationNumber = txtbxRegistrationNumber.Text,
+                    Mark = txtboxCarMark.Text,
+                    Type = txtboxType.Text,
+                    Model = txtbxModel.Text,
+                    Color = CboxColor.Text,
+                    ImagePath = txtbxImagePath.Text,
+                    DateOfUsage = dtpDateOfUsage.Value , 
+                    AdditionalNotes = txtboxNotes.Text , 
+                    FuelType = clsFuelType.GetFuelTypeIDByName(CboxFuelType.Text) , 
+                    DrivingLicenseTypeID = clsDrivingLicenseType.GetDrivingLicenseTypeIDByName(CboxDrivingLisence.Text)
+
+                }; 
+
+
+
+
+                //this is the code to save on DB 
+                if (vehicle.Save())
+                {
+                    // MessageBox.Show("student is saved successfully with ID = " + student.StudentID);
+                    statusMessageForm = new StatusMessageForm("Exam Saved Successfully .");
+                    statusMessageForm.ShowSuccess();
+                    Close();
+                }
+                else
+                {
+                    statusMessageForm = new StatusMessageForm("Exam not Saved .");
+                    statusMessageForm.ShowFailed();
+                }
+            }
+            else
+                MessageBox.Show("هناك معلومات مفقودة", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            StoreVehicle(); 
+        }
     }
+
+
 }
+

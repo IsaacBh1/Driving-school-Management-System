@@ -170,7 +170,7 @@ namespace DrivingSchool_DataAccessLayer
             return result;
         }
 
-        public static int GetFuelTypeIDByInfo(string Name)
+        public static int GetFuelTypeIDByName(string Name)
         {
             int ID = -1;
             SqlConnection connection = new SqlConnection(ConnectionString);
@@ -203,7 +203,7 @@ namespace DrivingSchool_DataAccessLayer
 
         public static bool IsFuelTypeExists(string Name)
         {
-            return (GetFuelTypeIDByInfo(Name) != -1);
+            return (GetFuelTypeIDByName(Name) != -1);
         }
     }
 }
