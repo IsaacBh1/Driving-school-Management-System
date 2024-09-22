@@ -483,5 +483,8 @@
   <ItemGroup>
     <None Include="Resources\note-pencil %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dots-three-outline-vertical.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,5 +1,6 @@
 ﻿using DrivingSchool_BusinesseLayer;
 using DrivingSchool_DataAccessLayer;
+using System.Data;
 
 namespace Driving_school_BusinessLayer
 {
@@ -74,6 +75,9 @@ namespace Driving_school_BusinessLayer
 
         }
 
+
+        public static DataTable GetAllFuelTypes()
+            => clsFuelTypeDataAccess.GetAllFuelTypes();
 
 
     }

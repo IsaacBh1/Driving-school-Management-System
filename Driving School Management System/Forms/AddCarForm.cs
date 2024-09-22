@@ -2,6 +2,8 @@
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Drawing;
+using System.IO;
+using Driving_school_BusinessLayer;
 
 
 namespace Driving_School_Management_System.Forms
@@ -46,13 +48,54 @@ namespace Driving_School_Management_System.Forms
         {
             InitializeComponent();
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-
+            _inetializeCboxes(); 
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         => Close();
 
         private void guna2Button2_Click(object sender, EventArgs e)
-        => Close(); 
+        => Close();
+
+
+        private void _initializeDrivingLicenseTypeCbox()
+        {
+            CboxDrivingLisence.DataSource = clsDrivingLicenseType.GetAllNames().DefaultView;
+            CboxDrivingLisence.DisplayMember = "Name";
+        }
+        private void _initializeFuelTypeCbox()
+        {
+            CboxFuelType.DataSource = clsFuelType.GetAllFuelTypes();
+            CboxFuelType.DisplayMember = "Name";
+        }
+
+        private void _inetializeCboxes() {
+            _initializeDrivingLicenseTypeCbox();
+            _initializeFuelTypeCbox(); 
+        }
+
+
+
+        private void btnGetCarImagePath_Click(object sender, EventArgs e)
+        {
+            openFileDialogCarImage.Multiselect = false;
+            openFileDialogCarImage.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+            if (openFileDialogCarImage.ShowDialog() == DialogResult.OK)
+            {
+                // The selected file path
+                string filePath = openFileDialogCarImage.FileName;
+                if (File.Exists(filePath))
+                {
+                txtbxImagePath.Text = filePath;
+                    // Proceed with the file, e.g., display the image or process it
+                }
+                else
+                {
+                    MessageBox.Show("الملف غير موجود.");
+                }
+
+            }
+
+        }
     }
 }

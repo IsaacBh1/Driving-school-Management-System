@@ -33,7 +33,6 @@
             this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox9 = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -43,16 +42,23 @@
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.CboxFuelType = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.guna2ComboBox4 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.CboxDrivingLisence = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.openFileDialogCarImage = new System.Windows.Forms.OpenFileDialog();
+            this.txtbxImagePath = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnGetCarImagePath = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -150,25 +156,11 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(30, 386);
+            this.textBox1.Location = new System.Drawing.Point(30, 464);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(839, 84);
             this.textBox1.TabIndex = 9;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.x_light;
-            this.pictureBox1.Location = new System.Drawing.Point(30, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // guna2Separator1
             // 
@@ -206,7 +198,7 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(164, 495);
+            this.guna2Button2.Location = new System.Drawing.Point(164, 562);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(126, 44);
@@ -224,7 +216,7 @@
             this.btnSubmit.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
             this.btnSubmit.ForeColor = System.Drawing.Color.Black;
             this.btnSubmit.HoverState.Parent = this.btnSubmit;
-            this.btnSubmit.Location = new System.Drawing.Point(30, 495);
+            this.btnSubmit.Location = new System.Drawing.Point(30, 562);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.ShadowDecoration.Parent = this.btnSubmit;
             this.btnSubmit.Size = new System.Drawing.Size(126, 44);
@@ -365,24 +357,24 @@
             this.label5.TabIndex = 41;
             this.label5.Text = "الموديل";
             // 
-            // guna2ComboBox3
+            // CboxFuelType
             // 
-            this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox3.FocusedState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox3.FormattingEnabled = true;
-            this.guna2ComboBox3.HoverState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.ItemsAppearance.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(621, 301);
-            this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Size = new System.Drawing.Size(248, 36);
-            this.guna2ComboBox3.TabIndex = 45;
+            this.CboxFuelType.BackColor = System.Drawing.Color.Transparent;
+            this.CboxFuelType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CboxFuelType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CboxFuelType.FocusedColor = System.Drawing.Color.Empty;
+            this.CboxFuelType.FocusedState.Parent = this.CboxFuelType;
+            this.CboxFuelType.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.CboxFuelType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.CboxFuelType.FormattingEnabled = true;
+            this.CboxFuelType.HoverState.Parent = this.CboxFuelType;
+            this.CboxFuelType.ItemHeight = 30;
+            this.CboxFuelType.ItemsAppearance.Parent = this.CboxFuelType;
+            this.CboxFuelType.Location = new System.Drawing.Point(621, 301);
+            this.CboxFuelType.Name = "CboxFuelType";
+            this.CboxFuelType.ShadowDecoration.Parent = this.CboxFuelType;
+            this.CboxFuelType.Size = new System.Drawing.Size(248, 36);
+            this.CboxFuelType.TabIndex = 45;
             // 
             // guna2ComboBox2
             // 
@@ -532,24 +524,24 @@
             this.label8.TabIndex = 38;
             this.label8.Text = "الاسم";
             // 
-            // guna2ComboBox4
+            // CboxDrivingLisence
             // 
-            this.guna2ComboBox4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox4.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox4.FocusedState.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox4.FormattingEnabled = true;
-            this.guna2ComboBox4.HoverState.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.ItemHeight = 30;
-            this.guna2ComboBox4.ItemsAppearance.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Location = new System.Drawing.Point(324, 301);
-            this.guna2ComboBox4.Name = "guna2ComboBox4";
-            this.guna2ComboBox4.ShadowDecoration.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Size = new System.Drawing.Size(248, 36);
-            this.guna2ComboBox4.TabIndex = 48;
+            this.CboxDrivingLisence.BackColor = System.Drawing.Color.Transparent;
+            this.CboxDrivingLisence.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CboxDrivingLisence.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CboxDrivingLisence.FocusedColor = System.Drawing.Color.Empty;
+            this.CboxDrivingLisence.FocusedState.Parent = this.CboxDrivingLisence;
+            this.CboxDrivingLisence.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.CboxDrivingLisence.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.CboxDrivingLisence.FormattingEnabled = true;
+            this.CboxDrivingLisence.HoverState.Parent = this.CboxDrivingLisence;
+            this.CboxDrivingLisence.ItemHeight = 30;
+            this.CboxDrivingLisence.ItemsAppearance.Parent = this.CboxDrivingLisence;
+            this.CboxDrivingLisence.Location = new System.Drawing.Point(324, 301);
+            this.CboxDrivingLisence.Name = "CboxDrivingLisence";
+            this.CboxDrivingLisence.ShadowDecoration.Parent = this.CboxDrivingLisence;
+            this.CboxDrivingLisence.Size = new System.Drawing.Size(248, 36);
+            this.CboxDrivingLisence.TabIndex = 48;
             // 
             // label9
             // 
@@ -585,25 +577,122 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tahoma", 10F);
             this.label11.ForeColor = System.Drawing.Color.Gray;
-            this.label11.Location = new System.Drawing.Point(795, 353);
+            this.label11.Location = new System.Drawing.Point(795, 431);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(74, 24);
             this.label11.TabIndex = 43;
             this.label11.Text = "ملحوظة";
+            // 
+            // openFileDialogCarImage
+            // 
+            this.openFileDialogCarImage.FileName = "openFileDialog1";
+            // 
+            // txtbxImagePath
+            // 
+            this.txtbxImagePath.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtbxImagePath.DefaultText = "";
+            this.txtbxImagePath.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtbxImagePath.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtbxImagePath.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxImagePath.DisabledState.Parent = this.txtbxImagePath;
+            this.txtbxImagePath.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxImagePath.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxImagePath.FocusedState.Parent = this.txtbxImagePath;
+            this.txtbxImagePath.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxImagePath.HoverState.Parent = this.txtbxImagePath;
+            this.txtbxImagePath.Location = new System.Drawing.Point(78, 392);
+            this.txtbxImagePath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbxImagePath.Name = "txtbxImagePath";
+            this.txtbxImagePath.PasswordChar = '\0';
+            this.txtbxImagePath.PlaceholderText = "";
+            this.txtbxImagePath.SelectedText = "";
+            this.txtbxImagePath.ShadowDecoration.Parent = this.txtbxImagePath;
+            this.txtbxImagePath.Size = new System.Drawing.Size(791, 33);
+            this.txtbxImagePath.TabIndex = 50;
+            // 
+            // btnGetCarImagePath
+            // 
+            this.btnGetCarImagePath.BorderRadius = 5;
+            this.btnGetCarImagePath.CheckedState.Parent = this.btnGetCarImagePath;
+            this.btnGetCarImagePath.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGetCarImagePath.CustomImages.Parent = this.btnGetCarImagePath;
+            this.btnGetCarImagePath.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
+            this.btnGetCarImagePath.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnGetCarImagePath.ForeColor = System.Drawing.Color.White;
+            this.btnGetCarImagePath.HoverState.Parent = this.btnGetCarImagePath;
+            this.btnGetCarImagePath.Image = global::Driving_School_Management_System.Properties.Resources.dots_three_outline_vertical;
+            this.btnGetCarImagePath.Location = new System.Drawing.Point(30, 392);
+            this.btnGetCarImagePath.Name = "btnGetCarImagePath";
+            this.btnGetCarImagePath.ShadowDecoration.Parent = this.btnGetCarImagePath;
+            this.btnGetCarImagePath.Size = new System.Drawing.Size(41, 33);
+            this.btnGetCarImagePath.TabIndex = 51;
+            this.btnGetCarImagePath.Click += new System.EventHandler(this.btnGetCarImagePath_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.x_light;
+            this.pictureBox1.Location = new System.Drawing.Point(30, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label12.ForeColor = System.Drawing.Color.Gray;
+            this.label12.Location = new System.Drawing.Point(752, 355);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(117, 24);
+            this.label12.TabIndex = 43;
+            this.label12.Text = "صورة السيارة";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.ForeColor = System.Drawing.Color.Salmon;
+            this.label13.Location = new System.Drawing.Point(730, 87);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(18, 19);
+            this.label13.TabIndex = 52;
+            this.label13.Text = "*";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.ForeColor = System.Drawing.Color.Salmon;
+            this.label14.Location = new System.Drawing.Point(481, 86);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(18, 19);
+            this.label14.TabIndex = 53;
+            this.label14.Text = "*";
             // 
             // AddCarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(899, 564);
+            this.ClientSize = new System.Drawing.Size(899, 634);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.btnGetCarImagePath);
+            this.Controls.Add(this.txtbxImagePath);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.guna2ComboBox4);
+            this.Controls.Add(this.CboxDrivingLisence);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.guna2ComboBox3);
+            this.Controls.Add(this.CboxFuelType);
             this.Controls.Add(this.guna2ComboBox2);
             this.Controls.Add(this.label11);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -649,15 +738,21 @@
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
+        private Guna.UI2.WinForms.Guna2ComboBox CboxFuelType;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox4;
+        private Guna.UI2.WinForms.Guna2ComboBox CboxDrivingLisence;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.OpenFileDialog openFileDialogCarImage;
+        private Guna.UI2.WinForms.Guna2TextBox txtbxImagePath;
+        private Guna.UI2.WinForms.Guna2Button btnGetCarImagePath;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }

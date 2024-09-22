@@ -199,8 +199,8 @@
   <data name="funnel (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\funnel (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="car-thin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\car-thin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="piggy-bank-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\piggy-bank-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="magnifying-glass-thin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\magnifying-glass-thin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,9 +220,6 @@
   <data name="file-thin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\file-thin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrow-circle-left-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrow-circle-left-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="calendar-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -241,11 +238,14 @@
   <data name="electric-car" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\electric-car.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="note-pencil (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\note-pencil (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="piggy-bank-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\piggy-bank-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="file-bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file-bold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="x-bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\x-bold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -264,9 +264,6 @@
   </data>
   <data name="gear" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="file-bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\file-bold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user-circle-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-circle-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,14 +295,20 @@
   <data name="pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="clock-thin (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clock-thin (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrow-circle-left-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-circle-left-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dots-three-outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dots-three-outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="clock-thin (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clock-thin (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="exam" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="car-thin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\car-thin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bank" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -328,7 +331,7 @@
   <data name="coins1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coins1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="note-pencil (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\note-pencil (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dots-three-outline-vertical" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dots-three-outline-vertical.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

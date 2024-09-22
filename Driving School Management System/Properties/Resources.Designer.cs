@@ -333,6 +333,16 @@ namespace Driving_School_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dots_three_outline_vertical {
+            get {
+                object obj = ResourceManager.GetObject("dots-three-outline-vertical", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap electric_car {
             get {
                 object obj = ResourceManager.GetObject("electric-car", resourceCulture);
