@@ -1,12 +1,16 @@
 ﻿using System;
+using System.Data;
+using System.Drawing;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace Driving_School_Management_System.UserControls
 {
-    public partial class CarInformations : UserControl
+    public partial class lblCarInformations : UserControl
     {
 
+        int Id = 0; 
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -19,13 +23,44 @@ namespace Driving_School_Management_System.UserControls
             int nHeightEllipse // height of ellipse
         );
 
-
-
-        public CarInformations()
+        public lblCarInformations(int Id ,  string RegistratioNumber = "None" , string DrivingLicense = "None" , string Marka = "None" , string Type = "None" , string UsageDate = "None" , string FuelType = "None" , string ImagePath = "None")
         {
             InitializeComponent();
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            this.Id = Id;
+            lblmarka.Text = Marka;
+            lblType.Text = Type;    
+            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            lbleRegistratioNumber.Text = RegistratioNumber;
+            lblDrivingLisence.Text = DrivingLicense;
+            lblUsageDate.Text = UsageDate;
+            lblFuelType.Text = FuelType;
+            if (File.Exists(ImagePath)) picVehicleImage.Image = Image.FromFile(ImagePath);  
+            else picVehicleImage.Image = Properties.Resources.electric_car;
+        }
 
+
+        public lblCarInformations()
+        {
+            InitializeComponent();
+            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+
+        }
+
+        private void lblCarInformations_MouseHover(object sender, EventArgs e)
+        {
+            BackColor = ColorTranslator.FromHtml("#fcfafa");
+            
+        }
+
+        private void lblCarInformations_MouseLeave(object sender, EventArgs e)
+        {
+            BackColor = Color.White;
+
+        }
+
+        private void lblmarka_MouseHover(object sender, EventArgs e)
+        {
+            BackColor = ColorTranslator.FromHtml("#fcfafa");
         }
     }
 }

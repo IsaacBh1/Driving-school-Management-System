@@ -306,6 +306,40 @@ namespace DrivingSchool_DataAccessLayer
             return ID;
         }
 
+        public static string GetDrivingLicenseNameByID(int ID)
+        {
+            string Name = string.Empty;
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = @"select * from DrivingLicenseTypes where DrivingLiceseTypeID = @ID";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@ID", ID);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Name = (string)reader["Name"];
+                    }
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return Name;
+        }
+
+
+
+
 
         public static decimal GetDrivingLicenseTypePriceByID(int ID)
         {

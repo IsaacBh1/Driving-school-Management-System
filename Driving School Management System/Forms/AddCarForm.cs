@@ -131,13 +131,13 @@ namespace Driving_School_Management_System.Forms
                 if (vehicle.Save())
                 {
                     // MessageBox.Show("student is saved successfully with ID = " + student.StudentID);
-                    statusMessageForm = new StatusMessageForm("Exam Saved Successfully .");
+                    statusMessageForm = new StatusMessageForm("Vehicle Saved Successfully .");
                     statusMessageForm.ShowSuccess();
                     Close();
                 }
                 else
                 {
-                    statusMessageForm = new StatusMessageForm("Exam not Saved .");
+                    statusMessageForm = new StatusMessageForm("Vehicle not Saved .");
                     statusMessageForm.ShowFailed();
                 }
             }

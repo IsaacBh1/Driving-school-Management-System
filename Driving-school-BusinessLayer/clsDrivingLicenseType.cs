@@ -121,5 +121,11 @@ namespace Driving_school_BusinessLayer
             return clsDrivingLicenseTypeDataAccess.GetDrivingLicenseTypePriceByID(ID); 
         }
 
+
+        public static string GetDrivingLicenseNameByID(int ID)
+            =>clsDrivingLicenseTypeDataAccess.GetDrivingLicenseNameByID(ID);
+        
+
+
     }
 }

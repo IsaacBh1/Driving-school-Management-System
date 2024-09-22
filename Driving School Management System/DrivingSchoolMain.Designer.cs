@@ -105,6 +105,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.calendar_fill;
             this.pictureBox1.Name = "pictureBox1";

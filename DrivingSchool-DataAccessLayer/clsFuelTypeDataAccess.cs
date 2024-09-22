@@ -201,6 +201,41 @@ namespace DrivingSchool_DataAccessLayer
             return ID;
         }
 
+
+
+        public static string GetFuelTypeNameByID(int ID)
+        {
+            string Name = string.Empty;
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from FuelTypes where FuelTypeID = @ID; ";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@ID", ID);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Name = (string)reader["Name"];
+                    }
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return "";
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return Name;
+        }
+
+
+
         public static bool IsFuelTypeExists(string Name)
         {
             return (GetFuelTypeIDByName(Name) != -1);

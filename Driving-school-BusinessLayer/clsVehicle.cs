@@ -122,6 +122,12 @@ namespace Driving_school_BusinessLayer
         {
             return clsVehicleDataAccess.GetVehicleIDByVehicleName(Name); 
         }
-        
+
+
+        public static DataTable GetAllVehicles()
+            =>clsVehicleDataAccess.GetAllVehicles();
+
+
+
     }
 }
