@@ -56,7 +56,7 @@
             this.btnCars = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.guna2Panel13 = new Guna.UI2.WinForms.Guna2Panel();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btnInstructors = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -329,19 +329,20 @@
             // 
             this.guna2Panel13.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel13.BorderRadius = 8;
-            this.guna2Panel13.Controls.Add(this.button10);
+            this.guna2Panel13.Controls.Add(this.btnInstructors);
             this.guna2Panel13.Controls.Add(this.button11);
             this.guna2Panel13.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.guna2Panel13, "guna2Panel13");
             this.guna2Panel13.Name = "guna2Panel13";
             this.guna2Panel13.ShadowDecoration.Parent = this.guna2Panel13;
             // 
-            // button10
+            // btnInstructors
             // 
-            resources.ApplyResources(this.button10, "button10");
-            this.button10.Image = global::Driving_School_Management_System.Properties.Resources.identification_card;
-            this.button10.Name = "button10";
-            this.button10.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnInstructors, "btnInstructors");
+            this.btnInstructors.Image = global::Driving_School_Management_System.Properties.Resources.identification_card;
+            this.btnInstructors.Name = "btnInstructors";
+            this.btnInstructors.UseVisualStyleBackColor = true;
+            this.btnInstructors.Click += new System.EventHandler(this.btnInstructors_Click);
             // 
             // button11
             // 
@@ -527,7 +528,7 @@
         private System.Windows.Forms.Button btnCars;
         private System.Windows.Forms.Button button9;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel13;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnInstructors;
         private System.Windows.Forms.Button button11;
     }
 }

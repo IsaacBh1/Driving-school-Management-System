@@ -10,7 +10,7 @@ namespace Driving_School_Management_System.UserControls
     public partial class lblCarInformations : UserControl
     {
 
-        int Id = 0; 
+        public int Id { get; set; } = 0; 
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn

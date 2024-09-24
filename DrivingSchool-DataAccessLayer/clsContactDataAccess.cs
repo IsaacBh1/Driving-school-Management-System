@@ -214,7 +214,6 @@ namespace DrivingSchool_DataAccessLayer
 
                 connection.Close();
             }
-            return -1; 
         }
         public static bool IsContactExiste(string Phone, string Email, string AdditionalContact)
         {
