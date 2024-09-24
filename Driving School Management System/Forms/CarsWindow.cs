@@ -43,5 +43,11 @@ namespace Driving_School_Management_System.Forms
             AddCarForm carForm = new AddCarForm();
             carForm.ShowDialog(); 
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanelVehicles.Controls.Clear();
+            AddAllVehicluesToUI();
+        }
     }
 }

@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanelVehicles = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // label1
@@ -78,11 +79,31 @@
             this.guna2Button1.Text = "إضافة ";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
+            // guna2Button3
+            // 
+            this.guna2Button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button3.BorderRadius = 10;
+            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
+            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
+            this.guna2Button3.FillColor = System.Drawing.Color.Black;
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.HoverState.Parent = this.guna2Button3;
+            this.guna2Button3.Image = global::Driving_School_Management_System.Properties.Resources.arrows_clockwise;
+            this.guna2Button3.Location = new System.Drawing.Point(144, 13);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
+            this.guna2Button3.Size = new System.Drawing.Size(41, 43);
+            this.guna2Button3.TabIndex = 27;
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            // 
             // CarsWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1132, 708);
+            this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.flowLayoutPanelVehicles);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Button1);
@@ -99,5 +120,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelVehicles;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
     }
 }

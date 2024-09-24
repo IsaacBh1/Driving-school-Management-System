@@ -12,7 +12,7 @@ namespace DrivingSchool_DataAccessLayer
         {
             DataTable condidateFiles = new DataTable();
             SqlConnection connection = new SqlConnection(ConnectionString);
-            string query = "select * from CondidateFiles; ";
+            string query = "select * from CondidateFiles ; ";
             SqlCommand command = new SqlCommand(query, connection);
             try
             {
