@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblInsructorFullName = new System.Windows.Forms.Label();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblInsructorFullName
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblInsructorFullName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(64, 166);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Instuctor Full Name";
+            this.lblInsructorFullName.AutoSize = true;
+            this.lblInsructorFullName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.lblInsructorFullName.ForeColor = System.Drawing.Color.Gray;
+            this.lblInsructorFullName.Location = new System.Drawing.Point(64, 166);
+            this.lblInsructorFullName.Name = "lblInsructorFullName";
+            this.lblInsructorFullName.Size = new System.Drawing.Size(211, 24);
+            this.lblInsructorFullName.TabIndex = 1;
+            this.lblInsructorFullName.Text = "Instuctor Full Name";
             // 
             // guna2Button2
             // 
@@ -105,7 +105,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblInsructorFullName);
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Instructor";
@@ -119,7 +119,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblInsructorFullName;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }

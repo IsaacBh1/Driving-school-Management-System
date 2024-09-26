@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Driving_School_Management_System.UserControls
@@ -14,6 +8,9 @@ namespace Driving_School_Management_System.UserControls
     public partial class Instructor : UserControl
     {
 
+
+        public int ID {  get; set; }
+        public string FullName {  get; set; }
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -30,6 +27,20 @@ namespace Driving_School_Management_System.UserControls
             InitializeComponent();
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
+        }
+
+
+        public Instructor(int id , string UserName)
+        {
+            InitializeComponent();
+            ID = id;
+            FullName = UserName;
+            SetNameUi(); 
+        }
+
+        public void SetNameUi()
+        {
+            lblInsructorFullName.Text = FullName;
         }
     }
 }
