@@ -76,6 +76,12 @@
     <Compile Include="Forms\AddExamForm.Designer.cs">
       <DependentUpon>AddExamForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddInstructorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddInstructorForm.Designer.cs">
+      <DependentUpon>AddInstructorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CarsWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddExamForm.resx">
       <DependentUpon>AddExamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddInstructorForm.resx">
+      <DependentUpon>AddInstructorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CarsWindow.resx">
       <DependentUpon>CarsWindow.cs</DependentUpon>

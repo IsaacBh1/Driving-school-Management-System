@@ -1,7 +1,6 @@
 ﻿using Driving_school_BusinessLayer;
 using Driving_School_Management_System.UserControls;
 using System.Data;
-using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 
 namespace Driving_School_Management_System.Forms
@@ -22,6 +21,12 @@ namespace Driving_School_Management_System.Forms
         {
             InitializeComponent();
             LoadInstructorsToUI(); 
+        }
+
+        private void btnAddInsructor_Click(object sender, System.EventArgs e)
+        {
+            AddInstructorForm InstructorForm = new AddInstructorForm(); 
+            InstructorForm.ShowDialog();
         }
     }
 }
