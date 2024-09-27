@@ -103,7 +103,7 @@ namespace DrivingSchool_DataAccessLayer
         {
             int Id = -1;
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
-            string query = "insert into Instructors (PersonID, UserName, Gender, DrivingLicenseID, NationalCardID) values (@PersonID, @UserName, @Gender, @DrivingLicenseID, @NationalCardID);" +
+            string query = "insert into Instructors (PersonID, UserName, Gender, DrivingLicenseID, NationalCard) values (@PersonID, @UserName, @Gender, @DrivingLicenseID, @NationalCardID);" +
                 "select SCOPE_IDENTITY();";
 
             SqlCommand command = new SqlCommand(query, sqlConnection);

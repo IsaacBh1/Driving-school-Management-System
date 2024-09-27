@@ -4,6 +4,9 @@ namespace Driving_school_BusinessLayer
 {
     public class clsDrivingLicense
     {
+        enum enMode { AddNew  = 0 , Update = 1 }; 
+        enMode mode = enMode.AddNew;
+
 
         public int DrivingLicenseID { get; set; } 
         public string Number { get; set; }
@@ -15,6 +18,7 @@ namespace Driving_school_BusinessLayer
             Number = number;
             Type = type;
             this.CAP = CAP;
+            mode = enMode.Update; 
         }
 
         public clsDrivingLicense() {
@@ -23,6 +27,7 @@ namespace Driving_school_BusinessLayer
             Number = string.Empty ; 
             Type = string.Empty;
             CAP = string.Empty;
+            mode = enMode.AddNew; 
 
         }
 
@@ -38,6 +43,41 @@ namespace Driving_school_BusinessLayer
             
             return null; 
         }
+
+
+        private bool AddNew()
+        {
+            DrivingLicenseID = clsDrivingLicenseDataAccess.AddNewDrivingLicense(Number, Type, CAP);
+            return DrivingLicenseID != -1; 
+        
+        }
+
+
+        private bool Update()
+        {
+            return clsDrivingLicenseDataAccess.UpdateDrivingLicense(DrivingLicenseID , Number ,  Type , CAP);
+        }
+
+
+        public bool Save()
+        {
+            switch (mode)
+            {
+                case enMode.AddNew:
+                    if (AddNew())
+                    {
+                        mode = enMode.Update; 
+                        return true; 
+                    }
+                    return false; 
+                    
+                case enMode.Update:
+                    return Update(); 
+            }
+            return false; 
+        }
+
+
 
 
     }

@@ -155,7 +155,7 @@ namespace Driving_School_Management_System.Forms
             CheckField(txtboxFirstName);
             CheckField(txtboxLastName);
             CheckField(txtboxBirthPlace);
-            CheckField(txtbxPhone); ;
+            CheckField(txtbxPhone);
             CheckField(CboxIdentityType);
             CheckField(txtbxIdentityNumber);
             CheckField(txtbxEmail);

@@ -103,11 +103,11 @@
             this.txtbox_AdditionalContact = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtboxAdditionalContact = new Guna.UI2.WinForms.Guna2TextBox();
             this.label23 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.errDrivingLicenseNumber = new System.Windows.Forms.ErrorProvider(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -699,9 +699,9 @@
             // dTBirthDate
             // 
             this.dTBirthDate.CalendarFont = new System.Drawing.Font("Tahoma", 9F);
-            this.dTBirthDate.Location = new System.Drawing.Point(49, 56);
+            this.dTBirthDate.Location = new System.Drawing.Point(14, 56);
             this.dTBirthDate.Name = "dTBirthDate";
-            this.dTBirthDate.Size = new System.Drawing.Size(200, 27);
+            this.dTBirthDate.Size = new System.Drawing.Size(235, 27);
             this.dTBirthDate.TabIndex = 10;
             // 
             // label14
@@ -1227,6 +1227,14 @@
             this.label23.TabIndex = 18;
             this.label23.Text = "جهة اتصال إضافية";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(0, 40);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(859, 125);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "الرخصة";
+            // 
             // btnSubmit
             // 
             this.btnSubmit.BorderRadius = 4;
@@ -1281,14 +1289,6 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(0, 40);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(859, 125);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "الرخصة";
             // 
             // AddStudentForm
             // 

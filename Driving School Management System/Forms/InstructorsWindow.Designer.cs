@@ -77,6 +77,7 @@
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
             this.guna2Button3.Size = new System.Drawing.Size(41, 43);
             this.guna2Button3.TabIndex = 31;
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // btnAddInsructor
             // 
