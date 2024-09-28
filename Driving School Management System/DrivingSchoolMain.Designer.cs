@@ -248,6 +248,7 @@
             this.btnFinance.Image = global::Driving_School_Management_System.Properties.Resources.coins1;
             this.btnFinance.Name = "btnFinance";
             this.btnFinance.UseVisualStyleBackColor = true;
+            this.btnFinance.Click += new System.EventHandler(this.btnFinance_Click);
             // 
             // guna2Panel10
             // 

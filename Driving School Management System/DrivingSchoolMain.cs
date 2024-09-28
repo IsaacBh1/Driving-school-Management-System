@@ -1,6 +1,7 @@
 ﻿using Driving_School_Management_System.Forms;
 using System;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Windows.Forms;
 
 namespace Driving_School_Management_System
@@ -15,6 +16,7 @@ namespace Driving_School_Management_System
         ExamsWindow examsWindow = null;
         CarsWindow carsWindow = null;
         InstructorsWindow instructorsWindow = null;
+        PaymentWindow paymentWindow = null; 
         public MainForm()
         {
             InitializeComponent();
@@ -116,6 +118,9 @@ namespace Driving_School_Management_System
                 case 4:
                     btnExams.BackColor = ColorTranslator.FromHtml("#E5AF1D");
                     break;
+                case 5:
+                    btnFinance.BackColor = ColorTranslator.FromHtml("#E5AF1D");
+                    break;
                 case 8:
                     btnCars.BackColor = ColorTranslator.FromHtml("#E5AF1D");
                     break;
@@ -142,6 +147,10 @@ namespace Driving_School_Management_System
                     break;
                 case 4:
                     btnExams.BackColor = Color.Transparent;
+                    break;
+
+                case 5:
+                    btnFinance.BackColor = Color.Transparent;
                     break;
 
                 case 8:
@@ -186,6 +195,13 @@ namespace Driving_School_Management_System
             previousTabIndex = tabIndex;
             tabIndex = 9;
             ShowWindow<InstructorsWindow>(instructorsWindow); 
+        }
+
+        private void btnFinance_Click(object sender, EventArgs e)
+        {
+            previousTabIndex = tabIndex;
+            tabIndex = 5;
+            ShowWindow<PaymentWindow>(paymentWindow);  
         }
     }
 }

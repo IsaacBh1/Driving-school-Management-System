@@ -82,6 +82,12 @@
     <Compile Include="Forms\AddInstructorForm.Designer.cs">
       <DependentUpon>AddInstructorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddPaymentForm.Designer.cs">
+      <DependentUpon>AddPaymentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CarsWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,12 @@
     </Compile>
     <Compile Include="Forms\InstructorsWindow.Designer.cs">
       <DependentUpon>InstructorsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PaymentWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PaymentWindow.Designer.cs">
+      <DependentUpon>PaymentWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Calender.cs">
       <SubType>UserControl</SubType>
@@ -186,11 +198,23 @@
     <Compile Include="UserControls\Instructor.Designer.cs">
       <DependentUpon>Instructor.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\NoItemsFound.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\NoItemsFound.Designer.cs">
+      <DependentUpon>NoItemsFound.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\NotSavedMessage.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\NotSavedMessage.Designer.cs">
       <DependentUpon>NotSavedMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PaymentGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PaymentGridView.Designer.cs">
+      <DependentUpon>PaymentGridView.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\SavedSuccessfullyMessage.cs">
       <SubType>UserControl</SubType>
@@ -208,6 +232,9 @@
     <EmbeddedResource Include="Forms\AddInstructorForm.resx">
       <DependentUpon>AddInstructorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddPaymentForm.resx">
+      <DependentUpon>AddPaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CarsWindow.resx">
       <DependentUpon>CarsWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\InstructorsWindow.resx">
       <DependentUpon>InstructorsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PaymentWindow.resx">
+      <DependentUpon>PaymentWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Calender.resx">
       <DependentUpon>Calender.cs</DependentUpon>
@@ -272,8 +302,14 @@
     <EmbeddedResource Include="UserControls\Instructor.resx">
       <DependentUpon>Instructor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\NoItemsFound.resx">
+      <DependentUpon>NoItemsFound.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\NotSavedMessage.resx">
       <DependentUpon>NotSavedMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PaymentGridView.resx">
+      <DependentUpon>PaymentGridView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SavedSuccessfullyMessage.resx">
       <DependentUpon>SavedSuccessfullyMessage.cs</DependentUpon>
@@ -524,6 +560,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-circle1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
