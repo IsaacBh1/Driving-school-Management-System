@@ -75,10 +75,10 @@ namespace Driving_School_Management_System.Forms
         }
 
 
-        private void inetializeDGV()
+        private void inetializeDGV(int id , decimal amount , decimal reminder)
         {
             paymentpanel.Controls.Clear();
-            paymentDGV = new  PaymentGridView();
+            paymentDGV = new  PaymentGridView(id , amount , reminder);
             paymentpanel.Controls.Add(paymentDGV);
         }
 
@@ -106,9 +106,9 @@ namespace Driving_School_Management_System.Forms
                         MessageBox.Show("لم يتم العثور على الملف", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
-                    txtBoxPersonName.Text = condidateFile.Student.Person.FullName;
-                    inetializeDGV();
-                    // ADD THE BATCH HERE 
+                    txtBoxPersonName.Text = condidateFile.Student.Person.FullName_Arabic;
+                    // ADD THE BATCH HERE
+                    inetializeDGV(CondidateFileID , condidateFile.Payment.FullAmount , condidateFile.Payment.FullAmount - condidateFile.Payment.AmountPayed);
                 }
             }
         }
