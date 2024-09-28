@@ -40,8 +40,11 @@ namespace Driving_School_Management_System.Forms
 
 
         PaymentGridView paymentDGV = null; 
-
-
+        private bool isInforCorrect = false ; 
+        clsBatch batch = null;
+        clsCondidateFile condidateFile = null;
+        clsPayment payment = null;
+        StatusMessageForm statusMessageForm = null; 
         public AddPaymentForm()
         {
             InitializeComponent();
@@ -53,9 +56,8 @@ namespace Driving_School_Management_System.Forms
         => Close();
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-            Close();
-        }
+        => Close();
+        
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
@@ -86,6 +88,7 @@ namespace Driving_School_Management_System.Forms
         {
             paymentpanel.Controls.Clear();
             paymentpanel.Controls.Add(new NoItemsFound());
+            paymentDGV = null; 
 
         }
 
@@ -100,10 +103,11 @@ namespace Driving_School_Management_System.Forms
                 //search for that condidate file and his payment 
                 if(int.TryParse(txtboxID.Text , out int CondidateFileID))
                 {
-                    clsCondidateFile condidateFile = clsCondidateFile.Find(CondidateFileID);
+                    condidateFile = clsCondidateFile.Find(CondidateFileID);
                     if (condidateFile is null)
                     {
-                        MessageBox.Show("لم يتم العثور على الملف", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(" لم يتم العثور على الملف", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        isInforCorrect = false; 
                         return;
                     }
                     txtBoxPersonName.Text = condidateFile.Student.Person.FullName_Arabic;
@@ -111,6 +115,53 @@ namespace Driving_School_Management_System.Forms
                     inetializeDGV(CondidateFileID , condidateFile.Payment.FullAmount , condidateFile.Payment.FullAmount - condidateFile.Payment.AmountPayed);
                 }
             }
+        }
+
+        private void CheckPaymentInformations()
+        {
+            if (!(paymentDGV is null || condidateFile is null))
+            {
+                isInforCorrect = (paymentDGV.AmountPayed != 0);
+                return; 
+            }
+
+            isInforCorrect = false; 
+        }
+ 
+        private bool AddNewPayent()
+        {
+            CheckPaymentInformations();
+            if (isInforCorrect)
+            {
+                batch = new clsBatch()
+                {
+                    Price = paymentDGV.AmountPayed,
+                    PaymentDate = paymentDGV.PaymentDate,
+                    PaymentID = condidateFile.PaymentID,
+                };
+                if (!batch.Save()) return false; 
+                payment = clsPayment.Find(condidateFile.PaymentID);
+                payment.AmountPayed += batch.Price;
+                
+                return payment.Save();
+            }
+            return false; 
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if (AddNewPayent())
+            {
+                // MessageBox.Show("student is saved successfully with ID = " + student.StudentID);
+                statusMessageForm = new StatusMessageForm("تمت العملية بنجاح");
+                statusMessageForm.ShowSuccess();
+                Close();
+            }
+            else
+            {
+                statusMessageForm = new StatusMessageForm("لم تنجح العملية");
+                statusMessageForm.ShowFailed();
+            };
         }
     }
 }

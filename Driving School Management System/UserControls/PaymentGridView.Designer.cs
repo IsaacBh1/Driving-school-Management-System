@@ -33,7 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.paymentDateTime = new System.Windows.Forms.DateTimePicker();
             this.numericUpDownAmount = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.lblReminder = new System.Windows.Forms.Label();
@@ -99,12 +99,13 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "التاريخ\n";
             // 
-            // dateTimePicker1
+            // paymentDateTime
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 61);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(181, 27);
-            this.dateTimePicker1.TabIndex = 1;
+            this.paymentDateTime.Location = new System.Drawing.Point(12, 61);
+            this.paymentDateTime.Name = "paymentDateTime";
+            this.paymentDateTime.Size = new System.Drawing.Size(181, 27);
+            this.paymentDateTime.TabIndex = 1;
+            this.paymentDateTime.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // numericUpDownAmount
             // 
@@ -112,6 +113,7 @@
             this.numericUpDownAmount.Name = "numericUpDownAmount";
             this.numericUpDownAmount.Size = new System.Drawing.Size(146, 27);
             this.numericUpDownAmount.TabIndex = 2;
+            this.numericUpDownAmount.ValueChanged += new System.EventHandler(this.numericUpDownAmount_ValueChanged);
             // 
             // label6
             // 
@@ -173,7 +175,7 @@
             this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.numericUpDownAmount);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.paymentDateTime);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblReminder);
@@ -197,7 +199,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker paymentDateTime;
         private System.Windows.Forms.NumericUpDown numericUpDownAmount;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblReminder;

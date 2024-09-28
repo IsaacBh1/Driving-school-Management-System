@@ -119,6 +119,7 @@
             this.btnSubmit.Size = new System.Drawing.Size(179, 44);
             this.btnSubmit.TabIndex = 45;
             this.btnSubmit.Text = "إضافة دفعة";
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // guna2Button2
             // 
