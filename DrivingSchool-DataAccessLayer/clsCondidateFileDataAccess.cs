@@ -287,9 +287,42 @@ namespace DrivingSchool_DataAccessLayer
             return (GetCondidateFileIDByInfo(studentID, drivingLicenseTypeID, additionalNotes, isActive, creatingFileDate, isArchived, groupID, paymentID, theoreticalInstructorID, applicationInstructorID) != -1);
         }
 
-        public static bool GetCondidateFileInfoByID(int ID, ref int drivingLicenseTypeID, ref string additionalNotes, ref bool isActive, ref DateTime creatingFileDate, ref bool isArchived, ref int groupID, ref int paymentID, ref int theoreticalInstructorID, ref int applicationInstructorID)
+        public static bool GetCondidateFileInfoByID(int ID, ref int drivingLicenseTypeID, ref string additionalNotes, ref bool isActive, ref DateTime creatingFileDate, ref bool isArchived, ref int groupID, ref int paymentID, ref int theoreticalInstructorID, ref int applicationInstructorID , ref int StudentID)
         {
-            throw new NotImplementedException();
+            SqlConnection sqlConnection = new SqlConnection(ConnectionString);
+            string query = "select * from CondidateFiles where CondidateFileID = @ID ;";
+            SqlCommand command = new SqlCommand(query, sqlConnection);
+            command.Parameters.AddWithValue("@ID", ID);
+            bool IsFound = false;
+            try
+            {
+                sqlConnection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    IsFound = true;
+                    drivingLicenseTypeID = (int)reader["DrivingLicenseTypeID"];
+                    additionalNotes = (string)reader["additionalNotes"];
+                    isActive = (bool)reader["isActive"];
+                    creatingFileDate = (DateTime)reader["CreatingFileDate"];
+                    isArchived = (bool)reader["isArchived"];
+                    groupID = (int)reader["groupID"];
+                    paymentID = (int)reader["paymentID"];
+                    theoreticalInstructorID = (int)reader["theoreticalInstructorID"];
+                    applicationInstructorID = (int)reader["ApplicationInstructorID"];
+                    StudentID = (int)reader["StudentID"];
+                }
+                reader.Close();
+                return IsFound;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
         }
 
 

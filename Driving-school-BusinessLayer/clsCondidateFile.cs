@@ -105,7 +105,18 @@ namespace Driving_school_BusinessLayer
             int _TheoreticalInstructorID = -1;
             int _ApplicationInstructorID = -1;
 
-            if (clsCondidateFileDataAccess.GetCondidateFileInfoByID(ID ,ref _DrivingLicenseTypeID ,ref _AdditionalNotes ,ref _IsActive ,ref _CreatingFileDate ,ref _IsArchived ,ref _GroupID ,ref _PaymentID , ref _TheoreticalInstructorID , ref _ApplicationInstructorID))
+            if (clsCondidateFileDataAccess.GetCondidateFileInfoByID(ID,
+                                                                    ref _DrivingLicenseTypeID,
+                                                                    ref _AdditionalNotes,
+                                                                    ref _IsActive,
+                                                                    ref _CreatingFileDate,
+                                                                    ref _IsArchived,
+                                                                    ref _GroupID,
+                                                                    ref _PaymentID,
+                                                                    ref _TheoreticalInstructorID,
+                                                                    ref _ApplicationInstructorID,
+                                                                    ref _StudentID
+                                                                    ))
             {
                 return new clsCondidateFile(ID, _StudentID, _DrivingLicenseTypeID, _AdditionalNotes, _IsActive, _CreatingFileDate, _IsArchived, _GroupID, _PaymentID, _TheoreticalInstructorID, _ApplicationInstructorID);
             }

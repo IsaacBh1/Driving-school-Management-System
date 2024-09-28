@@ -35,11 +35,11 @@
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBoxPersonName = new Guna.UI2.WinForms.Guna2TextBox();
             this.paymentpanel = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.noItemsFound1 = new Driving_School_Management_System.UserControls.NoItemsFound();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.noItemsFound1 = new Driving_School_Management_System.UserControls.NoItemsFound();
             this.paymentpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,9 +48,9 @@
             // 
             this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Separator1.Location = new System.Drawing.Point(-15, 54);
+            this.guna2Separator1.Location = new System.Drawing.Point(-7, 54);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(1089, 14);
+            this.guna2Separator1.Size = new System.Drawing.Size(1043, 14);
             this.guna2Separator1.TabIndex = 41;
             // 
             // label1
@@ -153,30 +153,30 @@
             this.label3.TabIndex = 48;
             this.label3.Text = "اسم المرشح";
             // 
-            // guna2TextBox1
+            // txtBoxPersonName
             // 
-            this.guna2TextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.Enabled = false;
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(400, 110);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(271, 40);
-            this.guna2TextBox1.TabIndex = 47;
+            this.txtBoxPersonName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBoxPersonName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBoxPersonName.DefaultText = "";
+            this.txtBoxPersonName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBoxPersonName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBoxPersonName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBoxPersonName.DisabledState.Parent = this.txtBoxPersonName;
+            this.txtBoxPersonName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBoxPersonName.Enabled = false;
+            this.txtBoxPersonName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBoxPersonName.FocusedState.Parent = this.txtBoxPersonName;
+            this.txtBoxPersonName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBoxPersonName.HoverState.Parent = this.txtBoxPersonName;
+            this.txtBoxPersonName.Location = new System.Drawing.Point(400, 110);
+            this.txtBoxPersonName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBoxPersonName.Name = "txtBoxPersonName";
+            this.txtBoxPersonName.PasswordChar = '\0';
+            this.txtBoxPersonName.PlaceholderText = "";
+            this.txtBoxPersonName.SelectedText = "";
+            this.txtBoxPersonName.ShadowDecoration.Parent = this.txtBoxPersonName;
+            this.txtBoxPersonName.Size = new System.Drawing.Size(271, 40);
+            this.txtBoxPersonName.TabIndex = 47;
             // 
             // paymentpanel
             // 
@@ -205,14 +205,6 @@
             this.guna2Button1.Text = "بحث";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // noItemsFound1
-            // 
-            this.noItemsFound1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
-            this.noItemsFound1.Location = new System.Drawing.Point(478, 3);
-            this.noItemsFound1.Name = "noItemsFound1";
-            this.noItemsFound1.Size = new System.Drawing.Size(486, 85);
-            this.noItemsFound1.TabIndex = 0;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -227,16 +219,25 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
+            // noItemsFound1
+            // 
+            this.noItemsFound1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
+            this.noItemsFound1.Location = new System.Drawing.Point(478, 3);
+            this.noItemsFound1.Name = "noItemsFound1";
+            this.noItemsFound1.Size = new System.Drawing.Size(486, 85);
+            this.noItemsFound1.TabIndex = 0;
+            // 
             // AddPaymentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1036, 517);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.paymentpanel);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.txtBoxPersonName);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.label2);
@@ -262,7 +263,7 @@
         private Guna.UI2.WinForms.Guna2Button btnSubmit;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtBoxPersonName;
         private System.Windows.Forms.FlowLayoutPanel paymentpanel;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private UserControls.NoItemsFound noItemsFound1;

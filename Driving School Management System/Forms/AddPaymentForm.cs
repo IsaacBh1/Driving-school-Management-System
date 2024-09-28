@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Driving_school_BusinessLayer;
+using Driving_School_Management_System.UserControls;
+using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -37,6 +39,8 @@ namespace Driving_School_Management_System.Forms
         }
 
 
+        PaymentGridView paymentDGV = null; 
+
 
         public AddPaymentForm()
         {
@@ -58,10 +62,55 @@ namespace Driving_School_Management_System.Forms
             Close(); 
         }
 
+        private bool CheckCondidateFileInput()
+        {
+            bool isFound = !string.IsNullOrEmpty(txtboxID.Text);
+            if (isFound)
+            {
+                return true; 
+            }
+            MessageBox.Show("هناك معلومات مفقودة", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return false; 
+
+        }
+
+
+        private void inetializeDGV()
+        {
+            paymentpanel.Controls.Clear();
+            paymentDGV = new  PaymentGridView();
+            paymentpanel.Controls.Add(paymentDGV);
+        }
+
+        private void NotItemsFoundInDGV()
+        {
+            paymentpanel.Controls.Clear();
+            paymentpanel.Controls.Add(new NoItemsFound());
+
+        }
+
+
+
         //search for condidate file 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            NotItemsFoundInDGV(); 
+            if (CheckCondidateFileInput())
+            {
+                //search for that condidate file and his payment 
+                if(int.TryParse(txtboxID.Text , out int CondidateFileID))
+                {
+                    clsCondidateFile condidateFile = clsCondidateFile.Find(CondidateFileID);
+                    if (condidateFile is null)
+                    {
+                        MessageBox.Show("لم يتم العثور على الملف", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    txtBoxPersonName.Text = condidateFile.Student.Person.FullName;
+                    inetializeDGV();
+                    // ADD THE BATCH HERE 
+                }
+            }
         }
     }
 }

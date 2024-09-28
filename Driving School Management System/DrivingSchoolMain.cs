@@ -1,7 +1,6 @@
 ﻿using Driving_School_Management_System.Forms;
 using System;
 using System.Drawing;
-using System.Drawing.Text;
 using System.Windows.Forms;
 
 namespace Driving_School_Management_System
@@ -63,8 +62,6 @@ namespace Driving_School_Management_System
                 form .MdiParent = this;
                 form .Dock = DockStyle.Fill;
                 form .Show();
-                
-
             }
             else
             {
@@ -78,7 +75,6 @@ namespace Driving_School_Management_System
         {
             previousTabIndex = tabIndex; 
             tabIndex = 1;
-            //ShowMainWindow(); 
             ShowWindow<MainWindow>(mainWindow);
 
         }
