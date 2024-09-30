@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Driving_School_Management_System.UserControls;
 using System.Windows.Forms;
 
 namespace Driving_School_Management_System.Forms
@@ -15,6 +8,15 @@ namespace Driving_School_Management_System.Forms
         public BoxWindow()
         {
             InitializeComponent();
+            InetializeIncomeBox(); 
         }
+
+
+        private void InetializeIncomeBox()
+        {
+            flowLayoutBox.Controls.Add(new BoxBankInos(182, 20000, 400, 200, 200)); 
+        }
+
+
     }
 }

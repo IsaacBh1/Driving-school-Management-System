@@ -100,6 +100,12 @@
     <Compile Include="Forms\CarsWindow.Designer.cs">
       <DependentUpon>CarsWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\CloseBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CloseBoxForm.Designer.cs">
+      <DependentUpon>CloseBoxForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ExamsWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CarsWindow.resx">
       <DependentUpon>CarsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CloseBoxForm.resx">
+      <DependentUpon>CloseBoxForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ExamsWindow.resx">
       <DependentUpon>ExamsWindow.cs</DependentUpon>

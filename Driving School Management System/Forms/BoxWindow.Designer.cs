@@ -32,7 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutBox = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.CBoxExamsFilter = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnSearchLesson = new Guna.UI2.WinForms.Guna2Button();
@@ -51,14 +51,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtBoxID = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.boxBankInos1 = new Driving_School_Management_System.UserControls.BoxBankInos();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.Operations = new System.Windows.Forms.DataGridViewImageColumn();
             this.label2 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVExams)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
@@ -81,16 +79,15 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "إدارة الصندوق";
             // 
-            // flowLayoutPanel1
+            // flowLayoutBox
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.flowLayoutBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel1.Controls.Add(this.boxBankInos1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 87);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1270, 203);
-            this.flowLayoutPanel1.TabIndex = 7;
+            this.flowLayoutBox.Location = new System.Drawing.Point(12, 87);
+            this.flowLayoutBox.Name = "flowLayoutBox";
+            this.flowLayoutBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.flowLayoutBox.Size = new System.Drawing.Size(1270, 203);
+            this.flowLayoutBox.TabIndex = 7;
             // 
             // panel2
             // 
@@ -348,16 +345,6 @@
             this.panel3.Size = new System.Drawing.Size(183, 83);
             this.panel3.TabIndex = 23;
             // 
-            // boxBankInos1
-            // 
-            this.boxBankInos1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.boxBankInos1.BackColor = System.Drawing.Color.White;
-            this.boxBankInos1.Location = new System.Drawing.Point(10, 3);
-            this.boxBankInos1.Name = "boxBankInos1";
-            this.boxBankInos1.Size = new System.Drawing.Size(1257, 177);
-            this.boxBankInos1.TabIndex = 0;
-            // 
             // dataGridViewImageColumn1
             // 
             this.dataGridViewImageColumn1.HeaderText = "الإجراءات";
@@ -447,12 +434,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1294, 781);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flowLayoutBox);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BoxWindow";
             this.Text = "BoxWindow";
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVExams)).EndInit();
@@ -470,8 +456,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private UserControls.BoxBankInos boxBankInos1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutBox;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2ComboBox CBoxExamsFilter;
         private System.Windows.Forms.PictureBox pictureBox1;
