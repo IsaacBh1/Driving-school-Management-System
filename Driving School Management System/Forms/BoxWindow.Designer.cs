@@ -367,12 +367,13 @@
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Image = global::Driving_School_Management_System.Properties.Resources.tray_arrow_down_fill;
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2Button1.Location = new System.Drawing.Point(14, 8);
+            this.guna2Button1.Location = new System.Drawing.Point(12, 7);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(178, 44);
             this.guna2Button1.TabIndex = 36;
             this.guna2Button1.Text = "غلق الصندوق";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // pictureBox1
             // 
