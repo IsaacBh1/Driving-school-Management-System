@@ -582,43 +582,43 @@
   <data name="&gt;&gt;guna2Panel3.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="button4.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnBoxBank.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt, style=Bold</value>
   </data>
-  <data name="button4.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btnBoxBank.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnBoxBank.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnBoxBank.Location" type="System.Drawing.Point, System.Drawing">
     <value>-9, -12</value>
   </data>
-  <data name="button4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnBoxBank.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 10, 0</value>
   </data>
-  <data name="button4.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+  <data name="btnBoxBank.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnBoxBank.Size" type="System.Drawing.Size, System.Drawing">
     <value>252, 80</value>
   </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnBoxBank.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="button4.Text" xml:space="preserve">
+  <data name="btnBoxBank.Text" xml:space="preserve">
     <value>الصندوق</value>
   </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
+  <data name="&gt;&gt;btnBoxBank.Name" xml:space="preserve">
+    <value>btnBoxBank</value>
   </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnBoxBank.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnBoxBank.Parent" xml:space="preserve">
     <value>guna2Panel10</value>
   </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnBoxBank.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="button6.Font" type="System.Drawing.Font, System.Drawing">

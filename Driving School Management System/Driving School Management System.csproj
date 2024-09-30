@@ -600,5 +600,8 @@
   <ItemGroup>
     <None Include="Resources\bag-simple-fill %282%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tray-arrow-down-fill.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

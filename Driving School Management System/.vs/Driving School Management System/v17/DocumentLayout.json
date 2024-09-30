@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|c:\\users\\isaac\\source\\repos\\driving-school-management-system\\driving-school-management-system\\driving school management system\\usercontrols\\boxbankinos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:usercontrols\\boxbankinos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|c:\\users\\isaac\\source\\repos\\driving-school-management-system\\driving-school-management-system\\driving school management system\\forms\\boxwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:forms\\boxwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|c:\\users\\isaac\\source\\repos\\driving-school-management-system\\driving-school-management-system\\driving school management system\\usercontrols\\boxbankinos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:usercontrols\\boxbankinos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|c:\\users\\isaac\\source\\repos\\driving-school-management-system\\driving-school-management-system\\driving school management system\\drivingschoolmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:drivingschoolmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|c:\\users\\isaac\\source\\repos\\driving-school-management-system\\driving-school-management-system\\driving school management system\\drivingschoolmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:drivingschoolmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|c:\\users\\isaac\\source\\repos\\driving-school-management-system\\driving-school-management-system\\driving school management system\\forms\\carswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:forms\\carswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|c:\\users\\isaac\\source\\repos\\driving-school-management-system\\driving-school-management-system\\driving school management system\\forms\\addstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:forms\\addstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|c:\\users\\isaac\\source\\repos\\driving-school-management-system\\driving-school-management-system\\driving school management system\\forms\\condidateswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:forms\\condidateswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|c:\\users\\isaac\\source\\repos\\driving-school-management-system\\driving-school-management-system\\driving school management system\\forms\\examswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:forms\\examswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|c:\\users\\isaac\\source\\repos\\driving-school-management-system\\driving-school-management-system\\driving school management system\\usercontrols\\boxbankinos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:usercontrols\\boxbankinos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|c:\\users\\isaac\\source\\repos\\driving-school-management-system\\driving-school-management-system\\driving school management system\\usercontrols\\boxbankinos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:usercontrols\\boxbankinos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,19 +62,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BoxBankInos.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\BoxBankInos.cs",
-              "RelativeDocumentMoniker": "UserControls\\BoxBankInos.cs",
-              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\BoxBankInos.cs [Design]*",
-              "RelativeToolTip": "UserControls\\BoxBankInos.cs [Design]*",
+              "DocumentIndex": 1,
+              "Title": "DrivingSchoolMain.cs",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\DrivingSchoolMain.cs",
+              "RelativeDocumentMoniker": "DrivingSchoolMain.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\DrivingSchoolMain.cs",
+              "RelativeToolTip": "DrivingSchoolMain.cs",
+              "ViewState": "AQIAALAAAAAAAAAAAAAmwHkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T08:44:15.257Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-09-30T09:57:35.819Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BoxWindow.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\BoxWindow.cs",
               "RelativeDocumentMoniker": "Forms\\BoxWindow.cs",
@@ -67,15 +88,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BoxBankInos.cs",
-              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\BoxBankInos.cs",
-              "RelativeDocumentMoniker": "UserControls\\BoxBankInos.cs",
-              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\BoxBankInos.cs*",
-              "RelativeToolTip": "UserControls\\BoxBankInos.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAPAAAA",
+              "Title": "DrivingSchoolMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\DrivingSchoolMain.cs",
+              "RelativeDocumentMoniker": "DrivingSchoolMain.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\DrivingSchoolMain.cs [Design]",
+              "RelativeToolTip": "DrivingSchoolMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T08:48:56.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T09:57:32.419Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -88,6 +108,67 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T08:39:51.374Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddStudentForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddStudentForm.cs",
+              "RelativeDocumentMoniker": "Forms\\AddStudentForm.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddStudentForm.cs [Design]",
+              "RelativeToolTip": "Forms\\AddStudentForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T09:49:01.323Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CondidatesWindow.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\CondidatesWindow.cs",
+              "RelativeDocumentMoniker": "Forms\\CondidatesWindow.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\CondidatesWindow.cs [Design]",
+              "RelativeToolTip": "Forms\\CondidatesWindow.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T09:49:08.411Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExamsWindow.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\ExamsWindow.cs",
+              "RelativeDocumentMoniker": "Forms\\ExamsWindow.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\ExamsWindow.cs [Design]",
+              "RelativeToolTip": "Forms\\ExamsWindow.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T09:49:18.26Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BoxBankInos.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\BoxBankInos.cs",
+              "RelativeDocumentMoniker": "UserControls\\BoxBankInos.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\BoxBankInos.cs [Design]",
+              "RelativeToolTip": "UserControls\\BoxBankInos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T08:44:15.257Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BoxBankInos.cs",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\BoxBankInos.cs",
+              "RelativeDocumentMoniker": "UserControls\\BoxBankInos.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\BoxBankInos.cs",
+              "RelativeToolTip": "UserControls\\BoxBankInos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T08:48:56.286Z",
+              "EditorCaption": ""
             }
           ]
         }

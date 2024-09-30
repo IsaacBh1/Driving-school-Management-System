@@ -47,7 +47,7 @@
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnFinance = new System.Windows.Forms.Button();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnBoxBank = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.button3 = new System.Windows.Forms.Button();
@@ -254,19 +254,20 @@
             // 
             this.guna2Panel10.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel10.BorderRadius = 8;
-            this.guna2Panel10.Controls.Add(this.button4);
+            this.guna2Panel10.Controls.Add(this.btnBoxBank);
             this.guna2Panel10.Controls.Add(this.button6);
             this.guna2Panel10.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.guna2Panel10, "guna2Panel10");
             this.guna2Panel10.Name = "guna2Panel10";
             this.guna2Panel10.ShadowDecoration.Parent = this.guna2Panel10;
             // 
-            // button4
+            // btnBoxBank
             // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Image = global::Driving_School_Management_System.Properties.Resources.tray;
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnBoxBank, "btnBoxBank");
+            this.btnBoxBank.Image = global::Driving_School_Management_System.Properties.Resources.tray;
+            this.btnBoxBank.Name = "btnBoxBank";
+            this.btnBoxBank.UseVisualStyleBackColor = true;
+            this.btnBoxBank.Click += new System.EventHandler(this.btnBoxBank_Click);
             // 
             // button6
             // 
@@ -520,7 +521,7 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Button button5;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnBoxBank;
         private System.Windows.Forms.Button button6;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel11;
         private System.Windows.Forms.Button button3;
