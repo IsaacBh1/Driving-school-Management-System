@@ -1,5 +1,6 @@
 ﻿using DrivingSchool_DataAccessLayer;
 using System;
+using System.Data;
 
 namespace Driving_school_BusinessLayer
 {
@@ -70,6 +71,12 @@ namespace Driving_school_BusinessLayer
                 return new clsBatch(ID, _Price, _PaymentDate, _PaymentID);
             }
             return null;
+        }
+
+
+        public static DataTable GetAllBatchesInforfmations()
+        {
+            return clsBatchDataAccess.GetAllBatchInformations(); 
         }
     }
 }

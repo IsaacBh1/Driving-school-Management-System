@@ -39,6 +39,7 @@ namespace Driving_School_Management_System.Forms
             {
 
                 DGVExams.Rows.Add(row[0] ,row[1] ,row[2] ,row[3], GetExamType((int)row[4]),row[5]); 
+                    
             }
 
         }

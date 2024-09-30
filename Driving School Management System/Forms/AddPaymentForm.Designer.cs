@@ -37,9 +37,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtBoxPersonName = new Guna.UI2.WinForms.Guna2TextBox();
             this.paymentpanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.noItemsFound1 = new Driving_School_Management_System.UserControls.NoItemsFound();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.noItemsFound1 = new Driving_School_Management_System.UserControls.NoItemsFound();
             this.paymentpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -188,6 +188,14 @@
             this.paymentpanel.Size = new System.Drawing.Size(967, 249);
             this.paymentpanel.TabIndex = 49;
             // 
+            // noItemsFound1
+            // 
+            this.noItemsFound1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
+            this.noItemsFound1.Location = new System.Drawing.Point(478, 3);
+            this.noItemsFound1.Name = "noItemsFound1";
+            this.noItemsFound1.Size = new System.Drawing.Size(486, 85);
+            this.noItemsFound1.TabIndex = 0;
+            // 
             // guna2Button1
             // 
             this.guna2Button1.BorderRadius = 4;
@@ -219,14 +227,6 @@
             this.pictureBox1.TabIndex = 51;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
-            // 
-            // noItemsFound1
-            // 
-            this.noItemsFound1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
-            this.noItemsFound1.Location = new System.Drawing.Point(478, 3);
-            this.noItemsFound1.Name = "noItemsFound1";
-            this.noItemsFound1.Size = new System.Drawing.Size(486, 85);
-            this.noItemsFound1.TabIndex = 0;
             // 
             // AddPaymentForm
             // 

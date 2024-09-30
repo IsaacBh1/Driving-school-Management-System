@@ -35,6 +35,34 @@ namespace DrivingSchool_DataAccessLayer
             return Batches;
         }
 
+
+        public static DataTable GetAllBatchInformations()
+        {
+            DataTable Batches = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from Batchinfos order by BatchID desc;";
+            SqlCommand command = new SqlCommand(query, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    Batches.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return Batches;
+        }
+
         public static bool GetBatchInfoByID(int batchID, ref decimal Price, ref DateTime PaymentDate, ref int PaymentID)
         {
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
