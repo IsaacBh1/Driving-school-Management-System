@@ -33,9 +33,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.CBoxExamsFilter = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.CBoxBatchesFilter = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnSearchLesson = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSearchBatch = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.DGVPayment = new Guna.UI2.WinForms.Guna2DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,7 +50,7 @@
             this.textbxCondidateFileID = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.cboxStatus = new MetroFramework.Controls.MetroComboBox();
+            this.CbxDrivingLicenseType = new MetroFramework.Controls.MetroComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.label2 = new System.Windows.Forms.Label();
@@ -84,9 +84,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.CBoxExamsFilter);
+            this.panel2.Controls.Add(this.CBoxBatchesFilter);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.btnSearchLesson);
+            this.panel2.Controls.Add(this.btnSearchBatch);
             this.panel2.Controls.Add(this.guna2Button3);
             this.panel2.Controls.Add(this.DGVPayment);
             this.panel2.Controls.Add(this.flowLayoutPanel1);
@@ -97,30 +97,28 @@
             this.panel2.Size = new System.Drawing.Size(1184, 575);
             this.panel2.TabIndex = 9;
             // 
-            // CBoxExamsFilter
+            // CBoxBatchesFilter
             // 
-            this.CBoxExamsFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CBoxExamsFilter.BackColor = System.Drawing.Color.Transparent;
-            this.CBoxExamsFilter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CBoxExamsFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBoxExamsFilter.FocusedColor = System.Drawing.Color.Empty;
-            this.CBoxExamsFilter.FocusedState.Parent = this.CBoxExamsFilter;
-            this.CBoxExamsFilter.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.CBoxExamsFilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.CBoxExamsFilter.FormattingEnabled = true;
-            this.CBoxExamsFilter.HoverState.Parent = this.CBoxExamsFilter;
-            this.CBoxExamsFilter.ItemHeight = 30;
-            this.CBoxExamsFilter.Items.AddRange(new object[] {
-            "ID",
+            this.CBoxBatchesFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CBoxBatchesFilter.BackColor = System.Drawing.Color.Transparent;
+            this.CBoxBatchesFilter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CBoxBatchesFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBoxBatchesFilter.FocusedColor = System.Drawing.Color.Empty;
+            this.CBoxBatchesFilter.FocusedState.Parent = this.CBoxBatchesFilter;
+            this.CBoxBatchesFilter.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.CBoxBatchesFilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.CBoxBatchesFilter.FormattingEnabled = true;
+            this.CBoxBatchesFilter.HoverState.Parent = this.CBoxBatchesFilter;
+            this.CBoxBatchesFilter.ItemHeight = 30;
+            this.CBoxBatchesFilter.Items.AddRange(new object[] {
             "الملف",
-            "نوع الامتحان",
-            "الحالة"});
-            this.CBoxExamsFilter.ItemsAppearance.Parent = this.CBoxExamsFilter;
-            this.CBoxExamsFilter.Location = new System.Drawing.Point(836, 79);
-            this.CBoxExamsFilter.Name = "CBoxExamsFilter";
-            this.CBoxExamsFilter.ShadowDecoration.Parent = this.CBoxExamsFilter;
-            this.CBoxExamsFilter.Size = new System.Drawing.Size(183, 36);
-            this.CBoxExamsFilter.TabIndex = 35;
+            "الرخصة"});
+            this.CBoxBatchesFilter.ItemsAppearance.Parent = this.CBoxBatchesFilter;
+            this.CBoxBatchesFilter.Location = new System.Drawing.Point(836, 79);
+            this.CBoxBatchesFilter.Name = "CBoxBatchesFilter";
+            this.CBoxBatchesFilter.ShadowDecoration.Parent = this.CBoxBatchesFilter;
+            this.CBoxBatchesFilter.Size = new System.Drawing.Size(183, 36);
+            this.CBoxBatchesFilter.TabIndex = 35;
             // 
             // pictureBox1
             // 
@@ -133,23 +131,24 @@
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
             // 
-            // btnSearchLesson
+            // btnSearchBatch
             // 
-            this.btnSearchLesson.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearchLesson.BorderRadius = 5;
-            this.btnSearchLesson.CheckedState.Parent = this.btnSearchLesson;
-            this.btnSearchLesson.CustomImages.Parent = this.btnSearchLesson;
-            this.btnSearchLesson.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(135)))), ((int)(((byte)(255)))));
-            this.btnSearchLesson.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btnSearchLesson.ForeColor = System.Drawing.Color.White;
-            this.btnSearchLesson.HoverState.Parent = this.btnSearchLesson;
-            this.btnSearchLesson.Location = new System.Drawing.Point(1025, 76);
-            this.btnSearchLesson.Name = "btnSearchLesson";
-            this.btnSearchLesson.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnSearchLesson.ShadowDecoration.Parent = this.btnSearchLesson;
-            this.btnSearchLesson.Size = new System.Drawing.Size(89, 43);
-            this.btnSearchLesson.TabIndex = 27;
-            this.btnSearchLesson.Text = "بحث";
+            this.btnSearchBatch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearchBatch.BorderRadius = 5;
+            this.btnSearchBatch.CheckedState.Parent = this.btnSearchBatch;
+            this.btnSearchBatch.CustomImages.Parent = this.btnSearchBatch;
+            this.btnSearchBatch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(135)))), ((int)(((byte)(255)))));
+            this.btnSearchBatch.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnSearchBatch.ForeColor = System.Drawing.Color.White;
+            this.btnSearchBatch.HoverState.Parent = this.btnSearchBatch;
+            this.btnSearchBatch.Location = new System.Drawing.Point(1025, 76);
+            this.btnSearchBatch.Name = "btnSearchBatch";
+            this.btnSearchBatch.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSearchBatch.ShadowDecoration.Parent = this.btnSearchBatch;
+            this.btnSearchBatch.Size = new System.Drawing.Size(89, 43);
+            this.btnSearchBatch.TabIndex = 27;
+            this.btnSearchBatch.Text = "بحث";
+            this.btnSearchBatch.Click += new System.EventHandler(this.btnSearchBatch_Click);
             // 
             // guna2Button3
             // 
@@ -339,28 +338,24 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.cboxStatus);
+            this.panel6.Controls.Add(this.CbxDrivingLicenseType);
             this.panel6.Controls.Add(this.label4);
             this.panel6.Location = new System.Drawing.Point(788, 3);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(183, 83);
             this.panel6.TabIndex = 27;
             // 
-            // cboxStatus
+            // CbxDrivingLicenseType
             // 
-            this.cboxStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CbxDrivingLicenseType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cboxStatus.FormattingEnabled = true;
-            this.cboxStatus.ItemHeight = 23;
-            this.cboxStatus.Items.AddRange(new object[] {
-            "مبرمج",
-            "ناجح",
-            "راسب"});
-            this.cboxStatus.Location = new System.Drawing.Point(21, 34);
-            this.cboxStatus.Name = "cboxStatus";
-            this.cboxStatus.Size = new System.Drawing.Size(157, 29);
-            this.cboxStatus.TabIndex = 25;
-            this.cboxStatus.UseSelectable = true;
+            this.CbxDrivingLicenseType.FormattingEnabled = true;
+            this.CbxDrivingLicenseType.ItemHeight = 23;
+            this.CbxDrivingLicenseType.Location = new System.Drawing.Point(21, 34);
+            this.CbxDrivingLicenseType.Name = "CbxDrivingLicenseType";
+            this.CbxDrivingLicenseType.Size = new System.Drawing.Size(157, 29);
+            this.CbxDrivingLicenseType.TabIndex = 25;
+            this.CbxDrivingLicenseType.UseSelectable = true;
             // 
             // label4
             // 
@@ -457,9 +452,9 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2ComboBox CBoxExamsFilter;
+        private Guna.UI2.WinForms.Guna2ComboBox CBoxBatchesFilter;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2Button btnSearchLesson;
+        private Guna.UI2.WinForms.Guna2Button btnSearchBatch;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2DataGridView DGVPayment;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
@@ -467,7 +462,7 @@
         private System.Windows.Forms.TextBox textbxCondidateFileID;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel6;
-        private MetroFramework.Controls.MetroComboBox cboxStatus;
+        private MetroFramework.Controls.MetroComboBox CbxDrivingLicenseType;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.Label label2;

@@ -3,9 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1CE6D6E-ED55-488B-A892-BEA2CB1E6ECE}|..\\DrivingSchool-DataAccessLayer\\DrivingSchool-DataAccessLayer.csproj|c:\\users\\isaac\\source\\repos\\driving-school-management-system\\driving-school-management-system\\drivingschool-dataaccesslayer\\clsbatchdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\forms\\paymentwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:forms\\paymentwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -14,7 +11,22 @@
       "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:forms\\paymentwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A1CE6D6E-ED55-488B-A892-BEA2CB1E6ECE}|..\\DrivingSchool-DataAccessLayer\\DrivingSchool-DataAccessLayer.csproj|c:\\users\\isaac\\source\\repos\\driving-school-management-system\\driving-school-management-system\\drivingschool-dataaccesslayer\\clsbatchdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{16FD8272-A398-49B2-846F-DA2CB9F11D46}|..\\Driving-school-BusinessLayer\\Driving-school-BusinessLayer.csproj|c:\\users\\isaac\\source\\repos\\driving-school-management-system\\driving-school-management-system\\driving-school-businesslayer\\clsbatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\forms\\addlessonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:forms\\addlessonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\forms\\addcondidatefileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:forms\\addcondidatefileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\forms\\addcondidatefileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:forms\\addcondidatefileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\forms\\examswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,10 +111,6 @@
       "AbsoluteMoniker": "D:0:0:{A1CE6D6E-ED55-488B-A892-BEA2CB1E6ECE}|..\\DrivingSchool-DataAccessLayer\\DrivingSchool-DataAccessLayer.csproj|c:\\users\\isaac\\source\\repos\\driving-school-management-system\\driving-school-management-system\\drivingschool-dataaccesslayer\\clspersondataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\forms\\addlessonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:forms\\addlessonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\forms\\addpaymentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:forms\\addpaymentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -113,10 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\usercontrols\\noitemsfound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:usercontrols\\noitemsfound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\forms\\addcondidatefileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:forms\\addcondidatefileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\forms\\lessons\u0026examscalender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -225,10 +229,6 @@
       "AbsoluteMoniker": "D:0:0:{16FD8272-A398-49B2-846F-DA2CB9F11D46}|..\\Driving-school-BusinessLayer\\Driving-school-BusinessLayer.csproj|c:\\users\\isaac\\source\\repos\\driving-school-management-system\\driving-school-management-system\\driving-school-businesslayer\\clsexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\forms\\addcondidatefileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A9685C6-5892-4C0D-B200-E6998FC04A43}|Driving School Management System.csproj|solutionrelative:forms\\addcondidatefileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\isaac\\source\\repos\\driving-school-management-system\\driving-school-businesslayer\\clslesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -242,7 +242,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -259,32 +259,107 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PaymentWindow.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\PaymentWindow.cs",
+              "RelativeDocumentMoniker": "Forms\\PaymentWindow.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\PaymentWindow.cs [Design]*",
+              "RelativeToolTip": "Forms\\PaymentWindow.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T07:44:30.797Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "PaymentWindow.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\PaymentWindow.cs",
               "RelativeDocumentMoniker": "Forms\\PaymentWindow.cs",
-              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\PaymentWindow.cs",
-              "RelativeToolTip": "Forms\\PaymentWindow.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBEAAAAbAAAA",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\PaymentWindow.cs*",
+              "RelativeToolTip": "Forms\\PaymentWindow.cs*",
+              "ViewState": "AQIAADAAAAAAAAAAAAAowEcAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T09:16:31.359Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsBatchDataAccess.cs",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\DrivingSchool-DataAccessLayer\\clsBatchDataAccess.cs",
+              "RelativeDocumentMoniker": "..\\DrivingSchool-DataAccessLayer\\clsBatchDataAccess.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\DrivingSchool-DataAccessLayer\\clsBatchDataAccess.cs",
+              "RelativeToolTip": "..\\DrivingSchool-DataAccessLayer\\clsBatchDataAccess.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAF8AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T08:00:32.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "clsBatch.cs",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving-school-BusinessLayer\\clsBatch.cs",
+              "RelativeDocumentMoniker": "..\\Driving-school-BusinessLayer\\clsBatch.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving-school-BusinessLayer\\clsBatch.cs",
+              "RelativeToolTip": "..\\Driving-school-BusinessLayer\\clsBatch.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAAAFIAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T14:52:52.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "AddLessonForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddLessonForm.cs",
+              "RelativeDocumentMoniker": "Forms\\AddLessonForm.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddLessonForm.cs [Design]",
+              "RelativeToolTip": "Forms\\AddLessonForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T23:52:01.272Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddCondidateFileForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddCondidateFileForm.cs",
+              "RelativeDocumentMoniker": "Forms\\AddCondidateFileForm.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddCondidateFileForm.cs [Design]",
+              "RelativeToolTip": "Forms\\AddCondidateFileForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T22:24:59.567Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddCondidateFileForm.cs",
+              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddCondidateFileForm.cs",
+              "RelativeDocumentMoniker": "Forms\\AddCondidateFileForm.cs",
+              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddCondidateFileForm.cs",
+              "RelativeToolTip": "Forms\\AddCondidateFileForm.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAAwHoAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T22:25:04.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ExamsWindow.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\ExamsWindow.cs",
               "RelativeDocumentMoniker": "Forms\\ExamsWindow.cs",
               "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\ExamsWindow.cs",
               "RelativeToolTip": "Forms\\ExamsWindow.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAkwCkAAAAUAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwCkAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-08T22:27:47.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "AddPaymentForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddPaymentForm.cs",
               "RelativeDocumentMoniker": "Forms\\AddPaymentForm.cs",
@@ -296,45 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "clsBatchDataAccess.cs",
-              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\DrivingSchool-DataAccessLayer\\clsBatchDataAccess.cs",
-              "RelativeDocumentMoniker": "..\\DrivingSchool-DataAccessLayer\\clsBatchDataAccess.cs",
-              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\DrivingSchool-DataAccessLayer\\clsBatchDataAccess.cs*",
-              "RelativeToolTip": "..\\DrivingSchool-DataAccessLayer\\clsBatchDataAccess.cs*",
-              "ViewState": "AQIAABwAAAAAAAAAAAAowCoAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T08:00:32.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PaymentWindow.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\PaymentWindow.cs",
-              "RelativeDocumentMoniker": "Forms\\PaymentWindow.cs",
-              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\PaymentWindow.cs [Design]",
-              "RelativeToolTip": "Forms\\PaymentWindow.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T07:44:30.797Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "clsBatch.cs",
-              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving-school-BusinessLayer\\clsBatch.cs",
-              "RelativeDocumentMoniker": "..\\Driving-school-BusinessLayer\\clsBatch.cs",
-              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving-school-BusinessLayer\\clsBatch.cs",
-              "RelativeToolTip": "..\\Driving-school-BusinessLayer\\clsBatch.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAuwE4AAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T14:52:52.903Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ExamsWindow.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\ExamsWindow.cs",
               "RelativeDocumentMoniker": "Forms\\ExamsWindow.cs",
@@ -346,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "PaymentGridView.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\PaymentGridView.cs",
               "RelativeDocumentMoniker": "UserControls\\PaymentGridView.cs",
@@ -357,7 +394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "PaymentGridView.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\PaymentGridView.cs",
               "RelativeDocumentMoniker": "UserControls\\PaymentGridView.cs",
@@ -370,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "AddPaymentForm.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddPaymentForm.cs",
               "RelativeDocumentMoniker": "Forms\\AddPaymentForm.cs",
@@ -383,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "AddExamForm.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddExamForm.cs",
               "RelativeDocumentMoniker": "Forms\\AddExamForm.cs",
@@ -395,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "LessonsWindow.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\LessonsWindow.cs",
               "RelativeDocumentMoniker": "Forms\\LessonsWindow.cs",
@@ -406,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "AddLessonForm.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddLessonForm.cs",
               "RelativeDocumentMoniker": "Forms\\AddLessonForm.cs",
@@ -414,11 +451,12 @@
               "RelativeToolTip": "Forms\\AddLessonForm.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAFwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T22:24:42.305Z"
+              "WhenOpened": "2024-09-08T22:24:42.305Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "LessonsWindow.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\LessonsWindow.cs",
               "RelativeDocumentMoniker": "Forms\\LessonsWindow.cs",
@@ -430,7 +468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "DrivingSchoolMain.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\DrivingSchoolMain.cs",
               "RelativeDocumentMoniker": "DrivingSchoolMain.cs",
@@ -441,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "clsPerson.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving-school-BusinessLayer\\clsPerson.cs",
               "RelativeDocumentMoniker": "..\\Driving-school-BusinessLayer\\clsPerson.cs",
@@ -453,7 +491,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "clsPayment.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving-school-BusinessLayer\\clsPayment.cs",
               "RelativeDocumentMoniker": "..\\Driving-school-BusinessLayer\\clsPayment.cs",
@@ -465,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "clsCondidateFile.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving-school-BusinessLayer\\clsCondidateFile.cs",
               "RelativeDocumentMoniker": "..\\Driving-school-BusinessLayer\\clsCondidateFile.cs",
@@ -477,7 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "clsCondidateFileDataAccess.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\DrivingSchool-DataAccessLayer\\clsCondidateFileDataAccess.cs",
               "RelativeDocumentMoniker": "..\\DrivingSchool-DataAccessLayer\\clsCondidateFileDataAccess.cs",
@@ -489,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "clsGroup.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving-school-BusinessLayer\\clsGroup.cs",
               "RelativeDocumentMoniker": "..\\Driving-school-BusinessLayer\\clsGroup.cs",
@@ -501,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "clsInstructorDataAccess.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\DrivingSchool-DataAccessLayer\\clsInstructorDataAccess.cs",
               "RelativeDocumentMoniker": "..\\DrivingSchool-DataAccessLayer\\clsInstructorDataAccess.cs",
@@ -513,7 +551,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "clsInstructor.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving-school-BusinessLayer\\clsInstructor.cs",
               "RelativeDocumentMoniker": "..\\Driving-school-BusinessLayer\\clsInstructor.cs",
@@ -525,7 +563,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "clsDrivingLicenseType.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving-school-BusinessLayer\\clsDrivingLicenseType.cs",
               "RelativeDocumentMoniker": "..\\Driving-school-BusinessLayer\\clsDrivingLicenseType.cs",
@@ -537,7 +575,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "clsDrivingLicenseTypeDataAccess.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\DrivingSchool-DataAccessLayer\\clsDrivingLicenseTypeDataAccess.cs",
               "RelativeDocumentMoniker": "..\\DrivingSchool-DataAccessLayer\\clsDrivingLicenseTypeDataAccess.cs",
@@ -549,7 +587,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "DrivingSchoolMain.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\DrivingSchoolMain.cs",
               "RelativeDocumentMoniker": "DrivingSchoolMain.cs",
@@ -561,7 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "Main.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\Main.cs",
               "RelativeDocumentMoniker": "Forms\\Main.cs",
@@ -572,7 +610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "clsPersonDataAccess.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\DrivingSchool-DataAccessLayer\\clsPersonDataAccess.cs",
               "RelativeDocumentMoniker": "..\\DrivingSchool-DataAccessLayer\\clsPersonDataAccess.cs",
@@ -584,18 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "AddLessonForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddLessonForm.cs",
-              "RelativeDocumentMoniker": "Forms\\AddLessonForm.cs",
-              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddLessonForm.cs [Design]",
-              "RelativeToolTip": "Forms\\AddLessonForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T23:52:01.272Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "NoItemsFound.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\NoItemsFound.cs",
               "RelativeDocumentMoniker": "UserControls\\NoItemsFound.cs",
@@ -607,7 +634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "AddPaymentForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddPaymentForm.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\AddPaymentForm.Designer.cs",
@@ -620,7 +647,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "NoItemsFound.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\NoItemsFound.cs",
               "RelativeDocumentMoniker": "UserControls\\NoItemsFound.cs",
@@ -631,18 +658,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "AddCondidateFileForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddCondidateFileForm.cs",
-              "RelativeDocumentMoniker": "Forms\\AddCondidateFileForm.cs",
-              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddCondidateFileForm.cs [Design]",
-              "RelativeToolTip": "Forms\\AddCondidateFileForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T22:24:59.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "Lessons\u0026ExamsCalender.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\Lessons\u0026ExamsCalender.cs",
               "RelativeDocumentMoniker": "Forms\\Lessons\u0026ExamsCalender.cs",
@@ -653,7 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "PaymentGridView.Designer.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\PaymentGridView.Designer.cs",
               "RelativeDocumentMoniker": "UserControls\\PaymentGridView.Designer.cs",
@@ -665,7 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "AddExamForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddExamForm.cs",
               "RelativeDocumentMoniker": "Forms\\AddExamForm.cs",
@@ -676,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "CondidatesWindow.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\CondidatesWindow.cs",
               "RelativeDocumentMoniker": "Forms\\CondidatesWindow.cs",
@@ -687,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "CarsWindow.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\CarsWindow.cs",
               "RelativeDocumentMoniker": "Forms\\CarsWindow.cs",
@@ -698,7 +714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "StatusMessageForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\StatusMessageForm.cs",
               "RelativeDocumentMoniker": "Forms\\StatusMessageForm.cs",
@@ -709,7 +725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "InstructorsWindow.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\InstructorsWindow.cs",
               "RelativeDocumentMoniker": "Forms\\InstructorsWindow.cs",
@@ -721,7 +737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "InstructorsWindow.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\InstructorsWindow.cs",
               "RelativeDocumentMoniker": "Forms\\InstructorsWindow.cs",
@@ -732,7 +748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "AddInstructorForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddInstructorForm.cs",
               "RelativeDocumentMoniker": "Forms\\AddInstructorForm.cs",
@@ -743,7 +759,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "AddStudentForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddStudentForm.cs",
               "RelativeDocumentMoniker": "Forms\\AddStudentForm.cs",
@@ -754,7 +770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "AddInstructorForm.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddInstructorForm.cs",
               "RelativeDocumentMoniker": "Forms\\AddInstructorForm.cs",
@@ -766,7 +782,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "clsDrivingLicense.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving-school-BusinessLayer\\clsDrivingLicense.cs",
               "RelativeDocumentMoniker": "..\\Driving-school-BusinessLayer\\clsDrivingLicense.cs",
@@ -778,7 +794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "AddStudentForm.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddStudentForm.cs",
               "RelativeDocumentMoniker": "Forms\\AddStudentForm.cs",
@@ -790,7 +806,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "AddCarForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddCarForm.cs",
               "RelativeDocumentMoniker": "Forms\\AddCarForm.cs",
@@ -801,7 +817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "AddCarForm.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddCarForm.cs",
               "RelativeDocumentMoniker": "Forms\\AddCarForm.cs",
@@ -813,7 +829,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "AddStudentEventArgs.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UtilityClasses\\AddStudentEventArgs.cs",
               "RelativeDocumentMoniker": "UtilityClasses\\AddStudentEventArgs.cs",
@@ -825,7 +841,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "SavedSuccessfullyMessage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\SavedSuccessfullyMessage.cs",
               "RelativeDocumentMoniker": "UserControls\\SavedSuccessfullyMessage.cs",
@@ -836,7 +852,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "NotSavedMessage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\NotSavedMessage.cs",
               "RelativeDocumentMoniker": "UserControls\\NotSavedMessage.cs",
@@ -847,7 +863,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "ExpensesBar.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\ExpensesBar.cs",
               "RelativeDocumentMoniker": "UserControls\\ExpensesBar.cs",
@@ -858,7 +874,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "CalenderDay.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\CalenderDay.cs",
               "RelativeDocumentMoniker": "UserControls\\CalenderDay.cs",
@@ -869,7 +885,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "CarInformations.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\CarInformations.cs",
               "RelativeDocumentMoniker": "UserControls\\CarInformations.cs",
@@ -880,7 +896,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "Calender.cs [Design]",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\UserControls\\Calender.cs",
               "RelativeDocumentMoniker": "UserControls\\Calender.cs",
@@ -891,7 +907,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "clsExamTypeDataAccess.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\DrivingSchool-DataAccessLayer\\clsExamTypeDataAccess.cs",
               "RelativeDocumentMoniker": "..\\DrivingSchool-DataAccessLayer\\clsExamTypeDataAccess.cs",
@@ -903,7 +919,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "clsVehicle.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving-school-BusinessLayer\\clsVehicle.cs",
               "RelativeDocumentMoniker": "..\\Driving-school-BusinessLayer\\clsVehicle.cs",
@@ -915,7 +931,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "clsVehicleDataAccess.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\DrivingSchool-DataAccessLayer\\clsVehicleDataAccess.cs",
               "RelativeDocumentMoniker": "..\\DrivingSchool-DataAccessLayer\\clsVehicleDataAccess.cs",
@@ -927,7 +943,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "CondidatesWindow.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\CondidatesWindow.cs",
               "RelativeDocumentMoniker": "Forms\\CondidatesWindow.cs",
@@ -939,7 +955,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "clsExamType.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving-school-BusinessLayer\\clsExamType.cs",
               "RelativeDocumentMoniker": "..\\Driving-school-BusinessLayer\\clsExamType.cs",
@@ -951,7 +967,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "clsExam.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving-school-BusinessLayer\\clsExam.cs",
               "RelativeDocumentMoniker": "..\\Driving-school-BusinessLayer\\clsExam.cs",
@@ -960,18 +976,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-10T05:12:57.33Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "AddCondidateFileForm.cs",
-              "DocumentMoniker": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddCondidateFileForm.cs",
-              "RelativeDocumentMoniker": "Forms\\AddCondidateFileForm.cs",
-              "ToolTip": "C:\\Users\\isaac\\source\\repos\\Driving-school-Management-System\\Driving-school-Management-System\\Driving School Management System\\Forms\\AddCondidateFileForm.cs",
-              "RelativeToolTip": "Forms\\AddCondidateFileForm.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAowDYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T22:25:04.863Z"
             },
             {
               "$type": "Document",

@@ -63,6 +63,68 @@ namespace DrivingSchool_DataAccessLayer
             return Batches;
         }
 
+
+        public static DataTable GetAllBatchInfoByID(int ID)
+        {
+            DataTable Batches = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from Batchinfos where CondidateFileID = @ID ;";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@ID", ID); 
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    Batches.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return Batches;
+        }
+
+
+        public static DataTable GetAllBatchInfoByDrivingLicense(string DrivingLisence)
+        {
+            DataTable Batches = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from Batchinfos  where Name = @DrivingLisence ;";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@DrivingLisence", DrivingLisence);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    Batches.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return Batches;
+        }
+
+
+
+
+
         public static bool GetBatchInfoByID(int batchID, ref decimal Price, ref DateTime PaymentDate, ref int PaymentID)
         {
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);

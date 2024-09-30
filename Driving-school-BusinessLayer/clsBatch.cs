@@ -75,8 +75,13 @@ namespace Driving_school_BusinessLayer
 
 
         public static DataTable GetAllBatchesInforfmations()
-        {
-            return clsBatchDataAccess.GetAllBatchInformations(); 
-        }
+            => clsBatchDataAccess.GetAllBatchInformations(); 
+        
+        public static DataTable GetAllBatchInfoByID(int ID)
+            => clsBatchDataAccess.GetAllBatchInfoByID(ID);
+
+        public static DataTable GetAllBatchInfoByDrivingLicense(string DrivingLisence)
+            => clsBatchDataAccess.GetAllBatchInfoByDrivingLicense(DrivingLisence); 
+
     }
 }
