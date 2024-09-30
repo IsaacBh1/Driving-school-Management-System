@@ -133,6 +133,26 @@ namespace Driving_School_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bag_simple_fill__1_ {
+            get {
+                object obj = ResourceManager.GetObject("bag-simple-fill (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bag_simple_fill__2_ {
+            get {
+                object obj = ResourceManager.GetObject("bag-simple-fill (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bank {
             get {
                 object obj = ResourceManager.GetObject("bank", resourceCulture);
@@ -196,6 +216,16 @@ namespace Driving_School_Management_System.Properties {
         internal static System.Drawing.Bitmap car_thin {
             get {
                 object obj = ResourceManager.GetObject("car-thin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cardholder_fill {
+            get {
+                object obj = ResourceManager.GetObject("cardholder-fill", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -296,6 +326,16 @@ namespace Driving_School_Management_System.Properties {
         internal static System.Drawing.Bitmap corners_in {
             get {
                 object obj = ResourceManager.GetObject("corners-in", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap currency_circle_dollar_fill {
+            get {
+                object obj = ResourceManager.GetObject("currency-circle-dollar-fill", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -613,6 +653,16 @@ namespace Driving_School_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap receipt_fill {
+            get {
+                object obj = ResourceManager.GetObject("receipt-fill", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap scroll {
             get {
                 object obj = ResourceManager.GetObject("scroll", resourceCulture);
@@ -726,6 +776,16 @@ namespace Driving_School_Management_System.Properties {
         internal static System.Drawing.Bitmap users_four {
             get {
                 object obj = ResourceManager.GetObject("users-four", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vault_fill {
+            get {
+                object obj = ResourceManager.GetObject("vault-fill", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

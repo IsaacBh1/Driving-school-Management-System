@@ -66,8 +66,6 @@ namespace Driving_School_Management_System.Forms
             }
         }
 
-
-
         private void btnSearchBatch_Click(object sender, EventArgs e)
         {
             SerachBatchFromBatchInformations(); 

@@ -88,6 +88,12 @@
     <Compile Include="Forms\AddPaymentForm.Designer.cs">
       <DependentUpon>AddPaymentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\BoxWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BoxWindow.Designer.cs">
+      <DependentUpon>BoxWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CarsWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,12 @@
     </Compile>
     <Compile Include="Forms\PaymentWindow.Designer.cs">
       <DependentUpon>PaymentWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BoxBankInos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\BoxBankInos.Designer.cs">
+      <DependentUpon>BoxBankInos.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Calender.cs">
       <SubType>UserControl</SubType>
@@ -235,6 +247,9 @@
     <EmbeddedResource Include="Forms\AddPaymentForm.resx">
       <DependentUpon>AddPaymentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BoxWindow.resx">
+      <DependentUpon>BoxWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CarsWindow.resx">
       <DependentUpon>CarsWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -246,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PaymentWindow.resx">
       <DependentUpon>PaymentWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\BoxBankInos.resx">
+      <DependentUpon>BoxBankInos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Calender.resx">
       <DependentUpon>Calender.cs</DependentUpon>
@@ -563,6 +581,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\x-circle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardholder-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag-simple-fill %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vault-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receipt-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\currency-circle-dollar-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag-simple-fill %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
