@@ -223,13 +223,11 @@ namespace DrivingSchool_DataAccessLayer
             return ID;
         }
 
-
-
         public static int GetCurrentMoneyBank()
         {
             int ID = -1;
             SqlConnection connection = new SqlConnection(ConnectionString);
-            string query = @"Select CurrentMoneyBankID from Globals where ID = 2;";
+            string query = @"select MoneyBankID from MoneyBanks where IsClosed = 0;";
             SqlCommand command = new SqlCommand(query, connection);
       
             try
@@ -253,7 +251,29 @@ namespace DrivingSchool_DataAccessLayer
         }
 
 
+        public static bool CloseCurrentMonneyBank()
+        {
+            int AffectedRows = 0;
+            SqlConnection sqlConnection = new SqlConnection(ConnectionString);
+            string query = @"update MoneyBanks set IsClosed = 1 where IsClosed = 0 ;";
 
+            SqlCommand command = new SqlCommand(query, sqlConnection);
+          
 
+            try
+            {
+                sqlConnection.Open();
+                AffectedRows = command.ExecuteNonQuery();
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
+            return (AffectedRows != 0);
+        }
     }
 }

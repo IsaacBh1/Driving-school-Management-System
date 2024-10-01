@@ -82,5 +82,12 @@ namespace Driving_school_BusinessLayer
         {
             return clsMoneyBankDataAccess.GetCurrentMoneyBank(); 
         }
+
+        public static bool CloseCurrentMoneyBank()
+        {
+            return clsMoneyBankDataAccess.CloseCurrentMonneyBank(); 
+        }
+
+
     }
 }
