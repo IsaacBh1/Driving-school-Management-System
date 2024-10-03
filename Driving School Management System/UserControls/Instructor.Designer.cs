@@ -42,11 +42,11 @@
             this.lblInsructorFullName.AutoSize = true;
             this.lblInsructorFullName.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.lblInsructorFullName.ForeColor = System.Drawing.Color.Gray;
-            this.lblInsructorFullName.Location = new System.Drawing.Point(64, 166);
+            this.lblInsructorFullName.Location = new System.Drawing.Point(114, 210);
             this.lblInsructorFullName.Name = "lblInsructorFullName";
-            this.lblInsructorFullName.Size = new System.Drawing.Size(211, 24);
+            this.lblInsructorFullName.Size = new System.Drawing.Size(110, 24);
             this.lblInsructorFullName.TabIndex = 1;
-            this.lblInsructorFullName.Text = "Instuctor Full Name";
+            this.lblInsructorFullName.Text = "Instuctor ";
             // 
             // guna2Button2
             // 
@@ -62,7 +62,7 @@
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Image = global::Driving_School_Management_System.Properties.Resources.info;
-            this.guna2Button2.Location = new System.Drawing.Point(179, 233);
+            this.guna2Button2.Location = new System.Drawing.Point(179, 277);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(126, 44);
@@ -81,7 +81,7 @@
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Image = global::Driving_School_Management_System.Properties.Resources.wrench;
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.Location = new System.Drawing.Point(29, 233);
+            this.guna2Button1.Location = new System.Drawing.Point(29, 277);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(126, 44);
@@ -91,7 +91,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.professor;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 37);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(333, 146);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -109,7 +109,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Instructor";
-            this.Size = new System.Drawing.Size(339, 306);
+            this.Size = new System.Drawing.Size(339, 353);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
