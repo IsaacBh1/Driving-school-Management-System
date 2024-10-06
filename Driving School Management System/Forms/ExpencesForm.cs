@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Driving_school_BusinessLayer;
+using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -36,13 +37,22 @@ namespace Driving_School_Management_System.Forms
             }
         }
 
-
         public ExpencesForm()
         {
             InitializeComponent();
+            InetializeExpenceType(); 
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
         }
+        
+        private void InetializeExpenceType()
+        {
+            CboxType.DataSource = clsExpense.GetAllExpencesTypes().DefaultView;
+            CboxType.DisplayMember = "Name";
+
+        }
+
+
 
         private void pictureBox1_Click(object sender, EventArgs e)
         => Close();

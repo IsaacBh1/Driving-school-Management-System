@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CboxType = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -70,13 +70,13 @@
             this.guna2TextBox1.Size = new System.Drawing.Size(563, 109);
             this.guna2TextBox1.TabIndex = 0;
             // 
-            // comboBox1
+            // CboxType
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(41, 87);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(563, 27);
-            this.comboBox1.TabIndex = 1;
+            this.CboxType.FormattingEnabled = true;
+            this.CboxType.Location = new System.Drawing.Point(41, 87);
+            this.CboxType.Name = "CboxType";
+            this.CboxType.Size = new System.Drawing.Size(563, 27);
+            this.CboxType.TabIndex = 1;
             // 
             // dateTimePicker1
             // 
@@ -239,7 +239,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.CboxType);
             this.Controls.Add(this.guna2TextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ExpencesForm";
@@ -255,7 +255,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CboxType;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.PictureBox pictureBox1;

@@ -103,7 +103,6 @@
             this.txtbox_AdditionalContact = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtboxAdditionalContact = new Guna.UI2.WinForms.Guna2TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.errDrivingLicenseNumber = new System.Windows.Forms.ErrorProvider(this.components);
@@ -723,7 +722,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl.Controls.Add(this.tabPage1);
             this.pnl.Controls.Add(this.tabPage2);
-            this.pnl.Controls.Add(this.tabPage3);
             this.pnl.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.pnl.ItemSize = new System.Drawing.Size(120, 40);
             this.pnl.Location = new System.Drawing.Point(23, 423);
@@ -1227,14 +1225,6 @@
             this.label23.TabIndex = 18;
             this.label23.Text = "جهة اتصال إضافية";
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(0, 40);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(859, 125);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "الرخصة";
-            // 
             // btnSubmit
             // 
             this.btnSubmit.BorderRadius = 4;
@@ -1439,6 +1429,5 @@
         private System.Windows.Forms.TextBox txtbxEmail;
         private System.Windows.Forms.TextBox txtbxPhone;
         private System.Windows.Forms.TextBox txtbxAdditionalContact;
-        private System.Windows.Forms.TabPage tabPage3;
     }
 }

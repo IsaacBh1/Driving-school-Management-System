@@ -1,4 +1,5 @@
 ﻿using DrivingSchool_DataAccessLayer;
+using System.Data;
 
 namespace Driving_school_BusinessLayer
 {
@@ -74,5 +75,11 @@ namespace Driving_school_BusinessLayer
             }
             return null;
         }
+
+        public static DataTable GetAllExpencesTypes()
+        {
+            return clsExpenceTypeDataAccess.GetAllExpenceTypes();
+        }
+
     }
 }
