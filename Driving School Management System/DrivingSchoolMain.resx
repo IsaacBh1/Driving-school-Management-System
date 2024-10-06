@@ -684,43 +684,43 @@
   <data name="&gt;&gt;guna2Panel10.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnExpences.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt, style=Bold</value>
   </data>
-  <data name="button3.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btnExpences.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnExpences.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnExpences.Location" type="System.Drawing.Point, System.Drawing">
     <value>-9, -12</value>
   </data>
-  <data name="button3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnExpences.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 10, 0</value>
   </data>
-  <data name="button3.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+  <data name="btnExpences.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnExpences.Size" type="System.Drawing.Size, System.Drawing">
     <value>252, 80</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnExpences.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="button3.Text" xml:space="preserve">
+  <data name="btnExpences.Text" xml:space="preserve">
     <value>المصاريف</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="&gt;&gt;btnExpences.Name" xml:space="preserve">
+    <value>btnExpences</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnExpences.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnExpences.Parent" xml:space="preserve">
     <value>guna2Panel11</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnExpences.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="button7.Font" type="System.Drawing.Font, System.Drawing">

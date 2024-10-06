@@ -12,9 +12,19 @@ namespace Driving_School_Management_System.Forms
 {
     public partial class ExpencesWindow : Form
     {
+
+        ExpencesForm expencesForm = null; 
+
+
         public ExpencesWindow()
         {
             InitializeComponent();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            expencesForm = new ExpencesForm();
+            expencesForm.ShowDialog();
         }
     }
 }
