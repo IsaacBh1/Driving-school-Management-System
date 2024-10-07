@@ -89,5 +89,14 @@ namespace Driving_school_BusinessLayer
         }
 
 
+        public static string GetFuelTypeNameByID(int ID)
+        {
+            return clsExpenceTypeDataAccess.GetExpenceTypeNameByID(ID) ; 
+        }
+
+        public static DataTable GetAllExpences()
+        => clsExpenseDataAccess.GetAllExpenses(); 
+
+
     }
 }

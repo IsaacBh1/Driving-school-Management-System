@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.CbxDrivingLicenseType = new MetroFramework.Controls.MetroComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,36 +39,26 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CondidateName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CondidateFile = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CBoxBatchesFilter = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnSearchBatch = new Guna.UI2.WinForms.Guna2Button();
-            this.DGVPayment = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.DrivingLisence = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DGVExpences = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CondidateFile = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CondidateName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Operations = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.Operations = new System.Windows.Forms.DataGridViewImageColumn();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVPayment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVExpences)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -147,102 +137,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.Controls.Add(this.panel4);
             this.flowLayoutPanel1.Controls.Add(this.panel6);
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(14, 125);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1147, 100);
             this.flowLayoutPanel1.TabIndex = 24;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(583, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(183, 83);
-            this.panel1.TabIndex = 27;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(16, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(157, 27);
-            this.textBox1.TabIndex = 26;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(110, 2);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 28);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "الملف";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(394, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(183, 83);
-            this.panel3.TabIndex = 28;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(16, 36);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(157, 27);
-            this.textBox2.TabIndex = 26;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(110, 2);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 28);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "الملف";
-            // 
-            // date
-            // 
-            this.date.HeaderText = "التاريخ";
-            this.date.MinimumWidth = 8;
-            this.date.Name = "date";
-            this.date.ReadOnly = true;
-            // 
-            // Amount
-            // 
-            this.Amount.HeaderText = "المبلغ";
-            this.Amount.MinimumWidth = 8;
-            this.Amount.Name = "Amount";
-            this.Amount.ReadOnly = true;
-            // 
-            // CondidateName
-            // 
-            this.CondidateName.HeaderText = "المترشح";
-            this.CondidateName.MinimumWidth = 8;
-            this.CondidateName.Name = "CondidateName";
-            this.CondidateName.ReadOnly = true;
-            // 
-            // CondidateFile
-            // 
-            this.CondidateFile.HeaderText = "الملف";
-            this.CondidateFile.MinimumWidth = 8;
-            this.CondidateFile.Name = "CondidateFile";
-            this.CondidateFile.ReadOnly = true;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 8;
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
             // 
             // CBoxBatchesFilter
             // 
@@ -285,88 +184,117 @@
             this.btnSearchBatch.TabIndex = 27;
             this.btnSearchBatch.Text = "بحث";
             // 
-            // DGVPayment
+            // DGVExpences
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DGVPayment.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DGVPayment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.DGVExpences.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.DGVExpences.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.DGVPayment.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DGVPayment.BackgroundColor = System.Drawing.Color.White;
-            this.DGVPayment.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DGVPayment.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DGVPayment.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.NullValue = "\"\"";
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVPayment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DGVPayment.ColumnHeadersHeight = 50;
-            this.DGVPayment.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DGVExpences.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGVExpences.BackgroundColor = System.Drawing.Color.White;
+            this.DGVExpences.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DGVExpences.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DGVExpences.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.NullValue = "\"\"";
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVExpences.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.DGVExpences.ColumnHeadersHeight = 50;
+            this.DGVExpences.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.CondidateFile,
             this.CondidateName,
-            this.Amount,
-            this.DrivingLisence,
             this.date,
             this.Operations});
-            this.DGVPayment.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGVPayment.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DGVPayment.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.DGVPayment.EnableHeadersVisualStyles = false;
-            this.DGVPayment.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DGVPayment.Location = new System.Drawing.Point(6, 231);
-            this.DGVPayment.Name = "DGVPayment";
-            this.DGVPayment.ReadOnly = true;
-            this.DGVPayment.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.DGVPayment.RowHeadersVisible = false;
-            this.DGVPayment.RowHeadersWidth = 62;
-            this.DGVPayment.RowTemplate.Height = 40;
-            this.DGVPayment.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.DGVPayment.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVPayment.Size = new System.Drawing.Size(1155, 341);
-            this.DGVPayment.TabIndex = 25;
-            this.DGVPayment.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.DGVPayment.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.DGVPayment.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.DGVPayment.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.DGVPayment.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.DGVPayment.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.DGVPayment.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.DGVPayment.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DGVPayment.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
-            this.DGVPayment.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DGVPayment.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.DGVPayment.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.DGVPayment.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.DGVPayment.ThemeStyle.HeaderStyle.Height = 50;
-            this.DGVPayment.ThemeStyle.ReadOnly = true;
-            this.DGVPayment.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.DGVPayment.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DGVPayment.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.DGVPayment.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.DGVPayment.ThemeStyle.RowsStyle.Height = 40;
-            this.DGVPayment.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DGVPayment.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DGVExpences.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGVExpences.DefaultCellStyle = dataGridViewCellStyle6;
+            this.DGVExpences.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.DGVExpences.EnableHeadersVisualStyles = false;
+            this.DGVExpences.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DGVExpences.Location = new System.Drawing.Point(6, 231);
+            this.DGVExpences.Name = "DGVExpences";
+            this.DGVExpences.ReadOnly = true;
+            this.DGVExpences.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.DGVExpences.RowHeadersVisible = false;
+            this.DGVExpences.RowHeadersWidth = 62;
+            this.DGVExpences.RowTemplate.Height = 40;
+            this.DGVExpences.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.DGVExpences.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGVExpences.Size = new System.Drawing.Size(1155, 341);
+            this.DGVExpences.TabIndex = 25;
+            this.DGVExpences.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.DGVExpences.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.DGVExpences.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.DGVExpences.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.DGVExpences.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.DGVExpences.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.DGVExpences.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.DGVExpences.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DGVExpences.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
+            this.DGVExpences.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DGVExpences.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.DGVExpences.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.DGVExpences.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.DGVExpences.ThemeStyle.HeaderStyle.Height = 50;
+            this.DGVExpences.ThemeStyle.ReadOnly = true;
+            this.DGVExpences.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.DGVExpences.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DGVExpences.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.DGVExpences.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DGVExpences.ThemeStyle.RowsStyle.Height = 40;
+            this.DGVExpences.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DGVExpences.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // DrivingLisence
+            // ID
             // 
-            this.DrivingLisence.HeaderText = "الرخصة";
-            this.DrivingLisence.MinimumWidth = 8;
-            this.DrivingLisence.Name = "DrivingLisence";
-            this.DrivingLisence.ReadOnly = true;
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 8;
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            // 
+            // CondidateFile
+            // 
+            this.CondidateFile.HeaderText = "نوع النفقة";
+            this.CondidateFile.MinimumWidth = 8;
+            this.CondidateFile.Name = "CondidateFile";
+            this.CondidateFile.ReadOnly = true;
+            // 
+            // CondidateName
+            // 
+            this.CondidateName.HeaderText = "المبلغ المالي";
+            this.CondidateName.MinimumWidth = 8;
+            this.CondidateName.Name = "CondidateName";
+            this.CondidateName.ReadOnly = true;
+            // 
+            // date
+            // 
+            this.date.HeaderText = "الصندوق";
+            this.date.MinimumWidth = 8;
+            this.date.Name = "date";
+            this.date.ReadOnly = true;
+            // 
+            // Operations
+            // 
+            this.Operations.HeaderText = "الإجراءات";
+            this.Operations.Image = global::Driving_School_Management_System.Properties.Resources.dots_three_outline;
+            this.Operations.MinimumWidth = 8;
+            this.Operations.Name = "Operations";
+            this.Operations.ReadOnly = true;
+            this.Operations.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Operations.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // panel2
             // 
@@ -377,8 +305,8 @@
             this.panel2.Controls.Add(this.CBoxBatchesFilter);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btnSearchBatch);
-            this.panel2.Controls.Add(this.guna2Button3);
-            this.panel2.Controls.Add(this.DGVPayment);
+            this.panel2.Controls.Add(this.btnRefresh);
+            this.panel2.Controls.Add(this.DGVExpences);
             this.panel2.Controls.Add(this.flowLayoutPanel1);
             this.panel2.Controls.Add(this.guna2Separator1);
             this.panel2.Controls.Add(this.label2);
@@ -386,6 +314,51 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1168, 575);
             this.panel2.TabIndex = 12;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.funnel__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(772, 79);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(42, 37);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRefresh.BorderRadius = 5;
+            this.btnRefresh.CheckedState.Parent = this.btnRefresh;
+            this.btnRefresh.CustomImages.Parent = this.btnRefresh;
+            this.btnRefresh.FillColor = System.Drawing.Color.Black;
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.HoverState.Parent = this.btnRefresh;
+            this.btnRefresh.Image = global::Driving_School_Management_System.Properties.Resources.arrows_clockwise;
+            this.btnRefresh.Location = new System.Drawing.Point(1106, 76);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRefresh.ShadowDecoration.Parent = this.btnRefresh;
+            this.btnRefresh.Size = new System.Drawing.Size(41, 43);
+            this.btnRefresh.TabIndex = 26;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label2.Image = global::Driving_School_Management_System.Properties.Resources.magnifying_glass__1_;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Location = new System.Drawing.Point(934, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
+            this.label2.Name = "label2";
+            this.label2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.label2.Size = new System.Drawing.Size(234, 37);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "    بحث متعدد المعايير";
             // 
             // label1
             // 
@@ -449,60 +422,6 @@
             this.guna2Button1.Text = "إضافة ";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.funnel__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(772, 79);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 37);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 34;
-            this.pictureBox1.TabStop = false;
-            // 
-            // guna2Button3
-            // 
-            this.guna2Button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button3.BorderRadius = 5;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.Black;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Image = global::Driving_School_Management_System.Properties.Resources.arrows_clockwise;
-            this.guna2Button3.Location = new System.Drawing.Point(1106, 76);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(41, 43);
-            this.guna2Button3.TabIndex = 26;
-            // 
-            // Operations
-            // 
-            this.Operations.HeaderText = "الإجراءات";
-            this.Operations.Image = global::Driving_School_Management_System.Properties.Resources.dots_three_outline;
-            this.Operations.MinimumWidth = 8;
-            this.Operations.Name = "Operations";
-            this.Operations.ReadOnly = true;
-            this.Operations.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Operations.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label2.Image = global::Driving_School_Management_System.Properties.Resources.magnifying_glass__1_;
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(934, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.label2.Size = new System.Drawing.Size(234, 37);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "    بحث متعدد المعايير";
-            // 
             // ExpencesWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -514,17 +433,13 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ExpencesWindow";
-            this.Text = "ExpencesWindow";
+            this.Text = " ";
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVPayment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVExpences)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -545,27 +460,19 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.DataGridViewImageColumn Operations;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CondidateName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CondidateFile;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private Guna.UI2.WinForms.Guna2ComboBox CBoxBatchesFilter;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnSearchBatch;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2DataGridView DGVPayment;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DrivingLisence;
+        private Guna.UI2.WinForms.Guna2Button btnRefresh;
+        private Guna.UI2.WinForms.Guna2DataGridView DGVExpences;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CondidateFile;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CondidateName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn date;
+        private System.Windows.Forms.DataGridViewImageColumn Operations;
     }
 }

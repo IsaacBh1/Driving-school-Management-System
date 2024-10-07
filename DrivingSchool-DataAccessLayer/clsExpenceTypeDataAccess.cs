@@ -202,6 +202,36 @@ namespace DrivingSchool_DataAccessLayer
             return ID;
         }
 
+        public static string GetExpenceTypeNameByID(int ID)
+        {
+            string Name = string.Empty;
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select Name from ExpenceTypes where ExpenceTypeID  = @ID ;";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@ID", ID);
+            try
+            {
+                connection.Open();
+                object result = command.ExecuteScalar();
+                Name = (string)result;
+            }
+            catch
+            {
+                return "";
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return Name;
+        }
+
+
+
+
+
+
+
         public static bool IsExpenceTypeExists(string Name)
         {
             return (GetExpenceTypeIDByName(Name) != -1);
