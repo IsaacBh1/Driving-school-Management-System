@@ -1,5 +1,6 @@
 ﻿using DrivingSchool_DataAccessLayer;
 using System.Data;
+using System.Xml.Linq;
 
 namespace Driving_school_BusinessLayer
 {
@@ -80,6 +81,13 @@ namespace Driving_school_BusinessLayer
         {
             return clsExpenceTypeDataAccess.GetAllExpenceTypes();
         }
+
+
+        public static int GetExpenseTypeIDByName(string Name)
+        {
+            return clsExpenceTypeDataAccess.GetExpenceTypeIDByName(Name); 
+        }
+
 
     }
 }

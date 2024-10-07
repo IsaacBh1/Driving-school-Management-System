@@ -28,69 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtbxNote = new Guna.UI2.WinForms.Guna2TextBox();
             this.CboxType = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numupdownPrice = new System.Windows.Forms.NumericUpDown();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.numupdownPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2TextBox1
+            // txtbxNote
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(41, 327);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox1.Multiline = true;
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(563, 109);
-            this.guna2TextBox1.TabIndex = 0;
+            this.txtbxNote.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtbxNote.DefaultText = "";
+            this.txtbxNote.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtbxNote.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtbxNote.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxNote.DisabledState.Parent = this.txtbxNote;
+            this.txtbxNote.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxNote.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxNote.FocusedState.Parent = this.txtbxNote;
+            this.txtbxNote.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxNote.HoverState.Parent = this.txtbxNote;
+            this.txtbxNote.Location = new System.Drawing.Point(41, 212);
+            this.txtbxNote.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbxNote.Multiline = true;
+            this.txtbxNote.Name = "txtbxNote";
+            this.txtbxNote.PasswordChar = '\0';
+            this.txtbxNote.PlaceholderText = "";
+            this.txtbxNote.SelectedText = "";
+            this.txtbxNote.ShadowDecoration.Parent = this.txtbxNote;
+            this.txtbxNote.Size = new System.Drawing.Size(519, 109);
+            this.txtbxNote.TabIndex = 0;
             // 
             // CboxType
             // 
             this.CboxType.FormattingEnabled = true;
             this.CboxType.Location = new System.Drawing.Point(41, 87);
             this.CboxType.Name = "CboxType";
-            this.CboxType.Size = new System.Drawing.Size(563, 27);
+            this.CboxType.Size = new System.Drawing.Size(519, 27);
             this.CboxType.TabIndex = 1;
             // 
-            // dateTimePicker1
+            // numupdownPrice
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(41, 167);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(563, 27);
-            this.dateTimePicker1.TabIndex = 2;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(77, 247);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(527, 27);
-            this.numericUpDown1.TabIndex = 3;
+            this.numupdownPrice.Location = new System.Drawing.Point(77, 158);
+            this.numupdownPrice.Maximum = new decimal(new int[] {
+            -469762048,
+            -590869294,
+            5421010,
+            0});
+            this.numupdownPrice.Name = "numupdownPrice";
+            this.numupdownPrice.Size = new System.Drawing.Size(483, 27);
+            this.numupdownPrice.TabIndex = 3;
             // 
             // pictureBox1
             // 
@@ -133,7 +131,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(41, 252);
+            this.label2.Location = new System.Drawing.Point(41, 163);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 19);
             this.label2.TabIndex = 32;
@@ -150,34 +148,23 @@
             this.label3.TabIndex = 33;
             this.label3.Text = "النوع";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(713, 167);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 29);
-            this.label4.TabIndex = 33;
-            this.label4.Text = "التاريخ";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F);
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(610, 238);
+            this.label5.Location = new System.Drawing.Point(618, 150);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(177, 29);
+            this.label5.Size = new System.Drawing.Size(169, 29);
             this.label5.TabIndex = 33;
-            this.label5.Text = "المبلغ الإجمالي ";
+            this.label5.Text = "المبلغ الإجمالي";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 12F);
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(698, 327);
+            this.label6.Location = new System.Drawing.Point(698, 210);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 29);
             this.label6.TabIndex = 33;
@@ -196,7 +183,7 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(175, 459);
+            this.guna2Button2.Location = new System.Drawing.Point(176, 351);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(126, 44);
@@ -214,38 +201,59 @@
             this.btnSubmit.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
             this.btnSubmit.ForeColor = System.Drawing.Color.Black;
             this.btnSubmit.HoverState.Parent = this.btnSubmit;
-            this.btnSubmit.Location = new System.Drawing.Point(41, 459);
+            this.btnSubmit.Location = new System.Drawing.Point(42, 351);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.ShadowDecoration.Parent = this.btnSubmit;
             this.btnSubmit.Size = new System.Drawing.Size(126, 44);
             this.btnSubmit.TabIndex = 37;
             this.btnSubmit.Text = "التسجيل";
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.IndianRed;
+            this.label7.Location = new System.Drawing.Point(706, 95);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(18, 19);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "*";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.IndianRed;
+            this.label8.Location = new System.Drawing.Point(592, 155);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(18, 19);
+            this.label8.TabIndex = 39;
+            this.label8.Text = "*";
             // 
             // ExpencesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(799, 525);
+            this.ClientSize = new System.Drawing.Size(799, 426);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.numupdownPrice);
             this.Controls.Add(this.CboxType);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.txtbxNote);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ExpencesForm";
             this.Text = "ExpencesForm";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numupdownPrice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -254,19 +262,19 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtbxNote;
         private System.Windows.Forms.ComboBox CboxType;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numupdownPrice;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button btnSubmit;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
