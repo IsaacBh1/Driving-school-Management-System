@@ -139,9 +139,9 @@
             this.panel2.Controls.Add(this.lblFirstBalance);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(708, 3);
+            this.panel2.Location = new System.Drawing.Point(705, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(228, 90);
+            this.panel2.Size = new System.Drawing.Size(231, 90);
             this.panel2.TabIndex = 10;
             // 
             // lblFirstBalance
@@ -149,8 +149,8 @@
             this.lblFirstBalance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFirstBalance.AutoSize = true;
             this.lblFirstBalance.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold);
-            this.lblFirstBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(243)))), ((int)(((byte)(67)))));
-            this.lblFirstBalance.Location = new System.Drawing.Point(8, 42);
+            this.lblFirstBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(5)))));
+            this.lblFirstBalance.Location = new System.Drawing.Point(3, 42);
             this.lblFirstBalance.Name = "lblFirstBalance";
             this.lblFirstBalance.Size = new System.Drawing.Size(47, 36);
             this.lblFirstBalance.TabIndex = 2;
@@ -161,8 +161,8 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(243)))), ((int)(((byte)(67)))));
-            this.label5.Location = new System.Drawing.Point(0, 3);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(5)))));
+            this.label5.Location = new System.Drawing.Point(1, 3);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(126, 29);
             this.label5.TabIndex = 1;
@@ -174,7 +174,7 @@
             this.sjdns.Controls.Add(this.lblIncomes);
             this.sjdns.Controls.Add(this.label7);
             this.sjdns.Controls.Add(this.pictureBox3);
-            this.sjdns.Location = new System.Drawing.Point(474, 3);
+            this.sjdns.Location = new System.Drawing.Point(471, 3);
             this.sjdns.Name = "sjdns";
             this.sjdns.Size = new System.Drawing.Size(228, 90);
             this.sjdns.TabIndex = 11;
@@ -209,7 +209,7 @@
             this.panel4.Controls.Add(this.lblExpences);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Location = new System.Drawing.Point(240, 3);
+            this.panel4.Location = new System.Drawing.Point(237, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(228, 90);
             this.panel4.TabIndex = 12;
@@ -244,7 +244,7 @@
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Location = new System.Drawing.Point(6, 3);
+            this.panel5.Location = new System.Drawing.Point(3, 3);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(228, 90);
             this.panel5.TabIndex = 13;
@@ -285,7 +285,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Driving_School_Management_System.Properties.Resources.bag_simple_fill__2_;
+            this.pictureBox2.Image = global::Driving_School_Management_System.Properties.Resources.bag_simple_fill__3_;
             this.pictureBox2.Location = new System.Drawing.Point(125, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 84);

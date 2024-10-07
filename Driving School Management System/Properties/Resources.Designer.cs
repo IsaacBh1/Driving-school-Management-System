@@ -153,6 +153,16 @@ namespace Driving_School_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bag_simple_fill__3_ {
+            get {
+                object obj = ResourceManager.GetObject("bag-simple-fill (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bank {
             get {
                 object obj = ResourceManager.GetObject("bank", resourceCulture);

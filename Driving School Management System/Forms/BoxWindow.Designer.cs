@@ -38,15 +38,8 @@
             this.CBoxExamsFilter = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSearchLesson = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.DGVExams = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CondidateFile = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CondidateName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Operations = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
+            this.DGVBoxes = new Guna.UI2.WinForms.Guna2DataGridView();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtBoxID = new System.Windows.Forms.TextBox();
@@ -57,9 +50,15 @@
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CondidateFile = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CondidateName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Operations = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVExams)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVBoxes)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -99,8 +98,8 @@
             this.panel2.Controls.Add(this.CBoxExamsFilter);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btnSearchLesson);
-            this.panel2.Controls.Add(this.guna2Button3);
-            this.panel2.Controls.Add(this.DGVExams);
+            this.panel2.Controls.Add(this.btnRefresh);
+            this.panel2.Controls.Add(this.DGVBoxes);
             this.panel2.Controls.Add(this.flowLayoutPanel2);
             this.panel2.Controls.Add(this.guna2Separator1);
             this.panel2.Controls.Add(this.label2);
@@ -182,36 +181,37 @@
             this.btnSearchLesson.TabIndex = 27;
             this.btnSearchLesson.Text = "بحث";
             // 
-            // guna2Button3
+            // btnRefresh
             // 
-            this.guna2Button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button3.BorderRadius = 5;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.Black;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Image = global::Driving_School_Management_System.Properties.Resources.arrows_clockwise;
-            this.guna2Button3.Location = new System.Drawing.Point(1195, 76);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(41, 43);
-            this.guna2Button3.TabIndex = 26;
+            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRefresh.BorderRadius = 5;
+            this.btnRefresh.CheckedState.Parent = this.btnRefresh;
+            this.btnRefresh.CustomImages.Parent = this.btnRefresh;
+            this.btnRefresh.FillColor = System.Drawing.Color.Black;
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.HoverState.Parent = this.btnRefresh;
+            this.btnRefresh.Image = global::Driving_School_Management_System.Properties.Resources.arrows_clockwise;
+            this.btnRefresh.Location = new System.Drawing.Point(1195, 76);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRefresh.ShadowDecoration.Parent = this.btnRefresh;
+            this.btnRefresh.Size = new System.Drawing.Size(41, 43);
+            this.btnRefresh.TabIndex = 26;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // DGVExams
+            // DGVBoxes
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DGVExams.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DGVExams.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.DGVBoxes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DGVBoxes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.DGVExams.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DGVExams.BackgroundColor = System.Drawing.Color.White;
-            this.DGVExams.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DGVExams.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DGVExams.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DGVBoxes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGVBoxes.BackgroundColor = System.Drawing.Color.White;
+            this.DGVBoxes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DGVBoxes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DGVBoxes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -220,17 +220,16 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVExams.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DGVExams.ColumnHeadersHeight = 50;
-            this.DGVExams.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DGVBoxes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DGVBoxes.ColumnHeadersHeight = 50;
+            this.DGVBoxes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.CondidateFile,
             this.CondidateName,
             this.Status,
             this.type,
-            this.date,
             this.Operations});
-            this.DGVExams.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DGVBoxes.Cursor = System.Windows.Forms.Cursors.Hand;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -238,95 +237,43 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGVExams.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DGVExams.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.DGVExams.EnableHeadersVisualStyles = false;
-            this.DGVExams.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DGVExams.Location = new System.Drawing.Point(6, 231);
-            this.DGVExams.Name = "DGVExams";
-            this.DGVExams.ReadOnly = true;
-            this.DGVExams.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.DGVExams.RowHeadersVisible = false;
-            this.DGVExams.RowHeadersWidth = 62;
-            this.DGVExams.RowTemplate.Height = 40;
-            this.DGVExams.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.DGVExams.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVExams.Size = new System.Drawing.Size(1244, 232);
-            this.DGVExams.TabIndex = 25;
-            this.DGVExams.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.DGVExams.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.DGVExams.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.DGVExams.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.DGVExams.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.DGVExams.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.DGVExams.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.DGVExams.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DGVExams.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
-            this.DGVExams.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DGVExams.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.DGVExams.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.DGVExams.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.DGVExams.ThemeStyle.HeaderStyle.Height = 50;
-            this.DGVExams.ThemeStyle.ReadOnly = true;
-            this.DGVExams.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.DGVExams.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DGVExams.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.DGVExams.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.DGVExams.ThemeStyle.RowsStyle.Height = 40;
-            this.DGVExams.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DGVExams.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 8;
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            // 
-            // CondidateFile
-            // 
-            this.CondidateFile.HeaderText = "الملف";
-            this.CondidateFile.MinimumWidth = 8;
-            this.CondidateFile.Name = "CondidateFile";
-            this.CondidateFile.ReadOnly = true;
-            // 
-            // CondidateName
-            // 
-            this.CondidateName.HeaderText = "المترشح";
-            this.CondidateName.MinimumWidth = 8;
-            this.CondidateName.Name = "CondidateName";
-            this.CondidateName.ReadOnly = true;
-            // 
-            // Status
-            // 
-            this.Status.HeaderText = "الحالة";
-            this.Status.MinimumWidth = 8;
-            this.Status.Name = "Status";
-            this.Status.ReadOnly = true;
-            // 
-            // type
-            // 
-            this.type.HeaderText = "النوع";
-            this.type.MinimumWidth = 8;
-            this.type.Name = "type";
-            this.type.ReadOnly = true;
-            // 
-            // date
-            // 
-            this.date.HeaderText = "التاريخ";
-            this.date.MinimumWidth = 8;
-            this.date.Name = "date";
-            this.date.ReadOnly = true;
-            // 
-            // Operations
-            // 
-            this.Operations.HeaderText = "الإجراءات";
-            this.Operations.Image = global::Driving_School_Management_System.Properties.Resources.dots_three_outline;
-            this.Operations.MinimumWidth = 8;
-            this.Operations.Name = "Operations";
-            this.Operations.ReadOnly = true;
-            this.Operations.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Operations.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.DGVBoxes.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DGVBoxes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.DGVBoxes.EnableHeadersVisualStyles = false;
+            this.DGVBoxes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DGVBoxes.Location = new System.Drawing.Point(6, 231);
+            this.DGVBoxes.Name = "DGVBoxes";
+            this.DGVBoxes.ReadOnly = true;
+            this.DGVBoxes.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.DGVBoxes.RowHeadersVisible = false;
+            this.DGVBoxes.RowHeadersWidth = 62;
+            this.DGVBoxes.RowTemplate.Height = 40;
+            this.DGVBoxes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.DGVBoxes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGVBoxes.Size = new System.Drawing.Size(1244, 232);
+            this.DGVBoxes.TabIndex = 25;
+            this.DGVBoxes.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.DGVBoxes.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.DGVBoxes.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.DGVBoxes.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.DGVBoxes.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.DGVBoxes.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.DGVBoxes.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.DGVBoxes.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DGVBoxes.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
+            this.DGVBoxes.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DGVBoxes.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.DGVBoxes.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.DGVBoxes.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.DGVBoxes.ThemeStyle.HeaderStyle.Height = 50;
+            this.DGVBoxes.ThemeStyle.ReadOnly = true;
+            this.DGVBoxes.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.DGVBoxes.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DGVBoxes.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.DGVBoxes.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DGVBoxes.ThemeStyle.RowsStyle.Height = 40;
+            this.DGVBoxes.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DGVBoxes.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // flowLayoutPanel2
             // 
@@ -429,6 +376,51 @@
             this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewImageColumn1.Width = 178;
             // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 8;
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            // 
+            // CondidateFile
+            // 
+            this.CondidateFile.HeaderText = "المبلغ الأولي\n";
+            this.CondidateFile.MinimumWidth = 8;
+            this.CondidateFile.Name = "CondidateFile";
+            this.CondidateFile.ReadOnly = true;
+            // 
+            // CondidateName
+            // 
+            this.CondidateName.HeaderText = "إجمالي المبلغ\n";
+            this.CondidateName.MinimumWidth = 8;
+            this.CondidateName.Name = "CondidateName";
+            this.CondidateName.ReadOnly = true;
+            // 
+            // Status
+            // 
+            this.Status.HeaderText = "المبلغ الداخلي\n";
+            this.Status.MinimumWidth = 8;
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
+            // 
+            // type
+            // 
+            this.type.HeaderText = "الربح الصافي\n\n\n\n\n\n";
+            this.type.MinimumWidth = 8;
+            this.type.Name = "type";
+            this.type.ReadOnly = true;
+            // 
+            // Operations
+            // 
+            this.Operations.HeaderText = "الإجراءات";
+            this.Operations.Image = global::Driving_School_Management_System.Properties.Resources.dots_three_outline;
+            this.Operations.MinimumWidth = 8;
+            this.Operations.Name = "Operations";
+            this.Operations.ReadOnly = true;
+            this.Operations.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Operations.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // BoxWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -443,7 +435,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVExams)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVBoxes)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -462,15 +454,8 @@
         private Guna.UI2.WinForms.Guna2ComboBox CBoxExamsFilter;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnSearchLesson;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2DataGridView DGVExams;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CondidateFile;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CondidateName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
-        private System.Windows.Forms.DataGridViewTextBoxColumn type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn date;
-        private System.Windows.Forms.DataGridViewImageColumn Operations;
+        private Guna.UI2.WinForms.Guna2Button btnRefresh;
+        private Guna.UI2.WinForms.Guna2DataGridView DGVBoxes;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
@@ -482,5 +467,11 @@
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CondidateFile;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CondidateName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        private System.Windows.Forms.DataGridViewTextBoxColumn type;
+        private System.Windows.Forms.DataGridViewImageColumn Operations;
     }
 }

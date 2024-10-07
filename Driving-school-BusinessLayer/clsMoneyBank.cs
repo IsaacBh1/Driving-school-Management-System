@@ -1,4 +1,5 @@
 ﻿using DrivingSchool_DataAccessLayer;
+using System.Data;
 
 namespace Driving_school_BusinessLayer
 {
@@ -87,6 +88,9 @@ namespace Driving_school_BusinessLayer
         {
             return clsMoneyBankDataAccess.CloseCurrentMonneyBank(); 
         }
+
+        public static DataTable GetAllMoneyBanks()
+        => clsMoneyBankDataAccess.GetAllMoneyBanks();
 
 
     }

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
 
 namespace DrivingSchool_DataAccessLayer
@@ -12,7 +11,7 @@ namespace DrivingSchool_DataAccessLayer
         {
             DataTable MoneyBanks = new DataTable();
             SqlConnection connection = new SqlConnection(ConnectionString);
-            string query = "SELECT * FROM MoneyBanks;";
+            string query = "SELECT * FROM MoneyBanks order by MoneyBankID desc;";
             SqlCommand command = new SqlCommand(query, connection);
             try
             {

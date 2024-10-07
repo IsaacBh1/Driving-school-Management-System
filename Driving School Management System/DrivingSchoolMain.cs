@@ -1,5 +1,6 @@
 ﻿using Driving_School_Management_System.Forms;
 using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -7,6 +8,34 @@ namespace Driving_School_Management_System
 {
     public partial class MainForm : Form
     {
+
+
+        const float speedXPerSecond = 1000f / 30;
+        const int bar_width = 40;
+
+        float x_position = 0;
+        TimeSpan _lastFrameTime = TimeSpan.Zero;
+        Stopwatch _frameTimer = Stopwatch.StartNew();
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            TimeSpan currentFrameTime = _frameTimer.Elapsed;
+            float distance = (float)(currentFrameTime - _lastFrameTime).TotalSeconds * speedXPerSecond;
+
+            x_position += distance;
+            while (x_position > this.Width) x_position -= this.Width;
+            e.Graphics.FillRectangle(Brushes.Black, x_position, 0, bar_width, 500);
+            _lastFrameTime = currentFrameTime;
+
+            Invalidate();
+        }
+
+
+
+
+
         int tabIndex = 1;
         int previousTabIndex = -1;
         MainWindow mainWindow = null;
@@ -22,6 +51,8 @@ namespace Driving_School_Management_System
         {
             InitializeComponent();
             ShowWindow<MainWindow>(mainWindow);
+            DoubleBuffered = true;
+
         }
 
         private void MainForm_Load(object sender, EventArgs e)
