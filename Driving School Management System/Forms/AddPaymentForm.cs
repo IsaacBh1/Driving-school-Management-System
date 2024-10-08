@@ -45,6 +45,7 @@ namespace Driving_School_Management_System.Forms
         clsCondidateFile condidateFile = null;
         clsPayment payment = null;
         StatusMessageForm statusMessageForm = null; 
+        clsMoneyBank moneyBank = null;
         public AddPaymentForm()
         {
             InitializeComponent();
@@ -141,9 +142,10 @@ namespace Driving_School_Management_System.Forms
                 };
                 if (!batch.Save()) return false; 
                 payment = clsPayment.Find(condidateFile.PaymentID);
+                moneyBank = clsMoneyBank.Find(clsMoneyBank.GetCurrentMoneyBank());
                 payment.AmountPayed += batch.Price;
-                
-                return payment.Save();
+                moneyBank.AddPayment (batch.Price); 
+                return payment.Save() && moneyBank.Save() ;
             }
             return false; 
         }

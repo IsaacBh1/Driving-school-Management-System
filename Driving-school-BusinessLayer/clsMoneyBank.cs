@@ -37,6 +37,30 @@ namespace Driving_school_BusinessLayer
             Mode = enMode.Update;
         }
 
+        public void AddPayment(decimal price)
+        {
+            AllAmount += price;
+            InternalAmount += price; 
+            NetProfit += price;
+        }
+
+        public bool AddExpence(decimal price)
+        {
+
+
+            if (InternalAmount - price < 0 || price <= 0)
+                return false;
+
+            if (NetProfit - price <= 0) 
+                NetProfit = 0; 
+            else
+            {
+                InternalAmount -= price; 
+                NetProfit -= price;
+            }
+            return true;
+        }
+
         private bool _AddNewMoneyBank()
         {
             MoneyBankID = clsMoneyBankDataAccess.AddNewMoneyBank(InitialAmount, AllAmount, InternalAmount, NetProfit, IsClosed);
