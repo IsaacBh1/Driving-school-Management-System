@@ -40,6 +40,12 @@
             this.btnSearchLesson = new Guna.UI2.WinForms.Guna2Button();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.DGVBoxes = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CondidateFile = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CondidateName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Operations = new System.Windows.Forms.DataGridViewImageColumn();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtBoxID = new System.Windows.Forms.TextBox();
@@ -50,12 +56,6 @@
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CondidateFile = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CondidateName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Operations = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVBoxes)).BeginInit();
@@ -225,9 +225,9 @@
             this.DGVBoxes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.CondidateFile,
-            this.CondidateName,
             this.Status,
             this.type,
+            this.CondidateName,
             this.Operations});
             this.DGVBoxes.Cursor = System.Windows.Forms.Cursors.Hand;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -274,6 +274,51 @@
             this.DGVBoxes.ThemeStyle.RowsStyle.Height = 40;
             this.DGVBoxes.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DGVBoxes.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 8;
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            // 
+            // CondidateFile
+            // 
+            this.CondidateFile.HeaderText = "المبلغ الأولي\n";
+            this.CondidateFile.MinimumWidth = 8;
+            this.CondidateFile.Name = "CondidateFile";
+            this.CondidateFile.ReadOnly = true;
+            // 
+            // Status
+            // 
+            this.Status.HeaderText = "المبلغ الداخلي\n";
+            this.Status.MinimumWidth = 8;
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
+            // 
+            // type
+            // 
+            this.type.HeaderText = "الربح الصافي\n\n\n\n\n\n";
+            this.type.MinimumWidth = 8;
+            this.type.Name = "type";
+            this.type.ReadOnly = true;
+            // 
+            // CondidateName
+            // 
+            this.CondidateName.HeaderText = "المصاريف";
+            this.CondidateName.MinimumWidth = 8;
+            this.CondidateName.Name = "CondidateName";
+            this.CondidateName.ReadOnly = true;
+            // 
+            // Operations
+            // 
+            this.Operations.HeaderText = "الإجراءات";
+            this.Operations.Image = global::Driving_School_Management_System.Properties.Resources.dots_three_outline;
+            this.Operations.MinimumWidth = 8;
+            this.Operations.Name = "Operations";
+            this.Operations.ReadOnly = true;
+            this.Operations.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Operations.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // flowLayoutPanel2
             // 
@@ -376,51 +421,6 @@
             this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewImageColumn1.Width = 178;
             // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 8;
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            // 
-            // CondidateFile
-            // 
-            this.CondidateFile.HeaderText = "المبلغ الأولي\n";
-            this.CondidateFile.MinimumWidth = 8;
-            this.CondidateFile.Name = "CondidateFile";
-            this.CondidateFile.ReadOnly = true;
-            // 
-            // CondidateName
-            // 
-            this.CondidateName.HeaderText = "إجمالي المبلغ\n";
-            this.CondidateName.MinimumWidth = 8;
-            this.CondidateName.Name = "CondidateName";
-            this.CondidateName.ReadOnly = true;
-            // 
-            // Status
-            // 
-            this.Status.HeaderText = "المبلغ الداخلي\n";
-            this.Status.MinimumWidth = 8;
-            this.Status.Name = "Status";
-            this.Status.ReadOnly = true;
-            // 
-            // type
-            // 
-            this.type.HeaderText = "الربح الصافي\n\n\n\n\n\n";
-            this.type.MinimumWidth = 8;
-            this.type.Name = "type";
-            this.type.ReadOnly = true;
-            // 
-            // Operations
-            // 
-            this.Operations.HeaderText = "الإجراءات";
-            this.Operations.Image = global::Driving_School_Management_System.Properties.Resources.dots_three_outline;
-            this.Operations.MinimumWidth = 8;
-            this.Operations.Name = "Operations";
-            this.Operations.ReadOnly = true;
-            this.Operations.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Operations.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
             // BoxWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -469,9 +469,9 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn CondidateFile;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CondidateName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
         private System.Windows.Forms.DataGridViewTextBoxColumn type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CondidateName;
         private System.Windows.Forms.DataGridViewImageColumn Operations;
     }
 }

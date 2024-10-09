@@ -2,19 +2,20 @@
 using Driving_School_Management_System.UserControls;
 using System;
 using System.Data;
-using System.Windows.Forms;
-
+using System.Windows.Forms; 
 namespace Driving_School_Management_System.Forms
 {
     public partial class BoxWindow : Form
     {
         CloseBoxForm CloseBoxForm = null;
-        
+        clsMoneyBank MoneyBank = null;
         public BoxWindow()
         {
             InitializeComponent();
-            InetializeIncomeBox();
-            AddBoxesInformations(clsMoneyBank.GetAllMoneyBanks()); 
+            AddBoxesInformations(clsMoneyBank.GetAllMoneyBanks());
+            MoneyBank = clsMoneyBank.Find(clsMoneyBank.GetCurrentMoneyBank());
+            InetializeIncomeBox(MoneyBank);
+
         }
 
         private void AddBoxesInformations(DataTable BoxInformations)
@@ -22,26 +23,36 @@ namespace Driving_School_Management_System.Forms
             DGVBoxes.Rows.Clear();
             foreach (DataRow row in BoxInformations.Rows)
             {
-                DGVBoxes.Rows.Add(row[0],Convert.ToDecimal (row[1]).ToString("0.00"), Convert.ToDecimal( row[2]).ToString("0.00"),Convert.ToDecimal (row[3]).ToString("0.00"), Convert.ToDecimal(row[4]).ToString("0.00"));
+                DGVBoxes.Rows.Add(row[0],Convert.ToDecimal (row[1]).ToString("0.00"),Convert.ToDecimal (row[3]).ToString("0.00"), Convert.ToDecimal(row[4]).ToString("0.00") , (Convert.ToDecimal(row[2]) - Convert.ToDecimal(row[3])).ToString("0.00"));
             }
         }
 
 
-
-
-
-        private void InetializeIncomeBox()
+        private void InetializeIncomeBox(clsMoneyBank moneyBank)
         {
-            flowLayoutBox.Controls.Add(new BoxBankInos(182, 20000, 400, 200, 200)); 
+            flowLayoutBox.Controls.Clear();
+            flowLayoutBox.Controls.Add(new BoxBankInos( moneyBank.MoneyBankID, 
+                                                        moneyBank.InitialAmount, 
+                                                        moneyBank.NetProfit, 
+                                                        moneyBank.AllAmount -  moneyBank.InternalAmount, 
+                                                        moneyBank.InternalAmount
+                                                       )
+                                      ); 
         }
-
-        private void guna2Button1_Click(object sender, System.EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-            CloseBoxForm = new CloseBoxForm(); 
+            CloseBoxForm = new CloseBoxForm();
+            CloseBoxForm.MoneyBoxAddedEventHundler += RefreshMoneyBox;  
             CloseBoxForm.ShowDialog();
         }
 
-        private void btnRefresh_Click(object sender, System.EventArgs e)
+        private void RefreshMoneyBox(int id)
+        {
+            InetializeIncomeBox(clsMoneyBank.Find(id));
+            AddBoxesInformations(clsMoneyBank.GetAllMoneyBanks()); 
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
         {
             AddBoxesInformations(clsMoneyBank.GetAllMoneyBanks());
 

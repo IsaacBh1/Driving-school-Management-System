@@ -39,8 +39,8 @@ namespace Driving_School_Management_System.Forms
 
 
         clsExpense expense = null;
-        StatusMessageForm statusMessageForm = null;  
-
+        StatusMessageForm statusMessageForm = null;
+        clsMoneyBank moneyBank = clsMoneyBank.Find(clsMoneyBank.GetCurrentMoneyBank()); 
 
 
         public ExpencesForm()
@@ -73,9 +73,9 @@ namespace Driving_School_Management_System.Forms
                 MoneyBankID = clsMoneyBank.GetCurrentMoneyBank(), 
 
             };
+            if (!moneyBank.AddExpence(expense.Amount)) return false;    
 
-
-            return expense.Save(); 
+            return expense.Save() && moneyBank.Save(); 
         }
 
 
@@ -98,13 +98,13 @@ namespace Driving_School_Management_System.Forms
                 if (SaveExpence())
                 {
                     // MessageBox.Show("student is saved successfully with ID = " + student.StudentID);
-                    statusMessageForm = new StatusMessageForm("Expence Saved Successfully .");
+                    statusMessageForm = new StatusMessageForm("Expence Saved Successfully");
                     statusMessageForm.ShowSuccess();
                     Close();
                 }
                 else
                 {
-                    statusMessageForm = new StatusMessageForm("Expence not Saved .");
+                    statusMessageForm = new StatusMessageForm("Expence not Saved");
                     statusMessageForm.ShowFailed();
                 }
             }

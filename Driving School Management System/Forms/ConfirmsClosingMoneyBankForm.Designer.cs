@@ -102,7 +102,7 @@
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(126, 44);
             this.guna2Button2.TabIndex = 41;
-            this.guna2Button2.Text = "اغلاق";
+            this.guna2Button2.Text = "تراجع";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button1
@@ -121,14 +121,14 @@
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(178, 44);
             this.guna2Button1.TabIndex = 40;
-            this.guna2Button1.Text = "أضف الصندوق";
+            this.guna2Button1.Text = "اغلاق الصندوق";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // ConfirmsClosingMoneyBankForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(783, 232);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);

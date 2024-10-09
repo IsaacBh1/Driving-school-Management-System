@@ -34,10 +34,10 @@ namespace Driving_School_Management_System.UserControls
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
             lblID.Text = boxID.ToString();
-            lblFirstBalance.Text = FirstBalance.ToString() + " DA";
-            lblIncomes.Text = Incomes.ToString() + " DA";
-            lblExpences.Text = expences.ToString() + " DA";
-            label10.Text = currentMoney.ToString() + " DA"; 
+            lblFirstBalance.Text = FirstBalance.ToString("0.0") + " DA";
+            lblIncomes.Text = Incomes.ToString("0.0") + " DA";
+            lblExpences.Text = expences.ToString("0.0") + " DA";
+            label10.Text = currentMoney.ToString("0.0") + " DA"; 
         }
 
 

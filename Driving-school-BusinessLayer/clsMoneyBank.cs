@@ -51,8 +51,11 @@ namespace Driving_school_BusinessLayer
             if (InternalAmount - price < 0 || price <= 0)
                 return false;
 
-            if (NetProfit - price <= 0) 
-                NetProfit = 0; 
+            if (NetProfit - price <= 0)
+            {
+                NetProfit = 0;
+                InternalAmount -= price; 
+            }
             else
             {
                 InternalAmount -= price; 

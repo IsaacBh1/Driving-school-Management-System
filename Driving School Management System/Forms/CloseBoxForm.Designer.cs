@@ -30,8 +30,8 @@
         {
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtbxMoneyGetted = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtbxValueAdded = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -67,53 +67,53 @@
             this.label1.TabIndex = 26;
             this.label1.Text = "اغلاق الصندوق";
             // 
-            // guna2TextBox1
+            // txtbxMoneyGetted
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.Enabled = false;
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(204, 201);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(360, 43);
-            this.guna2TextBox1.TabIndex = 30;
+            this.txtbxMoneyGetted.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtbxMoneyGetted.DefaultText = "";
+            this.txtbxMoneyGetted.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtbxMoneyGetted.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtbxMoneyGetted.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxMoneyGetted.DisabledState.Parent = this.txtbxMoneyGetted;
+            this.txtbxMoneyGetted.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxMoneyGetted.Enabled = false;
+            this.txtbxMoneyGetted.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxMoneyGetted.FocusedState.Parent = this.txtbxMoneyGetted;
+            this.txtbxMoneyGetted.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxMoneyGetted.HoverState.Parent = this.txtbxMoneyGetted;
+            this.txtbxMoneyGetted.Location = new System.Drawing.Point(204, 201);
+            this.txtbxMoneyGetted.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbxMoneyGetted.Name = "txtbxMoneyGetted";
+            this.txtbxMoneyGetted.PasswordChar = '\0';
+            this.txtbxMoneyGetted.PlaceholderText = "";
+            this.txtbxMoneyGetted.SelectedText = "";
+            this.txtbxMoneyGetted.ShadowDecoration.Parent = this.txtbxMoneyGetted;
+            this.txtbxMoneyGetted.Size = new System.Drawing.Size(360, 43);
+            this.txtbxMoneyGetted.TabIndex = 30;
             // 
-            // guna2TextBox2
+            // txtbxValueAdded
             // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.Enabled = false;
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(204, 287);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(360, 43);
-            this.guna2TextBox2.TabIndex = 31;
+            this.txtbxValueAdded.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtbxValueAdded.DefaultText = "";
+            this.txtbxValueAdded.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtbxValueAdded.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtbxValueAdded.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxValueAdded.DisabledState.Parent = this.txtbxValueAdded;
+            this.txtbxValueAdded.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxValueAdded.Enabled = false;
+            this.txtbxValueAdded.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxValueAdded.FocusedState.Parent = this.txtbxValueAdded;
+            this.txtbxValueAdded.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxValueAdded.HoverState.Parent = this.txtbxValueAdded;
+            this.txtbxValueAdded.Location = new System.Drawing.Point(204, 287);
+            this.txtbxValueAdded.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbxValueAdded.Name = "txtbxValueAdded";
+            this.txtbxValueAdded.PasswordChar = '\0';
+            this.txtbxValueAdded.PlaceholderText = "";
+            this.txtbxValueAdded.SelectedText = "";
+            this.txtbxValueAdded.ShadowDecoration.Parent = this.txtbxValueAdded;
+            this.txtbxValueAdded.Size = new System.Drawing.Size(360, 43);
+            this.txtbxValueAdded.TabIndex = 31;
             // 
             // guna2Button2
             // 
@@ -174,7 +174,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.ForeColor = System.Drawing.Color.Salmon;
-            this.label5.Location = new System.Drawing.Point(580, 141);
+            this.label5.Location = new System.Drawing.Point(580, 133);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(18, 19);
             this.label5.TabIndex = 41;
@@ -215,10 +215,17 @@
             // 
             // numAmountGetted
             // 
-            this.numAmountGetted.Location = new System.Drawing.Point(204, 118);
+            this.numAmountGetted.Location = new System.Drawing.Point(204, 129);
+            this.numAmountGetted.Maximum = new decimal(new int[] {
+            1241513984,
+            370409800,
+            542101,
+            0});
             this.numAmountGetted.Name = "numAmountGetted";
+            this.numAmountGetted.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.numAmountGetted.Size = new System.Drawing.Size(360, 27);
             this.numAmountGetted.TabIndex = 43;
+            this.numAmountGetted.ValueChanged += new System.EventHandler(this.numAmountGetted_ValueChanged);
             // 
             // CloseBoxForm
             // 
@@ -233,8 +240,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.txtbxValueAdded);
+            this.Controls.Add(this.txtbxMoneyGetted);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.label1);
@@ -254,8 +261,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox txtbxMoneyGetted;
+        private Guna.UI2.WinForms.Guna2TextBox txtbxValueAdded;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private System.Windows.Forms.Label label2;

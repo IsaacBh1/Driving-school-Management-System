@@ -145,7 +145,7 @@ namespace Driving_School_Management_System.Forms
                 moneyBank = clsMoneyBank.Find(clsMoneyBank.GetCurrentMoneyBank());
                 payment.AmountPayed += batch.Price;
                 moneyBank.AddPayment (batch.Price); 
-                return payment.Save() && moneyBank.Save() ;
+                return payment.Save() && moneyBank.Save();
             }
             return false; 
         }

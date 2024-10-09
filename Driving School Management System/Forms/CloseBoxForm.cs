@@ -37,8 +37,12 @@ namespace Driving_School_Management_System.Forms
         }
 
 
-        public ConfirmsClosingMoneyBankForm closeMoneyBoxForm = null;
-        public clsMoneyBank moneyBank = null;
+        public delegate void AddingNewMoneyBox(int id);
+        public event AddingNewMoneyBox MoneyBoxAddedEventHundler; 
+
+        private ConfirmsClosingMoneyBankForm closeMoneyBoxForm = null;
+        private clsMoneyBank moneyBank = null;
+        private clsMoneyBank prevMoneyBank= clsMoneyBank.Find(clsMoneyBank.GetCurrentMoneyBank()); 
         private bool OperationIsCompletted = false;
         StatusMessageForm statusMessageForm = null; 
         public CloseBoxForm()
@@ -72,6 +76,7 @@ namespace Driving_School_Management_System.Forms
 
         private void CloseMoneyBank()
         {
+            prevMoneyBank = clsMoneyBank.Find(clsMoneyBank.GetCurrentMoneyBank());
             if (clsMoneyBank.CloseCurrentMoneyBank())
                 OperationIsCompletted = true;
             else
@@ -79,12 +84,16 @@ namespace Driving_School_Management_System.Forms
             AddingNewMoneyBank(AddNewMoneyBox()); 
         }
 
+        // this logic is false 
 
         private bool AddNewMoneyBox()
         {
+            if (prevMoneyBank is null) return false; 
             if (!OperationIsCompletted) return false;
             moneyBank = new clsMoneyBank() {
                 InitialAmount = Convert.ToDecimal(numAmountGetted.Value),
+                InternalAmount = Convert.ToDecimal(numAmountGetted.Value),
+                AllAmount = Convert.ToDecimal(numAmountGetted.Value) 
             };
             return moneyBank.Save(); 
 
@@ -95,28 +104,52 @@ namespace Driving_School_Management_System.Forms
         {
             if (MoneyBankIsAdded)
             {
-                statusMessageForm = new StatusMessageForm(" Operation is Done Successfully");
+                statusMessageForm = new StatusMessageForm("Operation is done Successfully");
                 statusMessageForm.ShowSuccess();
+                MoneyBoxAddedEventHundler?.Invoke(moneyBank.MoneyBankID); 
                 Close();
             }
             else
             {
-                statusMessageForm = new StatusMessageForm("Operation is not Done Successfully");
+                statusMessageForm = new StatusMessageForm("Operation Failed");
                 statusMessageForm.ShowFailed();
             }
         }
-
-
-       
-
-
-
        
         private void pictureBox1_Click(object sender, EventArgs e)
         => Close();
 
         private void guna2Button2_Click(object sender, EventArgs e)
-        => Close(); 
-        
+        => Close();
+
+        private void ChangetxtBoxMoneyAmount()
+        {
+            if (string.IsNullOrEmpty(numAmountGetted.Value.ToString()) || numAmountGetted.Value == 0)
+            {
+                txtbxMoneyGetted.Text = "";
+                txtbxValueAdded.Text = "";
+                return;
+
+            }
+
+            if (prevMoneyBank.InternalAmount - numAmountGetted.Value < 0)
+            {
+                txtbxMoneyGetted.Text = "0";
+                txtbxValueAdded.Text = (numAmountGetted.Value - prevMoneyBank.InternalAmount).ToString();
+            }
+            else
+            {
+                txtbxValueAdded.Text = "0";
+                txtbxMoneyGetted.Text = (prevMoneyBank.InternalAmount - numAmountGetted.Value).ToString();
+            }
+        }
+
+       
+
+        private void numAmountGetted_ValueChanged(object sender, EventArgs e)
+        {
+            ChangetxtBoxMoneyAmount();
+
+        }
     }
 }
