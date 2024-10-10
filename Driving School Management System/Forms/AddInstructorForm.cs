@@ -14,12 +14,12 @@ namespace Driving_School_Management_System.Forms
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
           (
-              int nLeftRect,     // x-coordinate of upper-left corner
-              int nTopRect,      // y-coordinate of upper-left corner
-              int nRightRect,    // x-coordinate of lower-right corner
-              int nBottomRect,   // y-coordinate of lower-right corner
-              int nWidthEllipse, // width of ellipse
-              int nHeightEllipse // height of ellipse
+              int nLeftRect,     
+              int nTopRect,      
+              int nRightRect,    
+              int nBottomRect,   
+              int nWidthEllipse, 
+              int nHeightEllipse 
           );
 
 
@@ -51,7 +51,9 @@ namespace Driving_School_Management_System.Forms
         StatusMessageForm statusMessageForm = null;
         clsAddress address = null;
         clsContact contact = null;
-        clsInstructor instructor = null; 
+        clsInstructor instructor = null;
+        public delegate void AddNewInstructor();
+        public event AddNewInstructor OnInstructorAddedEventHundler; 
         public AddInstructorForm()
         {
             InitializeComponent();
@@ -194,6 +196,7 @@ namespace Driving_School_Management_System.Forms
                     // MessageBox.Show("student is saved successfully with ID = " + student.StudentID);
                     statusMessageForm = new StatusMessageForm("Instructor Saved Successfully .");
                     statusMessageForm.ShowSuccess();
+                    OnInstructorAddedEventHundler?.Invoke(); 
                     Close();
                 }
                 else
