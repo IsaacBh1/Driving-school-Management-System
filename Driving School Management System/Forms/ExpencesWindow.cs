@@ -31,7 +31,13 @@ namespace Driving_School_Management_System.Forms
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             expencesForm = new ExpencesForm();
+            expencesForm.ExpenceAddedEventHundler += RefreshExpence; 
             expencesForm.ShowDialog();
+        }
+
+        private void RefreshExpence()
+        {
+            DisplayExpenceInformations(clsExpense.GetAllExpences());
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)

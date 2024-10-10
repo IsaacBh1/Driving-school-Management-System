@@ -35,7 +35,13 @@ namespace Driving_School_Management_System.Forms
         private void guna2Button1_Click(object sender, EventArgs e)
         {
            AddPaymentForm paymentForm = new AddPaymentForm();
+            paymentForm.PaymentHaddedEventHundler += RefreshPayment; 
            paymentForm.ShowDialog();
+        }
+
+        private void RefreshPayment()
+        {
+            FillPaymentDGVUI(clsBatch.GetAllBatchesInforfmations());
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
@@ -68,7 +74,7 @@ namespace Driving_School_Management_System.Forms
 
         private void btnSearchBatch_Click(object sender, EventArgs e)
         {
-            SerachBatchFromBatchInformations(); 
+            SerachBatchFromBatchInformations();
         }
     }
 }

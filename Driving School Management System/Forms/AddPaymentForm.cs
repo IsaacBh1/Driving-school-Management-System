@@ -46,6 +46,8 @@ namespace Driving_School_Management_System.Forms
         clsPayment payment = null;
         StatusMessageForm statusMessageForm = null; 
         clsMoneyBank moneyBank = null;
+        public delegate void AddNewPayment();
+        public event AddNewPayment PaymentHaddedEventHundler; 
         public AddPaymentForm()
         {
             InitializeComponent();
@@ -157,6 +159,7 @@ namespace Driving_School_Management_System.Forms
                 // MessageBox.Show("student is saved successfully with ID = " + student.StudentID);
                 statusMessageForm = new StatusMessageForm("تمت العملية بنجاح");
                 statusMessageForm.ShowSuccess();
+                PaymentHaddedEventHundler?.Invoke(); 
                 Close();
             }
             else
