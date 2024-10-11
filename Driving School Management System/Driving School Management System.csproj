@@ -258,7 +258,6 @@
     <Compile Include="UserControls\SavedSuccessfullyMessage.Designer.cs">
       <DependentUpon>SavedSuccessfullyMessage.cs</DependentUpon>
     </Compile>
-    <Compile Include="UtilityClasses\AddStudentEventArgs.cs" />
     <EmbeddedResource Include="Forms\AddCarForm.resx">
       <DependentUpon>AddCarForm.cs</DependentUpon>
     </EmbeddedResource>

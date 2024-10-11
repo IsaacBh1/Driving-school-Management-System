@@ -20,12 +20,12 @@ namespace Driving_School_Management_System.Forms
     [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
       (
-          int nLeftRect,     // x-coordinate of upper-left corner
-          int nTopRect,      // y-coordinate of upper-left corner
-          int nRightRect,    // x-coordinate of lower-right corner
-          int nBottomRect,   // y-coordinate of lower-right corner
-          int nWidthEllipse, // width of ellipse
-          int nHeightEllipse // height of ellipse
+          int nLeftRect,     
+          int nTopRect,      
+          int nRightRect,    
+          int nBottomRect,   
+          int nWidthEllipse, 
+          int nHeightEllipse 
       );
     
 
@@ -38,8 +38,9 @@ namespace Driving_School_Management_System.Forms
         private clsContact contact;
         private clsStudent student;
         private clsNationalCard nationalCard;
-        
-        public EventHandler<AddStudentEventArgs> StudentAdded { get; set; }
+        public delegate void AddNewStudent();
+        public event AddNewStudent OnStudentAddedEventHundler; 
+
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -175,13 +176,14 @@ namespace Driving_School_Management_System.Forms
                 if (_SaveStudent())
                 {
                     // MessageBox.Show("student is saved successfully with ID = " + student.StudentID);
-                    statusMessageForm = new StatusMessageForm("Student Saved Successfully .");
-                    statusMessageForm.ShowSuccess(); 
+                    statusMessageForm = new StatusMessageForm("Student Saved Successfully");
+                    statusMessageForm.ShowSuccess();
+                    OnStudentAddedEventHundler?.Invoke(); 
                     Close();
                 }
                 else
                 {
-                    statusMessageForm = new StatusMessageForm("Student not Saved .");
+                    statusMessageForm = new StatusMessageForm("Student not Saved");
                     statusMessageForm.ShowFailed(); 
                 }
             }

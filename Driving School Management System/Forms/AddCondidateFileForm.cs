@@ -111,7 +111,8 @@ namespace Driving_School_Management_System.Forms
         private clsPayment payment;
         //private clsInstructor Theo_instructor;
         //private clsInstructor App_instructor; 
-
+        public delegate void AddNewCondidateFile();
+        public event AddNewCondidateFile OnCondidateFileAddedEventHundler; 
 
 
         //----------------------------------------------------------------------------------
@@ -231,6 +232,7 @@ namespace Driving_School_Management_System.Forms
                     // MessageBox.Show("student is saved successfully with ID = " + student.StudentID);
                     statusMessageForm = new StatusMessageForm("File Saved Successfully");
                     statusMessageForm.ShowSuccess();
+                    OnCondidateFileAddedEventHundler?.Invoke(); 
                     Close();
                 }
                 else

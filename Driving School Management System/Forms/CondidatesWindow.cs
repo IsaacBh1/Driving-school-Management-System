@@ -25,9 +25,17 @@ namespace Driving_School_Management_System.Forms
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            AddStudentForm addStudentForm = new AddStudentForm(); 
+            AddStudentForm addStudentForm = new AddStudentForm();
+            addStudentForm.OnStudentAddedEventHundler += RefreshStudents; 
+
+
             addStudentForm.ShowDialog();
             //LoadAllStudentInfoToDataGrid(); 
+        }
+
+        private void RefreshStudents()
+        {
+            DispalyStudentsInformations(clsStudent.GetAllStudentsInfo());
         }
 
         private void btnCondidtes_Click(object sender, EventArgs e)
@@ -208,14 +216,19 @@ namespace Driving_School_Management_System.Forms
 
         private void btnAddCondidtefile_Click(object sender, EventArgs e)
         {
-            AddCondidateFileForm frm = new AddCondidateFileForm();
-            frm.ShowDialog();
+            AddCondidateFileForm CondidateFileForm = new AddCondidateFileForm();
+            CondidateFileForm.OnCondidateFileAddedEventHundler += OnCondidateFileAdded; 
+            CondidateFileForm.ShowDialog();
+        }
+
+        private void OnCondidateFileAdded()
+        {
+            DisplayCondidteFilesInformations(clsCondidateFile.GetAllCondidateFileInformations());
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
             DisplayCondidteFilesInformations(clsCondidateFile.GetAllCondidateFileInformations());
-
         }
 
         private void btnSSearchCondidteFIle_Click(object sender, EventArgs e)

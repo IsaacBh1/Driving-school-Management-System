@@ -46,6 +46,8 @@ namespace Driving_School_Management_System.Forms
 
         clsVehicle vehicle = null;
         StatusMessageForm statusMessageForm = null;
+        public delegate void AddNewCar();
+        public event AddNewCar OnCarAddedEventHundler; 
         public AddCarForm()
         {
             InitializeComponent();
@@ -133,6 +135,7 @@ namespace Driving_School_Management_System.Forms
                     // MessageBox.Show("student is saved successfully with ID = " + student.StudentID);
                     statusMessageForm = new StatusMessageForm("Vehicle Saved Successfully .");
                     statusMessageForm.ShowSuccess();
+                    OnCarAddedEventHundler?.Invoke(); 
                     Close();
                 }
                 else

@@ -23,6 +23,7 @@ namespace Driving_School_Management_System.Forms
 
         private void AddAllVehicluesToUI()
         {
+            flowLayoutPanelVehicles.Controls.Clear();
             DataTable vehiclesDataTable = GetAllVehicules();
             foreach (DataRow row in vehiclesDataTable.Rows)
             {
@@ -41,12 +42,18 @@ namespace Driving_School_Management_System.Forms
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             AddCarForm carForm = new AddCarForm();
+            carForm.OnCarAddedEventHundler += RefreshCarWindo; 
             carForm.ShowDialog(); 
+        }
+
+        private void RefreshCarWindo()
+        {
+            AddAllVehicluesToUI(); 
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            flowLayoutPanelVehicles.Controls.Clear();
+            
             AddAllVehicluesToUI();
         }
     }

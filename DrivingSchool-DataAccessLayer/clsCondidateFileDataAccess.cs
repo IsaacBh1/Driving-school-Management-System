@@ -39,7 +39,7 @@ namespace DrivingSchool_DataAccessLayer
         {
             DataTable condidateFiles = new DataTable();
             SqlConnection connection = new SqlConnection(ConnectionString);
-            string query = "select * from CondidateFileInformation ; ";
+            string query = "select * from CondidateFileInformation order by CondidateFileID desc;";
             SqlCommand command = new SqlCommand(query, connection);
             try
             {
