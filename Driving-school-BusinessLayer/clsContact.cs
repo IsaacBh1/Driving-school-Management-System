@@ -1,8 +1,5 @@
 ﻿using DrivingSchool_DataAccessLayer;
-using System;
 using System.Data;
-using System.Diagnostics.Eventing.Reader;
-using System.Runtime.CompilerServices;
 
 
 
@@ -14,10 +11,12 @@ namespace DrivingSchool_BusinesseLayer
         public enum enMode { AddNew = 0, Update = 1 };
         private enMode Mode = enMode.AddNew;
         public int contactID { get; set; }
-        public string Phone { set; get; }
-        public string Email { set; get; }
+        public string Phone { get; set;  }
+        public string Email { get; set; }
         public string AdditionalContact { get; set; }
 
+
+     
         private clsContact(int contactID, string Phone, string Email, string AdditionalContact)
         {
             this.contactID = contactID;

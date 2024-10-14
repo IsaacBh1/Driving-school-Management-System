@@ -1,4 +1,5 @@
 ﻿using Driving_school_BusinessLayer;
+using Driving_School_Management_System.ShowInformationsForms;
 using System;
 using System.Data;
 using System.Drawing;
@@ -8,13 +9,10 @@ namespace Driving_School_Management_System.Forms
 {
     public partial class CondidatesWindow : Form
     {
-        /*  
-           
-=       */
         
         
         private ContextMenuStrip contextMenu;
-
+        private int selectedId = -1;
         public CondidatesWindow()
         {
             InitializeComponent();
@@ -35,7 +33,7 @@ namespace Driving_School_Management_System.Forms
             ViewStudentInformationsItem.Click += ViewStudentInformations_Click; // Define what happens when "Edit" is clicked
 
             var EditStudentInformationsItem = new ToolStripMenuItem("تعديل معلومات الطالب" , Properties.Resources.gear);
-            EditStudentInformationsItem .Click += EditStudentInformations_Click;
+            EditStudentInformationsItem.Click += EditStudentInformations_Click;
 
             var DeleteStudentItem = new ToolStripMenuItem("حذف الطالب", Properties.Resources.trash__1_);
             DeleteStudentItem.Click += DeleteStudent_Click; 
@@ -75,8 +73,8 @@ namespace Driving_School_Management_System.Forms
             if (e.RowIndex >= 0 &&( e.Button == MouseButtons.Right || e.Button == MouseButtons.Left) && e.ColumnIndex == 6) // Check for right-click
             {
                 var cellRect = DGVStudents.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, true);
+                selectedId = Convert.ToInt32(DGVStudents.Rows[e.RowIndex].Cells[0].Value); 
                 Point menuLocation = DGVStudents.PointToScreen(new Point(cellRect.X, cellRect.Y + cellRect.Height));
-
                 // Show the context menu at the calculated location
                 contextMenu.Show(menuLocation);
             }
@@ -85,8 +83,10 @@ namespace Driving_School_Management_System.Forms
         // Edit item click handler
         private void ViewStudentInformations_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Edit option selected", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("Edit option selected", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             // Add your logic to edit the selected student entry
+            ShowStudentInformationsForm studentinfos = new ShowStudentInformationsForm(selectedId);
+            studentinfos.ShowDialog(); 
         }
 
         // Delete item click handler

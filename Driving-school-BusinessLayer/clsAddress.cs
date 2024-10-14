@@ -1,4 +1,5 @@
 ﻿using DrivingSchool_DataAccessLayer;
+using System.Net;
 using System.Runtime.InteropServices.WindowsRuntime;
 
 namespace Driving_school_BusinessLayer
@@ -29,6 +30,17 @@ namespace Driving_school_BusinessLayer
             this.LocalAddress = LocalAddress;
             this.Country = Country;
             Mode = enMode.Update;
+        }
+
+        public string GetFullAddress()
+        {
+            if (LocalAddress is null)
+                return State; 
+            if (LocalAddress.Length == 0)
+                return State;
+
+            return LocalAddress + " - \n " + State;
+
         }
 
         private bool _AddNewAddress()

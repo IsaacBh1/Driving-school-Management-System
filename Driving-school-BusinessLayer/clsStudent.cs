@@ -92,6 +92,14 @@ namespace Driving_school_BusinessLayer
         }
 
 
+        public string GetGender()
+        {
+            if (Gender) return "ذكر";
+            return "أنثى";
+        }
+
+
+
         public static bool IsStudentExists(int ID)
         {
             return clsStudentDataAccess.IsStudentExists(ID);
