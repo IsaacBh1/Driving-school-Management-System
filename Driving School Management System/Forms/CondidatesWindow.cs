@@ -8,16 +8,96 @@ namespace Driving_School_Management_System.Forms
 {
     public partial class CondidatesWindow : Form
     {
+        /*  
+           
+=       */
+        
+        
+        private ContextMenuStrip contextMenu;
+
         public CondidatesWindow()
         {
             InitializeComponent();
-            _initializeDrivingLicenseTypeCbox(); 
+            _initializeDrivingLicenseTypeCbox();
             DispalyStudentsInformations(clsStudent.GetAllStudentsInfo());
             DisplayCondidteFilesInformations(clsCondidateFile.GetAllCondidateFileInformations());
 
-
+            InitializeContextMenu(); // Initialize the context menu
+            DGVStudents.CellMouseClick += DGVStudents_CellMouseClick; // Handle cell clicks
         }
-       
+
+        private void InitializeContextMenu()
+        {
+            contextMenu = new ContextMenuStrip();
+
+            // Add menu items dynamically
+            var ViewStudentInformationsItem = new ToolStripMenuItem("عرض معلومات الطالب" , Properties.Resources.eye);
+            ViewStudentInformationsItem.Click += ViewStudentInformations_Click; // Define what happens when "Edit" is clicked
+
+            var EditStudentInformationsItem = new ToolStripMenuItem("تعديل معلومات الطالب" , Properties.Resources.gear);
+            EditStudentInformationsItem .Click += EditStudentInformations_Click;
+
+            var DeleteStudentItem = new ToolStripMenuItem("حذف الطالب", Properties.Resources.trash__1_);
+            DeleteStudentItem.Click += DeleteStudent_Click; 
+
+            var AddStudentFileItem = new ToolStripMenuItem("إضافة ملف إلى الطالب", Properties.Resources.file_bold);
+            AddStudentFileItem.Click += AddStudentFile_Click;
+
+            var DownloadStudentInformationsItem = new ToolStripMenuItem("تنزيل معلومات الطالب" , Properties.Resources.download_simple);
+            DownloadStudentInformationsItem.Click += DownloadStudentInformations_Click;
+
+
+            contextMenu.Items.Add(ViewStudentInformationsItem);
+            contextMenu.Items.Add(EditStudentInformationsItem);
+            contextMenu.Items.Add(DeleteStudentItem);
+            contextMenu.Items.Add(AddStudentFileItem);
+            contextMenu.Items.Add(DownloadStudentInformationsItem);
+        }
+
+        private void DownloadStudentInformations_Click(object sender, EventArgs e)
+        {
+            // this is for update the student informations
+        }
+
+        private void AddStudentFile_Click(object sender, EventArgs e)
+        {
+            // this is add student file
+        }
+
+        private void DeleteStudent_Click(object sender, EventArgs e)
+        {
+            // this is for delete student
+        }
+
+        // Event handler for cell clicks
+        private void DGVStudents_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0 &&( e.Button == MouseButtons.Right || e.Button == MouseButtons.Left) && e.ColumnIndex == 6) // Check for right-click
+            {
+                var cellRect = DGVStudents.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, true);
+                Point menuLocation = DGVStudents.PointToScreen(new Point(cellRect.X, cellRect.Y + cellRect.Height));
+
+                // Show the context menu at the calculated location
+                contextMenu.Show(menuLocation);
+            }
+        }
+
+        // Edit item click handler
+        private void ViewStudentInformations_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Edit option selected", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // Add your logic to edit the selected student entry
+        }
+
+        // Delete item click handler
+        private void EditStudentInformations_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Delete option selected", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // Add your logic to delete the selected student entry
+        }
+
+
+
         private string _getFileStatus(string s) => s == "False" ? "نشط" : "مؤرشف";
         private string _getStudentStatus(string s) => s == "True" ? "نشط" : "منقطع"; 
         private bool _getIsActive(string s)=> s == "نشط" ? true : false;
