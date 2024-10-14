@@ -68,7 +68,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.guna2TextBox9 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtbxRest = new Guna.UI2.WinForms.Guna2TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -82,7 +82,6 @@
             this.txtbxIdentityNumber = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -92,6 +91,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtBoxAdditionalNotes = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtbxPrice)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
@@ -108,9 +108,9 @@
             this.panel7.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel14
@@ -551,6 +551,7 @@
             this.txtbxAmountPayed.Name = "txtbxAmountPayed";
             this.txtbxAmountPayed.Size = new System.Drawing.Size(174, 39);
             this.txtbxAmountPayed.TabIndex = 36;
+            this.txtbxAmountPayed.ValueChanged += new System.EventHandler(this.txtbxAmountPayed_ValueChanged);
             // 
             // label18
             // 
@@ -725,7 +726,7 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.guna2TextBox9);
+            this.panel7.Controls.Add(this.txtbxRest);
             this.panel7.Controls.Add(this.label19);
             this.panel7.Controls.Add(this.guna2TextBox6);
             this.panel7.Controls.Add(this.guna2TextBox7);
@@ -735,32 +736,33 @@
             this.panel7.Size = new System.Drawing.Size(442, 61);
             this.panel7.TabIndex = 34;
             // 
-            // guna2TextBox9
+            // txtbxRest
             // 
-            this.guna2TextBox9.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox9.BorderRadius = 5;
-            this.guna2TextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox9.DefaultText = "";
-            this.guna2TextBox9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.DisabledState.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.FocusedState.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.HoverState.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.guna2TextBox9.Location = new System.Drawing.Point(162, 15);
-            this.guna2TextBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox9.Name = "guna2TextBox9";
-            this.guna2TextBox9.PasswordChar = '\0';
-            this.guna2TextBox9.PlaceholderText = "";
-            this.guna2TextBox9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.guna2TextBox9.SelectedText = "";
-            this.guna2TextBox9.ShadowDecoration.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.Size = new System.Drawing.Size(174, 34);
-            this.guna2TextBox9.TabIndex = 21;
+            this.txtbxRest.BorderColor = System.Drawing.Color.DarkGray;
+            this.txtbxRest.BorderRadius = 5;
+            this.txtbxRest.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtbxRest.DefaultText = "";
+            this.txtbxRest.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtbxRest.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtbxRest.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxRest.DisabledState.Parent = this.txtbxRest;
+            this.txtbxRest.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxRest.Enabled = false;
+            this.txtbxRest.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxRest.FocusedState.Parent = this.txtbxRest;
+            this.txtbxRest.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxRest.HoverState.Parent = this.txtbxRest;
+            this.txtbxRest.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.txtbxRest.Location = new System.Drawing.Point(162, 15);
+            this.txtbxRest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbxRest.Name = "txtbxRest";
+            this.txtbxRest.PasswordChar = '\0';
+            this.txtbxRest.PlaceholderText = "";
+            this.txtbxRest.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtbxRest.SelectedText = "";
+            this.txtbxRest.ShadowDecoration.Parent = this.txtbxRest;
+            this.txtbxRest.Size = new System.Drawing.Size(174, 34);
+            this.txtbxRest.TabIndex = 21;
             // 
             // label19
             // 
@@ -974,20 +976,6 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "رقم الهوية";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.x_light;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // guna2Separator1
             // 
             this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1114,6 +1102,20 @@
             this.label8.TabIndex = 9;
             this.label8.Text = "ملاحظات";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.x_light;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // AddCondidateFileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -1160,11 +1162,11 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1223,7 +1225,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox9;
+        private Guna.UI2.WinForms.Guna2TextBox txtbxRest;
         private System.Windows.Forms.Panel panel11;
         private MetroFramework.Controls.MetroComboBox CboxAppInsructor;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox14;

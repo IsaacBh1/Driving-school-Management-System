@@ -34,7 +34,7 @@ namespace DrivingSchool_DataAccessLayer
             return MoneyBanks;
         }
 
-        public static bool GetMoneyBankInfoByID(int moneyBankID, ref decimal InitialAmount, ref decimal AllAmount, ref decimal InternalAmount, ref decimal NetProfit, ref bool IsClosed)
+        public static bool GetMoneyBankInfoByID(int moneyBankID, ref decimal InitialAmount, ref decimal Expences, ref decimal InternalAmount, ref bool IsClosed)
         {
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
             string query = "SELECT * FROM MoneyBanks WHERE MoneyBankID = @moneyBankID";
@@ -49,9 +49,8 @@ namespace DrivingSchool_DataAccessLayer
                 {
                     IsFound = true;
                     InitialAmount = (decimal)reader["InitialAmount"];
-                    AllAmount = (decimal)reader["AllAmount"];
+                    Expences = (decimal)reader["Expences"];
                     InternalAmount = (decimal)reader["InternalAmount"];
-                    NetProfit = (decimal)reader["NetProfit"];
                     IsClosed = (bool)reader["IsClosed"];
                 }
                 reader.Close();
@@ -67,19 +66,18 @@ namespace DrivingSchool_DataAccessLayer
             }
         }
 
-        public static int AddNewMoneyBank(decimal InitialAmount, decimal AllAmount, decimal InternalAmount, decimal NetProfit, bool IsClosed)
+        public static int AddNewMoneyBank(decimal InitialAmount, decimal Expences, decimal InternalAmount, bool IsClosed)
         {
             int Id = -1;
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
-            string query = @"INSERT INTO MoneyBanks (InitialAmount, AllAmount, InternalAmount, NetProfit, IsClosed) 
-                             VALUES (@InitialAmount, @AllAmount, @InternalAmount, @NetProfit, @IsClosed);
+            string query = @"INSERT INTO MoneyBanks (InitialAmount, Expences, InternalAmount, IsClosed) 
+                             VALUES (@InitialAmount, @Expences, @InternalAmount, @NetProfit, @IsClosed);
                              SELECT SCOPE_IDENTITY();";
 
             SqlCommand command = new SqlCommand(query, sqlConnection);
             command.Parameters.AddWithValue("@InitialAmount", InitialAmount);
-            command.Parameters.AddWithValue("@AllAmount", AllAmount);
+            command.Parameters.AddWithValue("@Expences", Expences);
             command.Parameters.AddWithValue("@InternalAmount", InternalAmount);
-            command.Parameters.AddWithValue("@NetProfit", NetProfit);
             command.Parameters.AddWithValue("@IsClosed", IsClosed);
 
             try
@@ -102,24 +100,22 @@ namespace DrivingSchool_DataAccessLayer
             return Id;
         }
 
-        public static bool UpdateMoneyBank(int moneyBankID, decimal InitialAmount, decimal AllAmount, decimal InternalAmount, decimal NetProfit, bool IsClosed)
+        public static bool UpdateMoneyBank(int moneyBankID, decimal InitialAmount, decimal Expences, decimal InternalAmount, bool IsClosed)
         {
             int AffectedRows = 0;
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
             string query = @"UPDATE MoneyBanks SET 
                              InitialAmount = @InitialAmount, 
-                             AllAmount = @AllAmount, 
+                             Expences = @Expences, 
                              InternalAmount = @InternalAmount, 
-                             NetProfit = @NetProfit, 
                              IsClosed = @IsClosed 
                              WHERE MoneyBankID = @moneyBankID";
 
             SqlCommand command = new SqlCommand(query, sqlConnection);
             command.Parameters.AddWithValue("@moneyBankID", moneyBankID);
             command.Parameters.AddWithValue("@InitialAmount", InitialAmount);
-            command.Parameters.AddWithValue("@AllAmount", AllAmount);
+            command.Parameters.AddWithValue("@Expences", Expences);
             command.Parameters.AddWithValue("@InternalAmount", InternalAmount);
-            command.Parameters.AddWithValue("@NetProfit", NetProfit);
             command.Parameters.AddWithValue("@IsClosed", IsClosed);
 
             try

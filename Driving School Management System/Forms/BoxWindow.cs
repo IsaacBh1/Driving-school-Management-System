@@ -23,7 +23,13 @@ namespace Driving_School_Management_System.Forms
             DGVBoxes.Rows.Clear();
             foreach (DataRow row in BoxInformations.Rows)
             {
-                DGVBoxes.Rows.Add(row[0],Convert.ToDecimal (row[1]).ToString("0.00"),Convert.ToDecimal (row[3]).ToString("0.00"), Convert.ToDecimal(row[4]).ToString("0.00") , (Convert.ToDecimal(row[2]) - Convert.ToDecimal(row[3])).ToString("0.00"));
+                decimal NetProfit = (Convert.ToDecimal(row[3]) - Convert.ToDecimal(row[1]));
+                if (NetProfit < 0) NetProfit = 0;
+                DGVBoxes.Rows.Add(  row[0],
+                                    Convert.ToDecimal (row[1]).ToString("0.00"),
+                                    Convert.ToDecimal (row[3]).ToString("0.00"),
+                                    NetProfit.ToString("0.00"), 
+                                    (Convert.ToDecimal(row[2]) - Convert.ToDecimal(row[3])).ToString("0.00"));
             }
         }
 
@@ -31,13 +37,12 @@ namespace Driving_School_Management_System.Forms
         private void InetializeIncomeBox(clsMoneyBank moneyBank)
         {
             flowLayoutBox.Controls.Clear();
-            flowLayoutBox.Controls.Add(new BoxBankInos( moneyBank.MoneyBankID, 
-                                                        moneyBank.InitialAmount, 
-                                                        moneyBank.NetProfit, 
-                                                        moneyBank.AllAmount -  moneyBank.InternalAmount, 
-                                                        moneyBank.InternalAmount
-                                                       )
-                                      ); 
+            if (moneyBank != null) { 
+            
+                BoxBankInos monayBox = new BoxBankInos(moneyBank); 
+                if (!(monayBox is null))
+                    flowLayoutBox.Controls.Add(monayBox); 
+            }
         }
         private void guna2Button1_Click(object sender, EventArgs e)
         {

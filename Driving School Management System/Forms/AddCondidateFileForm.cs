@@ -1,5 +1,4 @@
-﻿using DrivingSchool_BusinesseLayer;
-using System;
+﻿using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -45,7 +44,7 @@ namespace Driving_School_Management_System.Forms
         [DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
 
-        private void Form_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        private void Form_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
@@ -105,15 +104,10 @@ namespace Driving_School_Management_System.Forms
         private bool InformationCorrect = true;
         private StatusMessageForm statusMessageForm;
         private clsCondidateFile condidateFile;
-        //private clsStudent student;
-        //private clsDrivingLicenseType drivingLicenseType; 
-        //private clsGroup group;
         private clsPayment payment;
-        //private clsInstructor Theo_instructor;
-        //private clsInstructor App_instructor; 
         public delegate void AddNewCondidateFile();
-        public event AddNewCondidateFile OnCondidateFileAddedEventHundler; 
-
+        public event AddNewCondidateFile OnCondidateFileAddedEventHundler;
+        public clsMoneyBank moneyBank; 
 
         //----------------------------------------------------------------------------------
         //----------------this is for inetialize comboboxes of the form----------------------
@@ -196,10 +190,12 @@ namespace Driving_School_Management_System.Forms
 
             if (int.TryParse (txtbxCondidateID.Text , out int studentID))
             {
-            payment = new clsPayment() { AmountPayed = Convert.ToDecimal(txtbxAmountPayed.Text), 
+                payment = new clsPayment() { AmountPayed = Convert.ToDecimal(txtbxAmountPayed.Text), 
                                         FullAmount = Convert.ToDecimal(txtbxPrice.Text),
                                         MoneyBankID = clsMoneyBank.GetCurrentMoneyBank()};
-            payment.Save();
+                moneyBank = clsMoneyBank.Find(clsMoneyBank.GetCurrentMoneyBank());
+                moneyBank.AddPayment(txtbxAmountPayed.Value);
+                if (!payment.Save()) return false; 
                 condidateFile = new clsCondidateFile()
                 {
                     StudentID = studentID,
@@ -213,7 +209,7 @@ namespace Driving_School_Management_System.Forms
                     ApplicationInstructorID = GetIDOfIndructor(CboxAppInsructor.Text), 
                     TheoreticalInstructorID = GetIDOfIndructor(CboxTheoInsructor.Text)
                 };
-                return condidateFile.Save(); 
+                return moneyBank.Save() && condidateFile.Save() ; 
 
             }                     
 
@@ -265,6 +261,12 @@ namespace Driving_School_Management_System.Forms
         private void changeDrivingLicenseEvent(object sender, EventArgs e)
         {
             txtbxPrice.Text = GetDrivingLicensePrice(CbxDrivingLicenseType.Text).ToString(); 
+        }
+
+        private void txtbxAmountPayed_ValueChanged(object sender, EventArgs e)
+        {
+            if (txtbxPrice.Value >= txtbxAmountPayed.Value)
+                txtbxRest.Text = (txtbxPrice.Value - txtbxAmountPayed.Value).ToString(); 
         }
     }
 }

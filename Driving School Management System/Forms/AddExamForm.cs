@@ -47,7 +47,9 @@ namespace Driving_School_Management_System.Forms
 
 
         clsExam exam = null;
-        StatusMessageForm statusMessageForm = null; 
+        StatusMessageForm statusMessageForm = null;
+        public delegate void AddNewExam();
+        public event AddNewExam OnExamAddedEventHundler; 
         public AddExamForm()
         {
             InitializeComponent();
@@ -116,13 +118,14 @@ namespace Driving_School_Management_System.Forms
                 if (StoreExam())
                 {
                     // MessageBox.Show("student is saved successfully with ID = " + student.StudentID);
-                    statusMessageForm = new StatusMessageForm("Exam Saved Successfully .");
+                    statusMessageForm = new StatusMessageForm("Exam Saved Successfully");
                     statusMessageForm.ShowSuccess();
+                    OnExamAddedEventHundler?.Invoke();
                     Close();
                 }
                 else
                 {
-                    statusMessageForm = new StatusMessageForm("Exam not Saved .");
+                    statusMessageForm = new StatusMessageForm("Exam not Saved");
                     statusMessageForm.ShowFailed();
                 }
             }

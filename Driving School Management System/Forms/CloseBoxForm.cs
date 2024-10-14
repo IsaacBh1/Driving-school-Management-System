@@ -93,7 +93,6 @@ namespace Driving_School_Management_System.Forms
             moneyBank = new clsMoneyBank() {
                 InitialAmount = Convert.ToDecimal(numAmountGetted.Value),
                 InternalAmount = Convert.ToDecimal(numAmountGetted.Value),
-                AllAmount = Convert.ToDecimal(numAmountGetted.Value) 
             };
             return moneyBank.Save(); 
 

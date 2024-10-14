@@ -16,9 +16,14 @@ namespace Driving_School_Management_System.Forms
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             AddExamForm examForm = new AddExamForm();
+            examForm.OnExamAddedEventHundler += RefreshExams;
             examForm.ShowDialog();
         }
 
+        private void RefreshExams()
+        {
+            DisplayExamsInformations(clsExam.GetAllExamInformations());
+        }
 
         private string GetExamType(int typeid)
         {

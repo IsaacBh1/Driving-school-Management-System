@@ -41,7 +41,8 @@ namespace Driving_School_Management_System.Forms
         //private bool InformationCorrect = true;
         clsLesson lesson ;
         StatusMessageForm statusMessageForm; 
-
+        public delegate void AddNewLesson();
+        public event AddNewLesson OnLessonsAddedEventHundler; 
 
 
         private void _initializeGroupsCbox()
@@ -94,14 +95,14 @@ namespace Driving_School_Management_System.Forms
             };
             if (lesson.Save())
             {
-                // MessageBox.Show("student is saved successfully with ID = " + student.StudentID);
-                statusMessageForm = new StatusMessageForm("Student Saved Successfully .");
+                statusMessageForm = new StatusMessageForm("Lesson Saved Successfully");
                 statusMessageForm.ShowSuccess();
+                OnLessonsAddedEventHundler?.Invoke(); 
                 Close();
             }
             else
             {
-                statusMessageForm = new StatusMessageForm("Student not Saved .");
+                statusMessageForm = new StatusMessageForm("Lesson not Saved");
                 statusMessageForm.ShowFailed();
             }; 
         }

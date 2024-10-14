@@ -2,6 +2,7 @@
 using System;
 using System.Windows.Forms;
 using System.Drawing;
+using Driving_school_BusinessLayer;
 namespace Driving_School_Management_System.UserControls
 {
     public partial class BoxBankInos : UserControl
@@ -28,16 +29,17 @@ namespace Driving_School_Management_System.UserControls
 
         }
 
-        public BoxBankInos(int boxID , decimal FirstBalance , decimal Incomes  , decimal expences , decimal currentMoney)
+        public BoxBankInos(clsMoneyBank moneyBank)
         {
             InitializeComponent();
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
-            lblID.Text = boxID.ToString();
-            lblFirstBalance.Text = FirstBalance.ToString("0.0") + " DA";
-            lblIncomes.Text = Incomes.ToString("0.0") + " DA";
-            lblExpences.Text = expences.ToString("0.0") + " DA";
-            label10.Text = currentMoney.ToString("0.0") + " DA"; 
+            lblID.Text = moneyBank.MoneyBankID.ToString();
+            lblFirstBalance.Text = moneyBank.InitialAmount.ToString("0.0") + " DA";
+            if(moneyBank.InitialAmount <= moneyBank.InternalAmount)
+                lblIncomes.Text = (moneyBank.InternalAmount - moneyBank.InitialAmount ).ToString("0.0") + " DA";
+            lblExpences.Text = moneyBank.Expences.ToString("0.0") + " DA";
+            label10.Text = moneyBank.InternalAmount.ToString("0.0") + " DA"; 
         }
 
 

@@ -61,8 +61,6 @@ namespace DrivingSchool_DataAccessLayer
             }
             return condidateFiles;
         }
-
-
         public static bool GetCondidateFileInfoByID(int condidateFileID, ref int studentID, ref int drivingLicenseTypeID, ref string additionalNotes, ref bool isActive, ref DateTime creatingFileDate, ref bool isArchived, ref int groupID, ref int paymentID, ref int theoreticalInstructorID, ref int applicationInstructorID)
         {
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);

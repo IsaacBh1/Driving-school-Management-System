@@ -50,8 +50,15 @@ namespace Driving_School_Management_System.Forms
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
             AddLessonForm form = new AddLessonForm();
+            form.OnLessonsAddedEventHundler += RefreshLessons; 
             form.ShowDialog();
         }
+
+        private void RefreshLessons()
+        {
+            DisplayLessonInformations(clsLesson.GetAllLessons());
+        }
+
         //refersh btn
         private void guna2Button3_Click(object sender, EventArgs e)
         {
