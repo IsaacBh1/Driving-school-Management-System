@@ -148,6 +148,16 @@ namespace Driving_school_BusinessLayer
             return clsCondidateFileDataAccess.IsCondidateFileExist(id);
         }
 
+        public static bool DeleteCondidateFile(int id)
+        {
+            return clsCondidateFileDataAccess.DeleteCondidateFile(id); 
+        }
+
+        public static bool DeleteCondidateFilesByStudentID(int StudentID)
+        {
+            return clsCondidateFileDataAccess.DeleteCondidateFilesByStudentID(StudentID); 
+        }
+
     }
 
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -34,6 +35,42 @@ namespace DrivingSchool_DataAccessLayer
             }
             return condidateFiles;
         }
+
+
+        public static bool DeleteCondidateFilesByStudentID(int StudentID)
+        {
+            /*
+                select CondidateFileID from CondidateFiles where StudentID = 1039; 
+             */
+            bool result = false;
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "delete CondidateFiles where StudentID = @StudentID;";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@StudentID", StudentID);
+            try
+            {
+                int affectedRows = 0;
+                connection.Open();
+                affectedRows = command.ExecuteNonQuery();
+                if (affectedRows > 0) result = true;
+            }
+            catch
+            {
+                result = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+                return result;
+
+
+        }
+
+
+
+
+
 
         public static DataTable GetAllCondidateFileInformations()
         {

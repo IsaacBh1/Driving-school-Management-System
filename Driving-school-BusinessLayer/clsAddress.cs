@@ -97,8 +97,7 @@ namespace Driving_school_BusinessLayer
             return clsAddressDataAccess.GetAddressIDByInfo(_Country ,_State ,_LocalAddress);
         }
 
-
-        public static bool DeleteUser(int Id)
+        public static bool DeleteAddress(int Id)
         {
             return clsAddressDataAccess.DeleteAddress(Id); 
         }

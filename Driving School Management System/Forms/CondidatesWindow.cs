@@ -1,5 +1,6 @@
 ﻿using Driving_school_BusinessLayer;
 using Driving_School_Management_System.ShowInformationsForms;
+using DrivingSchool_BusinesseLayer;
 using System;
 using System.Data;
 using System.Drawing;
@@ -13,6 +14,7 @@ namespace Driving_School_Management_System.Forms
         
         private ContextMenuStrip contextMenu;
         private int selectedId = -1;
+        private StatusMessageForm statusMessageForm; 
         public CondidatesWindow()
         {
             InitializeComponent();
@@ -65,6 +67,20 @@ namespace Driving_School_Management_System.Forms
         private void DeleteStudent_Click(object sender, EventArgs e)
         {
             // this is for delete student
+            clsStudent StudentToDelete = clsStudent.Find(selectedId);
+             
+
+            if (!(StudentToDelete is null) && (clsCondidateFile.DeleteCondidateFilesByStudentID(selectedId)) && (clsStudent.DeleteStudent(StudentToDelete.StudentID)))
+            {
+                statusMessageForm = new StatusMessageForm("Operation done Successfully");
+                statusMessageForm.ShowSuccess();
+                Close();
+            }
+            else
+            {
+                statusMessageForm = new StatusMessageForm("Operation Failed");
+                statusMessageForm.ShowFailed();
+            }
         }
 
         // Event handler for cell clicks
@@ -92,7 +108,7 @@ namespace Driving_School_Management_System.Forms
         // Delete item click handler
         private void EditStudentInformations_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Delete option selected", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Update option selected", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             // Add your logic to delete the selected student entry
         }
 
@@ -132,8 +148,6 @@ namespace Driving_School_Management_System.Forms
             CondidatesWindowTab.SelectedIndex = 0;
 
         }
-
-
         public void DispalyStudentsInformations(DataTable AllStudents)
         {
             DGVStudents.Rows.Clear(); 
@@ -154,11 +168,7 @@ namespace Driving_School_Management_System.Forms
                 DGVFiles.Rows.Add(row[0], row[1], row[2], row[3], _getFileStatus(row[4].ToString()), _getStudentStatus(row[5].ToString()), row[6], row[7]); 
             }
         }
-
-
-        //GetAllCondidateFileInformations()
-
-
+        //GetAllCondidateFileInformations() ; 
         private DataTable QueryByID(int Id)
         {
             return clsStudent.SearchStudentInfoByID(Id); 
@@ -276,9 +286,8 @@ namespace Driving_School_Management_System.Forms
                         DisplayCondidteFilesInformations(clsCondidateFile.SearchArchivedStudentsFiles(_getIsArchived(CboxFileStatus.Text))); 
                         break;
                     case "وضع المرشح":
-                        DisplayCondidteFilesInformations(clsCondidateFile.SearchActiveStudentsFiles(_getIsActive(CboxStudentStatus.Text))); 
-                        break;
-
+                        DisplayCondidteFilesInformations(clsCondidateFile.SearchActiveStudentsFiles(_getIsActive(CboxStudentStatus.Text)));
+                        break; 
                  }
 
             }catch
