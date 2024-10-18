@@ -1,6 +1,5 @@
 ﻿using Driving_school_BusinessLayer;
 using Driving_School_Management_System.ShowInformationsForms;
-using DrivingSchool_BusinesseLayer;
 using System;
 using System.Data;
 using System.Drawing;
@@ -108,8 +107,10 @@ namespace Driving_School_Management_System.Forms
         // Delete item click handler
         private void EditStudentInformations_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Update option selected", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("Update option selected", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             // Add your logic to delete the selected student entry
+            AddStudentForm studentForm = new AddStudentForm(selectedId);
+            studentForm.ShowDialog();
         }
 
 
