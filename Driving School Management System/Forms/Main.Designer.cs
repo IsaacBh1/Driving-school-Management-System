@@ -721,7 +721,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tahoma", 9F);
             this.label11.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label11.Location = new System.Drawing.Point(444, 41);
+            this.label11.Location = new System.Drawing.Point(420, 41);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(148, 22);
             this.label11.TabIndex = 2;
@@ -743,7 +743,7 @@
             // 
             this.flowLayoutPanel8.Controls.Add(this.pictureBox7);
             this.flowLayoutPanel8.Controls.Add(this.panel8);
-            this.flowLayoutPanel8.Location = new System.Drawing.Point(12, 79);
+            this.flowLayoutPanel8.Location = new System.Drawing.Point(31, 79);
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
             this.flowLayoutPanel8.Size = new System.Drawing.Size(182, 87);
             this.flowLayoutPanel8.TabIndex = 7;
@@ -797,7 +797,7 @@
             // 
             this.flowLayoutPanel7.Controls.Add(this.pictureBox6);
             this.flowLayoutPanel7.Controls.Add(this.panel7);
-            this.flowLayoutPanel7.Location = new System.Drawing.Point(196, 80);
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(215, 80);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
             this.flowLayoutPanel7.Size = new System.Drawing.Size(182, 87);
             this.flowLayoutPanel7.TabIndex = 6;
@@ -851,7 +851,7 @@
             // 
             this.flowLayoutPanel6.Controls.Add(this.pictureBox5);
             this.flowLayoutPanel6.Controls.Add(this.panel6);
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(380, 80);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(399, 80);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
             this.flowLayoutPanel6.Size = new System.Drawing.Size(182, 87);
             this.flowLayoutPanel6.TabIndex = 5;
@@ -928,6 +928,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.Controls.Add(this.flowLayoutPanel24);
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Name = "tabPage1";

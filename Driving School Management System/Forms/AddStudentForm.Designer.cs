@@ -138,13 +138,13 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label1.Location = new System.Drawing.Point(663, 0);
+            this.label1.Location = new System.Drawing.Point(704, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(0, 20, 20, 0);
-            this.label1.Size = new System.Drawing.Size(244, 51);
+            this.label1.Size = new System.Drawing.Size(203, 51);
             this.label1.TabIndex = 3;
-            this.label1.Text = "إدارة المترشحين ";
+            this.label1.Text = "إضافة مترشح";
             // 
             // guna2Separator1
             // 

@@ -68,13 +68,14 @@ namespace Driving_School_Management_System.Forms
         {
             // this is for delete student
             clsStudent StudentToDelete = clsStudent.Find(selectedId);
-             
+            clsCondidateFile.DeleteCondidateFilesByStudentID(selectedId); 
 
-            if (!(StudentToDelete is null) && (clsCondidateFile.DeleteCondidateFilesByStudentID(selectedId)) && (clsStudent.DeleteStudent(StudentToDelete.StudentID)))
+            if (!(StudentToDelete is null)&&(clsStudent.DeleteStudent(StudentToDelete.StudentID)))
             {
                 statusMessageForm = new StatusMessageForm("Operation done Successfully");
                 statusMessageForm.ShowSuccess();
-                Close();
+                DispalyStudentsInformations(clsStudent.GetAllStudentsInfo());
+                DisplayCondidteFilesInformations(clsCondidateFile.GetAllCondidateFileInformations());
             }
             else
             {
@@ -82,7 +83,6 @@ namespace Driving_School_Management_System.Forms
                 statusMessageForm.ShowFailed();
             }
         }
-
         // Event handler for cell clicks
         private void DGVStudents_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -203,7 +203,6 @@ namespace Driving_School_Management_System.Forms
             txtBoxID.Text = string.Empty;
             txtBoxFirstName_Arabic.Text = string.Empty;
             txtBoxLastName_Arabic.Text = string.Empty;
-            txtBoxIdentityNumber.Text = string.Empty;
         }
 
 
@@ -272,8 +271,7 @@ namespace Driving_School_Management_System.Forms
                         break;
                     case "ID":
                         if (int.TryParse(textBoxID.Text.ToString(), out int ID))
-                            DisplayCondidteFilesInformations(clsCondidateFile.SearchCondidateFileInfoByID(ID.ToString())); 
-                            //textBoxID
+                            DisplayCondidteFilesInformations(clsCondidateFile.SearchCondidateFileInfoByID(ID.ToString()));
                             break;
                     case "الكل":
                         if (int.TryParse(textBoxID.Text.ToString(), out int Id))

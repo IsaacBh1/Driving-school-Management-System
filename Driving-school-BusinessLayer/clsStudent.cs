@@ -2,7 +2,6 @@
 using DrivingSchool_DataAccessLayer;
 using System;
 using System.Data;
-
 namespace Driving_school_BusinessLayer
 {
     public class clsStudent
@@ -39,11 +38,9 @@ namespace Driving_school_BusinessLayer
         public string BirthPlace { get; set; }
         public bool Gender { get; set; }
         public int NationalCardID { get; set; }
-        public string UserName { get; set; }//the identity card 
+        public string UserName { get; set; }//The Identity Card
         public clsPerson Person { get; set; }
         public clsNationalCard NationalCard { get; set; }
-
-
 
         private bool _AddNewStudent()
         {
@@ -91,14 +88,11 @@ namespace Driving_school_BusinessLayer
 
         }
 
-
         public string GetGender()
         {
             if (Gender) return "ذكر";
             return "أنثى";
         }
-
-
 
         public static bool IsStudentExists(int ID)
         {
@@ -110,7 +104,6 @@ namespace Driving_school_BusinessLayer
             return clsStudentDataAccess.DeleteStudent(ID);
         }
 
-
         public static DataTable GetAllStudentsInfo()
         {
             return clsStudentDataAccess.GetAllStudentsInformations();
@@ -121,13 +114,10 @@ namespace Driving_school_BusinessLayer
             return clsStudentDataAccess.SearchStudentInfoByID(id); 
         }
 
-
         public static DataTable SearchStudentInfoByFirstName_Arabic(string Name)
         {
             return clsStudentDataAccess.SearchStudentInfoFirstName_Arabic(Name);
         }
-
-
 
         public static DataTable SearchStudentInfoLastName_Arabic(string LastName)
         {
