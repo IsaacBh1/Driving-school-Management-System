@@ -895,7 +895,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.Salmon;
-            this.label3.Location = new System.Drawing.Point(256, 27);
+            this.label3.Location = new System.Drawing.Point(207, 27);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(18, 19);
             this.label3.TabIndex = 11;
@@ -907,11 +907,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(269, 17);
+            this.label2.Location = new System.Drawing.Point(259, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 31);
+            this.label2.Size = new System.Drawing.Size(152, 31);
             this.label2.TabIndex = 9;
-            this.label2.Text = "المترشح ID";
+            this.label2.Text = "معرف الطالب";
             // 
             // panel2
             // 

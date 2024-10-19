@@ -60,7 +60,8 @@ namespace Driving_School_Management_System.Forms
 
         private void AddStudentFile_Click(object sender, EventArgs e)
         {
-            // this is add student file
+            AddCondidateFileForm AddFileForm = new AddCondidateFileForm(selectedId);
+            AddFileForm.ShowDialog();
         }
 
         private void DeleteStudent_Click(object sender, EventArgs e)
@@ -85,6 +86,8 @@ namespace Driving_School_Management_System.Forms
         // Event handler for cell clicks
         private void DGVStudents_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+            if (DGVStudents.Rows[e.RowIndex].Cells[0].Value is null) return; 
+
             if (e.RowIndex >= 0 &&( e.Button == MouseButtons.Right || e.Button == MouseButtons.Left) && e.ColumnIndex == 6) // Check for right-click
             {
                 var cellRect = DGVStudents.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, true);

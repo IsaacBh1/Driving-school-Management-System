@@ -20,6 +20,20 @@ namespace Driving_School_Management_System.Forms
             changeDrivingLicenseEvent(CbxDrivingLicenseType, null); 
         }
 
+        public AddCondidateFileForm(int studentId)
+        {
+            InitializeComponent();
+            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            _initializeFormCboxes();
+            GetDrivingLicensePrice(CbxDrivingLicenseType.Text);
+            txtbxCondidateID.Text = studentId.ToString();
+            txtbxIdentityNumber.Text = GetStudentIdentityNumberfromID(studentId);
+
+            txtbxCondidateID.Enabled = false;
+            txtbxIdentityNumber.Enabled = false; 
+
+        }
+
         //----------------------------------------------------------------------------------
         //---------------------------this is for window properties ------------------------------
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
