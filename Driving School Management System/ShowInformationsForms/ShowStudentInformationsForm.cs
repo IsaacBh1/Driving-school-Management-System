@@ -66,10 +66,12 @@ namespace Driving_School_Management_System.ShowInformationsForms
             student = clsStudent.Find(studentid);
             if (student is null)
             {
-                MessageBox.Show("حدث خطأ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Close();
+                MessageBox.Show("حدث خطأ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+
             }
-            loadStudentInfoOnWindow(student);
+             loadStudentInfoOnWindow(student);
+            
         }
 
 

@@ -797,10 +797,9 @@
             this.CboxIdentityType.Items.AddRange(new object[] {
             "البطاقة الوطنية ",
             "جواز السفر",
-            "بطاقة التعريف العسكرية",
+            "البطاقة العسكرية",
             "بطاقة الإقامة",
-            "رخصة القيادة",
-            "بطاقة الضمان الاجتماعي"});
+            "رخصة القيادة"});
             this.CboxIdentityType.Location = new System.Drawing.Point(33, 52);
             this.CboxIdentityType.Name = "CboxIdentityType";
             this.CboxIdentityType.Size = new System.Drawing.Size(204, 29);

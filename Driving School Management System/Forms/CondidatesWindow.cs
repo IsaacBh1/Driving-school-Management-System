@@ -11,7 +11,8 @@ namespace Driving_School_Management_System.Forms
     {
         
         
-        private ContextMenuStrip contextMenu;
+        private ContextMenuStrip contextMenuStudent;
+        private ContextMenuStrip contextMenuFile;
         private int selectedId = -1;
         private StatusMessageForm statusMessageForm; 
         public CondidatesWindow()
@@ -20,14 +21,19 @@ namespace Driving_School_Management_System.Forms
             _initializeDrivingLicenseTypeCbox();
             DispalyStudentsInformations(clsStudent.GetAllStudentsInfo());
             DisplayCondidteFilesInformations(clsCondidateFile.GetAllCondidateFileInformations());
-
-            InitializeContextMenu(); // Initialize the context menu
+            InitializeContextMenuStudent(); // Initialize the context menu
+            InitializeContextMenuFile(); 
             DGVStudents.CellMouseClick += DGVStudents_CellMouseClick; // Handle cell clicks
+            DGVFiles.CellMouseClick += DGVFiles_CellMouseClick;
         }
 
-        private void InitializeContextMenu()
+
+        // this is for students 
+
+
+        private void InitializeContextMenuStudent()
         {
-            contextMenu = new ContextMenuStrip();
+            contextMenuStudent = new ContextMenuStrip();
 
             // Add menu items dynamically
             var ViewStudentInformationsItem = new ToolStripMenuItem("عرض معلومات الطالب" , Properties.Resources.eye);
@@ -46,12 +52,46 @@ namespace Driving_School_Management_System.Forms
             DownloadStudentInformationsItem.Click += DownloadStudentInformations_Click;
 
 
-            contextMenu.Items.Add(ViewStudentInformationsItem);
-            contextMenu.Items.Add(EditStudentInformationsItem);
-            contextMenu.Items.Add(DeleteStudentItem);
-            contextMenu.Items.Add(AddStudentFileItem);
-            contextMenu.Items.Add(DownloadStudentInformationsItem);
+            contextMenuStudent.Items.Add(ViewStudentInformationsItem);
+            contextMenuStudent.Items.Add(EditStudentInformationsItem);
+            contextMenuStudent.Items.Add(DeleteStudentItem);
+            contextMenuStudent.Items.Add(AddStudentFileItem);
+            contextMenuStudent.Items.Add(DownloadStudentInformationsItem);
         }
+
+
+        // this is for condidate files 
+
+
+        private void InitializeContextMenuFile()
+        {
+            contextMenuFile = new ContextMenuStrip();
+
+            // Add menu items dynamically
+            var ViewStudentInformationsItem = new ToolStripMenuItem("عرض معلومات الطالب", Properties.Resources.eye);
+            ViewStudentInformationsItem.Click += ViewStudentInformations_Click; // Define what happens when "Edit" is clicked
+
+            var EditStudentInformationsItem = new ToolStripMenuItem("تعديل معلومات الطالب", Properties.Resources.gear);
+            EditStudentInformationsItem.Click += EditStudentInformations_Click;
+
+            var DeleteStudentItem = new ToolStripMenuItem("حذف الطالب", Properties.Resources.trash__1_);
+            DeleteStudentItem.Click += DeleteStudent_Click;
+
+            var AddStudentFileItem = new ToolStripMenuItem("إضافة ملف إلى الطالب", Properties.Resources.file_bold);
+            AddStudentFileItem.Click += AddStudentFile_Click;
+
+            var DownloadStudentInformationsItem = new ToolStripMenuItem("تنزيل معلومات الطالب", Properties.Resources.download_simple);
+            DownloadStudentInformationsItem.Click += DownloadStudentInformations_Click;
+
+
+            contextMenuFile.Items.Add(ViewStudentInformationsItem);
+            contextMenuFile.Items.Add(EditStudentInformationsItem);
+            contextMenuFile.Items.Add(DeleteStudentItem);
+            contextMenuFile.Items.Add(AddStudentFileItem);
+            contextMenuFile.Items.Add(DownloadStudentInformationsItem);
+        }
+
+
 
         private void DownloadStudentInformations_Click(object sender, EventArgs e)
         {
@@ -94,9 +134,28 @@ namespace Driving_School_Management_System.Forms
                 selectedId = Convert.ToInt32(DGVStudents.Rows[e.RowIndex].Cells[0].Value); 
                 Point menuLocation = DGVStudents.PointToScreen(new Point(cellRect.X, cellRect.Y + cellRect.Height));
                 // Show the context menu at the calculated location
-                contextMenu.Show(menuLocation);
+                contextMenuStudent.Show(menuLocation);
             }
         }
+
+
+        private void DGVFiles_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (DGVFiles.Rows[e.RowIndex].Cells[0].Value is null) return;
+
+            if (e.RowIndex >= 0 && (e.Button == MouseButtons.Right || e.Button == MouseButtons.Left) && e.ColumnIndex == 8) // Check for right-click
+            {
+                var cellRect = DGVFiles.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, true);
+                selectedId = Convert.ToInt32(DGVFiles.Rows[e.RowIndex].Cells[0].Value);
+                Point menuLocation = DGVFiles.PointToScreen(new Point(cellRect.X, cellRect.Y + cellRect.Height));
+                // Show the context menu at the calculated location
+                contextMenuFile.Show(menuLocation);
+            }
+        }
+
+
+
+
 
         // Edit item click handler
         private void ViewStudentInformations_Click(object sender, EventArgs e)
