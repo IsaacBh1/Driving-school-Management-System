@@ -26,11 +26,7 @@ namespace Driving_School_Management_System.Forms
             DGVStudents.CellMouseClick += DGVStudents_CellMouseClick; // Handle cell clicks
             DGVFiles.CellMouseClick += DGVFiles_CellMouseClick;
         }
-
-
         // this is for students 
-
-
         private void InitializeContextMenuStudent()
         {
             contextMenuStudent = new ContextMenuStrip();
@@ -59,28 +55,25 @@ namespace Driving_School_Management_System.Forms
             contextMenuStudent.Items.Add(DownloadStudentInformationsItem);
         }
 
-
         // this is for condidate files 
-
 
         private void InitializeContextMenuFile()
         {
             contextMenuFile = new ContextMenuStrip();
-
             // Add menu items dynamically
-            var ViewStudentInformationsItem = new ToolStripMenuItem("عرض معلومات الطالب", Properties.Resources.eye);
+            var ViewStudentInformationsItem = new ToolStripMenuItem("إظهار معلومات الملف", Properties.Resources.eye);
             ViewStudentInformationsItem.Click += ViewStudentInformations_Click; // Define what happens when "Edit" is clicked
 
-            var EditStudentInformationsItem = new ToolStripMenuItem("تعديل معلومات الطالب", Properties.Resources.gear);
+            var EditStudentInformationsItem = new ToolStripMenuItem("تعديل معلومات الملف", Properties.Resources.gear);
             EditStudentInformationsItem.Click += EditStudentInformations_Click;
 
-            var DeleteStudentItem = new ToolStripMenuItem("حذف الطالب", Properties.Resources.trash__1_);
+            var DeleteStudentItem = new ToolStripMenuItem("حذف الملف", Properties.Resources.trash__1_);
             DeleteStudentItem.Click += DeleteStudent_Click;
 
-            var AddStudentFileItem = new ToolStripMenuItem("إضافة ملف إلى الطالب", Properties.Resources.file_bold);
+            var AddStudentFileItem = new ToolStripMenuItem("إضافة دفعة", Properties.Resources.file_bold);
             AddStudentFileItem.Click += AddStudentFile_Click;
 
-            var DownloadStudentInformationsItem = new ToolStripMenuItem("تنزيل معلومات الطالب", Properties.Resources.download_simple);
+            var DownloadStudentInformationsItem = new ToolStripMenuItem("تنزيل معلومات الملف", Properties.Resources.download_simple);
             DownloadStudentInformationsItem.Click += DownloadStudentInformations_Click;
 
 
@@ -314,8 +307,6 @@ namespace Driving_School_Management_System.Forms
                 MessageBox.Show("Error", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-
-
         }
 
         private void SearchFieldCondidteFile()
