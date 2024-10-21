@@ -10,23 +10,23 @@ namespace Driving_school_BusinessLayer
         enMode Mode = enMode.AddNew;
 
         public int GroupID { get; set; }
-        public int GroupNumber { get; set; }
+        public string Name { get; set; }
         public int NumberOfMembers { get; set; }
         public int DrivingLicenseTypesID { get; set; }
 
         public clsGroup()
         {
             GroupID = -1;
-            GroupNumber = 0;
+            Name = "";
             NumberOfMembers = 0;
             DrivingLicenseTypesID = -1;
             Mode = enMode.AddNew;
         }
 
-        private clsGroup(int groupID, int groupNumber, int numberOfMembers, int drivingLicenseTypesID)
+        private clsGroup(int groupID, string name, int numberOfMembers, int drivingLicenseTypesID)
         {
             GroupID = groupID;
-            GroupNumber = groupNumber;
+            Name = name;
             NumberOfMembers = numberOfMembers;
             DrivingLicenseTypesID = drivingLicenseTypesID;
             Mode = enMode.Update;
@@ -34,13 +34,13 @@ namespace Driving_school_BusinessLayer
 
         private bool _AddNewGroup()
         {
-            GroupID = clsGroupDataAccess.AddNewGroup(GroupNumber, NumberOfMembers, DrivingLicenseTypesID);
+            GroupID = clsGroupDataAccess.AddNewGroup(Name, NumberOfMembers, DrivingLicenseTypesID);
             return GroupID != -1;
         }
 
         private bool _UpdateGroup()
         {
-            return clsGroupDataAccess.UpdateGroup(GroupID, GroupNumber, NumberOfMembers, DrivingLicenseTypesID);
+            return clsGroupDataAccess.UpdateGroup(GroupID, Name, NumberOfMembers, DrivingLicenseTypesID);
         }
 
         public bool Save()
@@ -62,13 +62,13 @@ namespace Driving_school_BusinessLayer
 
         public static clsGroup Find(int ID)
         {
-            int _GroupNumber = 0;
+            string _Name = "";
             int _NumberOfMembers = 0;
             int _DrivingLicenseTypesID = -1;
 
-            if (clsGroupDataAccess.GetGroupInfoByID(ID, ref _GroupNumber, ref _NumberOfMembers, ref _DrivingLicenseTypesID))
+            if (clsGroupDataAccess.GetGroupInfoByID(ID, ref _Name, ref _NumberOfMembers, ref _DrivingLicenseTypesID))
             {
-                return new clsGroup(ID, _GroupNumber, _NumberOfMembers, _DrivingLicenseTypesID);
+                return new clsGroup(ID, _Name, _NumberOfMembers, _DrivingLicenseTypesID);
             }
             return null;
         }

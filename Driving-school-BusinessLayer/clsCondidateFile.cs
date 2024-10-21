@@ -12,6 +12,7 @@ namespace Driving_school_BusinessLayer
         public int StudentID { get; set; }
         public clsStudent Student {  get; set; }
         public int DrivingLicenseTypeID { get; set; }
+        public clsDrivingLicenseType drivingLicenseType { get; set; }
         public string AdditionalNotes { get; set; }
         public bool IsActive { get; set; }
         public DateTime CreatingFileDate { get; set; }
@@ -22,7 +23,6 @@ namespace Driving_school_BusinessLayer
         public clsPayment Payment { get; set; }
         public int TheoreticalInstructorID { get; set; }
         public int ApplicationInstructorID { get; set; }
-        public clsDrivingLicenseType drivingLicenseType {  get; set; }
         public clsInstructor TheoreticalInstructor {get ; set;}
         public clsInstructor ApplicationInstructor { get; set;}
         public clsCondidateFile()
@@ -60,9 +60,25 @@ namespace Driving_school_BusinessLayer
             ApplicationInstructorID = applicationInstructorID;
             TheoreticalInstructor = clsInstructor.Find(TheoreticalInstructorID); 
             ApplicationInstructor = clsInstructor.Find(ApplicationInstructorID);
-
             Mode = enMode.Update;
         }
+
+
+        public string GetActivation()
+        {
+            if (IsActive) return "نعم";
+            return "لا"; 
+        }
+
+
+        public string GetArchived()
+        {
+            if (IsArchived) return "مؤرشف";
+            return "غير مؤرشف";
+        }
+
+
+
 
         private bool _AddNewCandidateFile()
         {

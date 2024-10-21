@@ -62,7 +62,7 @@ namespace Driving_School_Management_System.Forms
             contextMenuFile = new ContextMenuStrip();
             // Add menu items dynamically
             var ViewStudentInformationsItem = new ToolStripMenuItem("إظهار معلومات الملف", Properties.Resources.eye);
-            ViewStudentInformationsItem.Click += ViewStudentInformations_Click; // Define what happens when "Edit" is clicked
+            ViewStudentInformationsItem.Click += ViewFileInformations_Click; // Define what happens when "Edit" is clicked
 
             var EditStudentInformationsItem = new ToolStripMenuItem("تعديل معلومات الملف", Properties.Resources.gear);
             EditStudentInformationsItem.Click += EditStudentInformations_Click;
@@ -84,7 +84,11 @@ namespace Driving_School_Management_System.Forms
             contextMenuFile.Items.Add(DownloadStudentInformationsItem);
         }
 
-
+        private void ViewFileInformations_Click(object sender, EventArgs e)
+        {
+            ShowFileInformations fileinfoForm = new ShowFileInformations(selectedId);
+            fileinfoForm.ShowDialog(); 
+        }
 
         private void DownloadStudentInformations_Click(object sender, EventArgs e)
         {

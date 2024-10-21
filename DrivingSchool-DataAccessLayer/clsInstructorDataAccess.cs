@@ -84,7 +84,7 @@ namespace DrivingSchool_DataAccessLayer
                     UserName = (string)reader["UserName"];
                     Gender = (bool)reader["Gender"];
                     DrivingLicenseID = (int)reader["DrivingLicenseID"];
-                    NationalCardID = (int)reader["NationalCardID"];
+                    NationalCardID = (int)reader["NationalCard"];
                 }
                 reader.Close();
                 return IsFound;

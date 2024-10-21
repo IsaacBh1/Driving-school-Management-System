@@ -63,7 +63,7 @@ namespace DrivingSchool_DataAccessLayer
         }
 
 
-        public static bool GetGroupInfoByID(int groupID, ref int GroupNumber, ref int NumberOfMembers, ref int DrivingLicenseTypesID)
+        public static bool GetGroupInfoByID(int groupID, ref string Name, ref int NumberOfMembers, ref int DrivingLicenseTypesID)
         {
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
             string query = "SELECT * FROM Groups WHERE GroupID = @groupID";
@@ -77,7 +77,7 @@ namespace DrivingSchool_DataAccessLayer
                 while (reader.Read())
                 {
                     IsFound = true;
-                    GroupNumber = (int)reader["GroupNumber"];
+                    Name = (string)reader["Name"];
                     NumberOfMembers = (int)reader["NumberOfMembers"];
                     DrivingLicenseTypesID = (int)reader["DrivingLicenseTypesID"];
                 }
@@ -94,16 +94,16 @@ namespace DrivingSchool_DataAccessLayer
             }
         }
 
-        public static int AddNewGroup(int GroupNumber, int NumberOfMembers, int DrivingLicenseTypesID)
+        public static int AddNewGroup(string Name, int NumberOfMembers, int DrivingLicenseTypesID)
         {
             int Id = -1;
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
-            string query = @"INSERT INTO Groups (GroupNumber, NumberOfMembers, DrivingLicenseTypesID) 
-                             VALUES (@GroupNumber, @NumberOfMembers, @DrivingLicenseTypesID);
+            string query = @"INSERT INTO Groups (Name, NumberOfMembers, DrivingLicenseTypesID) 
+                             VALUES (@Name, @NumberOfMembers, @DrivingLicenseTypesID);
                              SELECT SCOPE_IDENTITY();";
 
             SqlCommand command = new SqlCommand(query, sqlConnection);
-            command.Parameters.AddWithValue("@GroupNumber", GroupNumber);
+            command.Parameters.AddWithValue("@Name", Name);
             command.Parameters.AddWithValue("@NumberOfMembers", NumberOfMembers);
             command.Parameters.AddWithValue("@DrivingLicenseTypesID", DrivingLicenseTypesID);
 
@@ -127,19 +127,19 @@ namespace DrivingSchool_DataAccessLayer
             return Id;
         }
 
-        public static bool UpdateGroup(int groupID, int GroupNumber, int NumberOfMembers, int DrivingLicenseTypesID)
+        public static bool UpdateGroup(int groupID, string Name, int NumberOfMembers, int DrivingLicenseTypesID)
         {
             int AffectedRows = 0;
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
             string query = @"UPDATE Groups SET 
-                             GroupNumber = @GroupNumber, 
+                             Name = @Name, 
                              NumberOfMembers = @NumberOfMembers, 
                              DrivingLicenseTypesID = @DrivingLicenseTypesID 
                              WHERE GroupID = @groupID";
 
             SqlCommand command = new SqlCommand(query, sqlConnection);
             command.Parameters.AddWithValue("@groupID", groupID);
-            command.Parameters.AddWithValue("@GroupNumber", GroupNumber);
+            command.Parameters.AddWithValue("@Name", Name);
             command.Parameters.AddWithValue("@NumberOfMembers", NumberOfMembers);
             command.Parameters.AddWithValue("@DrivingLicenseTypesID", DrivingLicenseTypesID);
 

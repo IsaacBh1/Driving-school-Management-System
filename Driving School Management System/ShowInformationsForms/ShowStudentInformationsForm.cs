@@ -92,6 +92,7 @@ namespace Driving_School_Management_System.ShowInformationsForms
             Email.Text = student.Person.Contact.Email;
             UserName.Text = student.UserName.ToString();
             AdditionalContact.Text = student.Person.Contact.AdditionalContact; 
+
         }
 
 

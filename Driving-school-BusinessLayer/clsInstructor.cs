@@ -25,7 +25,7 @@ namespace Driving_school_BusinessLayer
             DrivingLicenseID = drivingLicenseID;
             DrivingLicence = clsDrivingLicense.Find(DrivingLicenseID);
             NationalCard = clsNationalCard.Find(NationalCardID);
-            UserName = NationalCard.CardNumber;
+            UserName = userName;
             Mode = enMode.Update;
 
         }
