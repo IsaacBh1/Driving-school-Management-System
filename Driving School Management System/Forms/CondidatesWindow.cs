@@ -104,10 +104,17 @@ namespace Driving_School_Management_System.Forms
         private void DeleteStudent_Click(object sender, EventArgs e)
         {
             // this is for delete student
-            clsStudent StudentToDelete = clsStudent.Find(selectedId);
-            clsCondidateFile.DeleteCondidateFilesByStudentID(selectedId); 
+            YesNoDesisionForm yesNoForm = new YesNoDesisionForm("هل تريد حذف الطالب ؟");
+            yesNoForm.DoOperationEventHundler += DeleteStudent;
+            yesNoForm.ShowDialog(); 
+        }
 
-            if (!(StudentToDelete is null)&&(clsStudent.DeleteStudent(StudentToDelete.StudentID)))
+        private void DeleteStudent()
+        {
+            clsStudent StudentToDelete = clsStudent.Find(selectedId);
+            clsCondidateFile.DeleteCondidateFilesByStudentID(selectedId);
+
+            if (!(StudentToDelete is null) && (clsStudent.DeleteStudent(StudentToDelete.StudentID)))
             {
                 statusMessageForm = new StatusMessageForm("Operation done Successfully");
                 statusMessageForm.ShowSuccess();

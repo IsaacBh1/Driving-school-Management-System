@@ -142,6 +142,12 @@
     <Compile Include="Forms\PaymentWindow.Designer.cs">
       <DependentUpon>PaymentWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\YesNoDesisionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\YesNoDesisionForm.Designer.cs">
+      <DependentUpon>YesNoDesisionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ShowInformationsForms\ShowFileInformations.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -308,6 +314,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PaymentWindow.resx">
       <DependentUpon>PaymentWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\YesNoDesisionForm.resx">
+      <DependentUpon>YesNoDesisionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ShowInformationsForms\ShowFileInformations.resx">
       <DependentUpon>ShowFileInformations.cs</DependentUpon>
