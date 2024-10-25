@@ -61,7 +61,7 @@ namespace Driving_School_Management_System.Forms
             {
                 case "ID":
                     if (int.TryParse(txtBoxID.Text, out int ID))
-                        DisplayExamsInformations(clsExam.GetExamByID(ID)); 
+                        DisplayExamsInformations(clsExam.GetExamsByID(ID)); 
                     break;
                 case "الملف":
                     if (int.TryParse(textbxCondidateFileID.Text, out int CondidateFileID))
@@ -75,7 +75,6 @@ namespace Driving_School_Management_System.Forms
                     break; 
             }
         }
-
 
 
         private void guna2Button3_Click(object sender, EventArgs e)

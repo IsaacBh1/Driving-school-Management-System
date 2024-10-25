@@ -1,6 +1,7 @@
 ﻿using DrivingSchool_DataAccessLayer;
 using System;
 using System.Data;
+using System.Net.NetworkInformation;
 
 namespace Driving_school_BusinessLayer
 {
@@ -78,7 +79,7 @@ namespace Driving_school_BusinessLayer
             return false;
         }
 
-      /*  public static clsExam Find(int ID)
+        public static clsExam Find(int ID)
         {
             int _ExamTypeID = -1;
             int _CandidateFileID = -1;
@@ -92,12 +93,12 @@ namespace Driving_school_BusinessLayer
                 
             }
             return null;
-        }*/
+        }
 
         public static DataTable GetAllExamInformations()
             => clsExamDataAccess.GetAllExamInformations(); 
         
-        public static DataTable GetExamByID(int ID)
+        public static DataTable GetExamsByID(int ID)
             => clsExamDataAccess.GetExamByID(ID);
 
         public static DataTable GetExamsByExamType(int ExamType)
@@ -109,6 +110,23 @@ namespace Driving_school_BusinessLayer
         public static DataTable GetExamsByCondidateFile(int condidateFileID)
             => clsExamDataAccess.GetExamsByCondidateFile(condidateFileID); 
 
+
+        public static  bool DeleteAllFileExams(int StudentID)
+        {
+            DataTable CondidateFiles =clsCondidateFileDataAccess.GetAllCondidateFilesByStudentID(StudentID);
+            
+            foreach(DataRow row in CondidateFiles.Rows)
+                if (!clsExamDataAccess.DeleteExamByCondidatefile((int)row["CondidateFileID"])) return false; 
+            
+
+            return true; 
+        }
+
+
+        public static bool DeleteExam(int id)
+        {
+            return clsExamDataAccess.DeleteExam(id); 
+        }
 
     }
 }

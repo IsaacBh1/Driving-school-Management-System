@@ -202,6 +202,33 @@ namespace DrivingSchool_DataAccessLayer
             return result;
         }
 
+        public static bool DeleteExamByCondidatefile(int CondidateFileId)
+        {
+            bool result = false;
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "DELETE FROM Exams WHERE CondidateFileID = @CondidateFileId";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@CondidateFileId", CondidateFileId);
+            try
+            {
+                int affectedRows = 0;
+                connection.Open();
+                affectedRows = command.ExecuteNonQuery();
+                if (affectedRows > 0) result = true;
+            }
+            catch
+            {
+                result = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return result;
+        }
+
+
+
         public static bool IsExamExist(int id)
         {
             bool result = false;

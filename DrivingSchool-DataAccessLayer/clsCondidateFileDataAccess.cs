@@ -37,6 +37,34 @@ namespace DrivingSchool_DataAccessLayer
         }
 
 
+        public static DataTable GetAllCondidateFilesByStudentID(int id)
+        {
+            DataTable condidateFiles = new DataTable();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            string query = "select * from CondidateFiles where StudentID = @id; ";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@id", id);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    condidateFiles.Load(reader);
+                }
+                reader.Close();
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return condidateFiles;
+        }
+
         public static bool DeleteCondidateFilesByStudentID(int StudentID)
         {
             /*

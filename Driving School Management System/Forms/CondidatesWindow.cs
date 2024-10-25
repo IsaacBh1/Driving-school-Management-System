@@ -112,9 +112,8 @@ namespace Driving_School_Management_System.Forms
         private void DeleteStudent()
         {
             clsStudent StudentToDelete = clsStudent.Find(selectedId);
-            clsCondidateFile.DeleteCondidateFilesByStudentID(selectedId);
-
-            if (!(StudentToDelete is null) && (clsStudent.DeleteStudent(StudentToDelete.StudentID)))
+            
+            if (!(StudentToDelete is null) && clsExam.DeleteAllFileExams(selectedId) && (clsCondidateFile.DeleteCondidateFilesByStudentID(selectedId)) && (clsStudent.DeleteStudent(StudentToDelete.StudentID)))
             {
                 statusMessageForm = new StatusMessageForm("Operation done Successfully");
                 statusMessageForm.ShowSuccess();
