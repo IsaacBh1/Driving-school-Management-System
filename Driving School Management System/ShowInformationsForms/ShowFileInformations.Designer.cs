@@ -572,7 +572,7 @@
             this.AdditionalNotes.AutoSize = true;
             this.AdditionalNotes.Font = new System.Drawing.Font("Tahoma", 12F);
             this.AdditionalNotes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.AdditionalNotes.Location = new System.Drawing.Point(177, 585);
+            this.AdditionalNotes.Location = new System.Drawing.Point(24, 585);
             this.AdditionalNotes.Name = "AdditionalNotes";
             this.AdditionalNotes.Size = new System.Drawing.Size(54, 29);
             this.AdditionalNotes.TabIndex = 56;

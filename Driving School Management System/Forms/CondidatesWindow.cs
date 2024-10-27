@@ -65,7 +65,7 @@ namespace Driving_School_Management_System.Forms
             ViewStudentInformationsItem.Click += ViewFileInformations_Click; // Define what happens when "Edit" is clicked
 
             var EditStudentInformationsItem = new ToolStripMenuItem("تعديل معلومات الملف", Properties.Resources.gear);
-            EditStudentInformationsItem.Click += EditStudentInformations_Click;
+            EditStudentInformationsItem.Click += EditFileInformations_Click;
 
             var DeleteStudentItem = new ToolStripMenuItem("حذف الملف", Properties.Resources.trash__1_);
             DeleteStudentItem.Click += DeleteStudent_Click;
@@ -82,6 +82,12 @@ namespace Driving_School_Management_System.Forms
             contextMenuFile.Items.Add(DeleteStudentItem);
             contextMenuFile.Items.Add(AddStudentFileItem);
             contextMenuFile.Items.Add(DownloadStudentInformationsItem);
+        }
+
+        private void EditFileInformations_Click(object sender, EventArgs e)
+        {
+            AddCondidateFileForm condidateFileForm = new AddCondidateFileForm(selectedId, false);
+            condidateFileForm.ShowDialog();
         }
 
         private void ViewFileInformations_Click(object sender, EventArgs e)
@@ -189,8 +195,6 @@ namespace Driving_School_Management_System.Forms
         {
             AddStudentForm addStudentForm = new AddStudentForm();
             addStudentForm.OnStudentAddedEventHundler += RefreshStudents; 
-
-
             addStudentForm.ShowDialog();
             //LoadAllStudentInfoToDataGrid(); 
         }

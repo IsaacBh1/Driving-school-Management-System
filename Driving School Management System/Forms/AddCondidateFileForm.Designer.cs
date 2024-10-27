@@ -61,12 +61,6 @@
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.CbxPaymentType = new MetroFramework.Controls.MetroComboBox();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.txtbxRest = new Guna.UI2.WinForms.Guna2TextBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -104,7 +98,6 @@
             this.flowLayoutPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtbxAmountPayed)).BeginInit();
-            this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -519,7 +512,6 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.panel14);
             this.flowLayoutPanel1.Controls.Add(this.panel5);
-            this.flowLayoutPanel1.Controls.Add(this.panel6);
             this.flowLayoutPanel1.Controls.Add(this.panel7);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
@@ -623,107 +615,6 @@
             this.label11.TabIndex = 18;
             this.label11.Text = "الدفع";
             // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.CbxPaymentType);
-            this.panel6.Controls.Add(this.guna2TextBox4);
-            this.panel6.Controls.Add(this.guna2TextBox5);
-            this.panel6.Controls.Add(this.label12);
-            this.panel6.Controls.Add(this.label13);
-            this.panel6.Location = new System.Drawing.Point(457, 70);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(442, 61);
-            this.panel6.TabIndex = 33;
-            // 
-            // CbxPaymentType
-            // 
-            this.CbxPaymentType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CbxPaymentType.FormattingEnabled = true;
-            this.CbxPaymentType.ItemHeight = 23;
-            this.CbxPaymentType.Items.AddRange(new object[] {
-            "نقديا",
-            "بطاقات الائتمان",
-            "الشيكات المصرفية ",
-            "الحوالات البريدية"});
-            this.CbxPaymentType.Location = new System.Drawing.Point(19, 17);
-            this.CbxPaymentType.Name = "CbxPaymentType";
-            this.CbxPaymentType.Size = new System.Drawing.Size(225, 29);
-            this.CbxPaymentType.TabIndex = 23;
-            this.CbxPaymentType.UseSelectable = true;
-            // 
-            // guna2TextBox4
-            // 
-            this.guna2TextBox4.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox4.BorderRadius = 5;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(1060, 5900);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(244, 1305, 244, 1305);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "ex : example@gmail.com";
-            this.guna2TextBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(5586, 3702);
-            this.guna2TextBox4.TabIndex = 28;
-            // 
-            // guna2TextBox5
-            // 
-            this.guna2TextBox5.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox5.BorderRadius = 5;
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.FocusedState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Location = new System.Drawing.Point(7445, 32118);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(1531, 17686, 1531, 17686);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderText = "";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.ShadowDecoration.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Size = new System.Drawing.Size(34411, 50168);
-            this.guna2TextBox5.TabIndex = 26;
-            // 
-            // label12
-            // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.ForeColor = System.Drawing.Color.Salmon;
-            this.label12.Location = new System.Drawing.Point(266, 17);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(24, 32);
-            this.label12.TabIndex = 21;
-            this.label12.Text = "*";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(285, 15);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(151, 32);
-            this.label13.TabIndex = 18;
-            this.label13.Text = "الدفع بواسطة";
-            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.txtbxRest);
@@ -733,7 +624,7 @@
             this.panel7.Controls.Add(this.label16);
             this.panel7.Location = new System.Drawing.Point(9, 70);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(442, 61);
+            this.panel7.Size = new System.Drawing.Size(890, 61);
             this.panel7.TabIndex = 34;
             // 
             // txtbxRest
@@ -753,7 +644,7 @@
             this.txtbxRest.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbxRest.HoverState.Parent = this.txtbxRest;
             this.txtbxRest.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.txtbxRest.Location = new System.Drawing.Point(162, 15);
+            this.txtbxRest.Location = new System.Drawing.Point(332, 14);
             this.txtbxRest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtbxRest.Name = "txtbxRest";
             this.txtbxRest.PasswordChar = '\0';
@@ -768,7 +659,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Gainsboro;
-            this.label19.Location = new System.Drawing.Point(112, 15);
+            this.label19.Location = new System.Drawing.Point(282, 14);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(45, 32);
             this.label19.TabIndex = 38;
@@ -828,7 +719,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(363, 20);
+            this.label16.Location = new System.Drawing.Point(533, 19);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(74, 32);
             this.label16.TabIndex = 18;
@@ -1154,8 +1045,6 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtbxAmountPayed)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -1212,16 +1101,10 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Panel panel6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel7;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
         private System.Windows.Forms.Label label16;
-        private MetroFramework.Controls.MetroComboBox CbxPaymentType;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;

@@ -20,6 +20,8 @@ namespace Driving_School_Management_System.Forms
             changeDrivingLicenseEvent(CbxDrivingLicenseType, null); 
         }
 
+
+
         public AddCondidateFileForm(int studentId)
         {
             InitializeComponent();
@@ -28,11 +30,55 @@ namespace Driving_School_Management_System.Forms
             GetDrivingLicensePrice(CbxDrivingLicenseType.Text);
             txtbxCondidateID.Text = studentId.ToString();
             txtbxIdentityNumber.Text = GetStudentIdentityNumberfromID(studentId);
-
             txtbxCondidateID.Enabled = false;
             txtbxIdentityNumber.Enabled = false; 
-
         }
+
+
+
+        public AddCondidateFileForm(int fileId , bool IsFile = false)
+        {
+            InitializeComponent();
+            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            _initializeFormCboxes();
+            GetDrivingLicensePrice(CbxDrivingLicenseType.Text);
+            changeDrivingLicenseEvent(CbxDrivingLicenseType, null);
+            condidateFile = clsCondidateFile.Find(fileId);
+            InetializeFileOnUpdate(condidateFile);
+            if (condidateFile != null)
+            {
+                payment = clsPayment.Find(condidateFile.PaymentID);
+
+            }
+        }
+
+
+        private void InetializeFileOnUpdate(clsCondidateFile condidateFile)
+        {
+            if (!(condidateFile is null))
+            {
+                txtbxCondidateID.Text = condidateFile.StudentID.ToString();
+                txtbxIdentityNumber.Text = condidateFile.Student.NationalCard.CardNumber;
+                txtbxCondidateID.Enabled = false; 
+                txtbxIdentityNumber.Enabled = false;
+                CbxDrivingLicenseType.Text = condidateFile.drivingLicenseType.Name;
+                CbxGroup.Text = condidateFile.Group.Name;
+                txtBoxAdditionalNotes.Text = condidateFile.AdditionalNotes;
+                txtbxPrice.Value = condidateFile.Payment.FullAmount;
+                txtbxAmountPayed.Value = condidateFile.Payment.AmountPayed;
+                txtbxRest.Text = (txtbxPrice.Value - txtbxAmountPayed.Value).ToString();
+                txtbxRest.Enabled= false;
+               /* CboxAppInsructor.Text = condidateFile.ApplicationInstructor.UserName;
+                CboxTheoInsructor.Text = condidateFile.TheoreticalInstructor.UserName; */
+            }
+        }
+
+
+
+
+
+
+
 
         //----------------------------------------------------------------------------------
         //---------------------------this is for window properties ------------------------------
@@ -117,11 +163,11 @@ namespace Driving_School_Management_System.Forms
 
         private bool InformationCorrect = true;
         private StatusMessageForm statusMessageForm;
-        private clsCondidateFile condidateFile;
-        private clsPayment payment;
+        private clsCondidateFile condidateFile = new clsCondidateFile();
+        private clsPayment payment = new clsPayment();
         public delegate void AddNewCondidateFile();
         public event AddNewCondidateFile OnCondidateFileAddedEventHundler;
-        public clsMoneyBank moneyBank; 
+        public clsMoneyBank moneyBank = new clsMoneyBank(); 
 
         //----------------------------------------------------------------------------------
         //----------------this is for inetialize comboboxes of the form----------------------
@@ -191,7 +237,6 @@ namespace Driving_School_Management_System.Forms
             CheckField(txtbxPrice); 
             CheckField(CbxDrivingLicenseType); 
             CheckField(CbxGroup); 
-            CheckField(CbxPaymentType); 
         }
 
 
@@ -204,25 +249,22 @@ namespace Driving_School_Management_System.Forms
 
             if (int.TryParse (txtbxCondidateID.Text , out int studentID))
             {
-                payment = new clsPayment() { AmountPayed = Convert.ToDecimal(txtbxAmountPayed.Text), 
-                                        FullAmount = Convert.ToDecimal(txtbxPrice.Text),
-                                        MoneyBankID = clsMoneyBank.GetCurrentMoneyBank()};
+                payment.AmountPayed = Convert.ToDecimal(txtbxAmountPayed.Text);
+                payment.FullAmount = Convert.ToDecimal(txtbxPrice.Text);
+                payment.MoneyBankID = clsMoneyBank.GetCurrentMoneyBank();
                 moneyBank = clsMoneyBank.Find(clsMoneyBank.GetCurrentMoneyBank());
                 moneyBank.AddPayment(txtbxAmountPayed.Value);
-                if (!payment.Save()) return false; 
-                condidateFile = new clsCondidateFile()
-                {
-                    StudentID = studentID,
-                    DrivingLicenseTypeID = GetIDOfDrivingLicenseTypeFromName(CbxDrivingLicenseType.Text),
-                    AdditionalNotes = txtBoxAdditionalNotes.Text,
-                    IsActive = true,
-                    CreatingFileDate = DateTime.Now,
-                    IsArchived = false,
-                    PaymentID = payment.PaymentID,
-                    GroupID = GetGruopIDFromName(CbxGroup.Text) , 
-                    ApplicationInstructorID = GetIDOfIndructor(CboxAppInsructor.Text), 
-                    TheoreticalInstructorID = GetIDOfIndructor(CboxTheoInsructor.Text)
-                };
+                if (!payment.Save()) return false;
+                condidateFile.StudentID = studentID;
+                condidateFile.DrivingLicenseTypeID = GetIDOfDrivingLicenseTypeFromName(CbxDrivingLicenseType.Text); 
+                condidateFile.AdditionalNotes = txtBoxAdditionalNotes.Text;
+                condidateFile.IsActive = true;
+                condidateFile.CreatingFileDate = DateTime.Now;
+                condidateFile.IsArchived = false;
+                condidateFile.PaymentID = payment.PaymentID;
+                condidateFile.GroupID = GetGruopIDFromName(CbxGroup.Text);
+                condidateFile.ApplicationInstructorID = GetIDOfIndructor(CboxAppInsructor.Text); 
+                condidateFile.TheoreticalInstructorID = GetIDOfIndructor(CboxTheoInsructor.Text);
                 return moneyBank.Save() && condidateFile.Save() ; 
 
             }                     
@@ -231,9 +273,9 @@ namespace Driving_School_Management_System.Forms
         }
 
 
-        private void btnSubmit_Click(object sender, EventArgs e)
+        private void SaveFile()
         {
-            CheckCondidatesFileInformations(); 
+            CheckCondidatesFileInformations();
             if (InformationCorrect)
             {
                 //this is the code to save on DB 
@@ -242,7 +284,7 @@ namespace Driving_School_Management_System.Forms
                     // MessageBox.Show("student is saved successfully with ID = " + student.StudentID);
                     statusMessageForm = new StatusMessageForm("File Saved Successfully");
                     statusMessageForm.ShowSuccess();
-                    OnCondidateFileAddedEventHundler?.Invoke(); 
+                    OnCondidateFileAddedEventHundler?.Invoke();
                     Close();
                 }
                 else
@@ -253,6 +295,13 @@ namespace Driving_School_Management_System.Forms
             }
             else
                 MessageBox.Show("هناك معلومات مفقودة", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            SaveFile(); 
 
         }
 

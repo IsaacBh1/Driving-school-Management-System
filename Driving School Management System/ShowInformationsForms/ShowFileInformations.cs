@@ -92,8 +92,8 @@ namespace Driving_School_Management_System.ShowInformationsForms
             Activation.Text = condidateFile.GetActivation();
             Archived.Text = condidateFile.GetArchived();
             Group.Text = condidateFile.Group.Name.ToString() ?? "";
-            theoInstructor.Text = condidateFile.TheoreticalInstructor.UserName ?? "";
-            appInstructor.Text = condidateFile.ApplicationInstructor.UserName ?? "";
+            theoInstructor.Text = condidateFile.TheoreticalInstructor?.UserName ?? "";
+            appInstructor.Text = condidateFile.ApplicationInstructor?.UserName ?? "";
             DateOfCreation.Text = condidateFile.CreatingFileDate.ToString();
             AdditionalNotes.Text = condidateFile.AdditionalNotes; 
 
