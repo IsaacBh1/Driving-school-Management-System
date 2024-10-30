@@ -68,7 +68,7 @@ namespace Driving_School_Management_System.Forms
             EditStudentInformationsItem.Click += EditFileInformations_Click;
 
             var DeleteStudentItem = new ToolStripMenuItem("حذف الملف", Properties.Resources.trash__1_);
-            DeleteStudentItem.Click += DeleteStudent_Click;
+            DeleteStudentItem.Click += DeleteFileInformations_Click;
 
             var AddStudentFileItem = new ToolStripMenuItem("إضافة دفعة", Properties.Resources.file_bold);
             AddStudentFileItem.Click += AddStudentFile_Click;
@@ -82,6 +82,31 @@ namespace Driving_School_Management_System.Forms
             contextMenuFile.Items.Add(DeleteStudentItem);
             contextMenuFile.Items.Add(AddStudentFileItem);
             contextMenuFile.Items.Add(DownloadStudentInformationsItem);
+        }
+
+        private void DeleteFileInformations_Click(object sender, EventArgs e)
+        {
+            YesNoDesisionForm yesNoForm = new YesNoDesisionForm("هل تريد حذف الملف ؟");
+            yesNoForm.DoOperationEventHundler += DeleteFile;
+            yesNoForm.ShowDialog();
+        }
+
+        private void DeleteFile()
+        {
+            clsCondidateFile FileToDelete = clsCondidateFile.Find(selectedId);
+
+            if (!(FileToDelete is null)&&(clsCondidateFile.DeleteCondidateFile(FileToDelete.CandidateFileID)))
+            {
+                statusMessageForm = new StatusMessageForm("Operation done Successfully");
+                statusMessageForm.ShowSuccess();
+                DispalyStudentsInformations(clsStudent.GetAllStudentsInfo());
+                DisplayCondidteFilesInformations(clsCondidateFile.GetAllCondidateFileInformations());
+            }
+            else
+            {
+                statusMessageForm = new StatusMessageForm("Operation Failed");
+                statusMessageForm.ShowFailed();
+            }
         }
 
         private void EditFileInformations_Click(object sender, EventArgs e)
