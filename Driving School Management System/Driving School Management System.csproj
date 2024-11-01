@@ -106,6 +106,12 @@
     <Compile Include="Forms\CloseBoxForm.Designer.cs">
       <DependentUpon>CloseBoxForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\CondidateFileWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CondidateFileWindow.Designer.cs">
+      <DependentUpon>CondidateFileWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ConfirmsClosingMoneyBankForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -296,6 +302,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CloseBoxForm.resx">
       <DependentUpon>CloseBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CondidateFileWindow.resx">
+      <DependentUpon>CondidateFileWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ConfirmsClosingMoneyBankForm.resx">
       <DependentUpon>ConfirmsClosingMoneyBankForm.cs</DependentUpon>
@@ -676,6 +685,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\download-simple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\files.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\files %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

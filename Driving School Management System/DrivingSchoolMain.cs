@@ -47,6 +47,7 @@ namespace Driving_School_Management_System
         PaymentWindow paymentWindow = null;
         BoxWindow boxWindow = null; 
         ExpencesWindow expencesWindow = null;
+        CondidateFileWindow condidateFileWindow = null;
         public MainForm()
         {
             InitializeComponent();
@@ -142,24 +143,27 @@ namespace Driving_School_Management_System
                     btnCondidtes.BackColor = ColorTranslator.FromHtml("#E5AF1D");
                     break;
                 case 3:
-                    btnLessons.BackColor = ColorTranslator.FromHtml("#E5AF1D");
+                    btnFiles.BackColor = ColorTranslator.FromHtml("#E5AF1D");
                     break;
                 case 4:
-                    btnExams.BackColor = ColorTranslator.FromHtml("#E5AF1D");
+                    btnLessons.BackColor = ColorTranslator.FromHtml("#E5AF1D");
                     break;
                 case 5:
-                    btnFinance.BackColor = ColorTranslator.FromHtml("#E5AF1D");
+                    btnExams.BackColor = ColorTranslator.FromHtml("#E5AF1D");
                     break;
                 case 6:
-                    btnBoxBank.BackColor = ColorTranslator.FromHtml("#E5AF1D");
+                    btnFinance.BackColor = ColorTranslator.FromHtml("#E5AF1D");
                     break;
                 case 7:
-                    btnExpences.BackColor = ColorTranslator.FromHtml("#E5AF1D");
+                    btnBoxBank.BackColor = ColorTranslator.FromHtml("#E5AF1D");
                     break;
                 case 8:
-                    btnCars.BackColor = ColorTranslator.FromHtml("#E5AF1D");
+                    btnExpences.BackColor = ColorTranslator.FromHtml("#E5AF1D");
                     break;
                 case 9:
+                    btnCars.BackColor = ColorTranslator.FromHtml("#E5AF1D");
+                    break;
+                case 10:
                     btnInstructors.BackColor = ColorTranslator.FromHtml("#E5AF1D");
                     break;
             }
@@ -173,31 +177,33 @@ namespace Driving_School_Management_System
                 case 1:
                     btnMain.BackColor = Color.Transparent;
                     break;
-
                 case 2:
                     btnCondidtes.BackColor = Color.Transparent;
                     break;
                 case 3:
-                    btnLessons.BackColor = Color.Transparent;
+                    btnFiles.BackColor = Color.Transparent;
                     break;
                 case 4:
+                    btnLessons.BackColor = Color.Transparent;
+                    break;
+                case 5:
                     btnExams.BackColor = Color.Transparent;
                     break;
 
-                case 5:
+                case 6:
                     btnFinance.BackColor = Color.Transparent;
                     break;
-                case 6:
+                case 7:
                     btnBoxBank.BackColor = Color.Transparent;
                     break;
-                case 7:
+                case 8:
                     btnExpences.BackColor = Color.Transparent;
                     break;
 
-                case 8:
+                case 9:
                     btnCars.BackColor = Color.Transparent;
                     break;
-                case 9:
+                case 10:
                     btnInstructors.BackColor = Color.Transparent;
                     break;
             }
@@ -206,7 +212,7 @@ namespace Driving_School_Management_System
         private void btnLessons_Click(object sender, EventArgs e)
         {
             previousTabIndex = tabIndex;
-            tabIndex = 3;
+            tabIndex = 4;
             ShowWindow<LessonsWindow>(lessonsForm); 
 
         }
@@ -220,43 +226,50 @@ namespace Driving_School_Management_System
         private void button3_Click(object sender, EventArgs e)
         {
             previousTabIndex = tabIndex;
-            tabIndex = 4;
+            tabIndex = 5;
             ShowWindow<ExamsWindow>(examsWindow); 
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             previousTabIndex = tabIndex;
-            tabIndex = 8;
+            tabIndex = 9;
             ShowWindow<CarsWindow>(carsWindow); 
         }
 
         private void btnInstructors_Click(object sender, EventArgs e)
         {
             previousTabIndex = tabIndex;
-            tabIndex = 9;
+            tabIndex = 10;
             ShowWindow<InstructorsWindow>(instructorsWindow); 
         }
 
         private void btnFinance_Click(object sender, EventArgs e)
         {
             previousTabIndex = tabIndex;
-            tabIndex = 5;
+            tabIndex = 6;
             ShowWindow<PaymentWindow>(paymentWindow);  
         }
 
         private void btnBoxBank_Click(object sender, EventArgs e)
         {
             previousTabIndex = tabIndex;
-            tabIndex = 6;
+            tabIndex = 7;
             ShowWindow<BoxWindow>(boxWindow); 
         }
 
         private void btnExpences_Click(object sender, EventArgs e)
         {
             previousTabIndex = tabIndex;
-            tabIndex = 7;
+            tabIndex = 8;
             ShowWindow<ExpencesWindow>(expencesWindow);
+        }
+
+        private void btnFiles_Click(object sender, EventArgs e)
+        {
+            previousTabIndex = tabIndex;
+            tabIndex = 3;
+            ShowWindow<CondidateFileWindow>(condidateFileWindow);
         }
     }
 }

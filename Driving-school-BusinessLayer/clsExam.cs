@@ -111,14 +111,13 @@ namespace Driving_school_BusinessLayer
             => clsExamDataAccess.GetExamsByCondidateFile(condidateFileID); 
 
 
-        public static  bool DeleteAllFileExams(int StudentID)
+        public static  bool DeleteAllFileExamsByStudentID(int StudentID)
         {
             DataTable CondidateFiles =clsCondidateFileDataAccess.GetAllCondidateFilesByStudentID(StudentID);
             
             foreach(DataRow row in CondidateFiles.Rows)
                 if (!clsExamDataAccess.DeleteExamByCondidatefile((int)row["CondidateFileID"])) return false; 
             
-
             return true; 
         }
 
@@ -127,6 +126,9 @@ namespace Driving_school_BusinessLayer
         {
             return clsExamDataAccess.DeleteExam(id); 
         }
+
+        public static bool DeleteExamByCondidatefile(int CondidateFileId) 
+            =>clsExamDataAccess.DeleteExamByCondidatefile(CondidateFileId);
 
     }
 }

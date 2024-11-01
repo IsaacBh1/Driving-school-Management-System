@@ -126,7 +126,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>908, 0</value>
+    <value>1375, 0</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 40</value>
@@ -223,7 +223,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>946, 0</value>
+    <value>1413, 0</value>
   </data>
   <data name="btnMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 40</value>
@@ -250,7 +250,7 @@
     <value>0, 0</value>
   </data>
   <data name="TopPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>984, 40</value>
+    <value>1451, 40</value>
   </data>
   <data name="TopPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -393,6 +393,69 @@
   <data name="&gt;&gt;guna2Panel4.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="btnFiles.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10pt, style=Bold</value>
+  </data>
+  <data name="btnFiles.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnFiles.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnFiles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-9, -10</value>
+  </data>
+  <data name="btnFiles.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 10, 0</value>
+  </data>
+  <data name="btnFiles.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="btnFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 80</value>
+  </data>
+  <data name="btnFiles.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnFiles.Text" xml:space="preserve">
+    <value>الملفات</value>
+  </data>
+  <data name="&gt;&gt;btnFiles.Name" xml:space="preserve">
+    <value>btnFiles</value>
+  </data>
+  <data name="&gt;&gt;btnFiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnFiles.Parent" xml:space="preserve">
+    <value>guna2Panel9</value>
+  </data>
+  <data name="&gt;&gt;btnFiles.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="guna2Panel9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10pt</value>
+  </data>
+  <data name="guna2Panel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 127</value>
+  </data>
+  <data name="guna2Panel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 56</value>
+  </data>
+  <data name="guna2Panel9.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel9.Name" xml:space="preserve">
+    <value>guna2Panel9</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel9.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel9.Parent" xml:space="preserve">
+    <value>SideBar</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel9.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="btnLessons.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt, style=Bold</value>
   </data>
@@ -436,7 +499,7 @@
     <value>Tahoma, 10pt</value>
   </data>
   <data name="guna2Panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 127</value>
+    <value>0, 189</value>
   </data>
   <data name="guna2Panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 56</value>
@@ -454,7 +517,7 @@
     <value>SideBar</value>
   </data>
   <data name="&gt;&gt;guna2Panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btnExams.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt, style=Bold</value>
@@ -499,7 +562,7 @@
     <value>Tahoma, 10pt</value>
   </data>
   <data name="guna2Panel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 189</value>
+    <value>0, 251</value>
   </data>
   <data name="guna2Panel7.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 56</value>
@@ -517,172 +580,7 @@
     <value>SideBar</value>
   </data>
   <data name="&gt;&gt;guna2Panel7.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnFinance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 10pt, style=Bold</value>
-  </data>
-  <data name="btnFinance.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="btnFinance.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnFinance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-9, -10</value>
-  </data>
-  <data name="btnFinance.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 10, 0</value>
-  </data>
-  <data name="btnFinance.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="btnFinance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>252, 80</value>
-  </data>
-  <data name="btnFinance.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="btnFinance.Text" xml:space="preserve">
-    <value>المداخيل</value>
-  </data>
-  <data name="&gt;&gt;btnFinance.Name" xml:space="preserve">
-    <value>btnFinance</value>
-  </data>
-  <data name="&gt;&gt;btnFinance.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnFinance.Parent" xml:space="preserve">
-    <value>guna2Panel3</value>
-  </data>
-  <data name="&gt;&gt;btnFinance.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="guna2Panel3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 10pt</value>
-  </data>
-  <data name="guna2Panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 251</value>
-  </data>
-  <data name="guna2Panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 56</value>
-  </data>
-  <data name="guna2Panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel3.Name" xml:space="preserve">
-    <value>guna2Panel3</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel3.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel3.Parent" xml:space="preserve">
-    <value>SideBar</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel3.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="btnBoxBank.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 10pt, style=Bold</value>
-  </data>
-  <data name="btnBoxBank.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="btnBoxBank.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnBoxBank.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-9, -12</value>
-  </data>
-  <data name="btnBoxBank.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 10, 0</value>
-  </data>
-  <data name="btnBoxBank.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="btnBoxBank.Size" type="System.Drawing.Size, System.Drawing">
-    <value>252, 80</value>
-  </data>
-  <data name="btnBoxBank.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="btnBoxBank.Text" xml:space="preserve">
-    <value>الصندوق</value>
-  </data>
-  <data name="&gt;&gt;btnBoxBank.Name" xml:space="preserve">
-    <value>btnBoxBank</value>
-  </data>
-  <data name="&gt;&gt;btnBoxBank.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnBoxBank.Parent" xml:space="preserve">
-    <value>guna2Panel10</value>
-  </data>
-  <data name="&gt;&gt;btnBoxBank.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="button6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 10pt, style=Bold</value>
-  </data>
-  <data name="button6.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="button6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-9, -10</value>
-  </data>
-  <data name="button6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 10, 0</value>
-  </data>
-  <data name="button6.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>252, 80</value>
-  </data>
-  <data name="button6.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="button6.Text" xml:space="preserve">
-    <value>الإعدادات</value>
-  </data>
-  <data name="&gt;&gt;button6.Name" xml:space="preserve">
-    <value>button6</value>
-  </data>
-  <data name="&gt;&gt;button6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
-    <value>guna2Panel10</value>
-  </data>
-  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="guna2Panel10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 10pt</value>
-  </data>
-  <data name="guna2Panel10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 313</value>
-  </data>
-  <data name="guna2Panel10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 56</value>
-  </data>
-  <data name="guna2Panel10.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel10.Name" xml:space="preserve">
-    <value>guna2Panel10</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel10.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel10.Parent" xml:space="preserve">
-    <value>SideBar</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel10.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="btnExpences.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt, style=Bold</value>
@@ -766,7 +664,7 @@
     <value>Tahoma, 10pt</value>
   </data>
   <data name="guna2Panel11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 375</value>
+    <value>0, 313</value>
   </data>
   <data name="guna2Panel11.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 56</value>
@@ -784,108 +682,171 @@
     <value>SideBar</value>
   </data>
   <data name="&gt;&gt;guna2Panel11.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
-  <data name="btnCars.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnFinance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt, style=Bold</value>
   </data>
-  <data name="btnCars.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btnFinance.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="btnCars.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnFinance.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnCars.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-9, -12</value>
-  </data>
-  <data name="btnCars.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 10, 0</value>
-  </data>
-  <data name="btnCars.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="btnCars.Size" type="System.Drawing.Size, System.Drawing">
-    <value>252, 80</value>
-  </data>
-  <data name="btnCars.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="btnCars.Text" xml:space="preserve">
-    <value>المركبات</value>
-  </data>
-  <data name="&gt;&gt;btnCars.Name" xml:space="preserve">
-    <value>btnCars</value>
-  </data>
-  <data name="&gt;&gt;btnCars.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCars.Parent" xml:space="preserve">
-    <value>guna2Panel12</value>
-  </data>
-  <data name="&gt;&gt;btnCars.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="button9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 10pt, style=Bold</value>
-  </data>
-  <data name="button9.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="button9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnFinance.Location" type="System.Drawing.Point, System.Drawing">
     <value>-9, -10</value>
   </data>
-  <data name="button9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnFinance.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 10, 0</value>
   </data>
-  <data name="button9.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+  <data name="btnFinance.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
-  <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnFinance.Size" type="System.Drawing.Size, System.Drawing">
     <value>252, 80</value>
   </data>
-  <data name="button9.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnFinance.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="button9.Text" xml:space="preserve">
-    <value>الإعدادات</value>
+  <data name="btnFinance.Text" xml:space="preserve">
+    <value>المداخيل</value>
   </data>
-  <data name="&gt;&gt;button9.Name" xml:space="preserve">
-    <value>button9</value>
+  <data name="&gt;&gt;btnFinance.Name" xml:space="preserve">
+    <value>btnFinance</value>
   </data>
-  <data name="&gt;&gt;button9.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnFinance.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
-    <value>guna2Panel12</value>
+  <data name="&gt;&gt;btnFinance.Parent" xml:space="preserve">
+    <value>guna2Panel3</value>
   </data>
-  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;btnFinance.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="guna2Panel12.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="guna2Panel3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt</value>
   </data>
-  <data name="guna2Panel12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 437</value>
+  <data name="guna2Panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 375</value>
   </data>
-  <data name="guna2Panel12.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="guna2Panel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 56</value>
   </data>
-  <data name="guna2Panel12.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="guna2Panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;guna2Panel12.Name" xml:space="preserve">
-    <value>guna2Panel12</value>
+  <data name="&gt;&gt;guna2Panel3.Name" xml:space="preserve">
+    <value>guna2Panel3</value>
   </data>
-  <data name="&gt;&gt;guna2Panel12.Type" xml:space="preserve">
+  <data name="&gt;&gt;guna2Panel3.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="&gt;&gt;guna2Panel12.Parent" xml:space="preserve">
+  <data name="&gt;&gt;guna2Panel3.Parent" xml:space="preserve">
     <value>SideBar</value>
   </data>
-  <data name="&gt;&gt;guna2Panel12.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;guna2Panel3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnBoxBank.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10pt, style=Bold</value>
+  </data>
+  <data name="btnBoxBank.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnBoxBank.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnBoxBank.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-9, -12</value>
+  </data>
+  <data name="btnBoxBank.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 10, 0</value>
+  </data>
+  <data name="btnBoxBank.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="btnBoxBank.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 80</value>
+  </data>
+  <data name="btnBoxBank.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnBoxBank.Text" xml:space="preserve">
+    <value>الصندوق</value>
+  </data>
+  <data name="&gt;&gt;btnBoxBank.Name" xml:space="preserve">
+    <value>btnBoxBank</value>
+  </data>
+  <data name="&gt;&gt;btnBoxBank.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBoxBank.Parent" xml:space="preserve">
+    <value>guna2Panel10</value>
+  </data>
+  <data name="&gt;&gt;btnBoxBank.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10pt, style=Bold</value>
+  </data>
+  <data name="button6.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="button6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-9, -10</value>
+  </data>
+  <data name="button6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 10, 0</value>
+  </data>
+  <data name="button6.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 80</value>
+  </data>
+  <data name="button6.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="button6.Text" xml:space="preserve">
+    <value>الإعدادات</value>
+  </data>
+  <data name="&gt;&gt;button6.Name" xml:space="preserve">
+    <value>button6</value>
+  </data>
+  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
+    <value>guna2Panel10</value>
+  </data>
+  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="guna2Panel10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10pt</value>
+  </data>
+  <data name="guna2Panel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 437</value>
+  </data>
+  <data name="guna2Panel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 56</value>
+  </data>
+  <data name="guna2Panel10.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel10.Name" xml:space="preserve">
+    <value>guna2Panel10</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel10.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel10.Parent" xml:space="preserve">
+    <value>SideBar</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel10.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="btnInstructors.Font" type="System.Drawing.Font, System.Drawing">
@@ -990,6 +951,108 @@
   <data name="&gt;&gt;guna2Panel13.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="btnCars.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10pt, style=Bold</value>
+  </data>
+  <data name="btnCars.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnCars.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCars.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-9, -12</value>
+  </data>
+  <data name="btnCars.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 10, 0</value>
+  </data>
+  <data name="btnCars.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="btnCars.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 80</value>
+  </data>
+  <data name="btnCars.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnCars.Text" xml:space="preserve">
+    <value>المركبات</value>
+  </data>
+  <data name="&gt;&gt;btnCars.Name" xml:space="preserve">
+    <value>btnCars</value>
+  </data>
+  <data name="&gt;&gt;btnCars.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCars.Parent" xml:space="preserve">
+    <value>guna2Panel12</value>
+  </data>
+  <data name="&gt;&gt;btnCars.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10pt, style=Bold</value>
+  </data>
+  <data name="button9.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="button9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-9, -10</value>
+  </data>
+  <data name="button9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 10, 0</value>
+  </data>
+  <data name="button9.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 80</value>
+  </data>
+  <data name="button9.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="button9.Text" xml:space="preserve">
+    <value>الإعدادات</value>
+  </data>
+  <data name="&gt;&gt;button9.Name" xml:space="preserve">
+    <value>button9</value>
+  </data>
+  <data name="&gt;&gt;button9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
+    <value>guna2Panel12</value>
+  </data>
+  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="guna2Panel12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10pt</value>
+  </data>
+  <data name="guna2Panel12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 561</value>
+  </data>
+  <data name="guna2Panel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 56</value>
+  </data>
+  <data name="guna2Panel12.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel12.Name" xml:space="preserve">
+    <value>guna2Panel12</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel12.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel12.Parent" xml:space="preserve">
+    <value>SideBar</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel12.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt, style=Bold</value>
   </data>
@@ -1033,7 +1096,7 @@
     <value>Tahoma, 10pt</value>
   </data>
   <data name="guna2Panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 561</value>
+    <value>0, 623</value>
   </data>
   <data name="guna2Panel5.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 56</value>
@@ -1051,27 +1114,6 @@
     <value>SideBar</value>
   </data>
   <data name="&gt;&gt;guna2Panel5.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="guna2Separator2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-6, 623</value>
-  </data>
-  <data name="guna2Separator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 10</value>
-  </data>
-  <data name="guna2Separator2.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;guna2Separator2.Name" xml:space="preserve">
-    <value>guna2Separator2</value>
-  </data>
-  <data name="&gt;&gt;guna2Separator2.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Separator, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="&gt;&gt;guna2Separator2.Parent" xml:space="preserve">
-    <value>SideBar</value>
-  </data>
-  <data name="&gt;&gt;guna2Separator2.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="button5.Font" type="System.Drawing.Font, System.Drawing">
@@ -1156,7 +1198,7 @@
     <value>Tahoma, 10pt</value>
   </data>
   <data name="guna2Panel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 639</value>
+    <value>0, 685</value>
   </data>
   <data name="guna2Panel8.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 56</value>
@@ -1175,6 +1217,27 @@
   </data>
   <data name="&gt;&gt;guna2Panel8.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <data name="guna2Separator2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-6, 747</value>
+  </data>
+  <data name="guna2Separator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 10</value>
+  </data>
+  <data name="guna2Separator2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;guna2Separator2.Name" xml:space="preserve">
+    <value>guna2Separator2</value>
+  </data>
+  <data name="&gt;&gt;guna2Separator2.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Separator, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;guna2Separator2.Parent" xml:space="preserve">
+    <value>SideBar</value>
+  </data>
+  <data name="&gt;&gt;guna2Separator2.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10pt, style=Bold</value>
@@ -1219,7 +1282,7 @@
     <value>Tahoma, 10pt</value>
   </data>
   <data name="guna2Panel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 701</value>
+    <value>0, 763</value>
   </data>
   <data name="guna2Panel6.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 56</value>
@@ -1237,7 +1300,7 @@
     <value>SideBar</value>
   </data>
   <data name="&gt;&gt;guna2Panel6.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="lblEmail.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1330,7 +1393,7 @@
     <value>2</value>
   </data>
   <data name="UserNamePanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 772</value>
+    <value>18, 834</value>
   </data>
   <data name="UserNamePanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>12, 12, 12, 12</value>
@@ -1351,13 +1414,13 @@
     <value>SideBar</value>
   </data>
   <data name="&gt;&gt;UserNamePanel.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="SideBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
   </data>
   <data name="SideBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>747, 40</value>
+    <value>1214, 40</value>
   </data>
   <data name="SideBar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>30, 0, 0, 0</value>
@@ -1393,7 +1456,7 @@
     <value>144, 144</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>984, 1029</value>
+    <value>1451, 1029</value>
   </data>
   <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
     <value>True</value>

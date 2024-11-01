@@ -21,7 +21,8 @@ namespace Driving_School_Management_System.Forms
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            DoOperationEventHundler?.Invoke(); 
+            DoOperationEventHundler?.Invoke();
+            Close();
         }
     }
 }
