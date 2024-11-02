@@ -160,6 +160,7 @@
             this.btnSSearchCondidteFIle.Size = new System.Drawing.Size(89, 43);
             this.btnSSearchCondidteFIle.TabIndex = 27;
             this.btnSSearchCondidteFIle.Text = "بحث";
+            this.btnSSearchCondidteFIle.Click += new System.EventHandler(this.btnSSearchCondidteFIle_Click);
             // 
             // guna2Button4
             // 
