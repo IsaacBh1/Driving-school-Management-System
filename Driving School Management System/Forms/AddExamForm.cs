@@ -57,12 +57,24 @@ namespace Driving_School_Management_System.Forms
 
         }
 
+        public AddExamForm(int conidateFileId)
+        {
+            InitializeComponent();
+            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            clsCondidateFile condidateFile = clsCondidateFile.Find(conidateFileId);
+            if(!(condidateFile is null))
+            {
+                txtboxID.Text = condidateFile.CandidateFileID.ToString();
+                txtboxID.Enabled = false; 
+            }
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private bool IsIDExists()
+        private bool IsCondidateFileExists()
         {
             bool IsCondidateFileExists = false; 
             if (int.TryParse(txtboxID.Text , out int ID)) {
@@ -85,7 +97,7 @@ namespace Driving_School_Management_System.Forms
 
         private bool CheckExamInputs()
         {
-            return !string.IsNullOrEmpty(txtboxID.Text) && !string.IsNullOrEmpty(CboxState.Text) && IsIDExists();
+            return !string.IsNullOrEmpty(txtboxID.Text) && !string.IsNullOrEmpty(CboxState.Text) && IsCondidateFileExists();
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -110,8 +122,6 @@ namespace Driving_School_Management_System.Forms
 
         private void SaveExam()
         {
-            //CheckField( CBoxState,e)&&
-
             if (CheckExamInputs())
             {
                 //this is the code to save on DB 

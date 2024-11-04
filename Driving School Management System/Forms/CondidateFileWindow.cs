@@ -87,7 +87,8 @@ namespace Driving_School_Management_System.Forms
         private void AddFileExam_Click(object sender, EventArgs e)
         {
             // add exam to file feature 
-            throw new NotImplementedException();
+            AddExamForm AddexamForm = new AddExamForm(selectedId);
+            AddexamForm.ShowDialog();
         }
 
         private void DeleteFileInformations_Click(object sender, EventArgs e)

@@ -61,7 +61,7 @@ namespace Driving_School_Management_System.Forms
             InitializeComponent();
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             clsCondidateFile condidateFile = clsCondidateFile.Find(CondidateFileId);
-            if (condidateFile != null)
+            if (!(condidateFile is null))
             {
                 txtboxID.Text = condidateFile.CandidateFileID.ToString();
                 txtboxID.Enabled = false;
