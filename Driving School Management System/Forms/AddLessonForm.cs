@@ -86,9 +86,7 @@ namespace Driving_School_Management_System.Forms
             {
                 GroupID = clsGroup.GetGroupIDbyName(CbxGroup.Text),
                 InstructorID = clsInstructor.GetInstructorIDByUserName(CboxInsructor.Text),
-                Duration_hours = Convert.ToInt32(numUpDwHours.Value),
-                Duration_minutes = Convert.ToInt32(numUpDwMins.Value),
-                timeSpan = new TimeSpan(Convert.ToInt32(numUpDwTimeHours.Value), Convert.ToInt32(numUpDwTimeMins.Value), 0),
+                LessonDuration = new TimeSpan(Convert.ToInt32(dateTimeLessaon.Value.Hour), Convert.ToInt32(dateTimeLessaon.Value.Minute), 0),
                 type = _getLessonType(),
                 LessonDate = dateTimeLessaon.Value
 

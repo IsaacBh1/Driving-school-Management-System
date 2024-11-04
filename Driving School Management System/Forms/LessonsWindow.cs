@@ -1,20 +1,73 @@
 ﻿using Driving_school_BusinessLayer;
 using System;
 using System.Data;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Driving_School_Management_System.Forms
 {
     public partial class LessonsWindow : Form
     {
+
+
+        private ContextMenuStrip contextLesson;
+        private int selectedId;
+        private StatusMessageForm statusMessageForm; 
         public LessonsWindow()
         {
             InitializeComponent();
             _initializeGroupsCbox();
-            DisplayLessonInformations(clsLesson.GetAllLessons()); 
-
+            DisplayLessonInformations(clsLesson.GetAllLessons());
+            DGVLessons.CellMouseClick += DGVLessons_CellMouseClick;
+            InetializeLessonMenu();
         }
 
+        private void DGVLessons_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (DGVLessons.Rows[e.RowIndex].Cells[0].Value is null) return;
+            if((e.RowIndex >= 0 )&& (e.Button == MouseButtons.Right || e.Button == MouseButtons.Left) && e.ColumnIndex == 7)
+            {
+                var cellRect = DGVLessons.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, true);
+                selectedId = Convert.ToInt32(DGVLessons.Rows[e.RowIndex].Cells[0].Value);
+                Point menuLocation = DGVLessons.PointToScreen(new Point(cellRect.X, cellRect.Y + cellRect.Height));
+                // Show the context menu at the calculated location
+                contextLesson.Show(menuLocation);
+            }
+        }
+
+        private void InetializeLessonMenu()
+        {
+            contextLesson = new ContextMenuStrip();
+            var deleteLessonItem = new ToolStripMenuItem("حذف الدرس" , Properties.Resources.trash__1_);
+            deleteLessonItem.Click += DelteLesson_Click;
+            var ShowLessonItem = new ToolStripMenuItem("ShowLessonInfos", Properties.Resources.trash__1_);
+            ShowLessonItem.Click += ShowLesson_Click;
+            contextLesson.Items.Add(deleteLessonItem); 
+            contextLesson.Items.Add(ShowLessonItem);
+        }
+
+        private void ShowLesson_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void DelteLesson_Click(object sender, EventArgs e)
+        {
+            // this is the code of deleting the lesson  
+            clsLesson lessonSelected = clsLesson.Find(selectedId);
+            if (!(lessonSelected is null) &&clsLesson.DelteLesson(lessonSelected.LessonID))
+            {
+                statusMessageForm = new StatusMessageForm("Lesson deleted Successfully");
+                statusMessageForm.ShowSuccess();
+                DisplayLessonInformations(clsLesson.GetAllLessons());
+
+            }
+            else
+            {
+                statusMessageForm = new StatusMessageForm("operation failed");
+                statusMessageForm.ShowFailed();
+            };
+        }
 
         public void DisplayLessonInformations(DataTable AllLessons)
         {

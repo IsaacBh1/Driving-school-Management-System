@@ -25,8 +25,6 @@ namespace Driving_School_Management_System.Forms
           );
 
 
-
-
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 

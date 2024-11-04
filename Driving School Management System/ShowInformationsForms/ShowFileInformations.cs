@@ -76,13 +76,13 @@ namespace Driving_School_Management_System.ShowInformationsForms
         {
             ID.Text = condidateFile.CandidateFileID.ToString();
             nameInAr.Text = condidateFile.Student.Person.FirstName_Arabic;
-            NameInfr.Text = condidateFile.Student.Person.FirstName;
+            appInstructor.Text = condidateFile.Student.Person.FirstName;
             LastNameInAr.Text = condidateFile.Student.Person.LastName_Arabic;
             LastNameinfr.Text = condidateFile.Student.Person.LastName;
             IdentifcationNumber.Text = condidateFile.Student.NationalCard.CardNumber;
             Gender.Text = condidateFile.Student.GetGender();
             birthPlace.Text = condidateFile.Student.BirthPlace;
-            birthDate.Text = condidateFile.Student.BirthDate.ToString();
+            birthDate.Text = condidateFile.Student.BirthDate.ToString("d");
             address.Text = condidateFile.Student.Person.Address.GetFullAddress();
             phoneNumber.Text = condidateFile.Student.Person.Contact.Phone;
             Email.Text = condidateFile.Student.Person.Contact.Email;
@@ -95,7 +95,8 @@ namespace Driving_School_Management_System.ShowInformationsForms
             theoInstructor.Text = condidateFile.TheoreticalInstructor?.UserName ?? "";
             appInstructor.Text = condidateFile.ApplicationInstructor?.UserName ?? "";
             DateOfCreation.Text = condidateFile.CreatingFileDate.ToString();
-            AdditionalNotes.Text = condidateFile.AdditionalNotes; 
+            AdditionalNotes.Text = condidateFile.AdditionalNotes;
+            
 
         }
 
