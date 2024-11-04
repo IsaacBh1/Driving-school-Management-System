@@ -99,8 +99,8 @@ namespace Driving_School_Management_System.Forms
         private void DeleteFile()
         {
             clsCondidateFile FileToDelete = clsCondidateFile.Find(selectedId);
-
-            if (!(FileToDelete is null) && (clsExam.DeleteExamByCondidatefile(FileToDelete.CandidateFileID)) && (clsCondidateFile.DeleteCondidateFile(FileToDelete.CandidateFileID)))
+            clsExam.DeleteExamByCondidatefile(FileToDelete.CandidateFileID);
+            if (!(FileToDelete is null)   && (clsCondidateFile.DeleteCondidateFile(FileToDelete.CandidateFileID)))
             {
                 statusMessageForm = new StatusMessageForm("Operation done Successfully");
                 statusMessageForm.ShowSuccess();
@@ -212,7 +212,8 @@ namespace Driving_School_Management_System.Forms
 
         }
 
-      
+       
+        
     }
 
 }
