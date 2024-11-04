@@ -55,6 +55,26 @@ namespace Driving_School_Management_System.Forms
 
         }
 
+
+        public AddPaymentForm(int CondidateFileId)
+        {
+            InitializeComponent();
+            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            clsCondidateFile condidateFile = clsCondidateFile.Find(CondidateFileId);
+            if (condidateFile != null)
+            {
+                txtboxID.Text = condidateFile.CandidateFileID.ToString();
+                txtboxID.Enabled = false;
+                txtBoxPersonName.Text = condidateFile.Student.Person.FullName;
+                txtBoxPersonName.Enabled = false;
+                SearchCondidateFile(condidateFile.CandidateFileID);
+                guna2Button1.Enabled = false; // this is search button
+
+            }
+
+        }
+ 
+
         private void pictureBox1_Click(object sender, EventArgs e)
         => Close();
 
@@ -95,32 +115,37 @@ namespace Driving_School_Management_System.Forms
 
         }
 
+        private void SearchCondidateFile(int CandidateFileId)
+        {
+            NotItemsFoundInDGV();
+            if (CheckCondidateFileInput())
+            {
+                //search for that condidate file and his payment 
+               
+                    condidateFile = clsCondidateFile.Find(CandidateFileId);
+                    if (condidateFile is null)
+                    {
+                        MessageBox.Show(" لم يتم العثور على الملف", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        isInforCorrect = false;
+                        return;
+                    }
+                    txtBoxPersonName.Text = condidateFile.Student.Person.FullName_Arabic;
+                    // ADD THE BATCH HERE
+                    inetializeDGV(CandidateFileId, condidateFile.Payment.FullAmount, condidateFile.Payment.FullAmount - condidateFile.Payment.AmountPayed);
+                
+            }
+        }
 
 
         //search for condidate file 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            NotItemsFoundInDGV(); 
-            if (CheckCondidateFileInput())
+            if (int.TryParse(txtboxID.Text, out int CondidateFileID))
             {
-                //search for that condidate file and his payment 
-                if(int.TryParse(txtboxID.Text , out int CondidateFileID))
-                {
-                    condidateFile = clsCondidateFile.Find(CondidateFileID);
-                    if (condidateFile is null)
-                    {
-                        MessageBox.Show(" لم يتم العثور على الملف", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        isInforCorrect = false; 
-                        return;
-                    }
-                    txtBoxPersonName.Text = condidateFile.Student.Person.FullName_Arabic;
-                    // ADD THE BATCH HERE
-                    inetializeDGV(CondidateFileID , condidateFile.Payment.FullAmount , condidateFile.Payment.FullAmount - condidateFile.Payment.AmountPayed);
-                }
+                SearchCondidateFile(CondidateFileID);
             }
         }
-
-        private void CheckPaymentInformations()
+            private void CheckPaymentInformations()
         {
             if (!(paymentDGV is null || condidateFile is null))
             {

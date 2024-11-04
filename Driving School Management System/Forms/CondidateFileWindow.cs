@@ -64,7 +64,8 @@ namespace Driving_School_Management_System.Forms
 
         private void AddFilePayment_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            AddPaymentForm addPaymentForm = new AddPaymentForm(selectedId);
+            addPaymentForm.ShowDialog();
         }
 
         private void _initializeDrivingLicenseTypeCbox()
