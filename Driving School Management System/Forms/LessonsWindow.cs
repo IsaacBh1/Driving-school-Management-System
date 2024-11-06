@@ -74,13 +74,14 @@ namespace Driving_School_Management_System.Forms
             DGVLessons.Rows.Clear();
             foreach (DataRow row in AllLessons.Rows)
             {
-                string DurationTime =row["DurationHours"].ToString() + ":" + row["DurationMin"] ;  
+                TimeSpan DurationTime =  (TimeSpan)row["TimeOfLesson"];  
+                TimeSpan date = new TimeSpan( (int)row[4] , (int)row[5] ,0 );
                 DGVLessons.Rows.Add(row[0], 
                     clsGroup.GetGroupNameByID ((int)row[7]),
                     clsInstructor.GetInsreuctorUserNameByID((int)row[6]), 
                     row[1], 
-                    row[2], 
-                    row[3], 
+                    row[2],
+                    date,
                     DurationTime);
             }
             

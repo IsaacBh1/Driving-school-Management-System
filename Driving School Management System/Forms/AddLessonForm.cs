@@ -86,10 +86,11 @@ namespace Driving_School_Management_System.Forms
             {
                 GroupID = clsGroup.GetGroupIDbyName(CbxGroup.Text),
                 InstructorID = clsInstructor.GetInstructorIDByUserName(CboxInsructor.Text),
-                LessonDuration = new TimeSpan(Convert.ToInt32(dateTimeLessaon.Value.Hour), Convert.ToInt32(dateTimeLessaon.Value.Minute), 0),
+                LessonDuration = new TimeSpan(Convert.ToInt32(numUpDwHours.Value), Convert.ToInt32(numUpDwMins.Value), 0),
                 type = _getLessonType(),
-                LessonDate = dateTimeLessaon.Value
-
+                LessonDate = dateTimeLessaon.Value , 
+                hour_ofLesson = dateTimeLessaon.Value.Hour , 
+                minut_ofLesson = dateTimeLessaon.Value.Minute
             };
             if (lesson.Save())
             {
