@@ -30,17 +30,11 @@
         {
             this.dateTimeExam = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.numUpDwTimeMins = new System.Windows.Forms.NumericUpDown();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.rdobtnApp = new System.Windows.Forms.RadioButton();
             this.rdobtnTheo = new System.Windows.Forms.RadioButton();
             this.chckLessonsType = new System.Windows.Forms.Label();
-            this.numUpDwTimeHours = new System.Windows.Forms.NumericUpDown();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblNotFoundStudent = new System.Windows.Forms.Label();
             this.txtboxID = new Guna.UI2.WinForms.Guna2TextBox();
@@ -53,7 +47,6 @@
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.numupdownResult = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
@@ -65,15 +58,12 @@
             this.txtboxAdditionalNotes = new Guna.UI2.WinForms.Guna2TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numUpDwTimeMins)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numUpDwTimeHours)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numupdownResult)).BeginInit();
             this.panel5.SuspendLayout();
@@ -82,7 +72,7 @@
             // 
             // dateTimeExam
             // 
-            this.dateTimeExam.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeExam.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimeExam.Location = new System.Drawing.Point(126, 23);
             this.dateTimeExam.Name = "dateTimeExam";
             this.dateTimeExam.Size = new System.Drawing.Size(359, 27);
@@ -99,40 +89,6 @@
             this.label9.Size = new System.Drawing.Size(173, 31);
             this.label9.TabIndex = 9;
             this.label9.Text = "التاريخ الامتحان\n";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label7.Location = new System.Drawing.Point(303, 18);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 29);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "min";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label14.Location = new System.Drawing.Point(130, 20);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(26, 29);
-            this.label14.TabIndex = 14;
-            this.label14.Text = "h";
-            // 
-            // numUpDwTimeMins
-            // 
-            this.numUpDwTimeMins.Location = new System.Drawing.Point(352, 19);
-            this.numUpDwTimeMins.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
-            this.numUpDwTimeMins.Name = "numUpDwTimeMins";
-            this.numUpDwTimeMins.Size = new System.Drawing.Size(140, 27);
-            this.numUpDwTimeMins.TabIndex = 13;
             // 
             // panel3
             // 
@@ -191,41 +147,6 @@
             this.chckLessonsType.TabIndex = 9;
             this.chckLessonsType.Text = "النوع";
             // 
-            // numUpDwTimeHours
-            // 
-            this.numUpDwTimeHours.Location = new System.Drawing.Point(157, 21);
-            this.numUpDwTimeHours.Maximum = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.numUpDwTimeHours.Name = "numUpDwTimeHours";
-            this.numUpDwTimeHours.Size = new System.Drawing.Size(140, 27);
-            this.numUpDwTimeHours.TabIndex = 12;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.ForeColor = System.Drawing.Color.Salmon;
-            this.label15.Location = new System.Drawing.Point(571, 26);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(18, 19);
-            this.label15.TabIndex = 11;
-            this.label15.Text = "*";
-            // 
-            // label16
-            // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label16.Location = new System.Drawing.Point(598, 16);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(155, 31);
-            this.label16.TabIndex = 9;
-            this.label16.Text = "وقت الامتحان";
-            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -277,7 +198,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.Salmon;
-            this.label3.Location = new System.Drawing.Point(610, 18);
+            this.label3.Location = new System.Drawing.Point(610, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(18, 19);
             this.label3.TabIndex = 11;
@@ -289,7 +210,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(633, 13);
+            this.label2.Location = new System.Drawing.Point(633, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 31);
             this.label2.TabIndex = 9;
@@ -305,7 +226,7 @@
             this.btnSubmit.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
             this.btnSubmit.ForeColor = System.Drawing.Color.Black;
             this.btnSubmit.HoverState.Parent = this.btnSubmit;
-            this.btnSubmit.Location = new System.Drawing.Point(23, 606);
+            this.btnSubmit.Location = new System.Drawing.Point(21, 571);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.ShadowDecoration.Parent = this.btnSubmit;
             this.btnSubmit.Size = new System.Drawing.Size(126, 44);
@@ -342,7 +263,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.x_light;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(21, 26);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -354,7 +275,7 @@
             // 
             this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Separator1.Location = new System.Drawing.Point(-31, 46);
+            this.guna2Separator1.Location = new System.Drawing.Point(-31, 59);
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(891, 14);
             this.guna2Separator1.TabIndex = 38;
@@ -378,30 +299,14 @@
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Controls.Add(this.panel4);
-            this.flowLayoutPanel1.Controls.Add(this.panel7);
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Controls.Add(this.panel5);
             this.flowLayoutPanel1.Controls.Add(this.panel8);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(21, 54);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(21, 78);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(790, 545);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(790, 475);
             this.flowLayoutPanel1.TabIndex = 40;
-            // 
-            // panel7
-            // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel7.Controls.Add(this.label7);
-            this.panel7.Controls.Add(this.label14);
-            this.panel7.Controls.Add(this.numUpDwTimeMins);
-            this.panel7.Controls.Add(this.numUpDwTimeHours);
-            this.panel7.Controls.Add(this.label15);
-            this.panel7.Controls.Add(this.label16);
-            this.panel7.Location = new System.Drawing.Point(16, 237);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(771, 70);
-            this.panel7.TabIndex = 31;
             // 
             // panel2
             // 
@@ -409,7 +314,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.numupdownResult);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(16, 313);
+            this.panel2.Location = new System.Drawing.Point(16, 237);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(771, 70);
             this.panel2.TabIndex = 27;
@@ -440,7 +345,7 @@
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.CboxState);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Location = new System.Drawing.Point(16, 389);
+            this.panel5.Location = new System.Drawing.Point(16, 313);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(771, 70);
             this.panel5.TabIndex = 28;
@@ -497,7 +402,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel8.Controls.Add(this.txtboxAdditionalNotes);
             this.panel8.Controls.Add(this.label11);
-            this.panel8.Location = new System.Drawing.Point(16, 465);
+            this.panel8.Location = new System.Drawing.Point(16, 389);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(771, 70);
             this.panel8.TabIndex = 32;
@@ -515,7 +420,7 @@
             this.txtboxAdditionalNotes.FocusedState.Parent = this.txtboxAdditionalNotes;
             this.txtboxAdditionalNotes.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtboxAdditionalNotes.HoverState.Parent = this.txtboxAdditionalNotes;
-            this.txtboxAdditionalNotes.Location = new System.Drawing.Point(126, 17);
+            this.txtboxAdditionalNotes.Location = new System.Drawing.Point(134, 15);
             this.txtboxAdditionalNotes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtboxAdditionalNotes.Name = "txtboxAdditionalNotes";
             this.txtboxAdditionalNotes.PasswordChar = '\0';
@@ -550,7 +455,7 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(163, 606);
+            this.guna2Button2.Location = new System.Drawing.Point(161, 571);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(126, 44);
@@ -562,7 +467,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(828, 670);
+            this.ClientSize = new System.Drawing.Size(828, 631);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2Separator1);
@@ -573,20 +478,16 @@
             this.Name = "AddExamForm";
             this.Text = "AddExamForm";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
-            ((System.ComponentModel.ISupportInitialize)(this.numUpDwTimeMins)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numUpDwTimeHours)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numupdownResult)).EndInit();
@@ -603,17 +504,11 @@
 
         private System.Windows.Forms.DateTimePicker dateTimeExam;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.NumericUpDown numUpDwTimeMins;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.RadioButton rdobtnApp;
         private System.Windows.Forms.RadioButton rdobtnTheo;
         private System.Windows.Forms.Label chckLessonsType;
-        private System.Windows.Forms.NumericUpDown numUpDwTimeHours;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -623,7 +518,6 @@
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel7;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2TextBox txtboxID;
         private System.Windows.Forms.Panel panel2;

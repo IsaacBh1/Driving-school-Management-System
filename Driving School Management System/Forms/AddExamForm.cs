@@ -112,7 +112,7 @@ namespace Driving_School_Management_System.Forms
                     Result = Convert.ToInt32(numupdownResult.Text),
                     AdditionalNotes = txtboxAdditionalNotes.Text , 
                     Situation = CboxState.Text,
-                    timeOfExam = new TimeSpan(Convert.ToInt32(numUpDwTimeHours.Value), Convert.ToInt32(numUpDwTimeMins.Value) , 0) 
+                    timeOfExam = new TimeSpan(Convert.ToInt32(dateTimeExam.Value.Hour), Convert.ToInt32(dateTimeExam.Value.Minute) , 0) 
                 };
                 return exam.Save(); 
         }
@@ -142,6 +142,6 @@ namespace Driving_School_Management_System.Forms
 
         }
 
-
+      
     }
 }

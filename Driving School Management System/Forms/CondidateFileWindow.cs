@@ -78,7 +78,7 @@ namespace Driving_School_Management_System.Forms
             DGVFiles.Rows.Clear();
             foreach (DataRow row in AllFiles.Rows)
             {
-                DGVFiles.Rows.Add(row[0], row[1], row[2], row[3], _getFileStatus(row[4].ToString()), _getStudentStatus(row[5].ToString()), row[6], row[7]);
+                DGVFiles.Rows.Add(row[0], row[1], row[2], row[3], _getFileStatus(row[4].ToString()), _getStudentStatus(row[5].ToString()), ((DateTime)row[6]).ToShortDateString(), row[7]);
             }
         }
 

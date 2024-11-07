@@ -57,7 +57,7 @@
             this.nameInAr = new System.Windows.Forms.TextBox();
             this.LastNameInAr = new System.Windows.Forms.TextBox();
             this.IdentifcationNumber = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.nameInfr = new System.Windows.Forms.TextBox();
             this.LastNameinfr = new System.Windows.Forms.TextBox();
             this.Gender = new System.Windows.Forms.TextBox();
             this.birthPlace = new System.Windows.Forms.TextBox();
@@ -391,13 +391,13 @@
             this.IdentifcationNumber.Size = new System.Drawing.Size(240, 27);
             this.IdentifcationNumber.TabIndex = 76;
             // 
-            // textBox5
+            // nameInfr
             // 
-            this.textBox5.Location = new System.Drawing.Point(494, 166);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(133, 27);
-            this.textBox5.TabIndex = 76;
+            this.nameInfr.Location = new System.Drawing.Point(494, 166);
+            this.nameInfr.Name = "nameInfr";
+            this.nameInfr.ReadOnly = true;
+            this.nameInfr.Size = new System.Drawing.Size(133, 27);
+            this.nameInfr.TabIndex = 76;
             // 
             // LastNameinfr
             // 
@@ -557,7 +557,7 @@
             this.Controls.Add(this.Activation);
             this.Controls.Add(this.phoneNumber);
             this.Controls.Add(this.birthPlace);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.nameInfr);
             this.Controls.Add(this.nameInAr);
             this.Controls.Add(this.Group);
             this.Controls.Add(this.DateOfCreation);
@@ -633,7 +633,7 @@
         private System.Windows.Forms.TextBox nameInAr;
         private System.Windows.Forms.TextBox LastNameInAr;
         private System.Windows.Forms.TextBox IdentifcationNumber;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox nameInfr;
         private System.Windows.Forms.TextBox LastNameinfr;
         private System.Windows.Forms.TextBox Gender;
         private System.Windows.Forms.TextBox birthPlace;

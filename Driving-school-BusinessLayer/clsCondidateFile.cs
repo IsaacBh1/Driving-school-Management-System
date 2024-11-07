@@ -58,8 +58,8 @@ namespace Driving_school_BusinessLayer
             Payment = clsPayment.Find(PaymentID);
             TheoreticalInstructorID = theoreticalInstructorID;
             ApplicationInstructorID = applicationInstructorID;
-            TheoreticalInstructor = clsInstructor.Find(TheoreticalInstructorID); 
-            ApplicationInstructor = clsInstructor.Find(ApplicationInstructorID);
+            TheoreticalInstructor = clsInstructor.Find(theoreticalInstructorID); 
+            ApplicationInstructor = clsInstructor.Find(applicationInstructorID);
             Mode = enMode.Update;
         }
 

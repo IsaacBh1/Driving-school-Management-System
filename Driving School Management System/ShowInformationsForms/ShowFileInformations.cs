@@ -76,6 +76,7 @@ namespace Driving_School_Management_System.ShowInformationsForms
         {
             ID.Text = condidateFile.CandidateFileID.ToString();
             nameInAr.Text = condidateFile.Student.Person.FirstName_Arabic;
+            nameInfr.Text = condidateFile.Student.Person.FirstName;
             appInstructor.Text = condidateFile.Student.Person.FirstName;
             LastNameInAr.Text = condidateFile.Student.Person.LastName_Arabic;
             LastNameinfr.Text = condidateFile.Student.Person.LastName;
@@ -96,8 +97,6 @@ namespace Driving_School_Management_System.ShowInformationsForms
             appInstructor.Text = condidateFile.ApplicationInstructor?.UserName ?? "";
             DateOfCreation.Text = condidateFile.CreatingFileDate.ToString();
             AdditionalNotes.Text = condidateFile.AdditionalNotes;
-            
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

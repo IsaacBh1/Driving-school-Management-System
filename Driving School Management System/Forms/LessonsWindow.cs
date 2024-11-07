@@ -40,10 +40,10 @@ namespace Driving_School_Management_System.Forms
             contextLesson = new ContextMenuStrip();
             var deleteLessonItem = new ToolStripMenuItem("حذف الدرس" , Properties.Resources.trash__1_);
             deleteLessonItem.Click += DelteLesson_Click;
-            var ShowLessonItem = new ToolStripMenuItem("ShowLessonInfos", Properties.Resources.trash__1_);
-            ShowLessonItem.Click += ShowLesson_Click;
+            //var ShowLessonItem = new ToolStripMenuItem("ShowLessonInfos", Properties.Resources.trash__1_);
+            //ShowLessonItem.Click += ShowLesson_Click;
             contextLesson.Items.Add(deleteLessonItem); 
-            contextLesson.Items.Add(ShowLessonItem);
+            //contextLesson.Items.Add(ShowLessonItem);
         }
 
         private void ShowLesson_Click(object sender, EventArgs e)
@@ -80,7 +80,7 @@ namespace Driving_School_Management_System.Forms
                     clsGroup.GetGroupNameByID ((int)row[7]),
                     clsInstructor.GetInsreuctorUserNameByID((int)row[6]), 
                     row[1], 
-                    row[2],
+                    ((DateTime)row[2]).ToShortDateString(),
                     date,
                     DurationTime);
             }

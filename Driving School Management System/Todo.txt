@@ -1,0 +1,4 @@
+﻿to do : 
+> add a the update and delete operations from the exams window options
+> change the window of student student informations 
+
