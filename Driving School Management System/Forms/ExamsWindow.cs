@@ -1,16 +1,35 @@
 ﻿using Driving_school_BusinessLayer;
 using System;
 using System.Data;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Driving_School_Management_System.Forms
 {
     public partial class ExamsWindow : Form
     {
+
+        ContextMenuStrip contextExam = null;
+        private int selectedId = -1; 
         public ExamsWindow()
         {
             InitializeComponent();
-            DisplayExamsInformations(clsExam.GetAllExamInformations()); 
+            DisplayExamsInformations(clsExam.GetAllExamInformations());
+            InetializeLessonMenu();
+            DGVExams.CellMouseClick += DGVExam_CellMouseClick; 
+        }
+
+        private void DGVExam_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (DGVExams.Rows[e.RowIndex].Cells[0].Value is null) return;
+            if ((e.RowIndex >= 0) && (e.Button == MouseButtons.Right || e.Button == MouseButtons.Left) && e.ColumnIndex == 6)
+            {
+                var cellRect = DGVExams.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, true);
+                selectedId = Convert.ToInt32(DGVExams.Rows[e.RowIndex].Cells[0].Value);
+                Point menuLocation = DGVExams.PointToScreen(new Point(cellRect.X, cellRect.Y + cellRect.Height));
+                // Show the context menu at the calculated location
+                contextExam.Show(menuLocation);
+            }
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -23,6 +42,28 @@ namespace Driving_School_Management_System.Forms
         private void RefreshExams()
         {
             DisplayExamsInformations(clsExam.GetAllExamInformations());
+        }
+        private void InetializeLessonMenu()
+        {
+            contextExam= new ContextMenuStrip();
+            var deleteLessonItem = new ToolStripMenuItem("حذف الدرس", Properties.Resources.trash__1_);
+            deleteLessonItem.Click += DeleteExam_Click;
+            var deleteExamItem = new ToolStripMenuItem("عرض معلومات الامتحان", Properties.Resources.exam);
+            deleteExamItem.Click += DeleteExam_Click;
+            var UpdateExamItem = new ToolStripMenuItem("تعديل نتائج الامتحان", Properties.Resources.trash__1_);
+            UpdateExamItem.Click += DeleteExam_Click;
+            /*var deleteLessonItem = new ToolStripMenuItem("حذف الدرس", Properties.Resources.trash__1_);
+            deleteLessonItem.Click += DeleteExam_Click;*/
+            //var ShowLessonItem = new ToolStripMenuItem("ShowLessonInfos", Properties.Resources.trash__1_);
+            //ShowLessonItem.Click += ShowLesson_Click;
+            contextExam.Items.Add(deleteLessonItem);
+            contextExam.Items.Add(deleteExamItem);
+            //contextLesson.Items.Add(ShowLessonItem);
+        }
+
+        private void DeleteExam_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private string GetExamType(int typeid)
