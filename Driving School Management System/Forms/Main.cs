@@ -16,14 +16,19 @@ namespace Driving_School_Management_System.Forms
         public MainWindow()
         {
             InitializeComponent();
+            Dock = DockStyle.Fill;
             chart1.Titles.Add("الملفات لكل رخصة سياقة");
             chart1.Series[0].IsValueShownAsLabel = true;
             chart1.Series[0].Points.AddXY("A", "20"); 
             chart1.Series[0].Points.AddXY("B", "40"); 
             chart1.Series[0].Points.AddXY("AB", "35"); 
             chart1.Series[0].Points.AddXY("C", "5");
+            
         }
 
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

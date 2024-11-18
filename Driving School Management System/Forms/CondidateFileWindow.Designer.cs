@@ -65,12 +65,13 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.CboxStudentStatus = new MetroFramework.Controls.MetroComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
-            this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.btnAddCondidtefile = new Guna.UI2.WinForms.Guna2Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVFiles)).BeginInit();
@@ -89,19 +90,20 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.label4);
+            this.panel6.Controls.Add(this.label3);
+            this.panel6.Controls.Add(this.label2);
             this.panel6.Controls.Add(this.CboxFilterCondidtateFile);
             this.panel6.Controls.Add(this.pictureBox2);
             this.panel6.Controls.Add(this.btnSSearchCondidteFIle);
             this.panel6.Controls.Add(this.guna2Button4);
             this.panel6.Controls.Add(this.DGVFiles);
             this.panel6.Controls.Add(this.flowLayoutPanel2);
-            this.panel6.Controls.Add(this.label13);
             this.panel6.Controls.Add(this.label14);
             this.panel6.Controls.Add(this.guna2Separator2);
-            this.panel6.Controls.Add(this.label15);
             this.panel6.Location = new System.Drawing.Point(12, 77);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1239, 625);
+            this.panel6.Size = new System.Drawing.Size(1249, 625);
             this.panel6.TabIndex = 10;
             // 
             // CboxFilterCondidtateFile
@@ -126,7 +128,7 @@
             "وضع المرشح",
             "الكل"});
             this.CboxFilterCondidtateFile.ItemsAppearance.Parent = this.CboxFilterCondidtateFile;
-            this.CboxFilterCondidtateFile.Location = new System.Drawing.Point(891, 79);
+            this.CboxFilterCondidtateFile.Location = new System.Drawing.Point(901, 79);
             this.CboxFilterCondidtateFile.Name = "CboxFilterCondidtateFile";
             this.CboxFilterCondidtateFile.ShadowDecoration.Parent = this.CboxFilterCondidtateFile;
             this.CboxFilterCondidtateFile.Size = new System.Drawing.Size(183, 36);
@@ -136,7 +138,7 @@
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::Driving_School_Management_System.Properties.Resources.funnel__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(843, 79);
+            this.pictureBox2.Location = new System.Drawing.Point(853, 79);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(42, 37);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -153,7 +155,7 @@
             this.btnSSearchCondidteFIle.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.btnSSearchCondidteFIle.ForeColor = System.Drawing.Color.White;
             this.btnSSearchCondidteFIle.HoverState.Parent = this.btnSSearchCondidteFIle;
-            this.btnSSearchCondidteFIle.Location = new System.Drawing.Point(1080, 76);
+            this.btnSSearchCondidteFIle.Location = new System.Drawing.Point(1090, 76);
             this.btnSSearchCondidteFIle.Name = "btnSSearchCondidteFIle";
             this.btnSSearchCondidteFIle.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnSSearchCondidteFIle.ShadowDecoration.Parent = this.btnSSearchCondidteFIle;
@@ -173,7 +175,7 @@
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
             this.guna2Button4.Image = global::Driving_School_Management_System.Properties.Resources.arrows_clockwise;
-            this.guna2Button4.Location = new System.Drawing.Point(1177, 76);
+            this.guna2Button4.Location = new System.Drawing.Point(1187, 76);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
@@ -232,7 +234,7 @@
             this.DGVFiles.RowTemplate.Height = 40;
             this.DGVFiles.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DGVFiles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVFiles.Size = new System.Drawing.Size(1226, 361);
+            this.DGVFiles.Size = new System.Drawing.Size(1236, 361);
             this.DGVFiles.TabIndex = 25;
             this.DGVFiles.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.DGVFiles.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -336,14 +338,14 @@
             this.flowLayoutPanel2.Location = new System.Drawing.Point(14, 125);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1218, 100);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1228, 100);
             this.flowLayoutPanel2.TabIndex = 24;
             // 
             // panel7
             // 
             this.panel7.Controls.Add(this.textBoxID);
             this.panel7.Controls.Add(this.label9);
-            this.panel7.Location = new System.Drawing.Point(1032, 3);
+            this.panel7.Location = new System.Drawing.Point(1042, 3);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(183, 83);
             this.panel7.TabIndex = 23;
@@ -370,7 +372,7 @@
             // 
             this.panel9.Controls.Add(this.textBoxFName_Arabic);
             this.panel9.Controls.Add(this.label11);
-            this.panel9.Location = new System.Drawing.Point(843, 3);
+            this.panel9.Location = new System.Drawing.Point(853, 3);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(183, 83);
             this.panel9.TabIndex = 25;
@@ -397,7 +399,7 @@
             // 
             this.panel10.Controls.Add(this.textBoxLName_Arabic);
             this.panel10.Controls.Add(this.label12);
-            this.panel10.Location = new System.Drawing.Point(654, 3);
+            this.panel10.Location = new System.Drawing.Point(664, 3);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(183, 83);
             this.panel10.TabIndex = 26;
@@ -424,7 +426,7 @@
             // 
             this.panel11.Controls.Add(this.CboxDrivingLisence);
             this.panel11.Controls.Add(this.label17);
-            this.panel11.Location = new System.Drawing.Point(465, 3);
+            this.panel11.Location = new System.Drawing.Point(475, 3);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(183, 83);
             this.panel11.TabIndex = 27;
@@ -463,7 +465,7 @@
             // 
             this.panel12.Controls.Add(this.CboxFileStatus);
             this.panel12.Controls.Add(this.label18);
-            this.panel12.Location = new System.Drawing.Point(276, 3);
+            this.panel12.Location = new System.Drawing.Point(286, 3);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(183, 83);
             this.panel12.TabIndex = 28;
@@ -498,7 +500,7 @@
             // 
             this.panel8.Controls.Add(this.CboxStudentStatus);
             this.panel8.Controls.Add(this.label10);
-            this.panel8.Location = new System.Drawing.Point(87, 3);
+            this.panel8.Location = new System.Drawing.Point(97, 3);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(183, 83);
             this.panel8.TabIndex = 29;
@@ -529,18 +531,6 @@
             this.label10.TabIndex = 23;
             this.label10.Text = "وضع المرشح";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(135)))), ((int)(((byte)(255)))));
-            this.label13.Location = new System.Drawing.Point(0, 0);
-            this.label13.Name = "label13";
-            this.label13.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.label13.Size = new System.Drawing.Size(18, 24);
-            this.label13.TabIndex = 4;
-            this.label13.Text = "0";
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -551,9 +541,8 @@
             this.label14.Location = new System.Drawing.Point(21, 0);
             this.label14.Name = "label14";
             this.label14.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.label14.Size = new System.Drawing.Size(135, 24);
+            this.label14.Size = new System.Drawing.Size(0, 24);
             this.label14.TabIndex = 3;
-            this.label14.Text = "الملفات الحالية     ";
             // 
             // guna2Separator2
             // 
@@ -561,22 +550,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Separator2.Location = new System.Drawing.Point(-9, 52);
             this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(1251, 10);
+            this.guna2Separator2.Size = new System.Drawing.Size(1261, 10);
             this.guna2Separator2.TabIndex = 2;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label15.Image = global::Driving_School_Management_System.Properties.Resources.magnifying_glass__1_;
-            this.label15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label15.Location = new System.Drawing.Point(1083, 0);
-            this.label15.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
-            this.label15.Name = "label15";
-            this.label15.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.label15.Size = new System.Drawing.Size(156, 24);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "    بحث متعدد المعايير";
             // 
             // label16
             // 
@@ -603,13 +578,56 @@
             this.btnAddCondidtefile.HoverState.Parent = this.btnAddCondidtefile;
             this.btnAddCondidtefile.Image = global::Driving_School_Management_System.Properties.Resources.plus_bold;
             this.btnAddCondidtefile.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnAddCondidtefile.Location = new System.Drawing.Point(10, 27);
+            this.btnAddCondidtefile.Location = new System.Drawing.Point(12, 12);
             this.btnAddCondidtefile.Name = "btnAddCondidtefile";
             this.btnAddCondidtefile.ShadowDecoration.Parent = this.btnAddCondidtefile;
             this.btnAddCondidtefile.Size = new System.Drawing.Size(126, 44);
             this.btnAddCondidtefile.TabIndex = 9;
             this.btnAddCondidtefile.Text = "إضافة ";
             this.btnAddCondidtefile.Click += new System.EventHandler(this.btnAddCondidtefile_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(135)))), ((int)(((byte)(255)))));
+            this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Name = "label4";
+            this.label4.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.label4.Size = new System.Drawing.Size(26, 34);
+            this.label4.TabIndex = 38;
+            this.label4.Text = "0";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(135)))), ((int)(((byte)(255)))));
+            this.label3.Image = global::Driving_School_Management_System.Properties.Resources.warning__1_;
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3.Location = new System.Drawing.Point(23, 0);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.label3.Size = new System.Drawing.Size(261, 34);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "المرشحين بدون ملف     ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.label2.Image = global::Driving_School_Management_System.Properties.Resources.magnifying_glass__1_;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Location = new System.Drawing.Point(1015, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
+            this.label2.Name = "label2";
+            this.label2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.label2.Size = new System.Drawing.Size(234, 34);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "    بحث متعدد المعايير";
             // 
             // CondidateFileWindow
             // 
@@ -680,11 +698,12 @@
         private System.Windows.Forms.Panel panel8;
         private MetroFramework.Controls.MetroComboBox CboxStudentStatus;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private Guna.UI2.WinForms.Guna2Button btnAddCondidtefile;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

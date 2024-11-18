@@ -162,9 +162,7 @@ namespace Driving_School_Management_System.Forms
             }
             else
                 MessageBox.Show("هناك معلومات مفقودة", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
         }
-
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             Close(); 

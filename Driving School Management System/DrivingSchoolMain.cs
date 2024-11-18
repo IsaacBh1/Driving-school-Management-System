@@ -93,9 +93,9 @@ namespace Driving_School_Management_System
             if (form is null)
             {
                 form = new FormType();
-                form .MdiParent = this;
-                form .Dock = DockStyle.Fill;
-                form .Show();
+                form.MdiParent = this;
+                form.Dock = DockStyle.Fill;
+                form.Show();
             }
             else
             {

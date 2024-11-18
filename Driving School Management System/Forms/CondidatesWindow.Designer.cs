@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.CBoxStudentInfoFilter = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -101,9 +101,9 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.guna2Separator1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(10, 86);
+            this.panel1.Location = new System.Drawing.Point(12, 78);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1167, 724);
+            this.panel1.Size = new System.Drawing.Size(1165, 724);
             this.panel1.TabIndex = 7;
             // 
             // CBoxStudentInfoFilter
@@ -125,7 +125,7 @@
             "النسب",
             "الكل"});
             this.CBoxStudentInfoFilter.ItemsAppearance.Parent = this.CBoxStudentInfoFilter;
-            this.CBoxStudentInfoFilter.Location = new System.Drawing.Point(819, 79);
+            this.CBoxStudentInfoFilter.Location = new System.Drawing.Point(817, 79);
             this.CBoxStudentInfoFilter.Name = "CBoxStudentInfoFilter";
             this.CBoxStudentInfoFilter.ShadowDecoration.Parent = this.CBoxStudentInfoFilter;
             this.CBoxStudentInfoFilter.Size = new System.Drawing.Size(183, 36);
@@ -135,7 +135,7 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.funnel__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(771, 79);
+            this.pictureBox1.Location = new System.Drawing.Point(769, 79);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(42, 37);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -152,7 +152,7 @@
             this.btnSearchStudentinfo.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.btnSearchStudentinfo.ForeColor = System.Drawing.Color.White;
             this.btnSearchStudentinfo.HoverState.Parent = this.btnSearchStudentinfo;
-            this.btnSearchStudentinfo.Location = new System.Drawing.Point(1008, 76);
+            this.btnSearchStudentinfo.Location = new System.Drawing.Point(1006, 76);
             this.btnSearchStudentinfo.Name = "btnSearchStudentinfo";
             this.btnSearchStudentinfo.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnSearchStudentinfo.ShadowDecoration.Parent = this.btnSearchStudentinfo;
@@ -172,7 +172,7 @@
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
             this.guna2Button3.Image = global::Driving_School_Management_System.Properties.Resources.arrows_clockwise;
-            this.guna2Button3.Location = new System.Drawing.Point(1105, 76);
+            this.guna2Button3.Location = new System.Drawing.Point(1103, 76);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
@@ -182,8 +182,8 @@
             // 
             // DGVStudents
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DGVStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.DGVStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.DGVStudents.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -192,15 +192,15 @@
             this.DGVStudents.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGVStudents.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DGVStudents.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.NullValue = "\"\"";
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.NullValue = "\"\"";
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.DGVStudents.ColumnHeadersHeight = 50;
             this.DGVStudents.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -210,14 +210,14 @@
             this.Phone,
             this.Email,
             this.Operations});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGVStudents.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGVStudents.DefaultCellStyle = dataGridViewCellStyle9;
             this.DGVStudents.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.DGVStudents.EnableHeadersVisualStyles = false;
             this.DGVStudents.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -230,7 +230,7 @@
             this.DGVStudents.RowTemplate.Height = 40;
             this.DGVStudents.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DGVStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVStudents.Size = new System.Drawing.Size(1154, 460);
+            this.DGVStudents.Size = new System.Drawing.Size(1152, 460);
             this.DGVStudents.TabIndex = 25;
             this.DGVStudents.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.DGVStudents.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -318,14 +318,14 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(14, 125);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1146, 100);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1144, 100);
             this.flowLayoutPanel1.TabIndex = 24;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.txtBoxID);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(960, 3);
+            this.panel2.Location = new System.Drawing.Point(958, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(183, 83);
             this.panel2.TabIndex = 23;
@@ -352,7 +352,7 @@
             // 
             this.panel4.Controls.Add(this.txtBoxFirstName_Arabic);
             this.panel4.Controls.Add(this.label7);
-            this.panel4.Location = new System.Drawing.Point(771, 3);
+            this.panel4.Location = new System.Drawing.Point(769, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(183, 83);
             this.panel4.TabIndex = 25;
@@ -379,7 +379,7 @@
             // 
             this.panel5.Controls.Add(this.txtBoxLastName_Arabic);
             this.panel5.Controls.Add(this.label8);
-            this.panel5.Location = new System.Drawing.Point(582, 3);
+            this.panel5.Location = new System.Drawing.Point(580, 3);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(183, 83);
             this.panel5.TabIndex = 26;
@@ -406,7 +406,7 @@
             // 
             this.panel3.Controls.Add(this.txtBoxIdentityNumber);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(393, 3);
+            this.panel3.Location = new System.Drawing.Point(391, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(183, 83);
             this.panel3.TabIndex = 28;
@@ -463,7 +463,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Separator1.Location = new System.Drawing.Point(-9, 52);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(1179, 10);
+            this.guna2Separator1.Size = new System.Drawing.Size(1177, 10);
             this.guna2Separator1.TabIndex = 2;
             // 
             // label2
@@ -473,7 +473,7 @@
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F);
             this.label2.Image = global::Driving_School_Management_System.Properties.Resources.magnifying_glass__1_;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(933, 0);
+            this.label2.Location = new System.Drawing.Point(931, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
@@ -506,13 +506,13 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label1.Location = new System.Drawing.Point(945, 0);
+            this.label1.Location = new System.Drawing.Point(953, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(0, 20, 20, 0);
-            this.label1.Size = new System.Drawing.Size(244, 51);
+            this.label1.Size = new System.Drawing.Size(236, 51);
             this.label1.TabIndex = 5;
-            this.label1.Text = "إدارة المترشحين ";
+            this.label1.Text = "إدارة المترشحين";
             // 
             // CondidatesWindow
             // 

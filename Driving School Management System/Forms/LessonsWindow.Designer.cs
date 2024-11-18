@@ -91,9 +91,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(34, 90);
+            this.panel1.Location = new System.Drawing.Point(12, 77);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1143, 575);
+            this.panel1.Size = new System.Drawing.Size(1184, 588);
             this.panel1.TabIndex = 7;
             // 
             // panel2
@@ -110,7 +110,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1143, 575);
+            this.panel2.Size = new System.Drawing.Size(1184, 588);
             this.panel2.TabIndex = 5;
             // 
             // CBoxLessonFilter
@@ -131,7 +131,7 @@
             "المجموعة",
             "نوع الدرس"});
             this.CBoxLessonFilter.ItemsAppearance.Parent = this.CBoxLessonFilter;
-            this.CBoxLessonFilter.Location = new System.Drawing.Point(795, 79);
+            this.CBoxLessonFilter.Location = new System.Drawing.Point(836, 79);
             this.CBoxLessonFilter.Name = "CBoxLessonFilter";
             this.CBoxLessonFilter.ShadowDecoration.Parent = this.CBoxLessonFilter;
             this.CBoxLessonFilter.Size = new System.Drawing.Size(183, 36);
@@ -141,7 +141,7 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.funnel__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(747, 79);
+            this.pictureBox1.Location = new System.Drawing.Point(788, 79);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(42, 37);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -158,7 +158,7 @@
             this.btnSearchLesson.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.btnSearchLesson.ForeColor = System.Drawing.Color.White;
             this.btnSearchLesson.HoverState.Parent = this.btnSearchLesson;
-            this.btnSearchLesson.Location = new System.Drawing.Point(984, 76);
+            this.btnSearchLesson.Location = new System.Drawing.Point(1025, 76);
             this.btnSearchLesson.Name = "btnSearchLesson";
             this.btnSearchLesson.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnSearchLesson.ShadowDecoration.Parent = this.btnSearchLesson;
@@ -178,7 +178,7 @@
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
             this.guna2Button3.Image = global::Driving_School_Management_System.Properties.Resources.arrows_clockwise;
-            this.guna2Button3.Location = new System.Drawing.Point(1081, 76);
+            this.guna2Button3.Location = new System.Drawing.Point(1122, 76);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
@@ -237,7 +237,7 @@
             this.DGVLessons.RowTemplate.Height = 40;
             this.DGVLessons.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DGVLessons.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVLessons.Size = new System.Drawing.Size(1130, 311);
+            this.DGVLessons.Size = new System.Drawing.Size(1171, 324);
             this.DGVLessons.TabIndex = 25;
             this.DGVLessons.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.DGVLessons.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -331,14 +331,14 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(14, 125);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1122, 100);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1163, 100);
             this.flowLayoutPanel1.TabIndex = 24;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.txtBoxID);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(936, 3);
+            this.panel3.Location = new System.Drawing.Point(977, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(183, 83);
             this.panel3.TabIndex = 23;
@@ -365,7 +365,7 @@
             // 
             this.panel4.Controls.Add(this.CbxGroup);
             this.panel4.Controls.Add(this.label6);
-            this.panel4.Location = new System.Drawing.Point(747, 3);
+            this.panel4.Location = new System.Drawing.Point(788, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(183, 83);
             this.panel4.TabIndex = 24;
@@ -397,7 +397,7 @@
             // 
             this.panel5.Controls.Add(this.CboxLessonType);
             this.panel5.Controls.Add(this.label3);
-            this.panel5.Location = new System.Drawing.Point(558, 3);
+            this.panel5.Location = new System.Drawing.Point(599, 3);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(183, 83);
             this.panel5.TabIndex = 26;
@@ -434,7 +434,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Separator1.Location = new System.Drawing.Point(-9, 52);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(1155, 10);
+            this.guna2Separator1.Size = new System.Drawing.Size(1196, 10);
             this.guna2Separator1.TabIndex = 2;
             // 
             // label2
@@ -444,7 +444,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label2.Image = global::Driving_School_Management_System.Properties.Resources.magnifying_glass__1_;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(909, 0);
+            this.label2.Location = new System.Drawing.Point(950, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
@@ -473,7 +473,7 @@
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Image = global::Driving_School_Management_System.Properties.Resources.plus_bold;
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2Button1.Location = new System.Drawing.Point(34, 20);
+            this.guna2Button1.Location = new System.Drawing.Point(12, 12);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(126, 44);
