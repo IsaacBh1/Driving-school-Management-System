@@ -45,20 +45,20 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.ID = new System.Windows.Forms.Label();
-            this.IdentifcationNumber = new System.Windows.Forms.Label();
-            this.Gender = new System.Windows.Forms.Label();
-            this.address = new System.Windows.Forms.Label();
-            this.nameInAr = new System.Windows.Forms.Label();
-            this.NameInfr = new System.Windows.Forms.Label();
-            this.birthPlace = new System.Windows.Forms.Label();
-            this.phoneNumber = new System.Windows.Forms.Label();
-            this.LastNameInAr = new System.Windows.Forms.Label();
-            this.LastNameinfr = new System.Windows.Forms.Label();
-            this.birthDate = new System.Windows.Forms.Label();
-            this.Email = new System.Windows.Forms.Label();
-            this.AdditionalContact = new System.Windows.Forms.Label();
-            this.UserName = new System.Windows.Forms.Label();
+            this.ID = new System.Windows.Forms.TextBox();
+            this.nameInAr = new System.Windows.Forms.TextBox();
+            this.LastNameInAr = new System.Windows.Forms.TextBox();
+            this.IdentifcationNumber = new System.Windows.Forms.TextBox();
+            this.NameInfr = new System.Windows.Forms.TextBox();
+            this.LastNameinfr = new System.Windows.Forms.TextBox();
+            this.Gender = new System.Windows.Forms.TextBox();
+            this.birthPlace = new System.Windows.Forms.TextBox();
+            this.birthDate = new System.Windows.Forms.TextBox();
+            this.address = new System.Windows.Forms.TextBox();
+            this.phoneNumber = new System.Windows.Forms.TextBox();
+            this.Email = new System.Windows.Forms.TextBox();
+            this.UserName = new System.Windows.Forms.TextBox();
+            this.AdditionalContact = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -254,159 +254,129 @@
             // 
             // ID
             // 
-            this.ID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ID.AutoSize = true;
-            this.ID.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.ID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.ID.Location = new System.Drawing.Point(927, 96);
+            this.ID.Location = new System.Drawing.Point(788, 97);
             this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
             this.ID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ID.Size = new System.Drawing.Size(54, 29);
-            this.ID.TabIndex = 44;
-            this.ID.Text = " ???";
-            // 
-            // IdentifcationNumber
-            // 
-            this.IdentifcationNumber.AutoSize = true;
-            this.IdentifcationNumber.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.IdentifcationNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.IdentifcationNumber.Location = new System.Drawing.Point(820, 168);
-            this.IdentifcationNumber.Name = "IdentifcationNumber";
-            this.IdentifcationNumber.Size = new System.Drawing.Size(54, 29);
-            this.IdentifcationNumber.TabIndex = 44;
-            this.IdentifcationNumber.Text = " ???";
-            // 
-            // Gender
-            // 
-            this.Gender.AutoSize = true;
-            this.Gender.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.Gender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.Gender.Location = new System.Drawing.Point(1005, 241);
-            this.Gender.Name = "Gender";
-            this.Gender.Size = new System.Drawing.Size(54, 29);
-            this.Gender.TabIndex = 44;
-            this.Gender.Text = " ???";
-            // 
-            // address
-            // 
-            this.address.AutoSize = true;
-            this.address.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.address.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.address.Location = new System.Drawing.Point(820, 313);
-            this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(54, 29);
-            this.address.TabIndex = 44;
-            this.address.Text = " ???";
+            this.ID.Size = new System.Drawing.Size(240, 27);
+            this.ID.TabIndex = 77;
             // 
             // nameInAr
             // 
-            this.nameInAr.AutoSize = true;
-            this.nameInAr.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.nameInAr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.nameInAr.Location = new System.Drawing.Point(470, 96);
+            this.nameInAr.Location = new System.Drawing.Point(377, 97);
             this.nameInAr.Name = "nameInAr";
-            this.nameInAr.Size = new System.Drawing.Size(54, 29);
-            this.nameInAr.TabIndex = 44;
-            this.nameInAr.Text = " ???";
-            // 
-            // NameInfr
-            // 
-            this.NameInfr.AutoSize = true;
-            this.NameInfr.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.NameInfr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.NameInfr.Location = new System.Drawing.Point(470, 168);
-            this.NameInfr.Name = "NameInfr";
-            this.NameInfr.Size = new System.Drawing.Size(54, 29);
-            this.NameInfr.TabIndex = 44;
-            this.NameInfr.Text = " ???";
-            // 
-            // birthPlace
-            // 
-            this.birthPlace.AutoSize = true;
-            this.birthPlace.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.birthPlace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.birthPlace.Location = new System.Drawing.Point(478, 241);
-            this.birthPlace.Name = "birthPlace";
-            this.birthPlace.Size = new System.Drawing.Size(54, 29);
-            this.birthPlace.TabIndex = 44;
-            this.birthPlace.Text = " ???";
-            // 
-            // phoneNumber
-            // 
-            this.phoneNumber.AutoSize = true;
-            this.phoneNumber.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.phoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.phoneNumber.Location = new System.Drawing.Point(470, 313);
-            this.phoneNumber.Name = "phoneNumber";
-            this.phoneNumber.Size = new System.Drawing.Size(54, 29);
-            this.phoneNumber.TabIndex = 44;
-            this.phoneNumber.Text = " ???";
+            this.nameInAr.ReadOnly = true;
+            this.nameInAr.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.nameInAr.Size = new System.Drawing.Size(240, 27);
+            this.nameInAr.TabIndex = 77;
             // 
             // LastNameInAr
             // 
-            this.LastNameInAr.AutoSize = true;
-            this.LastNameInAr.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.LastNameInAr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.LastNameInAr.Location = new System.Drawing.Point(148, 96);
+            this.LastNameInAr.Location = new System.Drawing.Point(46, 97);
             this.LastNameInAr.Name = "LastNameInAr";
-            this.LastNameInAr.Size = new System.Drawing.Size(54, 29);
-            this.LastNameInAr.TabIndex = 44;
-            this.LastNameInAr.Text = " ???";
+            this.LastNameInAr.ReadOnly = true;
+            this.LastNameInAr.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LastNameInAr.Size = new System.Drawing.Size(224, 27);
+            this.LastNameInAr.TabIndex = 77;
+            // 
+            // IdentifcationNumber
+            // 
+            this.IdentifcationNumber.Location = new System.Drawing.Point(827, 169);
+            this.IdentifcationNumber.Name = "IdentifcationNumber";
+            this.IdentifcationNumber.ReadOnly = true;
+            this.IdentifcationNumber.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.IdentifcationNumber.Size = new System.Drawing.Size(201, 27);
+            this.IdentifcationNumber.TabIndex = 77;
+            // 
+            // NameInfr
+            // 
+            this.NameInfr.Location = new System.Drawing.Point(486, 169);
+            this.NameInfr.Name = "NameInfr";
+            this.NameInfr.ReadOnly = true;
+            this.NameInfr.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.NameInfr.Size = new System.Drawing.Size(131, 27);
+            this.NameInfr.TabIndex = 77;
             // 
             // LastNameinfr
             // 
-            this.LastNameinfr.AutoSize = true;
-            this.LastNameinfr.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.LastNameinfr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.LastNameinfr.Location = new System.Drawing.Point(148, 168);
+            this.LastNameinfr.Location = new System.Drawing.Point(46, 169);
             this.LastNameinfr.Name = "LastNameinfr";
-            this.LastNameinfr.Size = new System.Drawing.Size(54, 29);
-            this.LastNameinfr.TabIndex = 44;
-            this.LastNameinfr.Text = " ???";
+            this.LastNameinfr.ReadOnly = true;
+            this.LastNameinfr.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LastNameinfr.Size = new System.Drawing.Size(224, 27);
+            this.LastNameinfr.TabIndex = 77;
+            // 
+            // Gender
+            // 
+            this.Gender.Location = new System.Drawing.Point(788, 242);
+            this.Gender.Name = "Gender";
+            this.Gender.ReadOnly = true;
+            this.Gender.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Gender.Size = new System.Drawing.Size(240, 27);
+            this.Gender.TabIndex = 77;
+            // 
+            // birthPlace
+            // 
+            this.birthPlace.Location = new System.Drawing.Point(443, 242);
+            this.birthPlace.Name = "birthPlace";
+            this.birthPlace.ReadOnly = true;
+            this.birthPlace.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.birthPlace.Size = new System.Drawing.Size(174, 27);
+            this.birthPlace.TabIndex = 77;
             // 
             // birthDate
             // 
-            this.birthDate.AutoSize = true;
-            this.birthDate.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.birthDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.birthDate.Location = new System.Drawing.Point(112, 241);
+            this.birthDate.Location = new System.Drawing.Point(46, 242);
             this.birthDate.Name = "birthDate";
-            this.birthDate.Size = new System.Drawing.Size(54, 29);
-            this.birthDate.TabIndex = 44;
-            this.birthDate.Text = " ???";
+            this.birthDate.ReadOnly = true;
+            this.birthDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.birthDate.Size = new System.Drawing.Size(240, 27);
+            this.birthDate.TabIndex = 77;
+            // 
+            // address
+            // 
+            this.address.Location = new System.Drawing.Point(788, 314);
+            this.address.Name = "address";
+            this.address.ReadOnly = true;
+            this.address.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.address.Size = new System.Drawing.Size(240, 27);
+            this.address.TabIndex = 77;
+            // 
+            // phoneNumber
+            // 
+            this.phoneNumber.Location = new System.Drawing.Point(476, 314);
+            this.phoneNumber.Name = "phoneNumber";
+            this.phoneNumber.ReadOnly = true;
+            this.phoneNumber.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.phoneNumber.Size = new System.Drawing.Size(141, 27);
+            this.phoneNumber.TabIndex = 77;
             // 
             // Email
             // 
-            this.Email.AutoSize = true;
-            this.Email.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.Email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.Email.Location = new System.Drawing.Point(9, 313);
+            this.Email.Location = new System.Drawing.Point(46, 314);
             this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(54, 29);
-            this.Email.TabIndex = 44;
-            this.Email.Text = " ???";
-            // 
-            // AdditionalContact
-            // 
-            this.AdditionalContact.AutoSize = true;
-            this.AdditionalContact.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.AdditionalContact.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.AdditionalContact.Location = new System.Drawing.Point(162, 386);
-            this.AdditionalContact.Name = "AdditionalContact";
-            this.AdditionalContact.Size = new System.Drawing.Size(54, 29);
-            this.AdditionalContact.TabIndex = 44;
-            this.AdditionalContact.Text = " ???";
+            this.Email.ReadOnly = true;
+            this.Email.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Email.Size = new System.Drawing.Size(240, 27);
+            this.Email.TabIndex = 77;
             // 
             // UserName
             // 
-            this.UserName.AutoSize = true;
-            this.UserName.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.UserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.UserName.Location = new System.Drawing.Point(820, 386);
+            this.UserName.Location = new System.Drawing.Point(667, 387);
             this.UserName.Name = "UserName";
-            this.UserName.Size = new System.Drawing.Size(54, 29);
-            this.UserName.TabIndex = 44;
-            this.UserName.Text = " ???";
+            this.UserName.ReadOnly = true;
+            this.UserName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.UserName.Size = new System.Drawing.Size(327, 27);
+            this.UserName.TabIndex = 77;
+            // 
+            // AdditionalContact
+            // 
+            this.AdditionalContact.Location = new System.Drawing.Point(46, 387);
+            this.AdditionalContact.Name = "AdditionalContact";
+            this.AdditionalContact.ReadOnly = true;
+            this.AdditionalContact.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AdditionalContact.Size = new System.Drawing.Size(344, 27);
+            this.AdditionalContact.TabIndex = 77;
             // 
             // ShowStudentInformationsForm
             // 
@@ -414,6 +384,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1235, 467);
+            this.Controls.Add(this.Email);
+            this.Controls.Add(this.birthDate);
+            this.Controls.Add(this.LastNameinfr);
+            this.Controls.Add(this.LastNameInAr);
+            this.Controls.Add(this.AdditionalContact);
+            this.Controls.Add(this.phoneNumber);
+            this.Controls.Add(this.birthPlace);
+            this.Controls.Add(this.NameInfr);
+            this.Controls.Add(this.nameInAr);
+            this.Controls.Add(this.UserName);
+            this.Controls.Add(this.address);
+            this.Controls.Add(this.Gender);
+            this.Controls.Add(this.IdentifcationNumber);
+            this.Controls.Add(this.ID);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -427,20 +411,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.Email);
-            this.Controls.Add(this.birthDate);
-            this.Controls.Add(this.phoneNumber);
-            this.Controls.Add(this.birthPlace);
-            this.Controls.Add(this.LastNameinfr);
-            this.Controls.Add(this.AdditionalContact);
-            this.Controls.Add(this.UserName);
-            this.Controls.Add(this.address);
-            this.Controls.Add(this.NameInfr);
-            this.Controls.Add(this.LastNameInAr);
-            this.Controls.Add(this.Gender);
-            this.Controls.Add(this.nameInAr);
-            this.Controls.Add(this.IdentifcationNumber);
-            this.Controls.Add(this.ID);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2Separator1);
@@ -474,19 +444,19 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label ID;
-        private System.Windows.Forms.Label IdentifcationNumber;
-        private System.Windows.Forms.Label Gender;
-        private System.Windows.Forms.Label address;
-        private System.Windows.Forms.Label nameInAr;
-        private System.Windows.Forms.Label NameInfr;
-        private System.Windows.Forms.Label birthPlace;
-        private System.Windows.Forms.Label phoneNumber;
-        private System.Windows.Forms.Label LastNameInAr;
-        private System.Windows.Forms.Label LastNameinfr;
-        private System.Windows.Forms.Label birthDate;
-        private System.Windows.Forms.Label Email;
-        private System.Windows.Forms.Label AdditionalContact;
-        private System.Windows.Forms.Label UserName;
+        private System.Windows.Forms.TextBox ID;
+        private System.Windows.Forms.TextBox nameInAr;
+        private System.Windows.Forms.TextBox LastNameInAr;
+        private System.Windows.Forms.TextBox IdentifcationNumber;
+        private System.Windows.Forms.TextBox NameInfr;
+        private System.Windows.Forms.TextBox LastNameinfr;
+        private System.Windows.Forms.TextBox Gender;
+        private System.Windows.Forms.TextBox birthPlace;
+        private System.Windows.Forms.TextBox birthDate;
+        private System.Windows.Forms.TextBox address;
+        private System.Windows.Forms.TextBox phoneNumber;
+        private System.Windows.Forms.TextBox Email;
+        private System.Windows.Forms.TextBox UserName;
+        private System.Windows.Forms.TextBox AdditionalContact;
     }
 }

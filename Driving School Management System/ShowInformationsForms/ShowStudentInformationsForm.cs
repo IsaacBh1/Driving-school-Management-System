@@ -74,7 +74,7 @@ namespace Driving_School_Management_System.ShowInformationsForms
             
         }
 
-
+        
         private void loadStudentInfoOnWindow(clsStudent student)
         {
             // this is the student infos writen

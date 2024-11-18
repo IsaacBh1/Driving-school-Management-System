@@ -2,6 +2,7 @@
 using System;
 using System.Data;
 using System.Net.NetworkInformation;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Driving_school_BusinessLayer
 {
@@ -39,6 +40,17 @@ namespace Driving_school_BusinessLayer
             Mode = enMode.AddNew;
         }
 
+
+        public static string GetExamType(int typeid)
+        {
+            return typeid == 1 ? "نظري" : "تطبيقي";
+        }
+
+        public static int GetExamType(string typeName)
+        {
+            return typeName == "نظري" ? 1 : 2;
+
+        }
         private clsExam(int examID, int examTypeID, int candidateFileID, DateTime examDate, int result, string situation, string additionalNotes, TimeSpan timeOfExam)
         {
             ExamID = examID;
@@ -49,6 +61,7 @@ namespace Driving_school_BusinessLayer
             Situation = situation;
             AdditionalNotes = additionalNotes;
             this.timeOfExam = timeOfExam;
+            Mode = enMode.Update;
         }
 
         private bool _AddNewExam()
@@ -84,13 +97,15 @@ namespace Driving_school_BusinessLayer
             int _ExamTypeID = -1;
             int _CandidateFileID = -1;
             DateTime _ExamDate = DateTime.MinValue;
-            string _Result = string.Empty;
-            int _ApplicationInstructorID = -1;
-
+            int _Result = 0;
+            string _situation = "";
+            string _AdditionalNotes = ""; 
+            TimeSpan _time = TimeSpan.Zero;
             if (clsExamDataAccess.GetExamInfoByID(
-                ID, ref _ExamTypeID, ref _CandidateFileID, ref _ExamDate, ref _Result, ref _ApplicationInstructorID))
+                ID, ref _CandidateFileID,  ref _ExamTypeID, ref _Result, ref _situation ,ref _ExamDate,ref _AdditionalNotes,ref _time))
             {
-                
+                return new clsExam(ID, _ExamTypeID, _CandidateFileID, _ExamDate, _Result, _situation, _AdditionalNotes, _time); 
+
             }
             return null;
         }

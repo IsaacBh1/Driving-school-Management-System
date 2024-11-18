@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -921,6 +921,7 @@
             this.tabControl1.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(412, 180);
             this.tabControl1.Name = "tabControl1";
+            this.tabControl1.Padding = new System.Drawing.Point(8, 8);
             this.tabControl1.RightToLeftLayout = true;
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(520, 228);
@@ -930,9 +931,9 @@
             // 
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.Controls.Add(this.flowLayoutPanel24);
-            this.tabPage1.Location = new System.Drawing.Point(4, 28);
+            this.tabPage1.Location = new System.Drawing.Point(4, 38);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(512, 196);
+            this.tabPage1.Size = new System.Drawing.Size(512, 186);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "اليوم ";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -945,7 +946,7 @@
             this.flowLayoutPanel24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel24.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel24.Name = "flowLayoutPanel24";
-            this.flowLayoutPanel24.Size = new System.Drawing.Size(512, 196);
+            this.flowLayoutPanel24.Size = new System.Drawing.Size(512, 186);
             this.flowLayoutPanel24.TabIndex = 13;
             // 
             // flowLayoutPanel25
@@ -1254,9 +1255,9 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.flowLayoutPanel15);
-            this.tabPage2.Location = new System.Drawing.Point(4, 28);
+            this.tabPage2.Location = new System.Drawing.Point(4, 38);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(512, 196);
+            this.tabPage2.Size = new System.Drawing.Size(512, 186);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "هذا الاسبوع";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1269,7 +1270,7 @@
             this.flowLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel15.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel15.Name = "flowLayoutPanel15";
-            this.flowLayoutPanel15.Size = new System.Drawing.Size(512, 196);
+            this.flowLayoutPanel15.Size = new System.Drawing.Size(512, 186);
             this.flowLayoutPanel15.TabIndex = 13;
             // 
             // flowLayoutPanel16
@@ -1578,9 +1579,9 @@
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.flowLayoutPanel18);
-            this.tabPage3.Location = new System.Drawing.Point(4, 28);
+            this.tabPage3.Location = new System.Drawing.Point(4, 38);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(512, 196);
+            this.tabPage3.Size = new System.Drawing.Size(512, 186);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "هذا الشهر";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1593,7 +1594,7 @@
             this.flowLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel18.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel18.Name = "flowLayoutPanel18";
-            this.flowLayoutPanel18.Size = new System.Drawing.Size(512, 196);
+            this.flowLayoutPanel18.Size = new System.Drawing.Size(512, 186);
             this.flowLayoutPanel18.TabIndex = 13;
             // 
             // flowLayoutPanel19
@@ -1902,9 +1903,9 @@
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.flowLayoutPanel21);
-            this.tabPage4.Location = new System.Drawing.Point(4, 28);
+            this.tabPage4.Location = new System.Drawing.Point(4, 38);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(512, 196);
+            this.tabPage4.Size = new System.Drawing.Size(512, 186);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "هذه السنة";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -1917,7 +1918,7 @@
             this.flowLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel21.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel21.Name = "flowLayoutPanel21";
-            this.flowLayoutPanel21.Size = new System.Drawing.Size(512, 196);
+            this.flowLayoutPanel21.Size = new System.Drawing.Size(512, 186);
             this.flowLayoutPanel21.TabIndex = 13;
             // 
             // flowLayoutPanel22
@@ -2226,9 +2227,9 @@
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.flowLayoutPanel12);
-            this.tabPage5.Location = new System.Drawing.Point(4, 28);
+            this.tabPage5.Location = new System.Drawing.Point(4, 38);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(512, 196);
+            this.tabPage5.Size = new System.Drawing.Size(512, 186);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "آخر";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -2241,7 +2242,7 @@
             this.flowLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel12.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel12.Name = "flowLayoutPanel12";
-            this.flowLayoutPanel12.Size = new System.Drawing.Size(512, 196);
+            this.flowLayoutPanel12.Size = new System.Drawing.Size(512, 186);
             this.flowLayoutPanel12.TabIndex = 13;
             // 
             // flowLayoutPanel13
@@ -2593,18 +2594,18 @@
             // 
             this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(960, 378);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Legend = "Legend1";
-            series1.Name = "DrivingLicenseTypesPieChart";
-            this.chart1.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.Legend = "Legend1";
+            series2.Name = "DrivingLicenseTypesPieChart";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(603, 583);
             this.chart1.TabIndex = 5;
             this.chart1.Text = "chart1";

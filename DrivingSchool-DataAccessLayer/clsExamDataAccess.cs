@@ -68,7 +68,7 @@ namespace DrivingSchool_DataAccessLayer
 
 
 
-        public static bool GetExamInfoByID(int examID, ref int condidateFileID, ref int examTypeID, ref int? result, ref string situation, ref DateTime dateOfExam, ref string additionalNotes, ref TimeSpan timeOfExam)
+        public static bool GetExamInfoByID(int examID, ref int condidateFileID, ref int examTypeID, ref int result, ref string situation, ref DateTime dateOfExam, ref string additionalNotes, ref TimeSpan timeOfExam)
         {
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
             string query = "select * from Exams where ExamID = @examID";
@@ -84,7 +84,7 @@ namespace DrivingSchool_DataAccessLayer
                     isFound = true;
                     condidateFileID = (int)reader["CondidateFileID"];
                     examTypeID = (int)reader["ExamTypeID"];
-                    result = reader["Result"] as int?;
+                    result = (int)reader["Result"];
                     situation = (string)reader["Situation"];
                     dateOfExam = (DateTime)reader["DateOfExam"];
                     additionalNotes = reader["AdditionalNotes"] as string;
@@ -314,9 +314,6 @@ namespace DrivingSchool_DataAccessLayer
             throw new NotImplementedException();
         }
 
-        public static bool GetExamInfoByID(int iD, ref int examTypeID, ref int candidateFileID, ref DateTime examDate, ref string result, ref int applicationInstructorID)
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

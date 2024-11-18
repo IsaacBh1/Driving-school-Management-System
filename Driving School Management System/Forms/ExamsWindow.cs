@@ -10,7 +10,8 @@ namespace Driving_School_Management_System.Forms
     {
 
         ContextMenuStrip contextExam = null;
-        private int selectedId = -1; 
+        private int selectedId = -1;
+        StatusMessageForm statusMessageForm; 
         public ExamsWindow()
         {
             InitializeComponent();
@@ -46,47 +47,63 @@ namespace Driving_School_Management_System.Forms
         private void InetializeLessonMenu()
         {
             contextExam= new ContextMenuStrip();
-            var deleteLessonItem = new ToolStripMenuItem("حذف الدرس", Properties.Resources.trash__1_);
+            var deleteLessonItem = new ToolStripMenuItem("حذف الامتحان", Properties.Resources.trash__1_);
             deleteLessonItem.Click += DeleteExam_Click;
-            var deleteExamItem = new ToolStripMenuItem("عرض معلومات الامتحان", Properties.Resources.exam);
-            deleteExamItem.Click += DeleteExam_Click;
-            var UpdateExamItem = new ToolStripMenuItem("تعديل نتائج الامتحان", Properties.Resources.trash__1_);
-            UpdateExamItem.Click += DeleteExam_Click;
+            //var deleteExamItem = new ToolStripMenuItem("عرض معلومات الامتحان", Properties.Resources.exam);
+            //deleteExamItem.Click += DeleteExam_Click;
+            var UpdateExamItem = new ToolStripMenuItem("تعديل نتائج الامتحان", Properties.Resources.gear);
+            UpdateExamItem.Click += UpdateExam_Click;
             /*var deleteLessonItem = new ToolStripMenuItem("حذف الدرس", Properties.Resources.trash__1_);
             deleteLessonItem.Click += DeleteExam_Click;*/
             //var ShowLessonItem = new ToolStripMenuItem("ShowLessonInfos", Properties.Resources.trash__1_);
             //ShowLessonItem.Click += ShowLesson_Click;
             contextExam.Items.Add(deleteLessonItem);
-            contextExam.Items.Add(deleteExamItem);
+            //contextExam.Items.Add(deleteExamItem);
+            contextExam.Items.Add(UpdateExamItem);
+
             //contextLesson.Items.Add(ShowLessonItem);
+        }
+
+        private void UpdateExam_Click(object sender, EventArgs e)
+        {
+            AddExamForm addExamForm = new AddExamForm(selectedId, true);
+            addExamForm.ShowDialog(); 
         }
 
         private void DeleteExam_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            YesNoDesisionForm yesNoForm = new YesNoDesisionForm("هل تريد حذف الامتحان؟");
+            yesNoForm.DoOperationEventHundler += DeleteExam;
+            yesNoForm.ShowDialog();
         }
 
-        private string GetExamType(int typeid)
+
+        private void DeleteExam()
         {
-            return typeid == 1 ? "نظري" : "تطبيقي"; 
-        }
 
-        private int GetExamType(string typeName)
-        {
-            return typeName == "نظري" ? 1 : 2;
+            clsExam exam = clsExam.Find(selectedId); 
+            if((!(exam is null )) && clsExam.DeleteExam(selectedId))
+            {
+                statusMessageForm = new StatusMessageForm("Operation done Successfully");
+                statusMessageForm.ShowSuccess();
+                DisplayExamsInformations(clsExam.GetAllExamInformations());
+
+            }
+
+
+            
 
         }
+       
 
 
         private void DisplayExamsInformations(DataTable AllExams)
         {
             DGVExams.Rows.Clear();
             foreach (DataRow row in AllExams.Rows)
-            {
-
-                DGVExams.Rows.Add(row[0] ,row[1] ,row[2] ,row[3], GetExamType((int)row[4]),row[5]); 
+                DGVExams.Rows.Add(row[0] ,row[1] ,row[2] ,row[3], clsExam.GetExamType((int)row[4]),row[5]); 
                     
-            }
+            
 
         }
 
@@ -109,14 +126,13 @@ namespace Driving_School_Management_System.Forms
                         DisplayExamsInformations(clsExam.GetExamsByCondidateFile(CondidateFileID)); 
                     break;
                 case "نوع الامتحان":
-                    DisplayExamsInformations(clsExam.GetExamsByExamType(GetExamType(CboxExamType.Text))); 
+                    DisplayExamsInformations(clsExam.GetExamsByExamType(clsExam.GetExamType(CboxExamType.Text))); 
                     break;
                 case "الحالة":
                     DisplayExamsInformations(clsExam.GetExamsByStatus(cboxStatus.Text)); 
                     break; 
             }
         }
-
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {

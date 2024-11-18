@@ -693,6 +693,7 @@
     <None Include="Resources\files %281%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DrivingSchoolRelationalSchema.svg" />
     <Content Include="Todo.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

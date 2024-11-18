@@ -198,7 +198,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.Salmon;
-            this.label3.Location = new System.Drawing.Point(610, 15);
+            this.label3.Location = new System.Drawing.Point(580, 20);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(18, 19);
             this.label3.TabIndex = 11;
@@ -210,11 +210,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(633, 10);
+            this.label2.Location = new System.Drawing.Point(601, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 31);
+            this.label2.Size = new System.Drawing.Size(152, 31);
             this.label2.TabIndex = 9;
-            this.label2.Text = " ID الملف";
+            this.label2.Text = " معرف الملف";
             // 
             // btnSubmit
             // 
@@ -461,6 +461,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(126, 44);
             this.guna2Button2.TabIndex = 42;
             this.guna2Button2.Text = "اغلاق";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // AddExamForm
             // 

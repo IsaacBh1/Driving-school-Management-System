@@ -44,7 +44,7 @@ namespace Driving_School_Management_System.Forms
 
 
 
-        clsExam exam = null;
+        clsExam exam = new clsExam();
         StatusMessageForm statusMessageForm = null;
         public delegate void AddNewExam();
         public event AddNewExam OnExamAddedEventHundler; 
@@ -66,6 +66,23 @@ namespace Driving_School_Management_System.Forms
                 txtboxID.Enabled = false; 
             }
         }
+
+
+        public AddExamForm(int ExamId, bool IsUpdateMode)
+        {
+            InitializeComponent();
+            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            exam = clsExam.Find(ExamId);
+            clsCondidateFile condidateFile = clsCondidateFile.Find(exam.CandidateFileID);
+            if (!(condidateFile is null) && IsUpdateMode)
+            {
+                txtboxID.Text = condidateFile.CandidateFileID.ToString();
+                txtboxID.Enabled = false;
+                LoadExamInfosToForm(); 
+            }
+        }
+
+
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -104,19 +121,25 @@ namespace Driving_School_Management_System.Forms
         }
         private bool StoreExam()
         {
-                exam = new clsExam()
-                {
-                    ExamTypeID = GetExamType(),
-                    CandidateFileID = Convert.ToInt32(txtboxID.Text),
-                    ExamDate = dateTimeExam.Value,
-                    Result = Convert.ToInt32(numupdownResult.Text),
-                    AdditionalNotes = txtboxAdditionalNotes.Text , 
-                    Situation = CboxState.Text,
-                    timeOfExam = new TimeSpan(Convert.ToInt32(dateTimeExam.Value.Hour), Convert.ToInt32(dateTimeExam.Value.Minute) , 0) 
-                };
-                return exam.Save(); 
+            exam.ExamTypeID = GetExamType();
+            exam.CandidateFileID = Convert.ToInt32(txtboxID.Text);
+            exam.ExamDate = dateTimeExam.Value;
+            exam.Result = Convert.ToInt32(numupdownResult.Text);
+            exam.AdditionalNotes = txtboxAdditionalNotes.Text;
+            exam.Situation = CboxState.Text;
+            exam.timeOfExam = new TimeSpan(Convert.ToInt32(dateTimeExam.Value.Hour), Convert.ToInt32(dateTimeExam.Value.Minute), 0); 
+            return exam.Save(); 
         }
 
+
+        private void LoadExamInfosToForm()
+        {
+            dateTimeExam.Value = exam.ExamDate;
+            numupdownResult.Text = exam.Result.ToString();
+            txtboxAdditionalNotes.Text = exam.AdditionalNotes;
+            CboxState.Text = exam.Situation;
+            dateTimeExam.Value = new DateTime(exam.ExamDate.Year, exam.ExamDate.Month, exam.ExamDate.Day, Convert.ToInt16 (exam.timeOfExam.Hours),Convert.ToInt16(exam.timeOfExam.Minutes), 0);
+        }
 
         private void SaveExam()
         {
@@ -142,6 +165,9 @@ namespace Driving_School_Management_System.Forms
 
         }
 
-      
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Close(); 
+        }
     }
 }
