@@ -105,3 +105,4 @@ C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Mana
 C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.ShowInformationsForms.ShowFileInformations.resources
 C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.YesNoDesisionForm.resources
 C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.CondidateFileWindow.resources
+C:\Users\isaac\source\repos\Driving-school-Management-System\Driving-school-Management-System\Driving School Management System\obj\Debug\Driving_School_Management_System.Forms.Settings.resources

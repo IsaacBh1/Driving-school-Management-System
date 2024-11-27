@@ -73,6 +73,16 @@ namespace Driving_School_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_circle_down {
+            get {
+                object obj = ResourceManager.GetObject("arrow-circle-down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrow_circle_left_fill {
             get {
                 object obj = ResourceManager.GetObject("arrow-circle-left-fill", resourceCulture);
@@ -236,6 +246,16 @@ namespace Driving_School_Management_System.Properties {
         internal static System.Drawing.Bitmap cardholder_fill {
             get {
                 object obj = ResourceManager.GetObject("cardholder-fill", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap caret_circle_down {
+            get {
+                object obj = ResourceManager.GetObject("caret-circle-down", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

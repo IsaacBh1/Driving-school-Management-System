@@ -1,4 +1,4 @@
 ﻿to do : 
-> add a the update and delete operations from the exams window options
-> change the window of student student informations 
+> adding the window of creating new expences types also 
+> user inormations
 

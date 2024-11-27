@@ -8,7 +8,6 @@ namespace Driving_School_Management_System.UserControls
 
 
         public event Action AddNewBatchPayment; 
-
         public decimal AmountPayed { get; set; } = 0; 
         public DateTime PaymentDate {  get; set; } = DateTime.Now;
         public int CondidateFileID {  get; set; }

@@ -26,9 +26,6 @@ namespace Driving_School_Management_System.Forms
             
         }
 
-        private void MainWindow_Load(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }
