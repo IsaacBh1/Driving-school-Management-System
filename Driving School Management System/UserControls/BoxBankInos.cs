@@ -36,10 +36,13 @@ namespace Driving_School_Management_System.UserControls
 
             lblID.Text = moneyBank.MoneyBankID.ToString();
             lblFirstBalance.Text = moneyBank.InitialAmount.ToString("0.0") + " DA";
-            if(moneyBank.InitialAmount <= moneyBank.InternalAmount)
-                lblIncomes.Text = (moneyBank.InternalAmount - moneyBank.InitialAmount ).ToString("0.0") + " DA";
+            if(moneyBank.Expences <= moneyBank.InternalAmount)
+                lblIncomes.Text = (moneyBank.InternalAmount - moneyBank.Expences).ToString("0.0") + " DA";
+            else
+                lblIncomes.Text = "0 DA";
+
             lblExpences.Text = moneyBank.Expences.ToString("0.0") + " DA";
-            label10.Text = moneyBank.InternalAmount.ToString("0.0") + " DA"; 
+            internalAmount.Text = moneyBank.InternalAmount.ToString("0.0") + " DA"; 
         }
 
 

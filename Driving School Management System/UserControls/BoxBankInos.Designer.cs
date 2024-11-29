@@ -48,7 +48,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
+            this.internalAmount = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
@@ -281,7 +281,7 @@
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.Controls.Add(this.label10);
+            this.panel5.Controls.Add(this.internalAmount);
             this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.pictureBox5);
             this.panel5.Location = new System.Drawing.Point(18, 3);
@@ -289,17 +289,17 @@
             this.panel5.Size = new System.Drawing.Size(308, 90);
             this.panel5.TabIndex = 13;
             // 
-            // label10
+            // internalAmount
             // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(71)))), ((int)(((byte)(255)))));
-            this.label10.Location = new System.Drawing.Point(3, 41);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(47, 36);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "00";
+            this.internalAmount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.internalAmount.AutoSize = true;
+            this.internalAmount.Font = new System.Drawing.Font("Trebuchet MS", 14F, System.Drawing.FontStyle.Bold);
+            this.internalAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(71)))), ((int)(((byte)(255)))));
+            this.internalAmount.Location = new System.Drawing.Point(3, 41);
+            this.internalAmount.Name = "internalAmount";
+            this.internalAmount.Size = new System.Drawing.Size(47, 36);
+            this.internalAmount.TabIndex = 2;
+            this.internalAmount.Text = "00";
             // 
             // label11
             // 
@@ -376,7 +376,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label internalAmount;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox5;
     }

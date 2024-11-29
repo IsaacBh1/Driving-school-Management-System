@@ -45,5 +45,11 @@ namespace Driving_School_Management_System.Forms
             DisplayExpenceInformations(clsExpense.GetAllExpences());
 
         }
+
+        private void ExpencesWindow_Activated(object sender, EventArgs e)
+        {
+            DisplayExpenceInformations(clsExpense.GetAllExpences());
+
+        }
     }
 }

@@ -17,31 +17,29 @@ namespace Driving_School_Management_System.Forms
             InetializeIncomeBox(MoneyBank);
 
         }
-
         private void AddBoxesInformations(DataTable BoxInformations)
         {
             DGVBoxes.Rows.Clear();
             foreach (DataRow row in BoxInformations.Rows)
             {
-                decimal NetProfit = (Convert.ToDecimal(row[3]) - Convert.ToDecimal(row[1]));
+                decimal NetProfit = (Convert.ToDecimal(row[3]) - Convert.ToDecimal(row[2]));
                 if (NetProfit < 0) NetProfit = 0;
                 DGVBoxes.Rows.Add(  row[0],
                                     Convert.ToDecimal (row[1]).ToString("0.00"),
                                     Convert.ToDecimal (row[3]).ToString("0.00"),
                                     NetProfit.ToString("0.00"), 
-                                    (Convert.ToDecimal(row[2]) - Convert.ToDecimal(row[3])).ToString("0.00"));
+                                    Convert.ToDecimal(row[2]).ToString("0.00"));
             }
         }
-
-
         private void InetializeIncomeBox(clsMoneyBank moneyBank)
         {
             flowLayoutBox.Controls.Clear();
             if (moneyBank != null) { 
             
                 BoxBankInos monayBox = new BoxBankInos(moneyBank); 
+                monayBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
                 if (!(monayBox is null))
-                    flowLayoutBox.Controls.Add(monayBox); 
+                    flowLayoutBox.Controls.Add(monayBox);
             }
         }
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -60,7 +58,13 @@ namespace Driving_School_Management_System.Forms
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             AddBoxesInformations(clsMoneyBank.GetAllMoneyBanks());
+            InetializeIncomeBox(clsMoneyBank.Find(clsMoneyBank.GetCurrentMoneyBank()));
+        }
 
+        private void BoxWindow_Activated(object sender, EventArgs e)
+        {
+            AddBoxesInformations(clsMoneyBank.GetAllMoneyBanks());
+            InetializeIncomeBox(clsMoneyBank.Find(clsMoneyBank.GetCurrentMoneyBank()));
         }
     }
 }

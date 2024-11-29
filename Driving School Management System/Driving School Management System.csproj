@@ -715,6 +715,7 @@
     <None Include="Resources\arrow-circle-down.png" />
     <None Include="Resources\caret-circle-down.png" />
     <None Include="Resources\caret-circle-up.png" />
+    <None Include="Resources\currency-circle-dollar.png" />
     <Content Include="Todo.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

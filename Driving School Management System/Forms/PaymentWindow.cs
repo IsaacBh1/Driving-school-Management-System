@@ -50,11 +50,7 @@ namespace Driving_School_Management_System.Forms
         }
 
 
-        /*
-
-         الملف
-        الرخصة
-         */
+   
 
         private void SerachBatchFromBatchInformations()
         {
@@ -75,6 +71,11 @@ namespace Driving_School_Management_System.Forms
         private void btnSearchBatch_Click(object sender, EventArgs e)
         {
             SerachBatchFromBatchInformations();
+        }
+
+        private void PaymentWindow_Activated(object sender, EventArgs e)
+        {
+            FillPaymentDGVUI(clsBatch.GetAllBatchesInforfmations());
         }
     }
 }

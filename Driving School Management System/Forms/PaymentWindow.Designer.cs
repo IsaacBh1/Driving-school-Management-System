@@ -433,6 +433,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PaymentWindow";
             this.Text = "PaymentWindow";
+            this.Activated += new System.EventHandler(this.PaymentWindow_Activated);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
