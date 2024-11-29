@@ -453,6 +453,16 @@ namespace Driving_School_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DrivoLogo {
+            get {
+                object obj = ResourceManager.GetObject("DrivoLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap electric_car {
             get {
                 object obj = ResourceManager.GetObject("electric-car", resourceCulture);
@@ -636,6 +646,16 @@ namespace Driving_School_Management_System.Properties {
         internal static System.Drawing.Bitmap magnifying_glass_thin {
             get {
                 object obj = ResourceManager.GetObject("magnifying-glass-thin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minus {
+            get {
+                object obj = ResourceManager.GetObject("minus", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -936,6 +956,16 @@ namespace Driving_School_Management_System.Properties {
         internal static System.Drawing.Bitmap x {
             get {
                 object obj = ResourceManager.GetObject("x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x__3_ {
+            get {
+                object obj = ResourceManager.GetObject("x (3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

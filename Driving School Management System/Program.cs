@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Driving_School_Management_System.Forms;
+using System;
 using System.Windows.Forms;
 
 namespace Driving_School_Management_System
@@ -16,7 +17,7 @@ namespace Driving_School_Management_System
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new LoginForm());
         }
 
 

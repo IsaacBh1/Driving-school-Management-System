@@ -115,8 +115,8 @@
             // btnMinimize
             // 
             this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimize.Image = global::Driving_School_Management_System.Properties.Resources.minus;
             resources.ApplyResources(this.btnMinimize, "btnMinimize");
-            this.btnMinimize.Image = global::Driving_School_Management_System.Properties.Resources.arrows_in_simple_fill;
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.TabStop = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
@@ -124,8 +124,8 @@
             // btnclose
             // 
             this.btnclose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnclose.Image = global::Driving_School_Management_System.Properties.Resources.x__3_;
             resources.ApplyResources(this.btnclose, "btnclose");
-            this.btnclose.Image = global::Driving_School_Management_System.Properties.Resources.x_circle;
             this.btnclose.Name = "btnclose";
             this.btnclose.TabStop = false;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click_1);

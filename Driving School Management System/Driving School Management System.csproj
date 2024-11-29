@@ -148,6 +148,12 @@
     <Compile Include="Forms\InstructorsWindow.Designer.cs">
       <DependentUpon>InstructorsWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\PaymentWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -335,6 +341,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\InstructorsWindow.resx">
       <DependentUpon>InstructorsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PaymentWindow.resx">
       <DependentUpon>PaymentWindow.cs</DependentUpon>
@@ -716,6 +725,9 @@
     <None Include="Resources\caret-circle-down.png" />
     <None Include="Resources\caret-circle-up.png" />
     <None Include="Resources\currency-circle-dollar.png" />
+    <None Include="Resources\DrivoLogo.png" />
+    <None Include="Resources\x %283%29.png" />
+    <None Include="Resources\minus.png" />
     <Content Include="Todo.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
