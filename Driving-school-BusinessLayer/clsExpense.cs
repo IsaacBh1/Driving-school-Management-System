@@ -100,7 +100,11 @@ namespace Driving_school_BusinessLayer
         }
 
         public static DataTable GetAllExpences()
-        => clsExpenseDataAccess.GetAllExpenses(); 
+            => clsExpenseDataAccess.GetAllExpenses();
+
+
+        public static bool DeleteExpenceType(int Id)
+            => clsExpenceTypeDataAccess.DeleteExpenceType(Id); 
 
 
     }

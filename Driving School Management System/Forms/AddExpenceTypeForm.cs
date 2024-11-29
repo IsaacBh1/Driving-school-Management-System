@@ -39,6 +39,7 @@ namespace Driving_School_Management_System.Forms
 
 
         StatusMessageForm statusMessageForm;
+
         public delegate void AddnewExpenceType();
         public AddnewExpenceType OnAddingExpenceType; 
         public AddExpenceTypeForm()
@@ -47,6 +48,9 @@ namespace Driving_School_Management_System.Forms
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
         }
+
+     
+
 
 
 
@@ -65,7 +69,7 @@ namespace Driving_School_Management_System.Forms
             if (_SaveExpenceType())
             {
                 // MessageBox.Show("student is saved successfully with ID = " + student.StudentID);
-                statusMessageForm = new StatusMessageForm("Expense type savedSuccessfully");
+                statusMessageForm = new StatusMessageForm("Expense type saved Successfully");
                 statusMessageForm.ShowSuccess();
                 OnAddingExpenceType?.Invoke(); 
                 Close();

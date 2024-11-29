@@ -21,9 +21,6 @@ namespace Driving_School_Management_System.Forms
             DisplayCondidteFilesInformations(clsCondidateFile.GetAllCondidateFileInformations());
             InitializeContextMenuFile();
             DGVFiles.CellMouseClick += DGVFiles_CellMouseClick;
-
-
-
         }
 
         private void InitializeContextMenuFile()
@@ -102,7 +99,7 @@ namespace Driving_School_Management_System.Forms
         {
             clsCondidateFile FileToDelete = clsCondidateFile.Find(selectedId);
             clsExam.DeleteExamByCondidatefile(FileToDelete.CandidateFileID);
-            if (!(FileToDelete is null)   && (clsCondidateFile.DeleteCondidateFile(FileToDelete.CandidateFileID)))
+            if (!(FileToDelete is null) && (clsCondidateFile.DeleteCondidateFile(FileToDelete.CandidateFileID)))
             {
                 statusMessageForm = new StatusMessageForm("Operation done Successfully");
                 statusMessageForm.ShowSuccess();
@@ -163,7 +160,7 @@ namespace Driving_School_Management_System.Forms
         {
             if (DGVFiles.Rows[e.RowIndex].Cells[0].Value is null) return;
 
-            if (e.RowIndex >= 0 && (e.Button == MouseButtons.Right || e.Button == MouseButtons.Left) && e.ColumnIndex == 8) // Check for right-click
+            if (e.RowIndex >= 0 && (e.Button == MouseButtons.Right || e.Button == MouseButtons.Left) && e.ColumnIndex == 8) 
             {
                 var cellRect = DGVFiles.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, true);
                 selectedId = Convert.ToInt32(DGVFiles.Rows[e.RowIndex].Cells[0].Value);
