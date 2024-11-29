@@ -83,6 +83,11 @@ namespace Driving_school_BusinessLayer
         }
 
 
+        public static bool AddNewExpenceType(string Name, string Description)
+        {
+            return clsExpenceTypeDataAccess.AddNewExpenceType(Name, Description) != -1; 
+        }
+
         public static int GetExpenseTypeIDByName(string Name)
         {
             return clsExpenceTypeDataAccess.GetExpenceTypeIDByName(Name); 

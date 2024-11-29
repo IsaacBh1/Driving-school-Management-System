@@ -263,6 +263,16 @@ namespace Driving_School_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap caret_circle_up {
+            get {
+                object obj = ResourceManager.GetObject("caret-circle-up", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap chalkboard_teacher {
             get {
                 object obj = ResourceManager.GetObject("chalkboard-teacher", resourceCulture);
