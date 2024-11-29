@@ -9,16 +9,35 @@ namespace Driving_School_Management_System.Forms
     public partial class Settings : Form
     {
         private bool expencesTypesToggle = true; // true if open
+        private bool DrivingLicenseTypesToggle = true; // true if open
         private ContextMenuStrip contextMenuExpenceType;
+        private ContextMenuStrip contextDrivingLisenceType;
         StatusMessageForm statusMessageForm; 
         private int selectedId; 
         public Settings()
         {
             InitializeComponent();
             ToggleExpencesTypesPanel();
+            ToggleDrivingLicense();
             LoadExpencecsToDGVExpenceTypes(clsExpense.GetAllExpencesTypes());
             InitializeContextMenuExpenceType();
-            DGVExpenceTypes.CellMouseClick += DGVExpenceTypes_MouseClick; 
+            DGVExpenceTypes.CellMouseClick += DGVExpenceTypes_MouseClick;
+            DGVDrivingLicenseTypes.CellMouseClick += DGVDrivingLicenseTypes_MouseClick; 
+        }
+
+
+        // this is for mouse click 
+        private void DGVDrivingLicenseTypes_MouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (DGVDrivingLicenseTypes.Rows[e.RowIndex].Cells[0].Value is null) return;
+            if (e.RowIndex >= 0 && (e.Button == MouseButtons.Right || e.Button == MouseButtons.Left) && e.ColumnIndex == 3)
+            {
+                var cellRect = DGVDrivingLicenseTypes.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, true);
+                selectedId = Convert.ToInt32(DGVDrivingLicenseTypes.Rows[e.RowIndex].Cells[0].Value);
+                Point menuLocation = DGVDrivingLicenseTypes.PointToScreen(new Point(cellRect.X, cellRect.Y + cellRect.Height));
+                // Show the context menu at the calculated location
+                contextDrivingLisenceType.Show(menuLocation);
+            }
         }
 
         private void DGVExpenceTypes_MouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -33,6 +52,36 @@ namespace Driving_School_Management_System.Forms
                 contextMenuExpenceType.Show(menuLocation);
             }
 
+        }
+
+
+        private void InitializeContextDrivingLicenseType()
+        {
+            contextDrivingLisenceType = new ContextMenuStrip();
+            var deleteDrivingLicenseTypeItem = new ToolStripMenuItem("حذف نوع رخصة القيادة", Properties.Resources.trash__1_);
+            deleteDrivingLicenseTypeItem.Click += DeleteDrivingLicenseType_confirm;
+
+            var updateDrivingLicenseTypeItem = new ToolStripMenuItem("تعديل نوع رخصة القيادة", Properties.Resources.trash__1_);
+            updateDrivingLicenseTypeItem.Click += UpdateDrivingLisenceType;
+            contextDrivingLisenceType.Items.Add(deleteDrivingLicenseTypeItem);
+        }
+
+        private void UpdateDrivingLisenceType(object sender, EventArgs e)
+        {
+            // this is for deleting driving license type 
+        }
+
+        private void DeleteDrivingLicenseType_confirm(object sender, EventArgs e)
+        {
+            //this is for delete driving license type 
+            YesNoDesisionForm yesNoDesisionForm = new YesNoDesisionForm("هل تريد حذف نوع رخصة القيادة؟");
+            yesNoDesisionForm.DoOperationEventHundler += DeleteDrivingLicenseType; 
+            yesNoDesisionForm.ShowDialog();
+        }
+
+        private void DeleteDrivingLicenseType()
+        {
+            // this is for deleting drivingLicense type 
         }
 
         private void InitializeContextMenuExpenceType()
@@ -65,6 +114,38 @@ namespace Driving_School_Management_System.Forms
                 statusMessageForm.ShowFailed();
             }
         }
+
+      
+
+
+        private void lblDrivingLisenceType_Click(object sender, EventArgs e)
+        {
+            ToggleDrivingLicense(); 
+
+        }
+
+
+        private void ToggleDrivingLicense()
+        {
+            if (DrivingLicenseTypesToggle)// opened => close
+            {
+                pnlDrivingLicenses.Height = 96;
+                lblDrivingLisenceType.Image = Properties.Resources.caret_circle_down;
+                lblOpen_closeLicense.Text = "اضغط للفتح";
+
+            }
+            else //close => open 
+            {
+                pnlDrivingLicenses.Height = 444;
+                lblDrivingLisenceType.Image = Properties.Resources.caret_circle_up;
+                lblOpen_closeLicense.Text = "اضغط للإغلاق";
+
+            }
+
+            DrivingLicenseTypesToggle = !DrivingLicenseTypesToggle;
+        }
+
+
 
         private void ToggleExpencesTypesPanel()
         {
@@ -112,5 +193,7 @@ namespace Driving_School_Management_System.Forms
             LoadExpencecsToDGVExpenceTypes(clsExpense.GetAllExpencesTypes());
 
         }
+
+    
     }
 }

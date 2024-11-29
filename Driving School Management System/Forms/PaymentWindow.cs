@@ -19,7 +19,7 @@ namespace Driving_School_Management_System.Forms
             DGVPayment.Rows.Clear(); 
             foreach (DataRow row in PaymentInformations.Rows)
             {
-                DGVPayment.Rows.Add(row[0], row[1], row[2], row[3], row[4], row[5]); 
+                DGVPayment.Rows.Add(row[0], row[1], row[2], row[3], row[4],Convert.ToDateTime(row[5]).ToString("d")); 
             }
         }
 
@@ -29,16 +29,6 @@ namespace Driving_School_Management_System.Forms
             CbxDrivingLicenseType.DisplayMember = "Name";
         }
 
-
-
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-           AddPaymentForm paymentForm = new AddPaymentForm();
-            paymentForm.PaymentHaddedEventHundler += RefreshPayment; 
-           paymentForm.ShowDialog();
-        }
-
         private void RefreshPayment()
         {
             FillPaymentDGVUI(clsBatch.GetAllBatchesInforfmations());
@@ -46,23 +36,20 @@ namespace Driving_School_Management_System.Forms
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            FillPaymentDGVUI(clsBatch.GetAllBatchesInforfmations()); 
+            FillPaymentDGVUI(clsBatch.GetAllBatchesInforfmations());
         }
-
-
-   
 
         private void SerachBatchFromBatchInformations()
         {
             switch(CBoxBatchesFilter.Text)
             {
                 case "الملف":
-                    //this is seatch by file number
+                    //this is search by file Id
                     if(int.TryParse(textbxCondidateFileID.Text , out int FileID))
                         FillPaymentDGVUI(clsBatch.GetAllBatchInfoByID(FileID));
                     break;
                 case "الرخصة":
-                    //this is search by driving license
+                    //this is search by driving license name
                     FillPaymentDGVUI(clsBatch.GetAllBatchInfoByDrivingLicense(CbxDrivingLicenseType.Text)); 
                     break; 
             }
@@ -76,6 +63,13 @@ namespace Driving_School_Management_System.Forms
         private void PaymentWindow_Activated(object sender, EventArgs e)
         {
             FillPaymentDGVUI(clsBatch.GetAllBatchesInforfmations());
+        }
+
+        private void btnAddPayment_Click(object sender, EventArgs e)
+        {
+            AddPaymentForm paymentForm = new AddPaymentForm();
+            paymentForm.PaymentHaddedEventHundler += RefreshPayment;
+            paymentForm.ShowDialog();
         }
     }
 }

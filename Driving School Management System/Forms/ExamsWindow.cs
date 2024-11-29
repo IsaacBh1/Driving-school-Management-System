@@ -67,7 +67,14 @@ namespace Driving_School_Management_System.Forms
         private void UpdateExam_Click(object sender, EventArgs e)
         {
             AddExamForm addExamForm = new AddExamForm(selectedId, true);
+            addExamForm.OnExamAddedEventHundler += UpdateExamWindow;  
             addExamForm.ShowDialog(); 
+        }
+
+        private void UpdateExamWindow()
+        {
+           DisplayExamsInformations(clsExam.GetAllExamInformations());
+
         }
 
         private void DeleteExam_Click(object sender, EventArgs e)
@@ -81,18 +88,14 @@ namespace Driving_School_Management_System.Forms
         private void DeleteExam()
         {
 
-            clsExam exam = clsExam.Find(selectedId); 
-            if((!(exam is null )) && clsExam.DeleteExam(selectedId))
+            clsExam exam = clsExam.Find(selectedId);
+            if ((!(exam is null)) && clsExam.DeleteExam(selectedId))
             {
                 statusMessageForm = new StatusMessageForm("Operation done Successfully");
                 statusMessageForm.ShowSuccess();
                 DisplayExamsInformations(clsExam.GetAllExamInformations());
 
             }
-
-
-            
-
         }
        
 
@@ -102,8 +105,6 @@ namespace Driving_School_Management_System.Forms
             DGVExams.Rows.Clear();
             foreach (DataRow row in AllExams.Rows)
                 DGVExams.Rows.Add(row[0] ,row[1] ,row[2] ,row[3], clsExam.GetExamType((int)row[4]),row[5]); 
-                    
-            
 
         }
 

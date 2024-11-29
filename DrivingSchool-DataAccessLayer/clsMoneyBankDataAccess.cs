@@ -71,7 +71,7 @@ namespace DrivingSchool_DataAccessLayer
             int Id = -1;
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
             string query = @"INSERT INTO MoneyBanks (InitialAmount, Expences, InternalAmount, IsClosed) 
-                             VALUES (@InitialAmount, @Expences, @InternalAmount, @NetProfit, @IsClosed);
+                             VALUES (@InitialAmount, @Expences, @InternalAmount, @IsClosed);
                              SELECT SCOPE_IDENTITY();";
 
             SqlCommand command = new SqlCommand(query, sqlConnection);

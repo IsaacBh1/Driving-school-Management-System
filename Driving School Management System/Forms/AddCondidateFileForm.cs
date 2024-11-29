@@ -165,6 +165,7 @@ namespace Driving_School_Management_System.Forms
         private StatusMessageForm statusMessageForm;
         private clsCondidateFile condidateFile = new clsCondidateFile();
         private clsPayment payment = new clsPayment();
+        private clsBatch batch = new clsBatch();
         public delegate void AddNewCondidateFile();
         public event AddNewCondidateFile OnCondidateFileAddedEventHundler;
         public clsMoneyBank moneyBank = new clsMoneyBank(); 
@@ -254,7 +255,15 @@ namespace Driving_School_Management_System.Forms
                 payment.MoneyBankID = clsMoneyBank.GetCurrentMoneyBank();
                 moneyBank = clsMoneyBank.Find(clsMoneyBank.GetCurrentMoneyBank());
                 moneyBank.AddPayment(txtbxAmountPayed.Value);
-                if (!payment.Save()) return false;
+                if (payment.AmountPayed < 0 || !payment.Save()) return false;
+                if(payment.AmountPayed > 0)
+                {
+                    batch.PaymentID = payment.PaymentID;
+                    batch.Price = payment.AmountPayed;
+                    batch.PaymentDate = DateTime.Now; 
+                    
+                    batch.Save();
+                }
                 condidateFile.StudentID = studentID;
                 condidateFile.DrivingLicenseTypeID = GetIDOfDrivingLicenseTypeFromName(CbxDrivingLicenseType.Text); 
                 condidateFile.AdditionalNotes = txtBoxAdditionalNotes.Text;

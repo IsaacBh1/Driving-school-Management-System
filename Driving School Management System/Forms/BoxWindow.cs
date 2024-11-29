@@ -22,7 +22,7 @@ namespace Driving_School_Management_System.Forms
             DGVBoxes.Rows.Clear();
             foreach (DataRow row in BoxInformations.Rows)
             {
-                decimal NetProfit = (Convert.ToDecimal(row[3]) - Convert.ToDecimal(row[2]));
+                decimal NetProfit = (Convert.ToDecimal(row[3]) - Convert.ToDecimal(row[1]));
                 if (NetProfit < 0) NetProfit = 0;
                 DGVBoxes.Rows.Add(  row[0],
                                     Convert.ToDecimal (row[1]).ToString("0.00"),

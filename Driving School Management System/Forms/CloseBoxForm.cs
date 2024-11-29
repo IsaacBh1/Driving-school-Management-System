@@ -76,7 +76,7 @@ namespace Driving_School_Management_System.Forms
 
         private void CloseMoneyBank()
         {
-            prevMoneyBank = clsMoneyBank.Find(clsMoneyBank.GetCurrentMoneyBank());
+            prevMoneyBank = clsMoneyBank.Find(clsMoneyBank.GetCurrentMoneyBank());// whay i serach for it here 
             if (clsMoneyBank.CloseCurrentMoneyBank())
                 OperationIsCompletted = true;
             else

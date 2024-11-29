@@ -67,6 +67,8 @@ namespace Driving_School_Management_System.Forms
 
         private bool  SaveExpence()
         {
+            clsMoneyBank currentMoneyBank = clsMoneyBank.Find(clsMoneyBank.GetCurrentMoneyBank());
+            if (currentMoneyBank is null || currentMoneyBank.InternalAmount < Convert.ToDecimal(numupdownPrice.Value)) return false; 
             expense = new clsExpense() {
                 ExpenseTypeID = clsExpense.GetExpenseTypeIDByName(CboxType.Text),   
                 Amount = Convert.ToDecimal(numupdownPrice.Value) , 
