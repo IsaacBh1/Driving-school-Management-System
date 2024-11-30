@@ -69,7 +69,9 @@ namespace Driving_school_BusinessLayer
         }
 
 
-
+        public static string GetSituation(int situation)
+            => situation == 1 ? "نشط" : "مؤرشف" ; 
+        
         public bool Save()
         {
             switch(Mode)
@@ -107,6 +109,12 @@ namespace Driving_school_BusinessLayer
             }
             return null;
         }
+
+        public static DataTable GetAll()
+        {
+            return clsDrivingLicenseTypeDataAccess.GetAllDrivingLicenseTypes();
+        }
+
 
         public static DataTable GetAllNames()
         {

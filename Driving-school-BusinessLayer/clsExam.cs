@@ -1,8 +1,6 @@
 ﻿using DrivingSchool_DataAccessLayer;
 using System;
 using System.Data;
-using System.Net.NetworkInformation;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Driving_school_BusinessLayer
 {

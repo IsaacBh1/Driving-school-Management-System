@@ -28,19 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlDrivingLicenses = new System.Windows.Forms.Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.DGVDrivingLicenseTypes = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.number_theo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.num_app = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tho_instructor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.app_instructor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.AddNewDrivingLicenseType = new Guna.UI2.WinForms.Guna2Button();
             this.lblOpen_closeLicense = new System.Windows.Forms.Label();
             this.lblDrivingLisenceType = new System.Windows.Forms.Label();
             this.pnlExpencesTypes = new System.Windows.Forms.Panel();
@@ -57,18 +67,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.DGVDrivingLicenseTypes = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlDrivingLicenses.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVDrivingLicenseTypes)).BeginInit();
             this.pnlExpencesTypes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVExpenceTypes)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVDrivingLicenseTypes)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -148,7 +153,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlDrivingLicenses.BackColor = System.Drawing.Color.White;
             this.pnlDrivingLicenses.Controls.Add(this.DGVDrivingLicenseTypes);
-            this.pnlDrivingLicenses.Controls.Add(this.guna2Button1);
+            this.pnlDrivingLicenses.Controls.Add(this.AddNewDrivingLicenseType);
             this.pnlDrivingLicenses.Controls.Add(this.lblOpen_closeLicense);
             this.pnlDrivingLicenses.Controls.Add(this.lblDrivingLisenceType);
             this.pnlDrivingLicenses.Location = new System.Drawing.Point(10, 126);
@@ -157,23 +162,176 @@
             this.pnlDrivingLicenses.Size = new System.Drawing.Size(1414, 444);
             this.pnlDrivingLicenses.TabIndex = 0;
             // 
-            // guna2Button1
+            // DGVDrivingLicenseTypes
             // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Image = global::Driving_School_Management_System.Properties.Resources.plus_bold;
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2Button1.Location = new System.Drawing.Point(15, 24);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(126, 44);
-            this.guna2Button1.TabIndex = 10;
-            this.guna2Button1.Text = "إضافة ";
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.DGVDrivingLicenseTypes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DGVDrivingLicenseTypes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DGVDrivingLicenseTypes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGVDrivingLicenseTypes.BackgroundColor = System.Drawing.Color.White;
+            this.DGVDrivingLicenseTypes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DGVDrivingLicenseTypes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DGVDrivingLicenseTypes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.NullValue = "\"\"";
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVDrivingLicenseTypes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DGVDrivingLicenseTypes.ColumnHeadersHeight = 70;
+            this.DGVDrivingLicenseTypes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.price,
+            this.dataGridViewTextBoxColumn3,
+            this.number_theo,
+            this.num_app,
+            this.tho_instructor,
+            this.app_instructor,
+            this.dataGridViewImageColumn2});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGVDrivingLicenseTypes.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DGVDrivingLicenseTypes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.DGVDrivingLicenseTypes.EnableHeadersVisualStyles = false;
+            this.DGVDrivingLicenseTypes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DGVDrivingLicenseTypes.Location = new System.Drawing.Point(15, 104);
+            this.DGVDrivingLicenseTypes.Name = "DGVDrivingLicenseTypes";
+            this.DGVDrivingLicenseTypes.ReadOnly = true;
+            this.DGVDrivingLicenseTypes.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.DGVDrivingLicenseTypes.RowHeadersVisible = false;
+            this.DGVDrivingLicenseTypes.RowHeadersWidth = 62;
+            this.DGVDrivingLicenseTypes.RowTemplate.Height = 40;
+            this.DGVDrivingLicenseTypes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.DGVDrivingLicenseTypes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGVDrivingLicenseTypes.Size = new System.Drawing.Size(1381, 314);
+            this.DGVDrivingLicenseTypes.TabIndex = 27;
+            this.DGVDrivingLicenseTypes.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.DGVDrivingLicenseTypes.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.DGVDrivingLicenseTypes.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.DGVDrivingLicenseTypes.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.DGVDrivingLicenseTypes.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.DGVDrivingLicenseTypes.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.DGVDrivingLicenseTypes.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.DGVDrivingLicenseTypes.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DGVDrivingLicenseTypes.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
+            this.DGVDrivingLicenseTypes.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DGVDrivingLicenseTypes.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.DGVDrivingLicenseTypes.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.DGVDrivingLicenseTypes.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.DGVDrivingLicenseTypes.ThemeStyle.HeaderStyle.Height = 70;
+            this.DGVDrivingLicenseTypes.ThemeStyle.ReadOnly = true;
+            this.DGVDrivingLicenseTypes.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.DGVDrivingLicenseTypes.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DGVDrivingLicenseTypes.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.DGVDrivingLicenseTypes.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DGVDrivingLicenseTypes.ThemeStyle.RowsStyle.Height = 40;
+            this.DGVDrivingLicenseTypes.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DGVDrivingLicenseTypes.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.FillWeight = 53.91004F;
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.FillWeight = 110.6892F;
+            this.dataGridViewTextBoxColumn2.HeaderText = "الاسم";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // price
+            // 
+            this.price.FillWeight = 113.0612F;
+            this.price.HeaderText = "السعر";
+            this.price.MinimumWidth = 8;
+            this.price.Name = "price";
+            this.price.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.FillWeight = 102.2727F;
+            this.dataGridViewTextBoxColumn3.HeaderText = "الوضعية";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // number_theo
+            // 
+            this.number_theo.FillWeight = 113.0612F;
+            this.number_theo.HeaderText = "عدد الدروس النظرية";
+            this.number_theo.MinimumWidth = 8;
+            this.number_theo.Name = "number_theo";
+            this.number_theo.ReadOnly = true;
+            // 
+            // num_app
+            // 
+            this.num_app.FillWeight = 113.0612F;
+            this.num_app.HeaderText = "عدد الدروس التطبيقية";
+            this.num_app.MinimumWidth = 8;
+            this.num_app.Name = "num_app";
+            this.num_app.ReadOnly = true;
+            // 
+            // tho_instructor
+            // 
+            this.tho_instructor.FillWeight = 113.0612F;
+            this.tho_instructor.HeaderText = "المدرس النظري";
+            this.tho_instructor.MinimumWidth = 8;
+            this.tho_instructor.Name = "tho_instructor";
+            this.tho_instructor.ReadOnly = true;
+            // 
+            // app_instructor
+            // 
+            this.app_instructor.FillWeight = 113.0612F;
+            this.app_instructor.HeaderText = "المدرس التطبيقي";
+            this.app_instructor.MinimumWidth = 8;
+            this.app_instructor.Name = "app_instructor";
+            this.app_instructor.ReadOnly = true;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.FillWeight = 67.82231F;
+            this.dataGridViewImageColumn2.HeaderText = "الإجراءات";
+            this.dataGridViewImageColumn2.Image = global::Driving_School_Management_System.Properties.Resources.dots_three_outline;
+            this.dataGridViewImageColumn2.MinimumWidth = 8;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.ReadOnly = true;
+            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // AddNewDrivingLicenseType
+            // 
+            this.AddNewDrivingLicenseType.BorderRadius = 10;
+            this.AddNewDrivingLicenseType.CheckedState.Parent = this.AddNewDrivingLicenseType;
+            this.AddNewDrivingLicenseType.CustomImages.Parent = this.AddNewDrivingLicenseType;
+            this.AddNewDrivingLicenseType.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
+            this.AddNewDrivingLicenseType.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
+            this.AddNewDrivingLicenseType.ForeColor = System.Drawing.Color.Black;
+            this.AddNewDrivingLicenseType.HoverState.Parent = this.AddNewDrivingLicenseType;
+            this.AddNewDrivingLicenseType.Image = global::Driving_School_Management_System.Properties.Resources.plus_bold;
+            this.AddNewDrivingLicenseType.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.AddNewDrivingLicenseType.Location = new System.Drawing.Point(15, 24);
+            this.AddNewDrivingLicenseType.Name = "AddNewDrivingLicenseType";
+            this.AddNewDrivingLicenseType.ShadowDecoration.Parent = this.AddNewDrivingLicenseType;
+            this.AddNewDrivingLicenseType.Size = new System.Drawing.Size(126, 44);
+            this.AddNewDrivingLicenseType.TabIndex = 10;
+            this.AddNewDrivingLicenseType.Text = "إضافة ";
+            this.AddNewDrivingLicenseType.Click += new System.EventHandler(this.AddNewDrivingLicenseType_Click);
             // 
             // lblOpen_closeLicense
             // 
@@ -443,113 +601,6 @@
             this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewImageColumn1.Width = 197;
             // 
-            // DGVDrivingLicenseTypes
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DGVDrivingLicenseTypes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DGVDrivingLicenseTypes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DGVDrivingLicenseTypes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DGVDrivingLicenseTypes.BackgroundColor = System.Drawing.Color.White;
-            this.DGVDrivingLicenseTypes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DGVDrivingLicenseTypes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DGVDrivingLicenseTypes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.NullValue = "\"\"";
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVDrivingLicenseTypes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DGVDrivingLicenseTypes.ColumnHeadersHeight = 50;
-            this.DGVDrivingLicenseTypes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewImageColumn2});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGVDrivingLicenseTypes.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DGVDrivingLicenseTypes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.DGVDrivingLicenseTypes.EnableHeadersVisualStyles = false;
-            this.DGVDrivingLicenseTypes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DGVDrivingLicenseTypes.Location = new System.Drawing.Point(15, 104);
-            this.DGVDrivingLicenseTypes.Name = "DGVDrivingLicenseTypes";
-            this.DGVDrivingLicenseTypes.ReadOnly = true;
-            this.DGVDrivingLicenseTypes.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.DGVDrivingLicenseTypes.RowHeadersVisible = false;
-            this.DGVDrivingLicenseTypes.RowHeadersWidth = 62;
-            this.DGVDrivingLicenseTypes.RowTemplate.Height = 40;
-            this.DGVDrivingLicenseTypes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.DGVDrivingLicenseTypes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVDrivingLicenseTypes.Size = new System.Drawing.Size(1381, 314);
-            this.DGVDrivingLicenseTypes.TabIndex = 27;
-            this.DGVDrivingLicenseTypes.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.DGVDrivingLicenseTypes.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.DGVDrivingLicenseTypes.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.DGVDrivingLicenseTypes.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.DGVDrivingLicenseTypes.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.DGVDrivingLicenseTypes.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.DGVDrivingLicenseTypes.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.DGVDrivingLicenseTypes.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DGVDrivingLicenseTypes.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(186)))), ((int)(((byte)(188)))));
-            this.DGVDrivingLicenseTypes.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DGVDrivingLicenseTypes.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.DGVDrivingLicenseTypes.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.DGVDrivingLicenseTypes.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.DGVDrivingLicenseTypes.ThemeStyle.HeaderStyle.Height = 50;
-            this.DGVDrivingLicenseTypes.ThemeStyle.ReadOnly = true;
-            this.DGVDrivingLicenseTypes.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.DGVDrivingLicenseTypes.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DGVDrivingLicenseTypes.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.DGVDrivingLicenseTypes.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.DGVDrivingLicenseTypes.ThemeStyle.RowsStyle.Height = 40;
-            this.DGVDrivingLicenseTypes.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DGVDrivingLicenseTypes.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.FillWeight = 47.68219F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.FillWeight = 136.3636F;
-            this.dataGridViewTextBoxColumn2.HeaderText = "الاسم";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.FillWeight = 155.9669F;
-            this.dataGridViewTextBoxColumn3.HeaderText = "الوصف";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.FillWeight = 59.98727F;
-            this.dataGridViewImageColumn2.HeaderText = "الإجراءات";
-            this.dataGridViewImageColumn2.Image = global::Driving_School_Management_System.Properties.Resources.dots_three_outline;
-            this.dataGridViewImageColumn2.MinimumWidth = 8;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.ReadOnly = true;
-            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewImageColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -565,12 +616,12 @@
             this.panel1.PerformLayout();
             this.pnlDrivingLicenses.ResumeLayout(false);
             this.pnlDrivingLicenses.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVDrivingLicenseTypes)).EndInit();
             this.pnlExpencesTypes.ResumeLayout(false);
             this.pnlExpencesTypes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVExpenceTypes)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVDrivingLicenseTypes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -592,7 +643,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button AddNewDrivingLicenseType;
         private Guna.UI2.WinForms.Guna2Button btnAddNewExpenceType;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2DataGridView DGVExpenceTypes;
@@ -604,7 +655,12 @@
         private Guna.UI2.WinForms.Guna2DataGridView DGVDrivingLicenseTypes;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn number_theo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn num_app;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tho_instructor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn app_instructor;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
     }
 }

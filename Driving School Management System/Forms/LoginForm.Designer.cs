@@ -73,7 +73,7 @@
             this.pictureBox1.Image = global::Driving_School_Management_System.Properties.Resources.DrivoLogo;
             this.pictureBox1.Location = new System.Drawing.Point(12, 70);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(559, 530);
+            this.pictureBox1.Size = new System.Drawing.Size(518, 535);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -160,7 +160,7 @@
             this.btnlogin.CustomImages.Parent = this.btnlogin;
             this.btnlogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(175)))), ((int)(((byte)(29)))));
             this.btnlogin.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
-            this.btnlogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnlogin.ForeColor = System.Drawing.Color.Black;
             this.btnlogin.HoverState.Parent = this.btnlogin;
             this.btnlogin.Location = new System.Drawing.Point(596, 337);
             this.btnlogin.Name = "btnlogin";

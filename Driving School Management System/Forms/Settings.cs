@@ -19,8 +19,10 @@ namespace Driving_School_Management_System.Forms
             InitializeComponent();
             ToggleExpencesTypesPanel();
             ToggleDrivingLicense();
-            LoadExpencecsToDGVExpenceTypes(clsExpense.GetAllExpencesTypes());
+            LoadExpencesToDGVExpenceTypes(clsExpense.GetAllExpencesTypes());
+            LoadDrivingLicenseToDGVDrivingLicenseTypes(clsDrivingLicenseType.GetAll()); 
             InitializeContextMenuExpenceType();
+            InitializeContextDrivingLicenseType(); 
             DGVExpenceTypes.CellMouseClick += DGVExpenceTypes_MouseClick;
             DGVDrivingLicenseTypes.CellMouseClick += DGVDrivingLicenseTypes_MouseClick; 
         }
@@ -29,8 +31,8 @@ namespace Driving_School_Management_System.Forms
         // this is for mouse click 
         private void DGVDrivingLicenseTypes_MouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if (DGVDrivingLicenseTypes.Rows[e.RowIndex].Cells[0].Value is null) return;
-            if (e.RowIndex >= 0 && (e.Button == MouseButtons.Right || e.Button == MouseButtons.Left) && e.ColumnIndex == 3)
+            if (e.RowIndex > 0 && DGVDrivingLicenseTypes.Rows[e.RowIndex].Cells[0].Value is null) return;
+            if (e.RowIndex >= 0 && (e.Button == MouseButtons.Right || e.Button == MouseButtons.Left) && e.ColumnIndex == 8)
             {
                 var cellRect = DGVDrivingLicenseTypes.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, true);
                 selectedId = Convert.ToInt32(DGVDrivingLicenseTypes.Rows[e.RowIndex].Cells[0].Value);
@@ -61,9 +63,10 @@ namespace Driving_School_Management_System.Forms
             var deleteDrivingLicenseTypeItem = new ToolStripMenuItem("حذف نوع رخصة القيادة", Properties.Resources.trash__1_);
             deleteDrivingLicenseTypeItem.Click += DeleteDrivingLicenseType_confirm;
 
-            var updateDrivingLicenseTypeItem = new ToolStripMenuItem("تعديل نوع رخصة القيادة", Properties.Resources.trash__1_);
+            var updateDrivingLicenseTypeItem = new ToolStripMenuItem("تعديل نوع رخصة القيادة", Properties.Resources.gear);
             updateDrivingLicenseTypeItem.Click += UpdateDrivingLisenceType;
             contextDrivingLisenceType.Items.Add(deleteDrivingLicenseTypeItem);
+            contextDrivingLisenceType.Items.Add(updateDrivingLicenseTypeItem);
         }
 
         private void UpdateDrivingLisenceType(object sender, EventArgs e)
@@ -104,7 +107,7 @@ namespace Driving_School_Management_System.Forms
             if(clsExpense.DeleteExpenceType(selectedId))
             {
                 statusMessageForm = new StatusMessageForm("Operation done Successfully");
-                LoadExpencecsToDGVExpenceTypes(clsExpense.GetAllExpencesTypes());
+                LoadExpencesToDGVExpenceTypes(clsExpense.GetAllExpencesTypes());
                 statusMessageForm.ShowSuccess();
                 
             }
@@ -114,9 +117,6 @@ namespace Driving_School_Management_System.Forms
                 statusMessageForm.ShowFailed();
             }
         }
-
-      
-
 
         private void lblDrivingLisenceType_Click(object sender, EventArgs e)
         {
@@ -161,13 +161,12 @@ namespace Driving_School_Management_System.Forms
                 pnlExpencesTypes.Height = 444;
                 expencesTypes.Image = Properties.Resources.caret_circle_up;
                 lblopen_close.Text = "اضغط للإغلاق"; 
-
             }
 
             expencesTypesToggle = !expencesTypesToggle;
         }
 
-        private void LoadExpencecsToDGVExpenceTypes(DataTable ExpenceTypes)
+        private void LoadExpencesToDGVExpenceTypes(DataTable ExpenceTypes)
         {
             DGVExpenceTypes.Rows.Clear(); 
             foreach (DataRow item in ExpenceTypes.Rows)
@@ -176,6 +175,21 @@ namespace Driving_School_Management_System.Forms
         }
 
 
+        private void LoadDrivingLicenseToDGVDrivingLicenseTypes(DataTable DrivingLicenseTypes)
+        {
+            DGVDrivingLicenseTypes.Rows.Clear();
+            foreach (DataRow item in DrivingLicenseTypes.Rows)
+            
+                DGVDrivingLicenseTypes.Rows.Add(item[0] ,
+                    item[1], 
+                    item[2] , 
+                    clsDrivingLicenseType.GetSituation(Convert.ToInt16(item[3])) , 
+                    item[4] , 
+                    item[5] , 
+                    clsInstructor.Find(Convert.ToInt16 (item[7]))?.UserName , 
+                    clsInstructor.Find(Convert.ToInt16(item[8]))?.UserName);    
+            
+        }
         private void expencesTypes_Click(object sender, EventArgs e)
         {
             ToggleExpencesTypesPanel(); 
@@ -190,10 +204,19 @@ namespace Driving_School_Management_System.Forms
 
         private void RefreshExpenceTypes()
         {
-            LoadExpencecsToDGVExpenceTypes(clsExpense.GetAllExpencesTypes());
-
+            LoadExpencesToDGVExpenceTypes(clsExpense.GetAllExpencesTypes());
         }
 
-    
+        private void AddNewDrivingLicenseType_Click(object sender, EventArgs e)
+        {
+            AddDrivingLiceseTypeForm drivingLiceseTypeForm = new AddDrivingLiceseTypeForm();
+            drivingLiceseTypeForm.OnAddNewDrivingLicenseTypeEventHundler += RefreshDGVDrivingLicenseTypes;
+            drivingLiceseTypeForm.ShowDialog(); 
+        }
+
+        private void RefreshDGVDrivingLicenseTypes()
+        {
+            LoadDrivingLicenseToDGVDrivingLicenseTypes(clsDrivingLicenseType.GetAll());
+        }
     }
 }

@@ -70,6 +70,12 @@
     <Compile Include="Forms\AddCarForm.Designer.cs">
       <DependentUpon>AddCarForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddDrivingLiceseTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddDrivingLiceseTypeForm.Designer.cs">
+      <DependentUpon>AddDrivingLiceseTypeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddExamForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -302,6 +308,9 @@
     </Compile>
     <EmbeddedResource Include="Forms\AddCarForm.resx">
       <DependentUpon>AddCarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddDrivingLiceseTypeForm.resx">
+      <DependentUpon>AddDrivingLiceseTypeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddExamForm.resx">
       <DependentUpon>AddExamForm.cs</DependentUpon>

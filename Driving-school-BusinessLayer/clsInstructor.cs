@@ -9,7 +9,7 @@ namespace Driving_school_BusinessLayer
         enMode Mode = enMode.AddNew;
 
         public int InstructorID {  get; set; }
-        public int PersonID {  get; set; }
+        public int? PersonID {  get; set; }
         public string UserName { get; set; }
         public bool  Gender { get; set; }
         public int DrivingLicenseID { get; set; }
@@ -17,7 +17,7 @@ namespace Driving_school_BusinessLayer
         public clsDrivingLicense DrivingLicence { get; set; }
         public clsNationalCard NationalCard { get; set;}
 
-        private clsInstructor(int instructorID, int personID, string userName, bool gender, int drivingLicenseID)
+        private clsInstructor(int instructorID, int? personID, string userName, bool gender, int drivingLicenseID)
         {
             InstructorID = instructorID;
             PersonID = personID;
@@ -77,7 +77,7 @@ namespace Driving_school_BusinessLayer
         {
 
             //int _InstructorID = -1 ; 
-            int _PersonID  = -1 ; 
+            int? _PersonID  = -1 ; 
             string _UserName = "" ; 
             bool _Gender = true ; 
             int _DrivingLicenseID = -1 ; 

@@ -22,7 +22,7 @@ namespace Driving_School_Management_System.Forms
 
         private void DGVExam_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if (DGVExams.Rows[e.RowIndex].Cells[0].Value is null) return;
+            if (e.RowIndex > 0 && DGVExams.Rows[e.RowIndex].Cells[0].Value is null) return;// this gives me an error here 
             if ((e.RowIndex >= 0) && (e.Button == MouseButtons.Right || e.Button == MouseButtons.Left) && e.ColumnIndex == 6)
             {
                 var cellRect = DGVExams.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, true);

@@ -66,7 +66,7 @@ namespace DrivingSchool_DataAccessLayer
 
 
 
-        public static bool GetInstructorInfoByID(int instructorID, ref int PersonID, ref string UserName, ref bool Gender, ref int DrivingLicenseID, ref int NationalCardID)
+        public static bool GetInstructorInfoByID(int instructorID, ref int? PersonID, ref string UserName, ref bool Gender, ref int DrivingLicenseID, ref int NationalCardID)
         {
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
             string query = "select * from Instructors where InstructorID = @instructorID";
@@ -80,7 +80,10 @@ namespace DrivingSchool_DataAccessLayer
                 while (reader.Read())
                 {
                     IsFound = true;
-                    PersonID = (int)reader["PersonID"];
+                    PersonID = reader["PersonID"] is DBNull
+                                                ? (int?)null
+                                                : Convert.ToInt32(reader["PersonID"]);
+
                     UserName = (string)reader["UserName"];
                     Gender = (bool)reader["Gender"];
                     DrivingLicenseID = (int)reader["DrivingLicenseID"];
@@ -99,7 +102,7 @@ namespace DrivingSchool_DataAccessLayer
             }
         }
 
-        public static int AddNewInstructor(int PersonID, string UserName, bool Gender, int DrivingLicenseID, int NationalCardID)
+        public static int AddNewInstructor(int? PersonID, string UserName, bool Gender, int DrivingLicenseID, int NationalCardID)
         {
             int Id = -1;
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
@@ -132,7 +135,7 @@ namespace DrivingSchool_DataAccessLayer
             return Id;
         }
 
-        public static bool UpdateInstructor(int instructorID, int PersonID, string UserName, bool Gender, int DrivingLicenseID, int NationalCardID)
+        public static bool UpdateInstructor(int instructorID, int? PersonID, string UserName, bool Gender, int DrivingLicenseID, int NationalCardID)
         {
             int AffectedRows = 0;
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
