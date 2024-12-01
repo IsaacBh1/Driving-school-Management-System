@@ -120,7 +120,6 @@ namespace Driving_School_Management_System.Forms
              drivingLicenseType.NumberOfLessons_App = Convert.ToByte(numNumberOfLessonsApp.Value);
              drivingLicenseType.Instructor_TheoID = clsInstructor.GetInstructorIDByUserName(CboxAppInsructor.Text);
              drivingLicenseType.Instructor_AppID = clsInstructor.GetInstructorIDByUserName(CboxTheoInsructor.Text);
-
             return drivingLicenseType.Save(); 
 
         }

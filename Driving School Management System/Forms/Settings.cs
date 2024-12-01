@@ -87,8 +87,21 @@ namespace Driving_School_Management_System.Forms
 
         private void DeleteDrivingLicenseType()
         {
-            // this is for deleting drivingLicense type 
+            if(clsDrivingLicenseType.DeleteDrivingLicenseType(selectedId))
+            {
+                statusMessageForm = new StatusMessageForm("Operation done Successfully");
+                LoadDrivingLicenseToDGVDrivingLicenseTypes(clsDrivingLicenseType.GetAll());
+
+                statusMessageForm.ShowSuccess();
+
+            }
+            else
+            {
+                statusMessageForm = new StatusMessageForm("Operation Failed");
+                statusMessageForm.ShowFailed();
+            }
         }
+        
 
         private void InitializeContextMenuExpenceType()
         {
@@ -124,9 +137,7 @@ namespace Driving_School_Management_System.Forms
         private void lblDrivingLisenceType_Click(object sender, EventArgs e)
         {
             ToggleDrivingLicense(); 
-
         }
-
 
         private void ToggleDrivingLicense()
         {

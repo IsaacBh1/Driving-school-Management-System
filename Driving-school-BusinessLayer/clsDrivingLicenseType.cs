@@ -135,8 +135,9 @@ namespace Driving_school_BusinessLayer
 
         public static string GetDrivingLicenseNameByID(int ID)
             =>clsDrivingLicenseTypeDataAccess.GetDrivingLicenseNameByID(ID);
-        
 
+        public static bool DeleteDrivingLicenseType(int Id)
+            => clsDrivingLicenseTypeDataAccess.DeleteDrivingLicenseType(Id);
 
     }
 }

@@ -338,9 +338,6 @@ namespace DrivingSchool_DataAccessLayer
         }
 
 
-
-
-
         public static decimal GetDrivingLicenseTypePriceByID(int ID)
         {
             decimal Price = 0;
@@ -373,18 +370,6 @@ namespace DrivingSchool_DataAccessLayer
             }
             return Price;
         }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         public static bool IsDrivingLicenseTypeExists(string Name, decimal Price, bool? Situation, int? NumberOfLessons_Theo, int? NumberOfLessons_App, string IconImagePath, int? Instructor_TheoID, int? Instructor_AppID)
