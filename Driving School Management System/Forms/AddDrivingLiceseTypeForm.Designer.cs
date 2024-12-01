@@ -32,7 +32,7 @@
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtboxID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtbxLicenseName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -43,10 +43,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.txtboxPrice = new System.Windows.Forms.NumericUpDown();
+            this.cbxSituation = new System.Windows.Forms.ComboBox();
+            this.numNumberOfLessonsTheo = new System.Windows.Forms.NumericUpDown();
+            this.numNumberOfLessonsApp = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.CboxAppInsructor = new System.Windows.Forms.ComboBox();
@@ -62,9 +62,9 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtboxPrice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numNumberOfLessonsTheo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numNumberOfLessonsApp)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
@@ -109,7 +109,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.txtboxID);
+            this.panel1.Controls.Add(this.txtbxLicenseName);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(117, 74);
@@ -117,28 +117,28 @@
             this.panel1.Size = new System.Drawing.Size(769, 58);
             this.panel1.TabIndex = 43;
             // 
-            // txtboxID
+            // txtbxLicenseName
             // 
-            this.txtboxID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtboxID.DefaultText = "";
-            this.txtboxID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtboxID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtboxID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxID.DisabledState.Parent = this.txtboxID;
-            this.txtboxID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtboxID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxID.FocusedState.Parent = this.txtboxID;
-            this.txtboxID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxID.HoverState.Parent = this.txtboxID;
-            this.txtboxID.Location = new System.Drawing.Point(126, 7);
-            this.txtboxID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtboxID.Name = "txtboxID";
-            this.txtboxID.PasswordChar = '\0';
-            this.txtboxID.PlaceholderText = "";
-            this.txtboxID.SelectedText = "";
-            this.txtboxID.ShadowDecoration.Parent = this.txtboxID;
-            this.txtboxID.Size = new System.Drawing.Size(359, 40);
-            this.txtboxID.TabIndex = 12;
+            this.txtbxLicenseName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtbxLicenseName.DefaultText = "";
+            this.txtbxLicenseName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtbxLicenseName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtbxLicenseName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxLicenseName.DisabledState.Parent = this.txtbxLicenseName;
+            this.txtbxLicenseName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxLicenseName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxLicenseName.FocusedState.Parent = this.txtbxLicenseName;
+            this.txtbxLicenseName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxLicenseName.HoverState.Parent = this.txtbxLicenseName;
+            this.txtbxLicenseName.Location = new System.Drawing.Point(126, 7);
+            this.txtbxLicenseName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbxLicenseName.Name = "txtbxLicenseName";
+            this.txtbxLicenseName.PasswordChar = '\0';
+            this.txtbxLicenseName.PlaceholderText = "";
+            this.txtbxLicenseName.SelectedText = "";
+            this.txtbxLicenseName.ShadowDecoration.Parent = this.txtbxLicenseName;
+            this.txtbxLicenseName.Size = new System.Drawing.Size(359, 40);
+            this.txtbxLicenseName.TabIndex = 12;
             // 
             // label3
             // 
@@ -167,7 +167,7 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.numericUpDown1);
+            this.panel2.Controls.Add(this.txtboxPrice);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(117, 138);
@@ -202,7 +202,7 @@
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Controls.Add(this.cbxSituation);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Location = new System.Drawing.Point(117, 202);
             this.panel3.Name = "panel3";
@@ -225,7 +225,7 @@
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.Controls.Add(this.numericUpDown2);
+            this.panel4.Controls.Add(this.numNumberOfLessonsTheo);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Location = new System.Drawing.Point(117, 266);
             this.panel4.Name = "panel4";
@@ -248,44 +248,49 @@
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.Controls.Add(this.numericUpDown3);
+            this.panel5.Controls.Add(this.numNumberOfLessonsApp);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Location = new System.Drawing.Point(117, 330);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(769, 58);
             this.panel5.TabIndex = 43;
             // 
-            // numericUpDown1
+            // txtboxPrice
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(126, 18);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(359, 27);
-            this.numericUpDown1.TabIndex = 13;
+            this.txtboxPrice.Location = new System.Drawing.Point(127, 18);
+            this.txtboxPrice.Maximum = new decimal(new int[] {
+            -469762049,
+            -590869294,
+            5421010,
+            0});
+            this.txtboxPrice.Name = "txtboxPrice";
+            this.txtboxPrice.Size = new System.Drawing.Size(359, 27);
+            this.txtboxPrice.TabIndex = 13;
             // 
-            // comboBox1
+            // cbxSituation
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbxSituation.FormattingEnabled = true;
+            this.cbxSituation.Items.AddRange(new object[] {
             "نشط",
             "مؤرشف"});
-            this.comboBox1.Location = new System.Drawing.Point(126, 16);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(359, 27);
-            this.comboBox1.TabIndex = 13;
+            this.cbxSituation.Location = new System.Drawing.Point(126, 16);
+            this.cbxSituation.Name = "cbxSituation";
+            this.cbxSituation.Size = new System.Drawing.Size(359, 27);
+            this.cbxSituation.TabIndex = 13;
             // 
-            // numericUpDown2
+            // numNumberOfLessonsTheo
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(126, 15);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(359, 27);
-            this.numericUpDown2.TabIndex = 13;
+            this.numNumberOfLessonsTheo.Location = new System.Drawing.Point(126, 15);
+            this.numNumberOfLessonsTheo.Name = "numNumberOfLessonsTheo";
+            this.numNumberOfLessonsTheo.Size = new System.Drawing.Size(359, 27);
+            this.numNumberOfLessonsTheo.TabIndex = 13;
             // 
-            // numericUpDown3
+            // numNumberOfLessonsApp
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(126, 16);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(359, 27);
-            this.numericUpDown3.TabIndex = 13;
+            this.numNumberOfLessonsApp.Location = new System.Drawing.Point(126, 16);
+            this.numNumberOfLessonsApp.Name = "numNumberOfLessonsApp";
+            this.numNumberOfLessonsApp.Size = new System.Drawing.Size(359, 27);
+            this.numNumberOfLessonsApp.TabIndex = 13;
             // 
             // label8
             // 
@@ -395,6 +400,7 @@
             this.btnSubmit.Size = new System.Drawing.Size(126, 44);
             this.btnSubmit.TabIndex = 45;
             this.btnSubmit.Text = "حفظ";
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // AddDrivingLiceseTypeForm
             // 
@@ -429,9 +435,9 @@
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtboxPrice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numNumberOfLessonsTheo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numNumberOfLessonsApp)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -447,7 +453,7 @@
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2TextBox txtboxID;
+        private Guna.UI2.WinForms.Guna2TextBox txtbxLicenseName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
@@ -458,10 +464,10 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown txtboxPrice;
+        private System.Windows.Forms.ComboBox cbxSituation;
+        private System.Windows.Forms.NumericUpDown numNumberOfLessonsTheo;
+        private System.Windows.Forms.NumericUpDown numNumberOfLessonsApp;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.ComboBox CboxAppInsructor;

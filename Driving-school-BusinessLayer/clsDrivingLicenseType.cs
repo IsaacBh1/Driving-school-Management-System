@@ -70,8 +70,11 @@ namespace Driving_school_BusinessLayer
 
 
         public static string GetSituation(int situation)
-            => situation == 1 ? "نشط" : "مؤرشف" ; 
-        
+            => situation == 1 ? "نشط" : "مؤرشف" ;
+
+        public static bool GetSituation(string situation)
+          => situation == "نشط" ? true : false;
+
         public bool Save()
         {
             switch(Mode)

@@ -71,7 +71,10 @@ namespace Driving_School_Management_System.Forms
 
         private void UpdateDrivingLisenceType(object sender, EventArgs e)
         {
-            // this is for deleting driving license type 
+            AddDrivingLiceseTypeForm drivingLiceseTypeForm = new AddDrivingLiceseTypeForm(selectedId);
+            drivingLiceseTypeForm.OnAddNewDrivingLicenseTypeEventHundler += RefreshDGVDrivingLicenseTypes;
+            drivingLiceseTypeForm.ShowDialog(); 
+
         }
 
         private void DeleteDrivingLicenseType_confirm(object sender, EventArgs e)
